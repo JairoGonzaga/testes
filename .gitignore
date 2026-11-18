@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+# simulações com o provedor fake
+*_fake/

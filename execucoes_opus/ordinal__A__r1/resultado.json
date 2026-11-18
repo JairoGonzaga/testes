@@ -1,0 +1,1067 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 128,
+ "n_validos": 128,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_r1_single_digit_suffixes[1-1st]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[2-2nd]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[3-3rd]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[4-4th]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[5-5th]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[6-6th]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[7-7th]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[8-8th]": "passed",
+  "test_gerado.py::test_r1_single_digit_suffixes[9-9th]": "passed",
+  "test_gerado.py::test_r1_zero_uses_th": "passed",
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[10-10th]": "passed",
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[20-20th]": "passed",
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[100-100th]": "passed",
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[1000-1000th]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[21-21st]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[22-22nd]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[23-23rd]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[24-24th]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[31-31st]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[42-42nd]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[53-53rd]": "passed",
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[99-99th]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[101-101st]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[102-102nd]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[103-103rd]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[104-104th]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[121-121st]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[1001-1001st]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[1002-1002nd]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[1003-1003rd]": "passed",
+  "test_gerado.py::test_r1_multi_digit_numbers[1004-1004th]": "passed",
+  "test_gerado.py::test_r1_large_number": "passed",
+  "test_gerado.py::test_r2_eleven_twelve_thirteen_use_th[11-11th]": "passed",
+  "test_gerado.py::test_r2_eleven_twelve_thirteen_use_th[12-12th]": "passed",
+  "test_gerado.py::test_r2_eleven_twelve_thirteen_use_th[13-13th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[111-111th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[112-112th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[113-113th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[211-211th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[1011-1011th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[1012-1012th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[1013-1013th]": "passed",
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[10111-10111th]": "passed",
+  "test_gerado.py::test_r2_boundaries_around_exception_range[10-10th]": "passed",
+  "test_gerado.py::test_r2_boundaries_around_exception_range[14-14th]": "passed",
+  "test_gerado.py::test_r2_boundaries_around_exception_range[110-110th]": "passed",
+  "test_gerado.py::test_r2_boundaries_around_exception_range[114-114th]": "passed",
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[21-21st]": "passed",
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[22-22nd]": "passed",
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[23-23rd]": "passed",
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[121-121st]": "passed",
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[122-122nd]": "passed",
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[123-123rd]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[5-5th]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[1-1st]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[2-2nd]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[3-3rd]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[0-0th]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[11-11th]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[12-12th]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[13-13th]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[103-103rd]": "passed",
+  "test_gerado.py::test_r3_string_containing_integer[1002-1002nd]": "passed",
+  "test_gerado.py::test_r3_string_with_surrounding_whitespace": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[1.0-1st]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[2.0-2nd]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[3.0-3rd]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[4.0-4th]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[1.9-1st]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[2.5-2nd]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[3.99-3rd]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[0.7-0th]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[11.5-11th]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[12.9-12th]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[13.1-13th]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[21.7-21st]": "passed",
+  "test_gerado.py::test_r3_float_is_truncated_by_int[103.4-103rd]": "passed",
+  "test_gerado.py::test_r3_float_truncation_does_not_round_up": "passed",
+  "test_gerado.py::test_r4_non_numeric_string_returned_as_is": "passed",
+  "test_gerado.py::test_r4_list_returned_as_str": "passed",
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[abc]": "passed",
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[]": "passed",
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[1.5]": "passed",
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[1st]": "passed",
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[12abc]": "passed",
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[one]": "passed",
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[None]": "passed",
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value1]": "passed",
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value2]": "passed",
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value3]": "passed",
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value4]": "passed",
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value5]": "passed",
+  "test_gerado.py::test_r4_none_returns_string_none": "passed",
+  "test_gerado.py::test_r4_result_is_always_a_string": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[1-1st]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[2-2nd]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[3-3rd]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[4-4th]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[11-11th]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[12-12th]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[13-13th]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[101-101st]": "passed",
+  "test_gerado.py::test_r5_female_gives_same_result[1002-1002nd]": "passed",
+  "test_gerado.py::test_r5_explicit_male_gives_same_result[1-1st]": "passed",
+  "test_gerado.py::test_r5_explicit_male_gives_same_result[22-22nd]": "passed",
+  "test_gerado.py::test_r5_explicit_male_gives_same_result[113-113th]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[0]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[1]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[2]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[3]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[4]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[11]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[12]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[13]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[21]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[111]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[1002]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[5]": "passed",
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[3.7]": "passed",
+  "test_gerado.py::test_r5_gender_as_positional_argument": "passed",
+  "test_gerado.py::test_r5_female_with_unconvertible_value": "passed",
+  "test_gerado.py::test_r6_positive_infinity": "passed",
+  "test_gerado.py::test_r6_negative_infinity": "passed",
+  "test_gerado.py::test_r6_nan": "passed",
+  "test_gerado.py::test_r6_math_constants": "passed",
+  "test_gerado.py::test_r6_non_finite_with_female_gender[inf-+Inf]": "passed",
+  "test_gerado.py::test_r6_non_finite_with_female_gender[-inf--Inf]": "passed",
+  "test_gerado.py::test_r6_non_finite_with_female_gender[nan-NaN]": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_r1_single_digit_suffixes[1-1st]": [
+   {
+    "value": 1,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[2-2nd]": [
+   {
+    "value": 2,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[3-3rd]": [
+   {
+    "value": 3,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[4-4th]": [
+   {
+    "value": 4,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[5-5th]": [
+   {
+    "value": 5,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[6-6th]": [
+   {
+    "value": 6,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[7-7th]": [
+   {
+    "value": 7,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[8-8th]": [
+   {
+    "value": 8,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_single_digit_suffixes[9-9th]": [
+   {
+    "value": 9,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_zero_uses_th": [
+   {
+    "value": 0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[10-10th]": [
+   {
+    "value": 10,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[20-20th]": [
+   {
+    "value": 20,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[100-100th]": [
+   {
+    "value": 100,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_last_digit_zero_uses_th[1000-1000th]": [
+   {
+    "value": 1000,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[21-21st]": [
+   {
+    "value": 21,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[22-22nd]": [
+   {
+    "value": 22,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[23-23rd]": [
+   {
+    "value": 23,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[24-24th]": [
+   {
+    "value": 24,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[31-31st]": [
+   {
+    "value": 31,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[42-42nd]": [
+   {
+    "value": 42,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[53-53rd]": [
+   {
+    "value": 53,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_two_digit_numbers_outside_teens[99-99th]": [
+   {
+    "value": 99,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[101-101st]": [
+   {
+    "value": 101,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[102-102nd]": [
+   {
+    "value": 102,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[103-103rd]": [
+   {
+    "value": 103,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[104-104th]": [
+   {
+    "value": 104,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[121-121st]": [
+   {
+    "value": 121,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[1001-1001st]": [
+   {
+    "value": 1001,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[1002-1002nd]": [
+   {
+    "value": 1002,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[1003-1003rd]": [
+   {
+    "value": 1003,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_multi_digit_numbers[1004-1004th]": [
+   {
+    "value": 1004,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r1_large_number": [
+   {
+    "value": 1234567892,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_eleven_twelve_thirteen_use_th[11-11th]": [
+   {
+    "value": 11,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_eleven_twelve_thirteen_use_th[12-12th]": [
+   {
+    "value": 12,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_eleven_twelve_thirteen_use_th[13-13th]": [
+   {
+    "value": 13,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[111-111th]": [
+   {
+    "value": 111,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[112-112th]": [
+   {
+    "value": 112,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[113-113th]": [
+   {
+    "value": 113,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[211-211th]": [
+   {
+    "value": 211,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[1011-1011th]": [
+   {
+    "value": 1011,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[1012-1012th]": [
+   {
+    "value": 1012,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[1013-1013th]": [
+   {
+    "value": 1013,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_applies_to_last_two_digits_of_larger_numbers[10111-10111th]": [
+   {
+    "value": 10111,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_boundaries_around_exception_range[10-10th]": [
+   {
+    "value": 10,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_boundaries_around_exception_range[14-14th]": [
+   {
+    "value": 14,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_boundaries_around_exception_range[110-110th]": [
+   {
+    "value": 110,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_boundaries_around_exception_range[114-114th]": [
+   {
+    "value": 114,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[21-21st]": [
+   {
+    "value": 21,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[22-22nd]": [
+   {
+    "value": 22,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[23-23rd]": [
+   {
+    "value": 23,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[121-121st]": [
+   {
+    "value": 121,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[122-122nd]": [
+   {
+    "value": 122,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r2_exception_does_not_apply_to_other_tens[123-123rd]": [
+   {
+    "value": 123,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[5-5th]": [
+   {
+    "value": "5",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[1-1st]": [
+   {
+    "value": "1",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[2-2nd]": [
+   {
+    "value": "2",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[3-3rd]": [
+   {
+    "value": "3",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[0-0th]": [
+   {
+    "value": "0",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[11-11th]": [
+   {
+    "value": "11",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[12-12th]": [
+   {
+    "value": "12",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[13-13th]": [
+   {
+    "value": "13",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[103-103rd]": [
+   {
+    "value": "103",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_containing_integer[1002-1002nd]": [
+   {
+    "value": "1002",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_string_with_surrounding_whitespace": [
+   {
+    "value": " 7 ",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[1.0-1st]": [
+   {
+    "value": 1.0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[2.0-2nd]": [
+   {
+    "value": 2.0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[3.0-3rd]": [
+   {
+    "value": 3.0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[4.0-4th]": [
+   {
+    "value": 4.0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[1.9-1st]": [
+   {
+    "value": 1.9,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[2.5-2nd]": [
+   {
+    "value": 2.5,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[3.99-3rd]": [
+   {
+    "value": 3.99,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[0.7-0th]": [
+   {
+    "value": 0.7,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[11.5-11th]": [
+   {
+    "value": 11.5,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[12.9-12th]": [
+   {
+    "value": 12.9,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[13.1-13th]": [
+   {
+    "value": 13.1,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[21.7-21st]": [
+   {
+    "value": 21.7,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_is_truncated_by_int[103.4-103rd]": [
+   {
+    "value": 103.4,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r3_float_truncation_does_not_round_up": [
+   {
+    "value": 10.99,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_non_numeric_string_returned_as_is": [
+   {
+    "value": "something else",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_list_returned_as_str": [
+   {
+    "value": [
+     1,
+     2,
+     3
+    ],
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[abc]": [
+   {
+    "value": "abc",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[]": [
+   {
+    "value": "",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[1.5]": [
+   {
+    "value": "1.5",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[1st]": [
+   {
+    "value": "1st",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[12abc]": [
+   {
+    "value": "12abc",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_strings_return_str_value[one]": [
+   {
+    "value": "one",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[None]": [
+   {
+    "value": null,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value1]": [
+   {
+    "value": [],
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value2]": [
+   {
+    "value": {},
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value3]": [
+   {
+    "value": {
+     "a": 1
+    },
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value4]": [
+   {
+    "value": [
+     1,
+     2
+    ],
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_unconvertible_objects_return_str_value[value5]": [
+   {
+    "value": "<object object at 0x7f509cf21da0>",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_none_returns_string_none": [
+   {
+    "value": null,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r4_result_is_always_a_string": [
+   {
+    "value": [
+     1,
+     2,
+     3
+    ],
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[1-1st]": [
+   {
+    "value": 1,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[2-2nd]": [
+   {
+    "value": 2,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[3-3rd]": [
+   {
+    "value": 3,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[4-4th]": [
+   {
+    "value": 4,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[11-11th]": [
+   {
+    "value": 11,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[12-12th]": [
+   {
+    "value": 12,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[13-13th]": [
+   {
+    "value": 13,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[101-101st]": [
+   {
+    "value": 101,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_female_gives_same_result[1002-1002nd]": [
+   {
+    "value": 1002,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_explicit_male_gives_same_result[1-1st]": [
+   {
+    "value": 1,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r5_explicit_male_gives_same_result[22-22nd]": [
+   {
+    "value": 22,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r5_explicit_male_gives_same_result[113-113th]": [
+   {
+    "value": 113,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[0]": [
+   {
+    "value": 0,
+    "gender": "male"
+   },
+   {
+    "value": 0,
+    "gender": "male"
+   },
+   {
+    "value": 0,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[1]": [
+   {
+    "value": 1,
+    "gender": "male"
+   },
+   {
+    "value": 1,
+    "gender": "male"
+   },
+   {
+    "value": 1,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[2]": [
+   {
+    "value": 2,
+    "gender": "male"
+   },
+   {
+    "value": 2,
+    "gender": "male"
+   },
+   {
+    "value": 2,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[3]": [
+   {
+    "value": 3,
+    "gender": "male"
+   },
+   {
+    "value": 3,
+    "gender": "male"
+   },
+   {
+    "value": 3,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[4]": [
+   {
+    "value": 4,
+    "gender": "male"
+   },
+   {
+    "value": 4,
+    "gender": "male"
+   },
+   {
+    "value": 4,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[11]": [
+   {
+    "value": 11,
+    "gender": "male"
+   },
+   {
+    "value": 11,
+    "gender": "male"
+   },
+   {
+    "value": 11,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[12]": [
+   {
+    "value": 12,
+    "gender": "male"
+   },
+   {
+    "value": 12,
+    "gender": "male"
+   },
+   {
+    "value": 12,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[13]": [
+   {
+    "value": 13,
+    "gender": "male"
+   },
+   {
+    "value": 13,
+    "gender": "male"
+   },
+   {
+    "value": 13,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[21]": [
+   {
+    "value": 21,
+    "gender": "male"
+   },
+   {
+    "value": 21,
+    "gender": "male"
+   },
+   {
+    "value": 21,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[111]": [
+   {
+    "value": 111,
+    "gender": "male"
+   },
+   {
+    "value": 111,
+    "gender": "male"
+   },
+   {
+    "value": 111,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[1002]": [
+   {
+    "value": 1002,
+    "gender": "male"
+   },
+   {
+    "value": 1002,
+    "gender": "male"
+   },
+   {
+    "value": 1002,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[5]": [
+   {
+    "value": "5",
+    "gender": "male"
+   },
+   {
+    "value": "5",
+    "gender": "male"
+   },
+   {
+    "value": "5",
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_default_male_and_female_are_equal[3.7]": [
+   {
+    "value": 3.7,
+    "gender": "male"
+   },
+   {
+    "value": 3.7,
+    "gender": "male"
+   },
+   {
+    "value": 3.7,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r5_gender_as_positional_argument": [
+   {
+    "value": 3,
+    "gender": "female"
+   },
+   {
+    "value": 3,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r5_female_with_unconvertible_value": [
+   {
+    "value": "something else",
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r6_positive_infinity": [
+   {
+    "value": Infinity,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r6_negative_infinity": [
+   {
+    "value": -Infinity,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r6_nan": [
+   {
+    "value": NaN,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r6_math_constants": [
+   {
+    "value": Infinity,
+    "gender": "male"
+   },
+   {
+    "value": -Infinity,
+    "gender": "male"
+   },
+   {
+    "value": NaN,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_r6_non_finite_with_female_gender[inf-+Inf]": [
+   {
+    "value": Infinity,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r6_non_finite_with_female_gender[-inf--Inf]": [
+   {
+    "value": -Infinity,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_r6_non_finite_with_female_gender[nan-NaN]": [
+   {
+    "value": NaN,
+    "gender": "female"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 6,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "F6"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 0.875,
+ "cobertura_linhas": 0.9473684210526315,
+ "defeitos": {
+  "d1_treze_esquecido": true,
+  "d2_modulo_errado": true,
+  "d3_ignora_centena": true,
+  "d4_retorno_vazio": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 31,
+  "equivalentes": 7,
+  "mortos": 24,
+  "sobreviventes": []
+ },
+ "mutation_score": 1.0
+}

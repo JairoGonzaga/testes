@@ -1,0 +1,7 @@
+# Mutantes equivalentes (verificados manualmente). Um nome por linha; '#' inicia comentário.
+m012  # _format_not_finite só recebe inf, -inf ou nan; a mutação não muda o resultado para esses valores
+m013  # _format_not_finite só recebe inf, -inf ou nan; a mutação não muda o resultado para esses valores
+m016  # _format_not_finite só recebe inf, -inf ou nan; a mutação não muda o resultado para esses valores
+m017  # _format_not_finite só recebe inf, -inf ou nan; a mutação não muda o resultado para esses valores
+m018  # _format_not_finite só recebe inf, -inf ou nan; a mutação não muda o resultado para esses valores
+m020  # linha inalcançável: o retorno '' de _format_not_finite nunca é executado

@@ -1,0 +1,427 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 54,
+ "n_validos": 54,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_c1_r1": "passed",
+  "test_gerado.py::test_c2_r1": "passed",
+  "test_gerado.py::test_c3_r1": "passed",
+  "test_gerado.py::test_c4_r1": "passed",
+  "test_gerado.py::test_c5_r1": "passed",
+  "test_gerado.py::test_c6_r1": "passed",
+  "test_gerado.py::test_c7_r1": "passed",
+  "test_gerado.py::test_c8_r1": "passed",
+  "test_gerado.py::test_c9_r1": "passed",
+  "test_gerado.py::test_c10_r1": "passed",
+  "test_gerado.py::test_c11_r1": "passed",
+  "test_gerado.py::test_c12_r1": "passed",
+  "test_gerado.py::test_c13_r1": "passed",
+  "test_gerado.py::test_c14_r1": "passed",
+  "test_gerado.py::test_c15_r1": "passed",
+  "test_gerado.py::test_c16_r1": "passed",
+  "test_gerado.py::test_c17_r2": "passed",
+  "test_gerado.py::test_c18_r2": "passed",
+  "test_gerado.py::test_c19_r2": "passed",
+  "test_gerado.py::test_c20_r2": "passed",
+  "test_gerado.py::test_c21_r2": "passed",
+  "test_gerado.py::test_c22_r2": "passed",
+  "test_gerado.py::test_c23_r2": "passed",
+  "test_gerado.py::test_c24_r2": "passed",
+  "test_gerado.py::test_c25_r2": "passed",
+  "test_gerado.py::test_c26_r2": "passed",
+  "test_gerado.py::test_c27_r2": "passed",
+  "test_gerado.py::test_c28_r2": "passed",
+  "test_gerado.py::test_c29_r3": "passed",
+  "test_gerado.py::test_c30_r3": "passed",
+  "test_gerado.py::test_c31_r3": "passed",
+  "test_gerado.py::test_c32_r3": "passed",
+  "test_gerado.py::test_c33_r3": "passed",
+  "test_gerado.py::test_c34_r3": "passed",
+  "test_gerado.py::test_c35_r3": "passed",
+  "test_gerado.py::test_c36_r3": "passed",
+  "test_gerado.py::test_c37_r4": "passed",
+  "test_gerado.py::test_c38_r4": "passed",
+  "test_gerado.py::test_c39_r4": "passed",
+  "test_gerado.py::test_c40_r4": "passed",
+  "test_gerado.py::test_c41_r4": "passed",
+  "test_gerado.py::test_c42_r4": "passed",
+  "test_gerado.py::test_c43_r4": "passed",
+  "test_gerado.py::test_c44_r5": "passed",
+  "test_gerado.py::test_c45_r5": "passed",
+  "test_gerado.py::test_c46_r5": "passed",
+  "test_gerado.py::test_c47_r5": "passed",
+  "test_gerado.py::test_c48_r5": "passed",
+  "test_gerado.py::test_c49_r5": "passed",
+  "test_gerado.py::test_c50_r5": "passed",
+  "test_gerado.py::test_c51_r6": "passed",
+  "test_gerado.py::test_c52_r6": "passed",
+  "test_gerado.py::test_c53_r6": "passed",
+  "test_gerado.py::test_c54_r6": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_c1_r1": [
+   {
+    "value": 1,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c2_r1": [
+   {
+    "value": 2,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c3_r1": [
+   {
+    "value": 3,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c4_r1": [
+   {
+    "value": 4,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c5_r1": [
+   {
+    "value": 0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c6_r1": [
+   {
+    "value": 9,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c7_r1": [
+   {
+    "value": 10,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c8_r1": [
+   {
+    "value": 21,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c9_r1": [
+   {
+    "value": 22,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c10_r1": [
+   {
+    "value": 23,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c11_r1": [
+   {
+    "value": 1002,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c12_r1": [
+   {
+    "value": 103,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c13_r1": [
+   {
+    "value": 101,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c14_r1": [
+   {
+    "value": 100,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c15_r1": [
+   {
+    "value": 57,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c16_r1": [
+   {
+    "value": 100000000000000000001,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c17_r2": [
+   {
+    "value": 11,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c18_r2": [
+   {
+    "value": 12,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c19_r2": [
+   {
+    "value": 13,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c20_r2": [
+   {
+    "value": 14,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c21_r2": [
+   {
+    "value": 111,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c22_r2": [
+   {
+    "value": 112,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c23_r2": [
+   {
+    "value": 113,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c24_r2": [
+   {
+    "value": 110,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c25_r2": [
+   {
+    "value": 121,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c26_r2": [
+   {
+    "value": 1011,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c27_r2": [
+   {
+    "value": 2012,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c28_r2": [
+   {
+    "value": 1013,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c29_r3": [
+   {
+    "value": "5",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c30_r3": [
+   {
+    "value": "112",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c31_r3": [
+   {
+    "value": "1002",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c32_r3": [
+   {
+    "value": 1.5,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c33_r3": [
+   {
+    "value": 2.9,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c34_r3": [
+   {
+    "value": 11.9,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c35_r3": [
+   {
+    "value": 0.5,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c36_r3": [
+   {
+    "value": 103.0,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c37_r4": [
+   {
+    "value": "something else",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c38_r4": [
+   {
+    "value": [
+     1,
+     2,
+     3
+    ],
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c39_r4": [
+   {
+    "value": null,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c40_r4": [
+   {
+    "value": "",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c41_r4": [
+   {
+    "value": "5.5",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c42_r4": [
+   {
+    "value": {},
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c43_r4": [
+   {
+    "value": "abc",
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c44_r5": [
+   {
+    "value": 1,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_c45_r5": [
+   {
+    "value": 2,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_c46_r5": [
+   {
+    "value": 3,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_c47_r5": [
+   {
+    "value": 12,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_c48_r5": [
+   {
+    "value": 4,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c49_r5": [
+   {
+    "value": 22,
+    "gender": "female"
+   }
+  ],
+  "test_gerado.py::test_c50_r5": [
+   {
+    "value": 111,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c51_r6": [
+   {
+    "value": Infinity,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c52_r6": [
+   {
+    "value": -Infinity,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c53_r6": [
+   {
+    "value": NaN,
+    "gender": "male"
+   }
+  ],
+  "test_gerado.py::test_c54_r6": [
+   {
+    "value": Infinity,
+    "gender": "female"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 6,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "F6"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 0.875,
+ "cobertura_linhas": 0.9473684210526315,
+ "defeitos": {
+  "d1_treze_esquecido": true,
+  "d2_modulo_errado": true,
+  "d3_ignora_centena": true,
+  "d4_retorno_vazio": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 31,
+  "equivalentes": 7,
+  "mortos": 22,
+  "sobreviventes": [
+   "m007",
+   "m009"
+  ]
+ },
+ "mutation_score": 0.9166666666666666
+}

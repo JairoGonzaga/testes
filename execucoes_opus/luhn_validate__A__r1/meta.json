@@ -1,0 +1,20 @@
+{
+ "run_id": "luhn_validate__A__r1",
+ "funcao": "luhn_validate",
+ "condicao": "A",
+ "repeticao": 1,
+ "piloto": false,
+ "provedor": "arquivo",
+ "modelo": "claude-opus-subagente",
+ "temperatura": null,
+ "max_chamadas": 3,
+ "versao_prompts": "56b903e055",
+ "data": "2026-11-17T21:37:20",
+ "status": "ok",
+ "chamadas": 1,
+ "tokens_entrada": 695,
+ "tokens_saida": 2981,
+ "tempo_modelo_s": 75.68,
+ "tempo_total_s": 75.68,
+ "tokens_aproximados": true
+}

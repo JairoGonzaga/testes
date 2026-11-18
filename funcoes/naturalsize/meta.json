@@ -1,0 +1,7 @@
+{
+  "nome_funcao": "naturalsize",
+  "assinatura": "def naturalsize(value, binary=False, gnu=False, format=\"%.1f\") -> str",
+  "excecoes": [],
+  "origem": "humanize 4.17.0 — humanize/filesize.py (licença MIT)",
+  "piloto": false
+}

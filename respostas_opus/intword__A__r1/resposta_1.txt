@@ -1,0 +1,329 @@
+```python
+"""Testes unitários para intword, escritos a partir das regras de negócio R1 a R7."""
+
+import math
+
+import pytest
+
+from alvo import intword
+
+
+# Tabela de potências (R2)
+POTENCIAS = [
+    (3, "thousand"),
+    (6, "million"),
+    (9, "billion"),
+    (12, "trillion"),
+    (15, "quadrillion"),
+    (18, "quintillion"),
+    (21, "sextillion"),
+    (24, "septillion"),
+    (27, "octillion"),
+    (30, "nonillion"),
+    (33, "decillion"),
+    (100, "googol"),
+]
+
+# Potências até nonillion: o maior quociente sem promoção (999.9 x 10^n) continua
+# abaixo de 10^36, fora da faixa "fora do escopo".
+POTENCIAS_ATE_NONILLION = POTENCIAS[:10]
+
+# Pares (potência, nome da próxima potência) para testar promoção (R3) até decillion.
+PROMOCOES = [
+    (POTENCIAS[i][0], POTENCIAS[i + 1][1]) for i in range(0, 10)
+]  # thousand->million ... nonillion->decillion
+
+
+# ---------------------------------------------------------------------------
+# R1: valor absoluto menor que 1000 é retornado como string, sem sufixo
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (0, "0"),
+        (1, "1"),
+        (100, "100"),
+        (998, "998"),
+        (999, "999"),  # fronteira: maior valor sem sufixo
+        ("100", "100"),  # exemplo da especificação
+        ("999", "999"),
+    ],
+)
+def test_r1_valores_menores_que_mil_sem_sufixo(valor, esperado):
+    assert intword(valor) == esperado
+
+
+def test_r1_retorno_e_string():
+    resultado = intword(100)
+    assert isinstance(resultado, str)
+    assert resultado == "100"
+
+
+@pytest.mark.parametrize("fmt", ["%.3f", "%0.3f", "%.0f"])
+def test_r1_format_nao_altera_valores_menores_que_mil(fmt):
+    assert intword(999, fmt) == "999"
+    assert intword(100, fmt) == "100"
+
+
+def test_r1_fronteira_999_versus_1000():
+    assert intword(999) == "999"
+    assert intword(1000) == "1.0 thousand"
+
+
+# ---------------------------------------------------------------------------
+# R2: divisão pela maior potência que não ultrapassa o valor
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        ("12400", "12.4 thousand"),
+        ("1000000", "1.0 million"),
+        (1_200_000_000, "1.2 billion"),
+        (8100000000000000000000000000000000, "8.1 decillion"),
+    ],
+)
+def test_r2_exemplos_da_especificacao(valor, esperado):
+    assert intword(valor) == esperado
+
+
+def test_r2_fronteira_inferior_mil():
+    assert intword(1000) == "1.0 thousand"
+
+
+@pytest.mark.parametrize("expoente, nome", POTENCIAS)
+def test_r2_potencia_exata(expoente, nome):
+    assert intword(10**expoente) == f"1.0 {nome}"
+
+
+@pytest.mark.parametrize("expoente, nome", POTENCIAS)
+def test_r2_quociente_intermediario(expoente, nome):
+    # 3.7 x 10^n
+    valor = 37 * 10 ** (expoente - 1)
+    assert intword(valor) == f"3.7 {nome}"
+
+
+@pytest.mark.parametrize("expoente, nome", POTENCIAS_ATE_NONILLION)
+def test_r2_maior_quociente_sem_promocao(expoente, nome):
+    # 999.949 x 10^n -> "999.9 <nome>" (formatado não alcança a próxima potência)
+    valor = 999_949 * 10 ** (expoente - 3)
+    assert intword(valor) == f"999.9 {nome}"
+
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (1049, "1.0 thousand"),
+        (1960, "2.0 thousand"),
+        (12_345, "12.3 thousand"),
+        (999_949, "999.9 thousand"),
+        (1_234_567, "1.2 million"),
+        (123_456_789, "123.5 million"),
+        (1_000_000_000_000, "1.0 trillion"),
+    ],
+)
+def test_r2_formatacao_padrao_com_uma_casa(valor, esperado):
+    assert intword(valor) == esperado
+
+
+# ---------------------------------------------------------------------------
+# R3: promoção para a próxima potência quando o quociente formatado a alcança
+# ---------------------------------------------------------------------------
+
+def test_r3_exemplo_da_especificacao():
+    assert intword(999_999) == "1.0 million"
+
+
+@pytest.mark.parametrize("expoente, proximo_nome", PROMOCOES)
+def test_r3_valor_imediatamente_abaixo_da_proxima_potencia(expoente, proximo_nome):
+    # 10^(n+3) - 1 -> quociente formatado "1000.0" -> promove
+    valor = 10 ** (expoente + 3) - 1
+    assert intword(valor) == f"1.0 {proximo_nome}"
+
+
+@pytest.mark.parametrize("expoente, proximo_nome", PROMOCOES)
+def test_r3_quociente_arredondado_para_mil(expoente, proximo_nome):
+    # 999.96 x 10^n -> "%.1f" dá "1000.0" -> promove
+    valor = 999_960 * 10 ** (expoente - 3)
+    assert intword(valor) == f"1.0 {proximo_nome}"
+
+
+def test_r3_promocao_depende_do_valor_formatado():
+    # Com 3 casas, 999.999 não alcança 1000 -> sem promoção
+    assert intword(999_999, "%.3f") == "999.999 thousand"
+    # Com 1 casa (padrão), o mesmo valor alcança 1000.0 -> promove
+    assert intword(999_999) == "1.0 million"
+
+
+def test_r3_promocao_com_format_personalizado():
+    # 999.9996 million com "%.3f" -> "1000.000" -> promove para billion com valor 1
+    assert intword(999_999_600, "%.3f") == "1.000 billion"
+    # 999.6 thousand com "%.0f" -> "1000" -> promove para million com valor 1
+    assert intword(999_600, "%.0f") == "1 million"
+
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (10**101, "10.0 googol"),  # exemplo da especificação
+        (15 * 10**99, "1.5 googol"),
+        (2 * 10**100, "2.0 googol"),
+        (10**102, "100.0 googol"),
+        (999 * 10**100, "999.0 googol"),
+        (10**103, "1000.0 googol"),  # não há próxima potência
+        (10**104, "10000.0 googol"),
+    ],
+)
+def test_r3_acima_de_googol_nao_ha_promocao(valor, esperado):
+    assert intword(valor) == esperado
+
+
+# ---------------------------------------------------------------------------
+# R4: valores negativos recebem prefixo "-" e usam o valor absoluto
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (-1_200_000, "-1.2 million"),  # exemplo da especificação
+        (-1, "-1"),
+        (-100, "-100"),
+        (-999, "-999"),  # fronteira R1 negativa
+        (-1000, "-1.0 thousand"),  # fronteira R2 negativa
+        (-12_400, "-12.4 thousand"),
+        (-999_999, "-1.0 million"),  # R3 com negativo
+        (-(10**33 - 1), "-1.0 decillion"),
+        (-8100000000000000000000000000000000, "-8.1 decillion"),
+        (-(10**100), "-1.0 googol"),
+        (-(10**101), "-10.0 googol"),
+    ],
+)
+def test_r4_valores_negativos(valor, esperado):
+    assert intword(valor) == esperado
+
+
+def test_r4_negativo_com_format_personalizado():
+    assert intword(-1_234_000, "%0.3f") == "-1.234 million"
+
+
+def test_r4_negativo_em_string():
+    assert intword("-1200000") == "-1.2 million"
+    assert intword("-999") == "-999"
+
+
+# ---------------------------------------------------------------------------
+# R5: o parâmetro format controla a parte numérica
+# ---------------------------------------------------------------------------
+
+def test_r5_exemplo_da_especificacao():
+    assert intword("1234000", "%0.3f") == "1.234 million"
+
+
+@pytest.mark.parametrize(
+    "valor, fmt, esperado",
+    [
+        (1_234_567, "%.2f", "1.23 million"),
+        (12_345, "%.0f", "12 thousand"),
+        (1000, "%.2f", "1.00 thousand"),
+        (12_400, "%.3f", "12.400 thousand"),
+        (10**101, "%.2f", "10.00 googol"),
+        (8100000000000000000000000000000000, "%.2f", "8.10 decillion"),
+    ],
+)
+def test_r5_format_personalizado(valor, fmt, esperado):
+    assert intword(valor, fmt) == esperado
+
+
+def test_r5_format_padrao_e_uma_casa_decimal():
+    assert intword(1_234_567) == intword(1_234_567, "%.1f") == "1.2 million"
+
+
+# ---------------------------------------------------------------------------
+# R6: conversão com int(); valores inconvertíveis retornam str(value)
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        ("1000", "1.0 thousand"),
+        ("12400", "12.4 thousand"),
+        ("999", "999"),
+        ("0", "0"),
+    ],
+)
+def test_r6_strings_com_inteiro_sao_aceitas(valor, esperado):
+    assert intword(valor) == esperado
+
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (0.9, "0"),
+        (999.9, "999"),  # truncado para 999 -> R1
+        (-999.9, "-999"),  # truncado para -999 -> R1 + R4
+        (1000.9, "1.0 thousand"),
+        (12_400.99, "12.4 thousand"),
+        (1_200_000.5, "1.2 million"),
+        (1.2e9, "1.2 billion"),
+    ],
+)
+def test_r6_floats_sao_truncados_por_int(valor, esperado):
+    assert intword(valor) == esperado
+
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (None, "None"),  # exemplo da especificação
+        ("abc", "abc"),
+        ("", ""),
+        ("12.5", "12.5"),  # int("12.5") falha
+        ("1e3", "1e3"),  # int("1e3") falha
+        ([1, 2], "[1, 2]"),
+        ({}, "{}"),
+    ],
+)
+def test_r6_valores_inconvertiveis_retornam_str(valor, esperado):
+    assert intword(valor) == esperado
+
+
+def test_r6_objeto_inconvertivel_retorna_str_do_objeto():
+    obj = object()
+    assert intword(obj) == str(obj)
+
+
+def test_r6_inconvertivel_com_format_personalizado():
+    assert intword(None, "%.3f") == "None"
+
+
+# ---------------------------------------------------------------------------
+# R7: valores não finitos
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (float("inf"), "+Inf"),
+        (math.inf, "+Inf"),
+        (float("-inf"), "-Inf"),
+        (-math.inf, "-Inf"),
+        (float("nan"), "NaN"),
+        (math.nan, "NaN"),
+    ],
+)
+def test_r7_valores_nao_finitos(valor, esperado):
+    assert intword(valor) == esperado
+
+
+@pytest.mark.parametrize(
+    "valor, esperado",
+    [
+        (float("inf"), "+Inf"),
+        (float("-inf"), "-Inf"),
+        (float("nan"), "NaN"),
+    ],
+)
+def test_r7_valores_nao_finitos_com_format_personalizado(valor, esperado):
+    assert intword(valor, "%.3f") == esperado
+```

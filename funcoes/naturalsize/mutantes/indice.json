@@ -1,0 +1,238 @@
+{
+ "m001": {
+  "linha": 9,
+  "descricao": "'decimal' → 'XXdecimalXX'"
+ },
+ "m002": {
+  "linha": 10,
+  "descricao": "'binary' → 'XXbinaryXX'"
+ },
+ "m003": {
+  "linha": 11,
+  "descricao": "'gnu' → 'XXgnuXX'"
+ },
+ "m004": {
+  "linha": 9,
+  "descricao": "'kB' → 'XXkBXX'"
+ },
+ "m005": {
+  "linha": 9,
+  "descricao": "'MB' → 'XXMBXX'"
+ },
+ "m006": {
+  "linha": 9,
+  "descricao": "'GB' → 'XXGBXX'"
+ },
+ "m007": {
+  "linha": 9,
+  "descricao": "'TB' → 'XXTBXX'"
+ },
+ "m008": {
+  "linha": 9,
+  "descricao": "'PB' → 'XXPBXX'"
+ },
+ "m009": {
+  "linha": 9,
+  "descricao": "'EB' → 'XXEBXX'"
+ },
+ "m010": {
+  "linha": 9,
+  "descricao": "'ZB' → 'XXZBXX'"
+ },
+ "m011": {
+  "linha": 9,
+  "descricao": "'YB' → 'XXYBXX'"
+ },
+ "m012": {
+  "linha": 9,
+  "descricao": "'RB' → 'XXRBXX'"
+ },
+ "m013": {
+  "linha": 9,
+  "descricao": "'QB' → 'XXQBXX'"
+ },
+ "m014": {
+  "linha": 10,
+  "descricao": "'KiB' → 'XXKiBXX'"
+ },
+ "m015": {
+  "linha": 10,
+  "descricao": "'MiB' → 'XXMiBXX'"
+ },
+ "m016": {
+  "linha": 10,
+  "descricao": "'GiB' → 'XXGiBXX'"
+ },
+ "m017": {
+  "linha": 10,
+  "descricao": "'TiB' → 'XXTiBXX'"
+ },
+ "m018": {
+  "linha": 10,
+  "descricao": "'PiB' → 'XXPiBXX'"
+ },
+ "m019": {
+  "linha": 10,
+  "descricao": "'EiB' → 'XXEiBXX'"
+ },
+ "m020": {
+  "linha": 10,
+  "descricao": "'ZiB' → 'XXZiBXX'"
+ },
+ "m021": {
+  "linha": 10,
+  "descricao": "'YiB' → 'XXYiBXX'"
+ },
+ "m022": {
+  "linha": 10,
+  "descricao": "'RiB' → 'XXRiBXX'"
+ },
+ "m023": {
+  "linha": 10,
+  "descricao": "'QiB' → 'XXQiBXX'"
+ },
+ "m024": {
+  "linha": 11,
+  "descricao": "'KMGTPEZYRQ' → 'XXKMGTPEZYRQXX'"
+ },
+ "m025": {
+  "linha": 15,
+  "descricao": "False → True"
+ },
+ "m026": {
+  "linha": 15,
+  "descricao": "False → True"
+ },
+ "m027": {
+  "linha": 15,
+  "descricao": "'%.1f' → 'XX%.1fXX'"
+ },
+ "m028": {
+  "linha": 17,
+  "descricao": "'gnu' → 'XXgnuXX'"
+ },
+ "m029": {
+  "linha": 19,
+  "descricao": "'binary' → 'XXbinaryXX'"
+ },
+ "m030": {
+  "linha": 21,
+  "descricao": "'decimal' → 'XXdecimalXX'"
+ },
+ "m031": {
+  "linha": 23,
+  "descricao": "or → and"
+ },
+ "m032": {
+  "linha": 23,
+  "descricao": "1024 → 1025"
+ },
+ "m033": {
+  "linha": 23,
+  "descricao": "1000 → 1001"
+ },
+ "m034": {
+  "linha": 27,
+  "descricao": "1 → 2"
+ },
+ "m035": {
+  "linha": 27,
+  "descricao": "== → !="
+ },
+ "m036": {
+  "linha": 27,
+  "descricao": "remove not"
+ },
+ "m037": {
+  "linha": 27,
+  "descricao": "and → or"
+ },
+ "m038": {
+  "linha": 28,
+  "descricao": "'%d Byte' → 'XX%d ByteXX'"
+ },
+ "m039": {
+  "linha": 28,
+  "descricao": "% → //"
+ },
+ "m040": {
+  "linha": 30,
+  "descricao": "< → <="
+ },
+ "m041": {
+  "linha": 31,
+  "descricao": "'%d Bytes' → 'XX%d BytesXX'"
+ },
+ "m042": {
+  "linha": 31,
+  "descricao": "% → //"
+ },
+ "m043": {
+  "linha": 34,
+  "descricao": "< → <="
+ },
+ "m044": {
+  "linha": 34,
+  "descricao": "** → *"
+ },
+ "m045": {
+  "linha": 34,
+  "descricao": "/ → *"
+ },
+ "m046": {
+  "linha": 34,
+  "descricao": "% → //"
+ },
+ "m047": {
+  "linha": 34,
+  "descricao": ">= → >"
+ },
+ "m048": {
+  "linha": 34,
+  "descricao": "and → or"
+ },
+ "m049": {
+  "linha": 35,
+  "descricao": "1 → 2"
+ },
+ "m050": {
+  "linha": 35,
+  "descricao": "+ → -"
+ },
+ "m051": {
+  "linha": 36,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m052": {
+  "linha": 36,
+  "descricao": "' ' → 'XX XX'"
+ },
+ "m053": {
+  "linha": 37,
+  "descricao": "** → *"
+ },
+ "m054": {
+  "linha": 37,
+  "descricao": "/ → *"
+ },
+ "m055": {
+  "linha": 37,
+  "descricao": "% → //"
+ },
+ "m056": {
+  "linha": 37,
+  "descricao": "+ → -"
+ },
+ "m057": {
+  "linha": 37,
+  "descricao": "1 → 2"
+ },
+ "m058": {
+  "linha": 37,
+  "descricao": "- → +"
+ },
+ "m059": {
+  "linha": 37,
+  "descricao": "+ → -"
+ }
+}

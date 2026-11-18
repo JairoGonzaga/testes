@@ -1,0 +1,158 @@
+{
+ "m001": {
+  "linha": 10,
+  "descricao": "'^[0-9]+$' → 'XX^[0-9]+$XX'"
+ },
+ "m002": {
+  "linha": 29,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m003": {
+  "linha": 31,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m004": {
+  "linha": 34,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m005": {
+  "linha": 34,
+  "descricao": "not in → in"
+ },
+ "m006": {
+  "linha": 42,
+  "descricao": "' -.' → 'XX -.XX'"
+ },
+ "m007": {
+  "linha": 46,
+  "descricao": "10 → 11"
+ },
+ "m008": {
+  "linha": 46,
+  "descricao": "- → +"
+ },
+ "m009": {
+  "linha": 46,
+  "descricao": "* → /"
+ },
+ "m010": {
+  "linha": 46,
+  "descricao": "9 → 10"
+ },
+ "m011": {
+  "linha": 47,
+  "descricao": "11 → 12"
+ },
+ "m012": {
+  "linha": 47,
+  "descricao": "- → +"
+ },
+ "m013": {
+  "linha": 47,
+  "descricao": "11 → 12"
+ },
+ "m014": {
+  "linha": 47,
+  "descricao": "% → //"
+ },
+ "m015": {
+  "linha": 47,
+  "descricao": "10 → 11"
+ },
+ "m016": {
+  "linha": 47,
+  "descricao": "% → //"
+ },
+ "m017": {
+  "linha": 48,
+  "descricao": "11 → 12"
+ },
+ "m018": {
+  "linha": 48,
+  "descricao": "- → +"
+ },
+ "m019": {
+  "linha": 48,
+  "descricao": "* → /"
+ },
+ "m020": {
+  "linha": 48,
+  "descricao": "9 → 10"
+ },
+ "m021": {
+  "linha": 48,
+  "descricao": "2 → 3"
+ },
+ "m022": {
+  "linha": 48,
+  "descricao": "* → /"
+ },
+ "m023": {
+  "linha": 48,
+  "descricao": "+ → -"
+ },
+ "m024": {
+  "linha": 49,
+  "descricao": "11 → 12"
+ },
+ "m025": {
+  "linha": 49,
+  "descricao": "- → +"
+ },
+ "m026": {
+  "linha": 49,
+  "descricao": "11 → 12"
+ },
+ "m027": {
+  "linha": 49,
+  "descricao": "% → //"
+ },
+ "m028": {
+  "linha": 49,
+  "descricao": "10 → 11"
+ },
+ "m029": {
+  "linha": 49,
+  "descricao": "% → //"
+ },
+ "m030": {
+  "linha": 50,
+  "descricao": "'%d%d' → 'XX%d%dXX'"
+ },
+ "m031": {
+  "linha": 50,
+  "descricao": "% → //"
+ },
+ "m032": {
+  "linha": 55,
+  "descricao": "remove not"
+ },
+ "m033": {
+  "linha": 55,
+  "descricao": "0 → 1"
+ },
+ "m034": {
+  "linha": 55,
+  "descricao": "<= → <"
+ },
+ "m035": {
+  "linha": 55,
+  "descricao": "or → and"
+ },
+ "m036": {
+  "linha": 57,
+  "descricao": "11 → 12"
+ },
+ "m037": {
+  "linha": 57,
+  "descricao": "!= → =="
+ },
+ "m038": {
+  "linha": 59,
+  "descricao": "2 → 3"
+ },
+ "m039": {
+  "linha": 59,
+  "descricao": "!= → =="
+ }
+}

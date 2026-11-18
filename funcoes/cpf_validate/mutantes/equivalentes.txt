@@ -1,0 +1,2 @@
+# Mutantes equivalentes (verificados manualmente). Um nome por linha; '#' inicia comentário.
+m002  # valor padrão de deletechars em clean(); compact() sempre passa " -." explicitamente

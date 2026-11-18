@@ -1,0 +1,54 @@
+{
+ "m001": {
+  "linha": 19,
+  "descricao": "'0123456789' → 'XX0123456789XX'"
+ },
+ "m002": {
+  "linha": 22,
+  "descricao": "2 → 3"
+ },
+ "m003": {
+  "linha": 22,
+  "descricao": "2 → 3"
+ },
+ "m004": {
+  "linha": 22,
+  "descricao": "* → /"
+ },
+ "m005": {
+  "linha": 22,
+  "descricao": "1 → 2"
+ },
+ "m006": {
+  "linha": 22,
+  "descricao": "2 → 3"
+ },
+ "m007": {
+  "linha": 22,
+  "descricao": "+ → -"
+ },
+ "m008": {
+  "linha": 22,
+  "descricao": "% → //"
+ },
+ "m009": {
+  "linha": 25,
+  "descricao": "'0123456789' → 'XX0123456789XX'"
+ },
+ "m010": {
+  "linha": 26,
+  "descricao": "remove not"
+ },
+ "m011": {
+  "linha": 29,
+  "descricao": "0 → 1"
+ },
+ "m012": {
+  "linha": 29,
+  "descricao": "== → !="
+ },
+ "m013": {
+  "linha": 32,
+  "descricao": "remove not"
+ }
+}

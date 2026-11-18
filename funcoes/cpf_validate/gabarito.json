@@ -1,0 +1,47 @@
+{
+  "regras": [
+    {"id": "R1", "testavel": true, "resumo": "compacta espaços, hífens e pontos"},
+    {"id": "R2", "testavel": true, "resumo": "não dígito, vazio ou zero: InvalidFormat"},
+    {"id": "R3", "testavel": true, "resumo": "diferente de 11 dígitos: InvalidLength"},
+    {"id": "R4", "testavel": true, "resumo": "dígitos verificadores: InvalidChecksum"},
+    {"id": "R5", "testavel": true, "resumo": "ordem das verificações"},
+    {"id": "R6", "testavel": true, "resumo": "retorna número compactado"},
+    {"id": "R7", "testavel": true, "resumo": "dígitos iguais sem tratamento especial"}
+  ],
+  "casos": [
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": ["390.533.447-05"]}, "esperado": {"retorno": "39053344705"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [" 390 533 447 05 "]}, "esperado": {"retorno": "39053344705"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": ["390533447-05"]}, "esperado": {"retorno": "39053344705"}},
+    {"regra": "R2", "tipo": "invalida", "entrada": {"args": ["390.533.447=0"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R2", "tipo": "invalida", "entrada": {"args": ["390.533.447/05"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R2", "tipo": "invalida", "entrada": {"args": [""]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R2", "tipo": "fronteira", "entrada": {"args": ["000.000.000-00"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R2", "tipo": "invalida", "entrada": {"args": ["12a"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R2", "tipo": "invalida", "entrada": {"args": [null]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R2", "tipo": "invalida", "entrada": {"args": ["39053344705X"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R3", "tipo": "fronteira", "entrada": {"args": ["3905334470"]}, "esperado": {"excecao": "InvalidLength"}},
+    {"regra": "R3", "tipo": "fronteira", "entrada": {"args": ["390533447051"]}, "esperado": {"excecao": "InvalidLength"}},
+    {"regra": "R3", "tipo": "invalida", "entrada": {"args": ["123"]}, "esperado": {"excecao": "InvalidLength"}},
+    {"regra": "R4", "tipo": "invalida", "entrada": {"args": ["231.002.999-00"]}, "esperado": {"excecao": "InvalidChecksum"}},
+    {"regra": "R4", "tipo": "invalida", "entrada": {"args": ["529.982.247-26"]}, "esperado": {"excecao": "InvalidChecksum"}},
+    {"regra": "R4", "tipo": "invalida", "entrada": {"args": ["123.456.789-10"]}, "esperado": {"excecao": "InvalidChecksum"}},
+    {"regra": "R5", "tipo": "invalida", "entrada": {"args": ["12a"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R5", "tipo": "invalida", "entrada": {"args": ["00000"]}, "esperado": {"excecao": "InvalidFormat"}},
+    {"regra": "R5", "tipo": "invalida", "entrada": {"args": ["1234567890"]}, "esperado": {"excecao": "InvalidLength"}},
+    {"regra": "R5", "tipo": "fronteira", "entrada": {"args": ["00000000001"]}, "esperado": {"excecao": "InvalidChecksum"}},
+    {"regra": "R6", "tipo": "normal", "entrada": {"args": ["529.982.247-25"]}, "esperado": {"retorno": "52998224725"}},
+    {"regra": "R6", "tipo": "normal", "entrada": {"args": ["52998224725"]}, "esperado": {"retorno": "52998224725"}},
+    {"regra": "R6", "tipo": "normal", "entrada": {"args": ["123.456.789-09"]}, "esperado": {"retorno": "12345678909"}},
+    {"regra": "R6", "tipo": "fronteira", "entrada": {"args": ["00000000191"]}, "esperado": {"retorno": "00000000191"}},
+    {"regra": "R6", "tipo": "normal", "entrada": {"args": ["736.625.851-20"]}, "esperado": {"retorno": "73662585120"}},
+    {"regra": "R7", "tipo": "normal", "entrada": {"args": ["111.111.111-11"]}, "esperado": {"retorno": "11111111111"}},
+    {"regra": "R7", "tipo": "normal", "entrada": {"args": ["22222222222"]}, "esperado": {"retorno": "22222222222"}}
+  ],
+  "fronteiras": [
+    {"id": "F1", "regra": "R3", "descricao": "10 dígitos (um a menos)", "criterio": "qtd_digitos(number) == 10"},
+    {"id": "F2", "regra": "R3", "descricao": "11 dígitos (comprimento exato)", "criterio": "qtd_digitos(number) == 11"},
+    {"id": "F3", "regra": "R3", "descricao": "12 dígitos (um a mais)", "criterio": "qtd_digitos(number) == 12"},
+    {"id": "F4", "regra": "R2", "descricao": "número igual a zero", "criterio": "eh_zero(number)"},
+    {"id": "F5", "regra": "R7", "descricao": "11 dígitos iguais diferentes de zero", "criterio": "todos_iguais(number)"}
+  ]
+}

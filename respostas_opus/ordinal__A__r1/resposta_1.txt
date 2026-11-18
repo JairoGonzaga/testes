@@ -1,0 +1,371 @@
+```python
+"""
+Testes unitários para a função `ordinal`, escritos a partir das regras de negócio.
+
+Cada teste traz no nome o identificador da regra que verifica (r1, r2, ...).
+"""
+
+import math
+
+import pytest
+
+from alvo import ordinal
+
+
+# ---------------------------------------------------------------------------
+# R1 — Sufixo escolhido pelo último dígito:
+#      1 -> "st", 2 -> "nd", 3 -> "rd"; 0 e 4..9 -> "th"
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (1, "1st"),
+        (2, "2nd"),
+        (3, "3rd"),
+        (4, "4th"),
+        (5, "5th"),
+        (6, "6th"),
+        (7, "7th"),
+        (8, "8th"),
+        (9, "9th"),
+    ],
+)
+def test_r1_single_digit_suffixes(value, expected):
+    # R1: todos os últimos dígitos de 1 a 9
+    assert ordinal(value) == expected
+
+
+def test_r1_zero_uses_th():
+    # R1: último dígito 0 -> "th" (fronteira inferior do domínio válido)
+    assert ordinal(0) == "0th"
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (10, "10th"),
+        (20, "20th"),
+        (100, "100th"),
+        (1000, "1000th"),
+    ],
+)
+def test_r1_last_digit_zero_uses_th(value, expected):
+    # R1: último dígito 0 -> "th"
+    assert ordinal(value) == expected
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (21, "21st"),
+        (22, "22nd"),
+        (23, "23rd"),
+        (24, "24th"),
+        (31, "31st"),
+        (42, "42nd"),
+        (53, "53rd"),
+        (99, "99th"),
+    ],
+)
+def test_r1_two_digit_numbers_outside_teens(value, expected):
+    # R1: dezenas diferentes de 1 seguem o último dígito
+    assert ordinal(value) == expected
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (101, "101st"),
+        (102, "102nd"),
+        (103, "103rd"),
+        (104, "104th"),
+        (121, "121st"),
+        (1001, "1001st"),
+        (1002, "1002nd"),
+        (1003, "1003rd"),
+        (1004, "1004th"),
+    ],
+)
+def test_r1_multi_digit_numbers(value, expected):
+    # R1: exemplos da especificação (1002 -> "1002nd", 103 -> "103rd") e similares
+    assert ordinal(value) == expected
+
+
+def test_r1_large_number():
+    # R1: número grande, último dígito 2 e dezena diferente de 1
+    assert ordinal(1234567892) == "1234567892nd"
+
+
+# ---------------------------------------------------------------------------
+# R2 — Exceção: dois últimos dígitos 11, 12 ou 13 -> sempre "th"
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (11, "11th"),
+        (12, "12th"),
+        (13, "13th"),
+    ],
+)
+def test_r2_eleven_twelve_thirteen_use_th(value, expected):
+    # R2: exceção básica
+    assert ordinal(value) == expected
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (111, "111th"),
+        (112, "112th"),
+        (113, "113th"),
+        (211, "211th"),
+        (1011, "1011th"),
+        (1012, "1012th"),
+        (1013, "1013th"),
+        (10111, "10111th"),
+    ],
+)
+def test_r2_exception_applies_to_last_two_digits_of_larger_numbers(value, expected):
+    # R2: a exceção olha só os dois últimos dígitos
+    assert ordinal(value) == expected
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (10, "10th"),   # logo antes da faixa 11..13
+        (14, "14th"),   # logo depois da faixa 11..13
+        (110, "110th"),
+        (114, "114th"),
+    ],
+)
+def test_r2_boundaries_around_exception_range(value, expected):
+    # R2 / R1: fronteiras imediatamente fora da faixa 11..13
+    assert ordinal(value) == expected
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (21, "21st"),
+        (22, "22nd"),
+        (23, "23rd"),
+        (121, "121st"),
+        (122, "122nd"),
+        (123, "123rd"),
+    ],
+)
+def test_r2_exception_does_not_apply_to_other_tens(value, expected):
+    # R2: a exceção não vale para x21, x22, x23 (valem as regras de R1)
+    assert ordinal(value) == expected
+
+
+# ---------------------------------------------------------------------------
+# R3 — Conversão com int(): strings com inteiro e floats (truncados)
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        ("5", "5th"),
+        ("1", "1st"),
+        ("2", "2nd"),
+        ("3", "3rd"),
+        ("0", "0th"),
+        ("11", "11th"),
+        ("12", "12th"),
+        ("13", "13th"),
+        ("103", "103rd"),
+        ("1002", "1002nd"),
+    ],
+)
+def test_r3_string_containing_integer(value, expected):
+    # R3: string com inteiro é convertida e passa por R1/R2
+    assert ordinal(value) == expected
+
+
+def test_r3_string_with_surrounding_whitespace():
+    # R3: int(" 7 ") == 7, então a string é aceita
+    assert ordinal(" 7 ") == "7th"
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (1.0, "1st"),
+        (2.0, "2nd"),
+        (3.0, "3rd"),
+        (4.0, "4th"),
+        (1.9, "1st"),      # truncado para 1
+        (2.5, "2nd"),      # truncado para 2
+        (3.99, "3rd"),     # truncado para 3
+        (0.7, "0th"),      # truncado para 0
+        (11.5, "11th"),    # truncado para 11 -> R2
+        (12.9, "12th"),    # truncado para 12 -> R2
+        (13.1, "13th"),    # truncado para 13 -> R2
+        (21.7, "21st"),    # truncado para 21
+        (103.4, "103rd"),  # truncado para 103
+    ],
+)
+def test_r3_float_is_truncated_by_int(value, expected):
+    # R3: floats são truncados por int() antes de aplicar R1/R2
+    assert ordinal(value) == expected
+
+
+def test_r3_float_truncation_does_not_round_up():
+    # R3: 10.99 vira 10 com int() (não arredonda para 11)
+    assert ordinal(10.99) == "10th"
+
+
+# ---------------------------------------------------------------------------
+# R4 — Valor não conversível com int() -> retorna str(value)
+# ---------------------------------------------------------------------------
+
+def test_r4_non_numeric_string_returned_as_is():
+    # R4: exemplo da especificação
+    assert ordinal("something else") == "something else"
+
+
+def test_r4_list_returned_as_str():
+    # R4: exemplo da especificação
+    assert ordinal([1, 2, 3]) == "[1, 2, 3]"
+
+
+@pytest.mark.parametrize(
+    "value",
+    [
+        "abc",
+        "",
+        "1.5",     # int("1.5") lança ValueError
+        "1st",
+        "12abc",
+        "one",
+    ],
+)
+def test_r4_unconvertible_strings_return_str_value(value):
+    # R4: strings que int() não converte
+    assert ordinal(value) == str(value)
+
+
+@pytest.mark.parametrize(
+    "value",
+    [
+        None,
+        [],
+        {},
+        {"a": 1},
+        (1, 2),
+        object(),
+    ],
+)
+def test_r4_unconvertible_objects_return_str_value(value):
+    # R4: objetos que int() não converte (TypeError)
+    assert ordinal(value) == str(value)
+
+
+def test_r4_none_returns_string_none():
+    # R4: str(None) == "None"
+    assert ordinal(None) == "None"
+
+
+def test_r4_result_is_always_a_string():
+    # R4: o retorno é str mesmo quando a entrada não é str
+    result = ordinal([1, 2, 3])
+    assert isinstance(result, str)
+
+
+# ---------------------------------------------------------------------------
+# R5 — gender: "male" (padrão) ou "female"; em inglês o resultado é igual
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (1, "1st"),
+        (2, "2nd"),
+        (3, "3rd"),
+        (4, "4th"),
+        (11, "11th"),
+        (12, "12th"),
+        (13, "13th"),
+        (101, "101st"),
+        (1002, "1002nd"),
+    ],
+)
+def test_r5_female_gives_same_result(value, expected):
+    # R5: gender="female" gera o mesmo resultado
+    assert ordinal(value, gender="female") == expected
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (1, "1st"),
+        (22, "22nd"),
+        (113, "113th"),
+    ],
+)
+def test_r5_explicit_male_gives_same_result(value, expected):
+    # R5: gender="male" explícito
+    assert ordinal(value, gender="male") == expected
+
+
+@pytest.mark.parametrize("value", [0, 1, 2, 3, 4, 11, 12, 13, 21, 111, 1002, "5", 3.7])
+def test_r5_default_male_and_female_are_equal(value):
+    # R5: padrão, "male" e "female" geram resultados iguais
+    default = ordinal(value)
+    assert default == ordinal(value, gender="male")
+    assert default == ordinal(value, gender="female")
+
+
+def test_r5_gender_as_positional_argument():
+    # R5: gender também pode ser passado na posição
+    assert ordinal(3, "female") == "3rd"
+    assert ordinal(3, "male") == "3rd"
+
+
+def test_r5_female_with_unconvertible_value():
+    # R5 + R4: gender não altera o retorno de str(value)
+    assert ordinal("something else", gender="female") == "something else"
+
+
+# ---------------------------------------------------------------------------
+# R6 — Valores não finitos
+# ---------------------------------------------------------------------------
+
+def test_r6_positive_infinity():
+    # R6: float("inf") -> "+Inf"
+    assert ordinal(float("inf")) == "+Inf"
+
+
+def test_r6_negative_infinity():
+    # R6: float("-inf") -> "-Inf"
+    assert ordinal(float("-inf")) == "-Inf"
+
+
+def test_r6_nan():
+    # R6: float("nan") -> "NaN"
+    assert ordinal(float("nan")) == "NaN"
+
+
+def test_r6_math_constants():
+    # R6: as constantes do módulo math têm o mesmo comportamento
+    assert ordinal(math.inf) == "+Inf"
+    assert ordinal(-math.inf) == "-Inf"
+    assert ordinal(math.nan) == "NaN"
+
+
+@pytest.mark.parametrize(
+    "value, expected",
+    [
+        (float("inf"), "+Inf"),
+        (float("-inf"), "-Inf"),
+        (float("nan"), "NaN"),
+    ],
+)
+def test_r6_non_finite_with_female_gender(value, expected):
+    # R6 + R5: gender não altera o resultado dos valores não finitos
+    assert ordinal(value, gender="female") == expected
+```

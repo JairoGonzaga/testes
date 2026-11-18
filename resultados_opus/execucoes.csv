@@ -1,0 +1,11 @@
+﻿run_id,funcao,condicao,repeticao,provedor,modelo,status,chamadas,tokens_entrada,tokens_saida,tempo_total_s,reparos,versao_prompts,avaliada,utilizavel,n_testes,n_validos,falsos_alarmes,deteccao_defeitos,mutation_score,cobertura_fronteiras,cobertura_ramos,cobertura_regras_auto,expectativas_corretas,cobertura_regras,testes_incorretos
+cpf_validate__A__r1,cpf_validate,A,1,arquivo,claude-opus-subagente,ok,1,791,3484,215.78,,56b903e055,True,1.0,391,391,0.0,1.0,1.0,1.0,1.0,1.0,,,
+cpf_validate__B__r1,cpf_validate,B,1,arquivo,claude-opus-subagente,ok,1,967,2807,170.8,0.0,56b903e055,True,1.0,55,55,0.0,1.0,0.9736842105263158,1.0,1.0,1.0,,,
+intword__A__r1,intword,A,1,arquivo,claude-opus-subagente,ok,1,757,2492,100.46,,56b903e055,True,1.0,138,138,0.0,1.0,1.0,1.0,0.9285714285714286,1.0,,,
+intword__B__r1,intword,B,1,arquivo,claude-opus-subagente,ok,1,933,2636,91.77,0.0,56b903e055,True,1.0,51,51,0.0,1.0,1.0,1.0,0.9285714285714286,1.0,,,
+luhn_validate__A__r1,luhn_validate,A,1,arquivo,claude-opus-subagente,ok,1,695,2981,75.68,,56b903e055,True,1.0,101,101,0.0,1.0,1.0,1.0,1.0,1.0,,,
+luhn_validate__B__r1,luhn_validate,B,1,arquivo,claude-opus-subagente,ok,1,871,3041,99.56,0.0,56b903e055,True,1.0,56,56,0.0,1.0,1.0,1.0,1.0,1.0,,,
+naturalsize__A__r1,naturalsize,A,1,arquivo,claude-opus-subagente,ok,1,792,3274,122.27,,56b903e055,True,1.0,162,162,0.0,1.0,1.0,1.0,1.0,1.0,,,
+naturalsize__B__r1,naturalsize,B,1,arquivo,claude-opus-subagente,ok,1,968,4460,132.01,0.0,56b903e055,True,1.0,94,94,0.0,1.0,1.0,1.0,1.0,1.0,,,
+ordinal__A__r1,ordinal,A,1,arquivo,claude-opus-subagente,ok,1,558,2439,37.05,,56b903e055,True,1.0,128,128,0.0,1.0,1.0,1.0,0.875,1.0,,,
+ordinal__B__r1,ordinal,B,1,arquivo,claude-opus-subagente,ok,1,734,2561,59.67,0.0,56b903e055,True,1.0,54,54,0.0,1.0,0.9166666666666666,1.0,0.875,1.0,,,

@@ -1,0 +1,55 @@
+=== SISTEMA ===
+Você é um engenheiro de testes de software experiente. Você escreve testes unitários em Python com pytest a partir de especificações de regras de negócio.
+
+=== USUÁRIO ===
+Você vai criar testes unitários para a função descrita abaixo.
+Você NÃO tem acesso ao código da função: baseie-se apenas nas regras de negócio.
+
+## Assinatura
+```python
+def ordinal(value, gender="male") -> str
+```
+
+## Como importar
+```python
+from alvo import ordinal
+```
+
+## Regras de negócio
+# ordinal
+
+Converte um inteiro para a sua forma ordinal em inglês (1st, 2nd, 3rd…).
+
+## Regras
+
+- **R1** — Retorna o inteiro seguido do sufixo ordinal, escolhido pelo último dígito:
+  1 → `"st"`, 2 → `"nd"`, 3 → `"rd"`; 0 e 4 a 9 → `"th"`.
+  Exemplos: 1 → `"1st"`, 1002 → `"1002nd"`, 103 → `"103rd"`, 4 → `"4th"`.
+- **R2** — Exceção a R1: quando os dois últimos dígitos são 11, 12 ou 13, o sufixo é
+  sempre `"th"`. Exemplos: 12 → `"12th"`, 111 → `"111th"`.
+- **R3** — O valor é convertido com `int()` antes de aplicar R1 e R2. Strings que
+  contêm um inteiro (`"5"` → `"5th"`) e floats (que `int()` trunca) também são aceitos.
+- **R4** — Se o valor não puder ser convertido com `int()`, a função retorna
+  `str(value)`: `"something else"` → `"something else"`, `[1, 2, 3]` → `"[1, 2, 3]"`.
+- **R5** — O parâmetro `gender` aceita `"male"` (padrão) ou `"female"`. Em inglês o
+  resultado é o mesmo para os dois valores.
+- **R6** — Valores não finitos: `float("inf")` → `"+Inf"`, `float("-inf")` → `"-Inf"`,
+  `float("nan")` → `"NaN"`.
+
+## Fora do escopo
+
+- Números negativos.
+- Valores de `gender` diferentes de `"male"` e `"female"`.
+
+## O que se espera dos testes
+- Cubra todas as regras (R1, R2, …).
+- Inclua valores-limite (fronteiras) e entradas inválidas sempre que as regras os definirem.
+- Cada expectativa (asserção) deve decorrer das regras. Não invente comportamento que as
+  regras não definem e não teste o que está "fora do escopo".
+- Indique qual regra cada caso verifica.
+
+## Formato da resposta
+Responda com UM arquivo pytest completo, dentro de um único bloco ```python ... ```.
+- Use apenas pytest e a biblioteca padrão do Python.
+- Importe a função exatamente como indicado acima.
+- Coloque o identificador da regra no nome de cada teste (por exemplo, `test_r2_...`).

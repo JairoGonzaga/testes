@@ -1,0 +1,2817 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 391,
+ "n_validos": 391,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390.533.447-05]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[39053344705]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[ 39053344705 ]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390 533 447 05]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390-533-447-05]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390.533.447.05]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[3-9.0 5..3--3 4 4 7 0 5]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[-39053344705.]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[\\t390.533.447-05\\n]": "passed",
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[  390.533.447-05\\r\\n]": "passed",
+  "test_gerado.py::test_r1_comprimento_considerado_apos_compactacao": "passed",
+  "test_gerado.py::test_r1_r2_outros_separadores_nao_sao_removidos[390,533,447-05]": "passed",
+  "test_gerado.py::test_r1_r2_outros_separadores_nao_sao_removidos[390.533.447/05]": "passed",
+  "test_gerado.py::test_r1_r2_outros_separadores_nao_sao_removidos[390_533_447_05]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[390.533.447=0]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[3905334470a]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[A9053344705]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[390533447O5]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[+39053344705]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[390.533.447-0#]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[39053344705x]": "passed",
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[3905334470 5x]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[ ]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[   ]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[.]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[-]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[...---   ]": "passed",
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[\\t\\n]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[00000000000]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[000.000.000-00]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[ 00000000000 ]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[0]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[00]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[0-0.0]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[0000000000]": "passed",
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[000000000000]": "passed",
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[None]": "passed",
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[39053344705_0]": "passed",
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[39053344705.0]": "passed",
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[39053344705_1]": "passed",
+  "test_gerado.py::test_r2_invalid_format_e_validation_error_e_value_error": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[3905334470]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390533447050]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390.533.447-0]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390.533.447-051]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[  3905334470  ]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390533447]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[1]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[0000000191]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[039053344705]": "passed",
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[123456789091234]": "passed",
+  "test_gerado.py::test_r3_invalid_length_e_invalid_format_validation_error_e_value_error": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[39053344705]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[11111111111]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[12345678909]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224725]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[23100299981]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[00000000191]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[00000102008]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224806]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224130]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224210]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224300]": "passed",
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224059]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[39053344705]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[11111111111]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[12345678909]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224725]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[23100299981]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[00000000191]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[00000102008]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224806]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224130]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224210]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224300]": "passed",
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224059]": "passed",
+  "test_gerado.py::test_r4_exemplo_das_regras_levanta_invalid_checksum": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344700]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344701]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344715]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344702]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344725]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344703]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344735]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344704]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344745]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344755]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344706]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344765]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344707]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344775]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344708]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344785]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344709]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344795]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111110]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111101]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111112]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111121]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111113]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111131]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111114]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111141]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111115]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111151]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111116]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111161]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111117]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111171]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111118]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111181]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111119]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111191]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678900]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678901]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678919]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678902]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678929]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678903]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678939]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678904]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678949]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678905]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678959]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678906]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678969]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678907]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678979]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678908]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678989]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678999]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224720]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224705]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224721]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224715]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224722]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224723]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224735]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224724]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224745]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224755]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224726]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224765]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224727]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224775]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224728]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224785]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224729]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224795]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299980]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299901]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299911]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299982]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299921]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299983]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299931]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299984]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299941]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299985]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299951]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299986]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299961]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299987]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299971]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299988]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299989]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299991]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000190]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000101]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000111]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000192]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000121]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000193]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000131]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000194]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000141]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000195]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000151]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000196]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000161]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000197]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000171]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000198]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000181]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000199]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102000]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102001]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102018]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102002]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102028]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102003]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102038]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102004]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102048]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102005]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102058]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102006]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102068]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102007]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102078]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102088]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102009]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102098]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224800]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224801]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224816]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224802]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224826]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224803]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224836]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224804]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224846]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224805]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224856]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224866]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224807]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224876]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224808]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224886]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224809]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224896]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224100]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224131]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224110]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224132]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224120]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224133]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224134]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224140]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224135]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224150]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224136]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224160]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224137]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224170]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224138]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224180]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224139]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224190]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224200]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224211]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224212]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224220]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224213]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224230]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224214]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224240]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224215]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224250]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224216]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224260]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224217]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224270]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224218]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224280]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224219]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224290]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224301]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224310]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224302]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224320]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224303]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224330]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224304]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224340]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224305]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224350]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224306]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224360]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224307]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224370]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224308]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224380]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224309]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224390]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224050]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224009]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224051]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224019]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224052]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224029]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224053]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224039]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224054]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224049]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224055]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224056]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224069]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224057]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224079]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224058]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224089]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224099]": "passed",
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[390.533.447-04]": "passed",
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[390.533.447-15]": "passed",
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[39053344750]": "passed",
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[12345678990]": "passed",
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[39053344605]": "passed",
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[93053344705]": "passed",
+  "test_gerado.py::test_r4_resto_10_vira_digito_0": "passed",
+  "test_gerado.py::test_r4_resto_10_nao_aceita_digito_1": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[646581699]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[839583735]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[401780306]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[545033601]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[327931889]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[103732367]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[755392558]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[198703313]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[072077357]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[252872764]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[294483898]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[420664327]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[255000295]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[496715915]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[740705687]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[936648307]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[613117642]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[782882974]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[963447638]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[629764900]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[062852348]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[370522916]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[455099428]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[572218402]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[020985861]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[598595972]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[992862388]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[565380711]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[158512571]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[144240105]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[422011668]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[193352515]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[985826886]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[168759716]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[816942013]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[556593394]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[498878951]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[721870318]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[773218603]": "passed",
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[877377594]": "passed",
+  "test_gerado.py::test_r4_invalid_checksum_e_validation_error_e_value_error": "passed",
+  "test_gerado.py::test_r2_r3_r4_hierarquia_das_excecoes": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[12a]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[3905334470X5]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[abc]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[0000000000]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[000000000000]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[0]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_checksum[231.002.999-0X]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_checksum[231.002.999=00]": "passed",
+  "test_gerado.py::test_r5_formato_verificado_antes_do_checksum[2310029990O]": "passed",
+  "test_gerado.py::test_r5_comprimento_verificado_antes_do_checksum[2310029990]": "passed",
+  "test_gerado.py::test_r5_comprimento_verificado_antes_do_checksum[231002999000]": "passed",
+  "test_gerado.py::test_r5_comprimento_verificado_antes_do_checksum[231.002.999-0]": "passed",
+  "test_gerado.py::test_r6_exemplo_das_regras_retorna_compactado": "passed",
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[390.533.447-05-39053344705]": "passed",
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[ 123.456.789-09 -12345678909]": "passed",
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[529 982 247 25-52998224725]": "passed",
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[231-002-999-81-23100299981]": "passed",
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[000.000.001-91-00000000191]": "passed",
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[000.001.020-08-00000102008]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[39053344705]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[11111111111]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[12345678909]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224725]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[23100299981]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[00000000191]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[00000102008]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224806]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224130]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224210]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224300]": "passed",
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224059]": "passed",
+  "test_gerado.py::test_r7_exemplo_das_regras": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[1]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[2]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[3]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[4]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[5]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[6]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[7]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[8]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[9]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[11111111112]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[111.111.111-12]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[22222222221]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[55555555556]": "passed",
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[99999999990]": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390.533.447-05]": [
+   {
+    "number": "390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[39053344705]": [
+   {
+    "number": "39053344705"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[ 39053344705 ]": [
+   {
+    "number": " 39053344705 "
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390 533 447 05]": [
+   {
+    "number": "390 533 447 05"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390-533-447-05]": [
+   {
+    "number": "390-533-447-05"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[390.533.447.05]": [
+   {
+    "number": "390.533.447.05"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[3-9.0 5..3--3 4 4 7 0 5]": [
+   {
+    "number": "3-9.0 5..3--3 4 4 7 0 5"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[-39053344705.]": [
+   {
+    "number": "-39053344705."
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[\\t390.533.447-05\\n]": [
+   {
+    "number": "\t390.533.447-05\n"
+   }
+  ],
+  "test_gerado.py::test_r1_compacta_separadores_e_espacos[  390.533.447-05\\r\\n]": [
+   {
+    "number": "  390.533.447-05\r\n"
+   }
+  ],
+  "test_gerado.py::test_r1_comprimento_considerado_apos_compactacao": [
+   {
+    "number": "390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_r1_r2_outros_separadores_nao_sao_removidos[390,533,447-05]": [
+   {
+    "number": "390,533,447-05"
+   }
+  ],
+  "test_gerado.py::test_r1_r2_outros_separadores_nao_sao_removidos[390.533.447/05]": [
+   {
+    "number": "390.533.447/05"
+   }
+  ],
+  "test_gerado.py::test_r1_r2_outros_separadores_nao_sao_removidos[390_533_447_05]": [
+   {
+    "number": "390_533_447_05"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[390.533.447=0]": [
+   {
+    "number": "390.533.447=0"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[3905334470a]": [
+   {
+    "number": "3905334470a"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[A9053344705]": [
+   {
+    "number": "A9053344705"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[390533447O5]": [
+   {
+    "number": "390533447O5"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[+39053344705]": [
+   {
+    "number": "+39053344705"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[390.533.447-0#]": [
+   {
+    "number": "390.533.447-0#"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[39053344705x]": [
+   {
+    "number": "39053344705x"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_nao_digito_levanta_invalid_format[3905334470 5x]": [
+   {
+    "number": "3905334470 5x"
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[]": [
+   {
+    "number": ""
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[ ]": [
+   {
+    "number": " "
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[   ]": [
+   {
+    "number": "   "
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[.]": [
+   {
+    "number": "."
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[-]": [
+   {
+    "number": "-"
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[...---   ]": [
+   {
+    "number": "...---   "
+   }
+  ],
+  "test_gerado.py::test_r2_vazio_apos_compactacao_levanta_invalid_format[\\t\\n]": [
+   {
+    "number": "\t\n"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[00000000000]": [
+   {
+    "number": "00000000000"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[000.000.000-00]": [
+   {
+    "number": "000.000.000-00"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[ 00000000000 ]": [
+   {
+    "number": " 00000000000 "
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[0]": [
+   {
+    "number": "0"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[00]": [
+   {
+    "number": "00"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[0-0.0]": [
+   {
+    "number": "0-0.0"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[0000000000]": [
+   {
+    "number": "0000000000"
+   }
+  ],
+  "test_gerado.py::test_r2_numero_igual_a_zero_levanta_invalid_format[000000000000]": [
+   {
+    "number": "000000000000"
+   }
+  ],
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[None]": [
+   {
+    "number": null
+   }
+  ],
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[39053344705_0]": [
+   {
+    "number": 39053344705
+   }
+  ],
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[39053344705.0]": [
+   {
+    "number": 39053344705.0
+   }
+  ],
+  "test_gerado.py::test_r2_valor_que_nao_e_string_levanta_invalid_format[39053344705_1]": [
+   {
+    "number": "b'39053344705'"
+   }
+  ],
+  "test_gerado.py::test_r2_invalid_format_e_validation_error_e_value_error": [
+   {
+    "number": "390.533.447=0"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[3905334470]": [
+   {
+    "number": "3905334470"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390533447050]": [
+   {
+    "number": "390533447050"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390.533.447-0]": [
+   {
+    "number": "390.533.447-0"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390.533.447-051]": [
+   {
+    "number": "390.533.447-051"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[  3905334470  ]": [
+   {
+    "number": "  3905334470  "
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[390533447]": [
+   {
+    "number": "390533447"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[1]": [
+   {
+    "number": "1"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[0000000191]": [
+   {
+    "number": "0000000191"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[039053344705]": [
+   {
+    "number": "039053344705"
+   }
+  ],
+  "test_gerado.py::test_r3_comprimento_diferente_de_11_levanta_invalid_length[123456789091234]": [
+   {
+    "number": "123456789091234"
+   }
+  ],
+  "test_gerado.py::test_r3_invalid_length_e_invalid_format_validation_error_e_value_error": [
+   {
+    "number": "3905334470"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[39053344705]": [
+   {
+    "number": "39053344705"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[11111111111]": [
+   {
+    "number": "11111111111"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[12345678909]": [
+   {
+    "number": "12345678909"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224725]": [
+   {
+    "number": "52998224725"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[23100299981]": [
+   {
+    "number": "23100299981"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[00000000191]": [
+   {
+    "number": "00000000191"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[00000102008]": [
+   {
+    "number": "00000102008"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224806]": [
+   {
+    "number": "52998224806"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224130]": [
+   {
+    "number": "52998224130"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224210]": [
+   {
+    "number": "52998224210"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224300]": [
+   {
+    "number": "52998224300"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_com_digitos_verificadores_corretos_e_aceito[52998224059]": [
+   {
+    "number": "52998224059"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[39053344705]": [
+   {
+    "number": "390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[11111111111]": [
+   {
+    "number": "111.111.111-11"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[12345678909]": [
+   {
+    "number": "123.456.789-09"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224725]": [
+   {
+    "number": "529.982.247-25"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[23100299981]": [
+   {
+    "number": "231.002.999-81"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[00000000191]": [
+   {
+    "number": "000.000.001-91"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[00000102008]": [
+   {
+    "number": "000.001.020-08"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224806]": [
+   {
+    "number": "529.982.248-06"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224130]": [
+   {
+    "number": "529.982.241-30"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224210]": [
+   {
+    "number": "529.982.242-10"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224300]": [
+   {
+    "number": "529.982.243-00"
+   }
+  ],
+  "test_gerado.py::test_r4_cpf_valido_formatado_e_aceito[52998224059]": [
+   {
+    "number": "529.982.240-59"
+   }
+  ],
+  "test_gerado.py::test_r4_exemplo_das_regras_levanta_invalid_checksum": [
+   {
+    "number": "231.002.999-00"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344700]": [
+   {
+    "number": "39053344700"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344701]": [
+   {
+    "number": "39053344701"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344715]": [
+   {
+    "number": "39053344715"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344702]": [
+   {
+    "number": "39053344702"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344725]": [
+   {
+    "number": "39053344725"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344703]": [
+   {
+    "number": "39053344703"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344735]": [
+   {
+    "number": "39053344735"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344704]": [
+   {
+    "number": "39053344704"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344745]": [
+   {
+    "number": "39053344745"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344755]": [
+   {
+    "number": "39053344755"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344706]": [
+   {
+    "number": "39053344706"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344765]": [
+   {
+    "number": "39053344765"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344707]": [
+   {
+    "number": "39053344707"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344775]": [
+   {
+    "number": "39053344775"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344708]": [
+   {
+    "number": "39053344708"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344785]": [
+   {
+    "number": "39053344785"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344709]": [
+   {
+    "number": "39053344709"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[39053344795]": [
+   {
+    "number": "39053344795"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111110]": [
+   {
+    "number": "11111111110"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111101]": [
+   {
+    "number": "11111111101"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111112]": [
+   {
+    "number": "11111111112"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111121]": [
+   {
+    "number": "11111111121"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111113]": [
+   {
+    "number": "11111111113"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111131]": [
+   {
+    "number": "11111111131"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111114]": [
+   {
+    "number": "11111111114"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111141]": [
+   {
+    "number": "11111111141"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111115]": [
+   {
+    "number": "11111111115"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111151]": [
+   {
+    "number": "11111111151"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111116]": [
+   {
+    "number": "11111111116"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111161]": [
+   {
+    "number": "11111111161"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111117]": [
+   {
+    "number": "11111111117"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111171]": [
+   {
+    "number": "11111111171"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111118]": [
+   {
+    "number": "11111111118"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111181]": [
+   {
+    "number": "11111111181"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111119]": [
+   {
+    "number": "11111111119"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[11111111191]": [
+   {
+    "number": "11111111191"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678900]": [
+   {
+    "number": "12345678900"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678901]": [
+   {
+    "number": "12345678901"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678919]": [
+   {
+    "number": "12345678919"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678902]": [
+   {
+    "number": "12345678902"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678929]": [
+   {
+    "number": "12345678929"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678903]": [
+   {
+    "number": "12345678903"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678939]": [
+   {
+    "number": "12345678939"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678904]": [
+   {
+    "number": "12345678904"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678949]": [
+   {
+    "number": "12345678949"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678905]": [
+   {
+    "number": "12345678905"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678959]": [
+   {
+    "number": "12345678959"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678906]": [
+   {
+    "number": "12345678906"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678969]": [
+   {
+    "number": "12345678969"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678907]": [
+   {
+    "number": "12345678907"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678979]": [
+   {
+    "number": "12345678979"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678908]": [
+   {
+    "number": "12345678908"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678989]": [
+   {
+    "number": "12345678989"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[12345678999]": [
+   {
+    "number": "12345678999"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224720]": [
+   {
+    "number": "52998224720"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224705]": [
+   {
+    "number": "52998224705"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224721]": [
+   {
+    "number": "52998224721"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224715]": [
+   {
+    "number": "52998224715"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224722]": [
+   {
+    "number": "52998224722"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224723]": [
+   {
+    "number": "52998224723"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224735]": [
+   {
+    "number": "52998224735"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224724]": [
+   {
+    "number": "52998224724"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224745]": [
+   {
+    "number": "52998224745"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224755]": [
+   {
+    "number": "52998224755"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224726]": [
+   {
+    "number": "52998224726"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224765]": [
+   {
+    "number": "52998224765"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224727]": [
+   {
+    "number": "52998224727"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224775]": [
+   {
+    "number": "52998224775"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224728]": [
+   {
+    "number": "52998224728"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224785]": [
+   {
+    "number": "52998224785"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224729]": [
+   {
+    "number": "52998224729"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224795]": [
+   {
+    "number": "52998224795"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299980]": [
+   {
+    "number": "23100299980"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299901]": [
+   {
+    "number": "23100299901"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299911]": [
+   {
+    "number": "23100299911"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299982]": [
+   {
+    "number": "23100299982"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299921]": [
+   {
+    "number": "23100299921"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299983]": [
+   {
+    "number": "23100299983"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299931]": [
+   {
+    "number": "23100299931"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299984]": [
+   {
+    "number": "23100299984"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299941]": [
+   {
+    "number": "23100299941"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299985]": [
+   {
+    "number": "23100299985"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299951]": [
+   {
+    "number": "23100299951"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299986]": [
+   {
+    "number": "23100299986"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299961]": [
+   {
+    "number": "23100299961"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299987]": [
+   {
+    "number": "23100299987"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299971]": [
+   {
+    "number": "23100299971"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299988]": [
+   {
+    "number": "23100299988"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299989]": [
+   {
+    "number": "23100299989"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[23100299991]": [
+   {
+    "number": "23100299991"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000190]": [
+   {
+    "number": "00000000190"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000101]": [
+   {
+    "number": "00000000101"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000111]": [
+   {
+    "number": "00000000111"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000192]": [
+   {
+    "number": "00000000192"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000121]": [
+   {
+    "number": "00000000121"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000193]": [
+   {
+    "number": "00000000193"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000131]": [
+   {
+    "number": "00000000131"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000194]": [
+   {
+    "number": "00000000194"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000141]": [
+   {
+    "number": "00000000141"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000195]": [
+   {
+    "number": "00000000195"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000151]": [
+   {
+    "number": "00000000151"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000196]": [
+   {
+    "number": "00000000196"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000161]": [
+   {
+    "number": "00000000161"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000197]": [
+   {
+    "number": "00000000197"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000171]": [
+   {
+    "number": "00000000171"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000198]": [
+   {
+    "number": "00000000198"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000181]": [
+   {
+    "number": "00000000181"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000000199]": [
+   {
+    "number": "00000000199"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102000]": [
+   {
+    "number": "00000102000"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102001]": [
+   {
+    "number": "00000102001"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102018]": [
+   {
+    "number": "00000102018"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102002]": [
+   {
+    "number": "00000102002"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102028]": [
+   {
+    "number": "00000102028"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102003]": [
+   {
+    "number": "00000102003"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102038]": [
+   {
+    "number": "00000102038"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102004]": [
+   {
+    "number": "00000102004"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102048]": [
+   {
+    "number": "00000102048"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102005]": [
+   {
+    "number": "00000102005"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102058]": [
+   {
+    "number": "00000102058"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102006]": [
+   {
+    "number": "00000102006"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102068]": [
+   {
+    "number": "00000102068"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102007]": [
+   {
+    "number": "00000102007"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102078]": [
+   {
+    "number": "00000102078"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102088]": [
+   {
+    "number": "00000102088"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102009]": [
+   {
+    "number": "00000102009"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[00000102098]": [
+   {
+    "number": "00000102098"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224800]": [
+   {
+    "number": "52998224800"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224801]": [
+   {
+    "number": "52998224801"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224816]": [
+   {
+    "number": "52998224816"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224802]": [
+   {
+    "number": "52998224802"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224826]": [
+   {
+    "number": "52998224826"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224803]": [
+   {
+    "number": "52998224803"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224836]": [
+   {
+    "number": "52998224836"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224804]": [
+   {
+    "number": "52998224804"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224846]": [
+   {
+    "number": "52998224846"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224805]": [
+   {
+    "number": "52998224805"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224856]": [
+   {
+    "number": "52998224856"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224866]": [
+   {
+    "number": "52998224866"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224807]": [
+   {
+    "number": "52998224807"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224876]": [
+   {
+    "number": "52998224876"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224808]": [
+   {
+    "number": "52998224808"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224886]": [
+   {
+    "number": "52998224886"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224809]": [
+   {
+    "number": "52998224809"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224896]": [
+   {
+    "number": "52998224896"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224100]": [
+   {
+    "number": "52998224100"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224131]": [
+   {
+    "number": "52998224131"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224110]": [
+   {
+    "number": "52998224110"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224132]": [
+   {
+    "number": "52998224132"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224120]": [
+   {
+    "number": "52998224120"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224133]": [
+   {
+    "number": "52998224133"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224134]": [
+   {
+    "number": "52998224134"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224140]": [
+   {
+    "number": "52998224140"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224135]": [
+   {
+    "number": "52998224135"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224150]": [
+   {
+    "number": "52998224150"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224136]": [
+   {
+    "number": "52998224136"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224160]": [
+   {
+    "number": "52998224160"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224137]": [
+   {
+    "number": "52998224137"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224170]": [
+   {
+    "number": "52998224170"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224138]": [
+   {
+    "number": "52998224138"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224180]": [
+   {
+    "number": "52998224180"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224139]": [
+   {
+    "number": "52998224139"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224190]": [
+   {
+    "number": "52998224190"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224200]": [
+   {
+    "number": "52998224200"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224211]": [
+   {
+    "number": "52998224211"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224212]": [
+   {
+    "number": "52998224212"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224220]": [
+   {
+    "number": "52998224220"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224213]": [
+   {
+    "number": "52998224213"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224230]": [
+   {
+    "number": "52998224230"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224214]": [
+   {
+    "number": "52998224214"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224240]": [
+   {
+    "number": "52998224240"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224215]": [
+   {
+    "number": "52998224215"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224250]": [
+   {
+    "number": "52998224250"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224216]": [
+   {
+    "number": "52998224216"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224260]": [
+   {
+    "number": "52998224260"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224217]": [
+   {
+    "number": "52998224217"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224270]": [
+   {
+    "number": "52998224270"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224218]": [
+   {
+    "number": "52998224218"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224280]": [
+   {
+    "number": "52998224280"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224219]": [
+   {
+    "number": "52998224219"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224290]": [
+   {
+    "number": "52998224290"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224301]": [
+   {
+    "number": "52998224301"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224310]": [
+   {
+    "number": "52998224310"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224302]": [
+   {
+    "number": "52998224302"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224320]": [
+   {
+    "number": "52998224320"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224303]": [
+   {
+    "number": "52998224303"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224330]": [
+   {
+    "number": "52998224330"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224304]": [
+   {
+    "number": "52998224304"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224340]": [
+   {
+    "number": "52998224340"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224305]": [
+   {
+    "number": "52998224305"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224350]": [
+   {
+    "number": "52998224350"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224306]": [
+   {
+    "number": "52998224306"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224360]": [
+   {
+    "number": "52998224360"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224307]": [
+   {
+    "number": "52998224307"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224370]": [
+   {
+    "number": "52998224370"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224308]": [
+   {
+    "number": "52998224308"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224380]": [
+   {
+    "number": "52998224380"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224309]": [
+   {
+    "number": "52998224309"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224390]": [
+   {
+    "number": "52998224390"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224050]": [
+   {
+    "number": "52998224050"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224009]": [
+   {
+    "number": "52998224009"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224051]": [
+   {
+    "number": "52998224051"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224019]": [
+   {
+    "number": "52998224019"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224052]": [
+   {
+    "number": "52998224052"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224029]": [
+   {
+    "number": "52998224029"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224053]": [
+   {
+    "number": "52998224053"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224039]": [
+   {
+    "number": "52998224039"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224054]": [
+   {
+    "number": "52998224054"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224049]": [
+   {
+    "number": "52998224049"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224055]": [
+   {
+    "number": "52998224055"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224056]": [
+   {
+    "number": "52998224056"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224069]": [
+   {
+    "number": "52998224069"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224057]": [
+   {
+    "number": "52998224057"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224079]": [
+   {
+    "number": "52998224079"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224058]": [
+   {
+    "number": "52998224058"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224089]": [
+   {
+    "number": "52998224089"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[52998224099]": [
+   {
+    "number": "52998224099"
+   }
+  ],
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[390.533.447-04]": [
+   {
+    "number": "390.533.447-04"
+   }
+  ],
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[390.533.447-15]": [
+   {
+    "number": "390.533.447-15"
+   }
+  ],
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[39053344750]": [
+   {
+    "number": "39053344750"
+   }
+  ],
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[12345678990]": [
+   {
+    "number": "12345678990"
+   }
+  ],
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[39053344605]": [
+   {
+    "number": "39053344605"
+   }
+  ],
+  "test_gerado.py::test_r4_alteracoes_no_numero_levantam_invalid_checksum[93053344705]": [
+   {
+    "number": "93053344705"
+   }
+  ],
+  "test_gerado.py::test_r4_resto_10_vira_digito_0": [
+   {
+    "number": "39053344705"
+   },
+   {
+    "number": "52998224300"
+   },
+   {
+    "number": "52998224130"
+   }
+  ],
+  "test_gerado.py::test_r4_resto_10_nao_aceita_digito_1": [
+   {
+    "number": "39053344715"
+   },
+   {
+    "number": "52998224311"
+   },
+   {
+    "number": "52998224131"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[646581699]": [
+   {
+    "number": "64658169975"
+   },
+   {
+    "number": "646.581.699-75"
+   },
+   {
+    "number": "64658169985"
+   },
+   {
+    "number": "64658169976"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[839583735]": [
+   {
+    "number": "83958373569"
+   },
+   {
+    "number": "839.583.735-69"
+   },
+   {
+    "number": "83958373579"
+   },
+   {
+    "number": "83958373560"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[401780306]": [
+   {
+    "number": "40178030678"
+   },
+   {
+    "number": "401.780.306-78"
+   },
+   {
+    "number": "40178030688"
+   },
+   {
+    "number": "40178030679"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[545033601]": [
+   {
+    "number": "54503360124"
+   },
+   {
+    "number": "545.033.601-24"
+   },
+   {
+    "number": "54503360134"
+   },
+   {
+    "number": "54503360125"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[327931889]": [
+   {
+    "number": "32793188905"
+   },
+   {
+    "number": "327.931.889-05"
+   },
+   {
+    "number": "32793188915"
+   },
+   {
+    "number": "32793188906"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[103732367]": [
+   {
+    "number": "10373236700"
+   },
+   {
+    "number": "103.732.367-00"
+   },
+   {
+    "number": "10373236710"
+   },
+   {
+    "number": "10373236701"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[755392558]": [
+   {
+    "number": "75539255860"
+   },
+   {
+    "number": "755.392.558-60"
+   },
+   {
+    "number": "75539255870"
+   },
+   {
+    "number": "75539255861"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[198703313]": [
+   {
+    "number": "19870331327"
+   },
+   {
+    "number": "198.703.313-27"
+   },
+   {
+    "number": "19870331337"
+   },
+   {
+    "number": "19870331328"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[072077357]": [
+   {
+    "number": "07207735715"
+   },
+   {
+    "number": "072.077.357-15"
+   },
+   {
+    "number": "07207735725"
+   },
+   {
+    "number": "07207735716"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[252872764]": [
+   {
+    "number": "25287276400"
+   },
+   {
+    "number": "252.872.764-00"
+   },
+   {
+    "number": "25287276410"
+   },
+   {
+    "number": "25287276401"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[294483898]": [
+   {
+    "number": "29448389892"
+   },
+   {
+    "number": "294.483.898-92"
+   },
+   {
+    "number": "29448389802"
+   },
+   {
+    "number": "29448389893"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[420664327]": [
+   {
+    "number": "42066432709"
+   },
+   {
+    "number": "420.664.327-09"
+   },
+   {
+    "number": "42066432719"
+   },
+   {
+    "number": "42066432700"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[255000295]": [
+   {
+    "number": "25500029541"
+   },
+   {
+    "number": "255.000.295-41"
+   },
+   {
+    "number": "25500029551"
+   },
+   {
+    "number": "25500029542"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[496715915]": [
+   {
+    "number": "49671591507"
+   },
+   {
+    "number": "496.715.915-07"
+   },
+   {
+    "number": "49671591517"
+   },
+   {
+    "number": "49671591508"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[740705687]": [
+   {
+    "number": "74070568700"
+   },
+   {
+    "number": "740.705.687-00"
+   },
+   {
+    "number": "74070568710"
+   },
+   {
+    "number": "74070568701"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[936648307]": [
+   {
+    "number": "93664830709"
+   },
+   {
+    "number": "936.648.307-09"
+   },
+   {
+    "number": "93664830719"
+   },
+   {
+    "number": "93664830700"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[613117642]": [
+   {
+    "number": "61311764267"
+   },
+   {
+    "number": "613.117.642-67"
+   },
+   {
+    "number": "61311764277"
+   },
+   {
+    "number": "61311764268"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[782882974]": [
+   {
+    "number": "78288297447"
+   },
+   {
+    "number": "782.882.974-47"
+   },
+   {
+    "number": "78288297457"
+   },
+   {
+    "number": "78288297448"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[963447638]": [
+   {
+    "number": "96344763841"
+   },
+   {
+    "number": "963.447.638-41"
+   },
+   {
+    "number": "96344763851"
+   },
+   {
+    "number": "96344763842"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[629764900]": [
+   {
+    "number": "62976490066"
+   },
+   {
+    "number": "629.764.900-66"
+   },
+   {
+    "number": "62976490076"
+   },
+   {
+    "number": "62976490067"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[062852348]": [
+   {
+    "number": "06285234833"
+   },
+   {
+    "number": "062.852.348-33"
+   },
+   {
+    "number": "06285234843"
+   },
+   {
+    "number": "06285234834"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[370522916]": [
+   {
+    "number": "37052291681"
+   },
+   {
+    "number": "370.522.916-81"
+   },
+   {
+    "number": "37052291691"
+   },
+   {
+    "number": "37052291682"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[455099428]": [
+   {
+    "number": "45509942827"
+   },
+   {
+    "number": "455.099.428-27"
+   },
+   {
+    "number": "45509942837"
+   },
+   {
+    "number": "45509942828"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[572218402]": [
+   {
+    "number": "57221840202"
+   },
+   {
+    "number": "572.218.402-02"
+   },
+   {
+    "number": "57221840212"
+   },
+   {
+    "number": "57221840203"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[020985861]": [
+   {
+    "number": "02098586132"
+   },
+   {
+    "number": "020.985.861-32"
+   },
+   {
+    "number": "02098586142"
+   },
+   {
+    "number": "02098586133"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[598595972]": [
+   {
+    "number": "59859597243"
+   },
+   {
+    "number": "598.595.972-43"
+   },
+   {
+    "number": "59859597253"
+   },
+   {
+    "number": "59859597244"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[992862388]": [
+   {
+    "number": "99286238800"
+   },
+   {
+    "number": "992.862.388-00"
+   },
+   {
+    "number": "99286238810"
+   },
+   {
+    "number": "99286238801"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[565380711]": [
+   {
+    "number": "56538071171"
+   },
+   {
+    "number": "565.380.711-71"
+   },
+   {
+    "number": "56538071181"
+   },
+   {
+    "number": "56538071172"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[158512571]": [
+   {
+    "number": "15851257172"
+   },
+   {
+    "number": "158.512.571-72"
+   },
+   {
+    "number": "15851257182"
+   },
+   {
+    "number": "15851257173"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[144240105]": [
+   {
+    "number": "14424010520"
+   },
+   {
+    "number": "144.240.105-20"
+   },
+   {
+    "number": "14424010530"
+   },
+   {
+    "number": "14424010521"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[422011668]": [
+   {
+    "number": "42201166803"
+   },
+   {
+    "number": "422.011.668-03"
+   },
+   {
+    "number": "42201166813"
+   },
+   {
+    "number": "42201166804"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[193352515]": [
+   {
+    "number": "19335251500"
+   },
+   {
+    "number": "193.352.515-00"
+   },
+   {
+    "number": "19335251510"
+   },
+   {
+    "number": "19335251501"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[985826886]": [
+   {
+    "number": "98582688660"
+   },
+   {
+    "number": "985.826.886-60"
+   },
+   {
+    "number": "98582688670"
+   },
+   {
+    "number": "98582688661"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[168759716]": [
+   {
+    "number": "16875971623"
+   },
+   {
+    "number": "168.759.716-23"
+   },
+   {
+    "number": "16875971633"
+   },
+   {
+    "number": "16875971624"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[816942013]": [
+   {
+    "number": "81694201309"
+   },
+   {
+    "number": "816.942.013-09"
+   },
+   {
+    "number": "81694201319"
+   },
+   {
+    "number": "81694201300"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[556593394]": [
+   {
+    "number": "55659339433"
+   },
+   {
+    "number": "556.593.394-33"
+   },
+   {
+    "number": "55659339443"
+   },
+   {
+    "number": "55659339434"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[498878951]": [
+   {
+    "number": "49887895199"
+   },
+   {
+    "number": "498.878.951-99"
+   },
+   {
+    "number": "49887895109"
+   },
+   {
+    "number": "49887895190"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[721870318]": [
+   {
+    "number": "72187031861"
+   },
+   {
+    "number": "721.870.318-61"
+   },
+   {
+    "number": "72187031871"
+   },
+   {
+    "number": "72187031862"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[773218603]": [
+   {
+    "number": "77321860361"
+   },
+   {
+    "number": "773.218.603-61"
+   },
+   {
+    "number": "77321860371"
+   },
+   {
+    "number": "77321860362"
+   }
+  ],
+  "test_gerado.py::test_r4_formula_dos_verificadores_para_bases_diversas[877377594]": [
+   {
+    "number": "87737759409"
+   },
+   {
+    "number": "877.377.594-09"
+   },
+   {
+    "number": "87737759419"
+   },
+   {
+    "number": "87737759400"
+   }
+  ],
+  "test_gerado.py::test_r4_invalid_checksum_e_validation_error_e_value_error": [
+   {
+    "number": "231.002.999-00"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[12a]": [
+   {
+    "number": "12a"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[3905334470X5]": [
+   {
+    "number": "3905334470X5"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[abc]": [
+   {
+    "number": "abc"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[0000000000]": [
+   {
+    "number": "0000000000"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[000000000000]": [
+   {
+    "number": "000000000000"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[0]": [
+   {
+    "number": "0"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_comprimento[]": [
+   {
+    "number": ""
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_checksum[231.002.999-0X]": [
+   {
+    "number": "231.002.999-0X"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_checksum[231.002.999=00]": [
+   {
+    "number": "231.002.999=00"
+   }
+  ],
+  "test_gerado.py::test_r5_formato_verificado_antes_do_checksum[2310029990O]": [
+   {
+    "number": "2310029990O"
+   }
+  ],
+  "test_gerado.py::test_r5_comprimento_verificado_antes_do_checksum[2310029990]": [
+   {
+    "number": "2310029990"
+   }
+  ],
+  "test_gerado.py::test_r5_comprimento_verificado_antes_do_checksum[231002999000]": [
+   {
+    "number": "231002999000"
+   }
+  ],
+  "test_gerado.py::test_r5_comprimento_verificado_antes_do_checksum[231.002.999-0]": [
+   {
+    "number": "231.002.999-0"
+   }
+  ],
+  "test_gerado.py::test_r6_exemplo_das_regras_retorna_compactado": [
+   {
+    "number": "390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[390.533.447-05-39053344705]": [
+   {
+    "number": "390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[ 123.456.789-09 -12345678909]": [
+   {
+    "number": " 123.456.789-09 "
+   }
+  ],
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[529 982 247 25-52998224725]": [
+   {
+    "number": "529 982 247 25"
+   }
+  ],
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[231-002-999-81-23100299981]": [
+   {
+    "number": "231-002-999-81"
+   }
+  ],
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[000.000.001-91-00000000191]": [
+   {
+    "number": "000.000.001-91"
+   }
+  ],
+  "test_gerado.py::test_r6_retorna_string_compacta_de_11_digitos[000.001.020-08-00000102008]": [
+   {
+    "number": "000.001.020-08"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[39053344705]": [
+   {
+    "number": "390.533.447-05"
+   },
+   {
+    "number": "39053344705"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[11111111111]": [
+   {
+    "number": "111.111.111-11"
+   },
+   {
+    "number": "11111111111"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[12345678909]": [
+   {
+    "number": "123.456.789-09"
+   },
+   {
+    "number": "12345678909"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224725]": [
+   {
+    "number": "529.982.247-25"
+   },
+   {
+    "number": "52998224725"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[23100299981]": [
+   {
+    "number": "231.002.999-81"
+   },
+   {
+    "number": "23100299981"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[00000000191]": [
+   {
+    "number": "000.000.001-91"
+   },
+   {
+    "number": "00000000191"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[00000102008]": [
+   {
+    "number": "000.001.020-08"
+   },
+   {
+    "number": "00000102008"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224806]": [
+   {
+    "number": "529.982.248-06"
+   },
+   {
+    "number": "52998224806"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224130]": [
+   {
+    "number": "529.982.241-30"
+   },
+   {
+    "number": "52998224130"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224210]": [
+   {
+    "number": "529.982.242-10"
+   },
+   {
+    "number": "52998224210"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224300]": [
+   {
+    "number": "529.982.243-00"
+   },
+   {
+    "number": "52998224300"
+   }
+  ],
+  "test_gerado.py::test_r6_resultado_validado_novamente_e_o_mesmo[52998224059]": [
+   {
+    "number": "529.982.240-59"
+   },
+   {
+    "number": "52998224059"
+   }
+  ],
+  "test_gerado.py::test_r7_exemplo_das_regras": [
+   {
+    "number": "111.111.111-11"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[1]": [
+   {
+    "number": "11111111111"
+   },
+   {
+    "number": "111.111.111-11"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[2]": [
+   {
+    "number": "22222222222"
+   },
+   {
+    "number": "222.222.222-22"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[3]": [
+   {
+    "number": "33333333333"
+   },
+   {
+    "number": "333.333.333-33"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[4]": [
+   {
+    "number": "44444444444"
+   },
+   {
+    "number": "444.444.444-44"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[5]": [
+   {
+    "number": "55555555555"
+   },
+   {
+    "number": "555.555.555-55"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[6]": [
+   {
+    "number": "66666666666"
+   },
+   {
+    "number": "666.666.666-66"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[7]": [
+   {
+    "number": "77777777777"
+   },
+   {
+    "number": "777.777.777-77"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[8]": [
+   {
+    "number": "88888888888"
+   },
+   {
+    "number": "888.888.888-88"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_corretos_sao_validos[9]": [
+   {
+    "number": "99999999999"
+   },
+   {
+    "number": "999.999.999-99"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[11111111112]": [
+   {
+    "number": "11111111112"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[111.111.111-12]": [
+   {
+    "number": "111.111.111-12"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[22222222221]": [
+   {
+    "number": "22222222221"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[55555555556]": [
+   {
+    "number": "55555555556"
+   }
+  ],
+  "test_gerado.py::test_r7_digitos_repetidos_com_verificadores_errados_levantam_invalid_checksum[99999999990]": [
+   {
+    "number": "99999999990"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 5,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 1.0,
+ "cobertura_linhas": 1.0,
+ "defeitos": {
+  "d1_aceita_zero": true,
+  "d2_comprimento_minimo": true,
+  "d3_nao_remove_ponto": true,
+  "d4_segundo_digito": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 39,
+  "equivalentes": 1,
+  "mortos": 38,
+  "sobreviventes": []
+ },
+ "mutation_score": 1.0
+}

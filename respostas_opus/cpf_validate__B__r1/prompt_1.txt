@@ -1,0 +1,86 @@
+=== SISTEMA ===
+Você é um engenheiro de testes de software experiente. Você escreve testes unitários em Python com pytest a partir de especificações de regras de negócio.
+
+=== USUÁRIO ===
+Você vai criar testes unitários para a função descrita abaixo.
+Você NÃO tem acesso ao código da função: baseie-se apenas nas regras de negócio.
+
+## Assinatura
+```python
+def validate(number: str) -> str
+```
+
+## Como importar
+```python
+from alvo import validate, ValidationError, InvalidFormat, InvalidLength, InvalidChecksum
+```
+Exceções que podem ser importadas de `alvo`: ValidationError, InvalidFormat, InvalidLength, InvalidChecksum.
+
+## Regras de negócio
+# validate (CPF)
+
+Valida um número de CPF (Cadastro de Pessoas Físicas). O CPF tem 11 dígitos, dos quais os
+dois últimos são dígitos verificadores.
+
+Exceções (todas podem ser importadas de `alvo`):
+
+- `ValidationError` — base de todas, subclasse de `ValueError`;
+- `InvalidFormat` — subclasse de `ValidationError`;
+- `InvalidLength` — subclasse de `InvalidFormat`;
+- `InvalidChecksum` — subclasse de `ValidationError`.
+
+## Regras
+
+- **R1** — Antes de validar, o número é compactado: removem-se espaços, hífens (`-`) e
+  pontos (`.`), além de espaços em branco nas pontas. `"390.533.447-05"` é tratado como
+  `"39053344705"`.
+- **R2** — Se o número compactado tiver qualquer caractere que não seja dígito de 0 a 9,
+  for vazio, ou for igual a zero (todos os dígitos `0`), levanta `InvalidFormat`.
+  Exemplo: `"390.533.447=0"` → `InvalidFormat`. Valores que não são strings (por exemplo
+  `None`) também levantam `InvalidFormat`.
+- **R3** — Se o número compactado (só com dígitos) não tiver exatamente 11 dígitos,
+  levanta `InvalidLength`.
+- **R4** — Os dois últimos dígitos são verificadores. Sendo `n0…n8` os nove primeiros dígitos:
+  - `d1 = (11 − Σ (10 − i)·n_i) mod 11 mod 10`, para i = 0…8;
+  - `d2 = (11 − (Σ (11 − i)·n_i + 2·d1)) mod 11 mod 10`, para i = 0…8.
+
+  Se o 10º e o 11º dígitos não forem `d1` e `d2`, levanta `InvalidChecksum`. Exemplo:
+  `"231.002.999-00"` → `InvalidChecksum`.
+- **R5** — As verificações seguem a ordem R2 → R3 → R4: a primeira que falhar define a
+  exceção.
+- **R6** — Se o número for válido, retorna o número compactado (11 dígitos, sem
+  separadores): `"390.533.447-05"` → `"39053344705"`.
+- **R7** — Números com todos os dígitos iguais não recebem tratamento especial: são válidos
+  se os dígitos verificadores conferirem (por exemplo, `"111.111.111-11"` →
+  `"11111111111"`).
+
+## Fora do escopo
+
+- Traços Unicode parecidos com o hífen (por exemplo `–` e `—`).
+
+## O que se espera dos testes
+- Cubra todas as regras (R1, R2, …).
+- Inclua valores-limite (fronteiras) e entradas inválidas sempre que as regras os definirem.
+- Cada expectativa (asserção) deve decorrer das regras. Não invente comportamento que as
+  regras não definem e não teste o que está "fora do escopo".
+- Indique qual regra cada caso verifica.
+
+## Formato da resposta
+Responda APENAS com um objeto JSON (sem texto antes ou depois), no formato:
+
+{"casos": [
+  {"id": "C1", "regra": "R1", "tipo": "normal", "descricao": "o que o caso verifica",
+   "entrada": {"args": [ ... ], "kwargs": { ... }},
+   "esperado": {"retorno": <valor esperado>}},
+  {"id": "C2", "regra": "R3", "tipo": "invalida", "descricao": "...",
+   "entrada": {"args": [ ... ]},
+   "esperado": {"excecao": "NomeDaExcecao"}}
+]}
+
+- "tipo" é "normal", "fronteira" ou "invalida".
+- "args" e "kwargs" usam valores JSON (números, strings, true/false, null, listas).
+- Para valores que JSON não representa, use {"$expr": "<expressão Python>"}, por exemplo
+  {"$expr": "float('inf')"} ou {"$expr": "10**30"}. Só são permitidos literais, operações
+  aritméticas e as funções float, int, str, bytes, list, tuple, set, dict, bool.
+- Em "esperado", use "retorno" (valor que a função deve devolver) OU "excecao" (nome de uma
+  exceção embutida do Python ou de uma das exceções listadas acima).

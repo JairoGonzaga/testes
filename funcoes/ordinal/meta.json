@@ -1,0 +1,7 @@
+{
+  "nome_funcao": "ordinal",
+  "assinatura": "def ordinal(value, gender=\"male\") -> str",
+  "excecoes": [],
+  "origem": "humanize 4.17.0 — humanize/number.py (licença MIT)",
+  "piloto": false
+}

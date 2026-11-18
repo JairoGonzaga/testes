@@ -1,0 +1,373 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 55,
+ "n_validos": 55,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_c1_r1": "passed",
+  "test_gerado.py::test_c2_r1": "passed",
+  "test_gerado.py::test_c3_r1": "passed",
+  "test_gerado.py::test_c4_r1": "passed",
+  "test_gerado.py::test_c5_r1": "passed",
+  "test_gerado.py::test_c6_r1": "passed",
+  "test_gerado.py::test_c7_r1": "passed",
+  "test_gerado.py::test_c8_r2": "passed",
+  "test_gerado.py::test_c9_r2": "passed",
+  "test_gerado.py::test_c10_r2": "passed",
+  "test_gerado.py::test_c11_r2": "passed",
+  "test_gerado.py::test_c12_r2": "passed",
+  "test_gerado.py::test_c13_r2": "passed",
+  "test_gerado.py::test_c14_r2": "passed",
+  "test_gerado.py::test_c15_r2": "passed",
+  "test_gerado.py::test_c16_r2": "passed",
+  "test_gerado.py::test_c17_r2": "passed",
+  "test_gerado.py::test_c18_r2": "passed",
+  "test_gerado.py::test_c19_r2": "passed",
+  "test_gerado.py::test_c20_r2": "passed",
+  "test_gerado.py::test_c21_r3": "passed",
+  "test_gerado.py::test_c22_r3": "passed",
+  "test_gerado.py::test_c23_r3": "passed",
+  "test_gerado.py::test_c24_r3": "passed",
+  "test_gerado.py::test_c25_r3": "passed",
+  "test_gerado.py::test_c26_r3": "passed",
+  "test_gerado.py::test_c27_r3": "passed",
+  "test_gerado.py::test_c28_r4": "passed",
+  "test_gerado.py::test_c29_r4": "passed",
+  "test_gerado.py::test_c30_r4": "passed",
+  "test_gerado.py::test_c31_r4": "passed",
+  "test_gerado.py::test_c32_r4": "passed",
+  "test_gerado.py::test_c33_r4": "passed",
+  "test_gerado.py::test_c34_r4": "passed",
+  "test_gerado.py::test_c35_r4": "passed",
+  "test_gerado.py::test_c36_r4": "passed",
+  "test_gerado.py::test_c37_r4": "passed",
+  "test_gerado.py::test_c38_r4": "passed",
+  "test_gerado.py::test_c39_r4": "passed",
+  "test_gerado.py::test_c40_r4": "passed",
+  "test_gerado.py::test_c41_r4": "passed",
+  "test_gerado.py::test_c42_r4": "passed",
+  "test_gerado.py::test_c43_r4": "passed",
+  "test_gerado.py::test_c44_r5": "passed",
+  "test_gerado.py::test_c45_r5": "passed",
+  "test_gerado.py::test_c46_r5": "passed",
+  "test_gerado.py::test_c47_r5": "passed",
+  "test_gerado.py::test_c48_r2": "passed",
+  "test_gerado.py::test_c49_r6": "passed",
+  "test_gerado.py::test_c50_r6": "passed",
+  "test_gerado.py::test_c51_r7": "passed",
+  "test_gerado.py::test_c52_r7": "passed",
+  "test_gerado.py::test_c53_r7": "passed",
+  "test_gerado.py::test_c54_r7": "passed",
+  "test_gerado.py::test_c55_r7": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_c1_r1": [
+   {
+    "number": "390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_c2_r1": [
+   {
+    "number": "  39053344705  "
+   }
+  ],
+  "test_gerado.py::test_c3_r1": [
+   {
+    "number": "390 533 447 05"
+   }
+  ],
+  "test_gerado.py::test_c4_r1": [
+   {
+    "number": "390-533-447-05"
+   }
+  ],
+  "test_gerado.py::test_c5_r1": [
+   {
+    "number": "3.9.0.5.3.3.4.4.7.0.5"
+   }
+  ],
+  "test_gerado.py::test_c6_r1": [
+   {
+    "number": " -.390..533--447 . 05.- "
+   }
+  ],
+  "test_gerado.py::test_c7_r1": [
+   {
+    "number": "\t39053344705\n"
+   }
+  ],
+  "test_gerado.py::test_c8_r2": [
+   {
+    "number": "390.533.447=0"
+   }
+  ],
+  "test_gerado.py::test_c9_r2": [
+   {
+    "number": "3905334470A"
+   }
+  ],
+  "test_gerado.py::test_c10_r2": [
+   {
+    "number": "CPF 390.533.447-05"
+   }
+  ],
+  "test_gerado.py::test_c11_r2": [
+   {
+    "number": "390,533,447/05"
+   }
+  ],
+  "test_gerado.py::test_c12_r2": [
+   {
+    "number": "+39053344705"
+   }
+  ],
+  "test_gerado.py::test_c13_r2": [
+   {
+    "number": ""
+   }
+  ],
+  "test_gerado.py::test_c14_r2": [
+   {
+    "number": "   "
+   }
+  ],
+  "test_gerado.py::test_c15_r2": [
+   {
+    "number": " .-.- "
+   }
+  ],
+  "test_gerado.py::test_c16_r2": [
+   {
+    "number": "00000000000"
+   }
+  ],
+  "test_gerado.py::test_c17_r2": [
+   {
+    "number": "000.000.000-00"
+   }
+  ],
+  "test_gerado.py::test_c18_r2": [
+   {
+    "number": "0"
+   }
+  ],
+  "test_gerado.py::test_c19_r2": [
+   {
+    "number": null
+   }
+  ],
+  "test_gerado.py::test_c20_r2": [
+   {
+    "number": 39053344705
+   }
+  ],
+  "test_gerado.py::test_c21_r3": [
+   {
+    "number": "3905334470"
+   }
+  ],
+  "test_gerado.py::test_c22_r3": [
+   {
+    "number": "390533447055"
+   }
+  ],
+  "test_gerado.py::test_c23_r3": [
+   {
+    "number": "390.533.447-0"
+   }
+  ],
+  "test_gerado.py::test_c24_r3": [
+   {
+    "number": "1"
+   }
+  ],
+  "test_gerado.py::test_c25_r3": [
+   {
+    "number": "123456789012345"
+   }
+  ],
+  "test_gerado.py::test_c26_r3": [
+   {
+    "number": "0000000001"
+   }
+  ],
+  "test_gerado.py::test_c27_r3": [
+   {
+    "number": "3905334470"
+   }
+  ],
+  "test_gerado.py::test_c28_r4": [
+   {
+    "number": "231.002.999-00"
+   }
+  ],
+  "test_gerado.py::test_c29_r4": [
+   {
+    "number": "231.002.999-81"
+   }
+  ],
+  "test_gerado.py::test_c30_r4": [
+   {
+    "number": "39053344715"
+   }
+  ],
+  "test_gerado.py::test_c31_r4": [
+   {
+    "number": "39053344704"
+   }
+  ],
+  "test_gerado.py::test_c32_r4": [
+   {
+    "number": "39053344750"
+   }
+  ],
+  "test_gerado.py::test_c33_r4": [
+   {
+    "number": "529.982.247-25"
+   }
+  ],
+  "test_gerado.py::test_c34_r4": [
+   {
+    "number": "529.982.247-24"
+   }
+  ],
+  "test_gerado.py::test_c35_r4": [
+   {
+    "number": "123.456.789-09"
+   }
+  ],
+  "test_gerado.py::test_c36_r4": [
+   {
+    "number": "987.654.321-00"
+   }
+  ],
+  "test_gerado.py::test_c37_r4": [
+   {
+    "number": "98765432290"
+   }
+  ],
+  "test_gerado.py::test_c38_r4": [
+   {
+    "number": "98765432110"
+   }
+  ],
+  "test_gerado.py::test_c39_r4": [
+   {
+    "number": "000.000.014-06"
+   }
+  ],
+  "test_gerado.py::test_c40_r4": [
+   {
+    "number": "00000000191"
+   }
+  ],
+  "test_gerado.py::test_c41_r4": [
+   {
+    "number": "00000000001"
+   }
+  ],
+  "test_gerado.py::test_c42_r4": [
+   {
+    "number": "231.002.999-00"
+   }
+  ],
+  "test_gerado.py::test_c43_r4": [
+   {
+    "number": "39053344704"
+   }
+  ],
+  "test_gerado.py::test_c44_r5": [
+   {
+    "number": "3905334470A5"
+   }
+  ],
+  "test_gerado.py::test_c45_r5": [
+   {
+    "number": "0000000000"
+   }
+  ],
+  "test_gerado.py::test_c46_r5": [
+   {
+    "number": "1111111111"
+   }
+  ],
+  "test_gerado.py::test_c47_r5": [
+   {
+    "number": "231.002.999-0X"
+   }
+  ],
+  "test_gerado.py::test_c48_r2": [
+   {
+    "number": "abc"
+   }
+  ],
+  "test_gerado.py::test_c49_r6": [
+   {
+    "number": "39053344705"
+   }
+  ],
+  "test_gerado.py::test_c50_r6": [
+   {
+    "number": "111.444.777-35"
+   }
+  ],
+  "test_gerado.py::test_c51_r7": [
+   {
+    "number": "111.111.111-11"
+   }
+  ],
+  "test_gerado.py::test_c52_r7": [
+   {
+    "number": "99999999999"
+   }
+  ],
+  "test_gerado.py::test_c53_r7": [
+   {
+    "number": "555.555.555-55"
+   }
+  ],
+  "test_gerado.py::test_c54_r7": [
+   {
+    "number": "11111111112"
+   }
+  ],
+  "test_gerado.py::test_c55_r7": [
+   {
+    "number": "222.222.222-11"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 5,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 1.0,
+ "cobertura_linhas": 1.0,
+ "defeitos": {
+  "d1_aceita_zero": true,
+  "d2_comprimento_minimo": true,
+  "d3_nao_remove_ponto": true,
+  "d4_segundo_digito": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 39,
+  "equivalentes": 1,
+  "mortos": 37,
+  "sobreviventes": [
+   "m006"
+  ]
+ },
+ "mutation_score": 0.9736842105263158
+}

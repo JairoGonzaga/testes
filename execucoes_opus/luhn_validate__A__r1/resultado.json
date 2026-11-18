@@ -1,0 +1,765 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 101,
+ "n_validos": 101,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_r1_r2_r4_hierarquia_validation_error_e_value_error": "passed",
+  "test_gerado.py::test_r1_r2_invalid_format_e_validation_error": "passed",
+  "test_gerado.py::test_r4_invalid_checksum_e_validation_error": "passed",
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[]": "passed",
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[None]": "passed",
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[0]": "passed",
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[0.0]": "passed",
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[False]": "passed",
+  "test_gerado.py::test_r1_string_vazia_com_alfabeto_customizado_levanta_invalid_format": "passed",
+  "test_gerado.py::test_r1_inteiro_zero_e_falso_mesmo_que_string_zero_seja_valida": "passed",
+  "test_gerado.py::test_r1_valor_falso_nao_levanta_invalid_checksum": "passed",
+  "test_gerado.py::test_r2_espacos_como_separadores_levantam_invalid_format": "passed",
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[7992-7398-713]": "passed",
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[7992.7398.713]": "passed",
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[ 79927398713]": "passed",
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[79927398713 ]": "passed",
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[79927398713\\n]": "passed",
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[\\t79927398713]": "passed",
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[a]": "passed",
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[1a]": "passed",
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[7992739871a]": "passed",
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[X79927398713]": "passed",
+  "test_gerado.py::test_r2_digitos_unicode_fora_do_alfabeto_levantam_invalid_format[\\uff11\\uff18]": "passed",
+  "test_gerado.py::test_r2_digitos_unicode_fora_do_alfabeto_levantam_invalid_format[\\u0661\\u0668]": "passed",
+  "test_gerado.py::test_r2_inteiro_negativo_levanta_invalid_format": "passed",
+  "test_gerado.py::test_r2_float_levanta_invalid_format": "passed",
+  "test_gerado.py::test_r2_digitos_decimais_fora_de_alfabeto_de_letras_levantam_invalid_format": "passed",
+  "test_gerado.py::test_r2_caractere_fora_do_alfabeto_binario_levanta_invalid_format": "passed",
+  "test_gerado.py::test_r2_erro_de_formato_tem_precedencia_e_nao_e_invalid_checksum": "passed",
+  "test_gerado.py::test_r3_exemplo_classico_valido": "passed",
+  "test_gerado.py::test_r3_cartao_de_teste_visa_valido": "passed",
+  "test_gerado.py::test_r3_cartao_de_teste_visa_com_digito_alterado_e_invalido": "passed",
+  "test_gerado.py::test_r3_soma_zero_e_multipla_de_n[0]": "passed",
+  "test_gerado.py::test_r3_soma_zero_e_multipla_de_n[00]": "passed",
+  "test_gerado.py::test_r3_soma_zero_e_multipla_de_n[000]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[1]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[2]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[3]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[4]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[5]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[6]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[7]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[8]": "passed",
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[9]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[00]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[18]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[26]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[34]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[42]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[59]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[67]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[75]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[83]": "passed",
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[91]": "passed",
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[50]": "passed",
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[69]": "passed",
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[78]": "passed",
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[87]": "passed",
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[96]": "passed",
+  "test_gerado.py::test_r3_percorre_da_direita_para_a_esquerda": "passed",
+  "test_gerado.py::test_r3_terceira_posicao_ímpar_nao_e_dobrada": "passed",
+  "test_gerado.py::test_r3_zeros_a_esquerda_nao_alteram_a_soma": "passed",
+  "test_gerado.py::test_r3_zero_a_direita_desloca_as_posicoes": "passed",
+  "test_gerado.py::test_r3_valor_e_posicao_no_alfabeto_permutado": "passed",
+  "test_gerado.py::test_r3_alfabeto_de_letras_equivalente_ao_decimal": "passed",
+  "test_gerado.py::test_r3_alfabeto_de_letras_equivalente_a_checksum_invalido": "passed",
+  "test_gerado.py::test_r3_base_2_valida_com_numero_par_de_uns": "passed",
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[1]": "passed",
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[10]": "passed",
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[0111]": "passed",
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[111]": "passed",
+  "test_gerado.py::test_r3_mesma_string_depende_de_n": "passed",
+  "test_gerado.py::test_r4_exemplo_da_especificacao_levanta_invalid_checksum": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[0_0]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[1]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[2]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[4]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[5]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[6]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[7]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[8]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[9]": "passed",
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[0_1]": "passed",
+  "test_gerado.py::test_r4_invalid_checksum_e_capturavel_como_validation_error_e_value_error": "passed",
+  "test_gerado.py::test_r4_checksum_invalido_nao_e_invalid_format": "passed",
+  "test_gerado.py::test_r4_inteiro_com_checksum_invalido": "passed",
+  "test_gerado.py::test_r5_string_valida_retorna_a_propria_string": "passed",
+  "test_gerado.py::test_r5_inteiro_valido_retorna_inteiro": "passed",
+  "test_gerado.py::test_r5_inteiro_pequeno_valido_retorna_inteiro": "passed",
+  "test_gerado.py::test_r5_zeros_a_esquerda_sao_preservados_no_retorno": "passed",
+  "test_gerado.py::test_r5_alfabeto_padrao_explicito_equivale_ao_padrao": "passed",
+  "test_gerado.py::test_r5_retorno_sem_alteracao_em_outra_base": "passed",
+  "test_gerado.py::test_r6_exemplo_hexadecimal_da_especificacao_e_valido": "passed",
+  "test_gerado.py::test_r6_hexadecimal_com_checksum_invalido": "passed",
+  "test_gerado.py::test_r6_hexadecimal_reducao_com_n_16": "passed",
+  "test_gerado.py::test_r6_hexadecimal_digito_unico_f_e_invalido": "passed",
+  "test_gerado.py::test_r6_maiusculas_nao_estao_no_alfabeto_minusculo": "passed",
+  "test_gerado.py::test_r6_minusculas_nao_estao_no_alfabeto_maiusculo": "passed",
+  "test_gerado.py::test_r6_alfabeto_maiusculo_aceita_maiusculas": "passed",
+  "test_gerado.py::test_r6_mistura_de_maiusculas_e_minusculas_levanta_invalid_format": "passed",
+  "test_gerado.py::test_r6_letras_hexadecimais_invalidas_no_alfabeto_padrao": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[]": [
+   {
+    "number": "",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[None]": [
+   {
+    "number": null,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[0]": [
+   {
+    "number": 0,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[0.0]": [
+   {
+    "number": 0.0,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r1_valor_falso_levanta_invalid_format[False]": [
+   {
+    "number": false,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r1_string_vazia_com_alfabeto_customizado_levanta_invalid_format": [
+   {
+    "number": "",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r1_inteiro_zero_e_falso_mesmo_que_string_zero_seja_valida": [
+   {
+    "number": 0,
+    "alphabet": "0123456789"
+   },
+   {
+    "number": "0",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r1_valor_falso_nao_levanta_invalid_checksum": [
+   {
+    "number": "",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_espacos_como_separadores_levantam_invalid_format": [
+   {
+    "number": "7992 7398 713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[7992-7398-713]": [
+   {
+    "number": "7992-7398-713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[7992.7398.713]": [
+   {
+    "number": "7992.7398.713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[ 79927398713]": [
+   {
+    "number": " 79927398713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[79927398713 ]": [
+   {
+    "number": "79927398713 ",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[79927398713\\n]": [
+   {
+    "number": "79927398713\n",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_separadores_e_espacos_nao_sao_removidos[\\t79927398713]": [
+   {
+    "number": "\t79927398713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[a]": [
+   {
+    "number": "a",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[1a]": [
+   {
+    "number": "1a",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[7992739871a]": [
+   {
+    "number": "7992739871a",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_letras_com_alfabeto_padrao_levantam_invalid_format[X79927398713]": [
+   {
+    "number": "X79927398713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_digitos_unicode_fora_do_alfabeto_levantam_invalid_format[\\uff11\\uff18]": [
+   {
+    "number": "１８",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_digitos_unicode_fora_do_alfabeto_levantam_invalid_format[\\u0661\\u0668]": [
+   {
+    "number": "١٨",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_inteiro_negativo_levanta_invalid_format": [
+   {
+    "number": -18,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_float_levanta_invalid_format": [
+   {
+    "number": 18.0,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r2_digitos_decimais_fora_de_alfabeto_de_letras_levantam_invalid_format": [
+   {
+    "number": "79927398713",
+    "alphabet": "abcdefghij"
+   }
+  ],
+  "test_gerado.py::test_r2_caractere_fora_do_alfabeto_binario_levanta_invalid_format": [
+   {
+    "number": "12",
+    "alphabet": "01"
+   }
+  ],
+  "test_gerado.py::test_r2_erro_de_formato_tem_precedencia_e_nao_e_invalid_checksum": [
+   {
+    "number": "7992 7398 713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_exemplo_classico_valido": [
+   {
+    "number": "79927398713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_cartao_de_teste_visa_valido": [
+   {
+    "number": "4111111111111111",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_cartao_de_teste_visa_com_digito_alterado_e_invalido": [
+   {
+    "number": "4111111111111112",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_soma_zero_e_multipla_de_n[0]": [
+   {
+    "number": "0",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_soma_zero_e_multipla_de_n[00]": [
+   {
+    "number": "00",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_soma_zero_e_multipla_de_n[000]": [
+   {
+    "number": "000",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[1]": [
+   {
+    "number": "1",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[2]": [
+   {
+    "number": "2",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[3]": [
+   {
+    "number": "3",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[4]": [
+   {
+    "number": "4",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[5]": [
+   {
+    "number": "5",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[6]": [
+   {
+    "number": "6",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[7]": [
+   {
+    "number": "7",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[8]": [
+   {
+    "number": "8",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_um_unico_digito_nao_nulo_e_invalido[9]": [
+   {
+    "number": "9",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[00]": [
+   {
+    "number": "00",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[18]": [
+   {
+    "number": "18",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[26]": [
+   {
+    "number": "26",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[34]": [
+   {
+    "number": "34",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[42]": [
+   {
+    "number": "42",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[59]": [
+   {
+    "number": "59",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[67]": [
+   {
+    "number": "67",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[75]": [
+   {
+    "number": "75",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[83]": [
+   {
+    "number": "83",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_digito_em_posicao_par_e_dobrado_e_reduzido[91]": [
+   {
+    "number": "91",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[50]": [
+   {
+    "number": "50",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[69]": [
+   {
+    "number": "69",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[78]": [
+   {
+    "number": "78",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[87]": [
+   {
+    "number": "87",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_dobro_sem_reducao_nao_e_aceito[96]": [
+   {
+    "number": "96",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_percorre_da_direita_para_a_esquerda": [
+   {
+    "number": "18",
+    "alphabet": "0123456789"
+   },
+   {
+    "number": "81",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_terceira_posicao_ímpar_nao_e_dobrada": [
+   {
+    "number": "125",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_zeros_a_esquerda_nao_alteram_a_soma": [
+   {
+    "number": "018",
+    "alphabet": "0123456789"
+   },
+   {
+    "number": "0018",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_zero_a_direita_desloca_as_posicoes": [
+   {
+    "number": "180",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_e_posicao_no_alfabeto_permutado": [
+   {
+    "number": "9",
+    "alphabet": "9876543210"
+   },
+   {
+    "number": "0",
+    "alphabet": "9876543210"
+   }
+  ],
+  "test_gerado.py::test_r3_alfabeto_de_letras_equivalente_ao_decimal": [
+   {
+    "number": "hjjchdjihbd",
+    "alphabet": "abcdefghij"
+   }
+  ],
+  "test_gerado.py::test_r3_alfabeto_de_letras_equivalente_a_checksum_invalido": [
+   {
+    "number": "hjjchdjihba",
+    "alphabet": "abcdefghij"
+   }
+  ],
+  "test_gerado.py::test_r3_base_2_valida_com_numero_par_de_uns": [
+   {
+    "number": "11",
+    "alphabet": "01"
+   },
+   {
+    "number": "0110",
+    "alphabet": "01"
+   },
+   {
+    "number": "101",
+    "alphabet": "01"
+   }
+  ],
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[1]": [
+   {
+    "number": "1",
+    "alphabet": "01"
+   }
+  ],
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[10]": [
+   {
+    "number": "10",
+    "alphabet": "01"
+   }
+  ],
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[0111]": [
+   {
+    "number": "0111",
+    "alphabet": "01"
+   }
+  ],
+  "test_gerado.py::test_r3_base_2_invalida_com_numero_impar_de_uns[111]": [
+   {
+    "number": "111",
+    "alphabet": "01"
+   }
+  ],
+  "test_gerado.py::test_r3_mesma_string_depende_de_n": [
+   {
+    "number": "18",
+    "alphabet": "0123456789"
+   },
+   {
+    "number": "18",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r4_exemplo_da_especificacao_levanta_invalid_checksum": [
+   {
+    "number": "79927398710",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[0_0]": [
+   {
+    "number": "79927398710",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[1]": [
+   {
+    "number": "79927398711",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[2]": [
+   {
+    "number": "79927398712",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[4]": [
+   {
+    "number": "79927398714",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[5]": [
+   {
+    "number": "79927398715",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[6]": [
+   {
+    "number": "79927398716",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[7]": [
+   {
+    "number": "79927398717",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[8]": [
+   {
+    "number": "79927398718",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[9]": [
+   {
+    "number": "79927398719",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_digito_verificador_errado_levanta_invalid_checksum[0_1]": [
+   {
+    "number": "79927398710",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_invalid_checksum_e_capturavel_como_validation_error_e_value_error": [
+   {
+    "number": "79927398710",
+    "alphabet": "0123456789"
+   },
+   {
+    "number": "79927398710",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_checksum_invalido_nao_e_invalid_format": [
+   {
+    "number": "79927398710",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r4_inteiro_com_checksum_invalido": [
+   {
+    "number": 79927398710,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r5_string_valida_retorna_a_propria_string": [
+   {
+    "number": "79927398713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r5_inteiro_valido_retorna_inteiro": [
+   {
+    "number": 79927398713,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r5_inteiro_pequeno_valido_retorna_inteiro": [
+   {
+    "number": 18,
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r5_zeros_a_esquerda_sao_preservados_no_retorno": [
+   {
+    "number": "0018",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r5_alfabeto_padrao_explicito_equivale_ao_padrao": [
+   {
+    "number": "79927398713",
+    "alphabet": "0123456789"
+   }
+  ],
+  "test_gerado.py::test_r5_retorno_sem_alteracao_em_outra_base": [
+   {
+    "number": "1a2b1",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_exemplo_hexadecimal_da_especificacao_e_valido": [
+   {
+    "number": "1a2b1",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_hexadecimal_com_checksum_invalido": [
+   {
+    "number": "1a2b2",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_hexadecimal_reducao_com_n_16": [
+   {
+    "number": "8f",
+    "alphabet": "0123456789abcdef"
+   },
+   {
+    "number": "f1",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_hexadecimal_digito_unico_f_e_invalido": [
+   {
+    "number": "f",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_maiusculas_nao_estao_no_alfabeto_minusculo": [
+   {
+    "number": "1A2B1",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_minusculas_nao_estao_no_alfabeto_maiusculo": [
+   {
+    "number": "1a2b1",
+    "alphabet": "0123456789ABCDEF"
+   }
+  ],
+  "test_gerado.py::test_r6_alfabeto_maiusculo_aceita_maiusculas": [
+   {
+    "number": "1A2B1",
+    "alphabet": "0123456789ABCDEF"
+   }
+  ],
+  "test_gerado.py::test_r6_mistura_de_maiusculas_e_minusculas_levanta_invalid_format": [
+   {
+    "number": "1a2B1",
+    "alphabet": "0123456789abcdef"
+   }
+  ],
+  "test_gerado.py::test_r6_letras_hexadecimais_invalidas_no_alfabeto_padrao": [
+   {
+    "number": "1a2b1",
+    "alphabet": "0123456789"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 4,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 1.0,
+ "cobertura_linhas": 1.0,
+ "defeitos": {
+  "d1_posicoes_trocadas": true,
+  "d2_sem_vai_um": true,
+  "d3_aceita_vazio": true,
+  "d4_converte_str": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 13,
+  "equivalentes": 1,
+  "mortos": 12,
+  "sobreviventes": []
+ },
+ "mutation_score": 1.0
+}

@@ -1,0 +1,7 @@
+{
+  "nome_funcao": "intword",
+  "assinatura": "def intword(value, format=\"%.1f\") -> str",
+  "excecoes": [],
+  "origem": "humanize 4.17.0 — humanize/number.py (licença MIT)",
+  "piloto": false
+}

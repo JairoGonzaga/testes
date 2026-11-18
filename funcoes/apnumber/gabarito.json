@@ -1,0 +1,39 @@
+{
+  "regras": [
+    {"id": "R1", "testavel": true, "resumo": "0 a 9 por extenso"},
+    {"id": "R2", "testavel": true, "resumo": "fora de 0-9 retorna str do número"},
+    {"id": "R3", "testavel": true, "resumo": "converte com int() antes"},
+    {"id": "R4", "testavel": true, "resumo": "não conversível retorna str(value)"},
+    {"id": "R5", "testavel": true, "resumo": "não finitos"}
+  ],
+  "casos": [
+    {"regra": "R1", "tipo": "fronteira", "entrada": {"args": [0]}, "esperado": {"retorno": "zero"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [1]}, "esperado": {"retorno": "one"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [5]}, "esperado": {"retorno": "five"}},
+    {"regra": "R1", "tipo": "fronteira", "entrada": {"args": [9]}, "esperado": {"retorno": "nine"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [2]}, "esperado": {"retorno": "two"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [3]}, "esperado": {"retorno": "three"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [4]}, "esperado": {"retorno": "four"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [6]}, "esperado": {"retorno": "six"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [7]}, "esperado": {"retorno": "seven"}},
+    {"regra": "R1", "tipo": "normal", "entrada": {"args": [8]}, "esperado": {"retorno": "eight"}},
+    {"regra": "R2", "tipo": "fronteira", "entrada": {"args": [10]}, "esperado": {"retorno": "10"}},
+    {"regra": "R2", "tipo": "fronteira", "entrada": {"args": [-1]}, "esperado": {"retorno": "-1"}},
+    {"regra": "R2", "tipo": "normal", "entrada": {"args": [100]}, "esperado": {"retorno": "100"}},
+    {"regra": "R3", "tipo": "normal", "entrada": {"args": ["7"]}, "esperado": {"retorno": "seven"}},
+    {"regra": "R3", "tipo": "normal", "entrada": {"args": [3.9]}, "esperado": {"retorno": "three"}},
+    {"regra": "R3", "tipo": "normal", "entrada": {"args": ["10"]}, "esperado": {"retorno": "10"}},
+    {"regra": "R4", "tipo": "invalida", "entrada": {"args": ["foo"]}, "esperado": {"retorno": "foo"}},
+    {"regra": "R4", "tipo": "invalida", "entrada": {"args": [null]}, "esperado": {"retorno": "None"}},
+    {"regra": "R4", "tipo": "invalida", "entrada": {"args": ["3.9"]}, "esperado": {"retorno": "3.9"}},
+    {"regra": "R5", "tipo": "invalida", "entrada": {"args": [{"$expr": "float('inf')"}]}, "esperado": {"retorno": "+Inf"}},
+    {"regra": "R5", "tipo": "invalida", "entrada": {"args": [{"$expr": "float('-inf')"}]}, "esperado": {"retorno": "-Inf"}},
+    {"regra": "R5", "tipo": "invalida", "entrada": {"args": [{"$expr": "float('nan')"}]}, "esperado": {"retorno": "NaN"}}
+  ],
+  "fronteiras": [
+    {"id": "F1", "regra": "R2", "descricao": "value = -1 (logo abaixo de 0)", "criterio": "eq(value, -1)"},
+    {"id": "F2", "regra": "R1", "descricao": "value = 0 (limite inferior)", "criterio": "eq(value, 0)"},
+    {"id": "F3", "regra": "R1", "descricao": "value = 9 (limite superior)", "criterio": "eq(value, 9)"},
+    {"id": "F4", "regra": "R2", "descricao": "value = 10 (logo acima de 9)", "criterio": "eq(value, 10)"}
+  ]
+}

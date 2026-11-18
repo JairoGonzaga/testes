@@ -1,0 +1,23 @@
+{
+ "run_id": "intword__B__r1",
+ "funcao": "intword",
+ "condicao": "B",
+ "repeticao": 1,
+ "piloto": false,
+ "provedor": "arquivo",
+ "modelo": "claude-opus-subagente",
+ "temperatura": null,
+ "max_chamadas": 3,
+ "versao_prompts": "56b903e055",
+ "data": "2026-11-17T21:37:20",
+ "status": "ok",
+ "reparos": 0,
+ "casos_plano": 51,
+ "casos_descartados": 0,
+ "chamadas": 1,
+ "tokens_entrada": 933,
+ "tokens_saida": 2636,
+ "tempo_modelo_s": 91.3,
+ "tempo_total_s": 91.77,
+ "tokens_aproximados": true
+}

@@ -1,0 +1,41 @@
+# intword
+
+Converte um inteiro grande em texto amigável, por exemplo `1_200_000` → `"1.2 million"`.
+
+## Regras
+
+- **R1** — Inteiros com valor absoluto menor que 1000 são retornados como string, sem
+  sufixo: `"100"` → `"100"`.
+- **R2** — A partir de 1000, o valor é dividido pela maior potência da tabela abaixo que
+  não o ultrapassa. O quociente é formatado com `format` (padrão `"%.1f"`) e seguido de
+  um espaço e do nome da potência.
+
+  | Potência | Nome | Potência | Nome |
+  |---|---|---|---|
+  | 10^3 | thousand | 10^21 | sextillion |
+  | 10^6 | million | 10^24 | septillion |
+  | 10^9 | billion | 10^27 | octillion |
+  | 10^12 | trillion | 10^30 | nonillion |
+  | 10^15 | quadrillion | 10^33 | decillion |
+  | 10^18 | quintillion | 10^100 | googol |
+
+  Exemplos: `"12400"` → `"12.4 thousand"`, `"1000000"` → `"1.0 million"`,
+  `1_200_000_000` → `"1.2 billion"`, `8100000000000000000000000000000000` → `"8.1 decillion"`.
+- **R3** — Se, depois de formatado, o quociente alcançar a próxima potência da tabela,
+  usa-se a próxima potência com valor 1. Exemplo: `999_999` → `"1.0 million"` (e não
+  `"1000.0 thousand"`). Acima de 10^100 não há próxima potência, e o número continua
+  crescendo: `10**101` → `"10.0 googol"`.
+- **R4** — Valores negativos recebem o prefixo `"-"` e são tratados pelo valor absoluto
+  conforme R1 a R3: `-1_200_000` → `"-1.2 million"`.
+- **R5** — O parâmetro `format` controla a parte numérica:
+  `intword("1234000", "%0.3f")` → `"1.234 million"`.
+- **R6** — O valor é convertido com `int()` antes (strings com inteiro e floats, que
+  `int()` trunca, são aceitos). Se não puder ser convertido, a função retorna
+  `str(value)`: `None` → `"None"`.
+- **R7** — Valores não finitos: `float("inf")` → `"+Inf"`, `float("-inf")` → `"-Inf"`,
+  `float("nan")` → `"NaN"`.
+
+## Fora do escopo
+
+- Valores entre 10^36 e 10^100.
+- Quocientes exatamente na metade do arredondamento (por exemplo, 1.25 com `"%.1f"`).

@@ -1,0 +1,1616 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 162,
+ "n_validos": 162,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_r1_numeric_string_is_converted[3000000-3.0 MB]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[1000-1.0 kB]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[999-999 Bytes]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[0-0 Bytes]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[1-1 Byte]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[-1--1 Byte]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[1e6-1.0 MB]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[  1000  -1.0 kB]": "passed",
+  "test_gerado.py::test_r1_numeric_string_is_converted[-3000000--3.0 MB]": "passed",
+  "test_gerado.py::test_r1_int_and_float_are_accepted[3000000-3.0 MB]": "passed",
+  "test_gerado.py::test_r1_int_and_float_are_accepted[3000000.0-3.0 MB]": "passed",
+  "test_gerado.py::test_r1_int_and_float_are_accepted[1000.0-1.0 kB]": "passed",
+  "test_gerado.py::test_r1_int_and_float_are_accepted[1500.5-1.5 kB]": "passed",
+  "test_gerado.py::test_r1_int_and_float_are_accepted[0.0-0 Bytes]": "passed",
+  "test_gerado.py::test_r1_int_and_float_are_accepted[1.0-1 Byte]": "passed",
+  "test_gerado.py::test_r1_numeric_string_in_binary_mode": "passed",
+  "test_gerado.py::test_r1_numeric_string_in_gnu_mode": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[abc]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[10 kB]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[1,5]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[one]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[   ]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_binary_mode[abc]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_binary_mode[10 kB]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_gnu_mode[abc]": "passed",
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_gnu_mode[10 kB]": "passed",
+  "test_gerado.py::test_r1_none_raises_type_error": "passed",
+  "test_gerado.py::test_r1_none_raises_type_error_in_binary_and_gnu_modes": "passed",
+  "test_gerado.py::test_r1_non_convertible_types_raise_type_error[value0]": "passed",
+  "test_gerado.py::test_r1_non_convertible_types_raise_type_error[value1]": "passed",
+  "test_gerado.py::test_r1_non_convertible_types_raise_type_error[value2]": "passed",
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[1-1 Byte0]": "passed",
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[-1--1 Byte0]": "passed",
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[1.0-1 Byte]": "passed",
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[-1.0--1 Byte]": "passed",
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[1-1 Byte1]": "passed",
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[-1--1 Byte1]": "passed",
+  "test_gerado.py::test_r2_one_byte_in_binary_mode": "passed",
+  "test_gerado.py::test_r2_one_byte_ignores_format": "passed",
+  "test_gerado.py::test_r2_boundary_neighbors_of_one_are_plural[2-2 Bytes]": "passed",
+  "test_gerado.py::test_r2_boundary_neighbors_of_one_are_plural[-2--2 Bytes]": "passed",
+  "test_gerado.py::test_r2_boundary_neighbors_of_one_are_plural[0-0 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[0-0 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[2-2 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[500-500 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[998-998 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[999-999 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[-500--500 Bytes]": "passed",
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[-999--999 Bytes]": "passed",
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[0-0 Bytes]": "passed",
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[2-2 Bytes]": "passed",
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[999-999 Bytes]": "passed",
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[1000-1000 Bytes]": "passed",
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[1023-1023 Bytes]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[0-0B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[1-1B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[-1--1B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[2-2B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[300-300B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[999-999B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[1000-1000B]": "passed",
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[1023-1023B]": "passed",
+  "test_gerado.py::test_r3_gnu_one_is_not_singular_byte": "passed",
+  "test_gerado.py::test_r3_below_base_ignores_format": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[1000-1.0 kB]": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[1001-1.0 kB]": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[1500-1.5 kB]": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[3000000-3.0 MB]": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[123456789-123.5 MB]": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[2500000000-2.5 GB]": "passed",
+  "test_gerado.py::test_r4_decimal_mode_examples[10000000000000000000000000000-10.0 RB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[1-kB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[2-MB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[3-GB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[4-TB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[5-PB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[6-EB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[7-ZB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[8-YB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[9-RB]": "passed",
+  "test_gerado.py::test_r4_decimal_suffix_sequence[10-QB]": "passed",
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-1000--1.0 kB]": "passed",
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-1500--1.5 kB]": "passed",
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-3000000--3.0 MB]": "passed",
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-2500000000--2.5 GB]": "passed",
+  "test_gerado.py::test_r4_decimal_is_default_mode": "passed",
+  "test_gerado.py::test_r4_decimal_lower_boundary_switches_from_bytes_to_kb": "passed",
+  "test_gerado.py::test_r5_binary_mode_examples[1024-1.0 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_mode_examples[1025-1.0 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_mode_examples[1536-1.5 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_mode_examples[3000-2.9 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_mode_examples[4096-4.0 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_mode_examples[3221225472-3.0 GiB]": "passed",
+  "test_gerado.py::test_r5_binary_positional_argument": "passed",
+  "test_gerado.py::test_r5_binary_sign_is_preserved[-4096--4.0 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_sign_is_preserved[-1024--1.0 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_sign_is_preserved[-1536--1.5 KiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[1-KiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[2-MiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[3-GiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[4-TiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[5-PiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[6-EiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[7-ZiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[8-YiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[9-RiB]": "passed",
+  "test_gerado.py::test_r5_binary_suffix_sequence[10-QiB]": "passed",
+  "test_gerado.py::test_r5_binary_lower_boundary_switches_from_bytes_to_kib": "passed",
+  "test_gerado.py::test_r6_gnu_mode_examples[1024-1.0K]": "passed",
+  "test_gerado.py::test_r6_gnu_mode_examples[1536-1.5K]": "passed",
+  "test_gerado.py::test_r6_gnu_mode_examples[3000-2.9K]": "passed",
+  "test_gerado.py::test_r6_gnu_mode_examples[4096-4.0K]": "passed",
+  "test_gerado.py::test_r6_gnu_mode_examples[3221225472-3.0G]": "passed",
+  "test_gerado.py::test_r6_gnu_positional_arguments": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[1-K]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[2-M]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[3-G]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[4-T]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[5-P]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[6-E]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[7-Z]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[8-Y]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[9-R]": "passed",
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[10-Q]": "passed",
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[1023]": "passed",
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[1024]": "passed",
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[3000]": "passed",
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[1073741824]": "passed",
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[3377699720527872]": "passed",
+  "test_gerado.py::test_r6_gnu_with_binary_true_uses_one_letter_suffix": "passed",
+  "test_gerado.py::test_r6_gnu_uses_base_1024_not_1000": "passed",
+  "test_gerado.py::test_r7_format_example_gnu": "passed",
+  "test_gerado.py::test_r7_format_in_decimal_mode[1234567-%.3f-1.235 MB]": "passed",
+  "test_gerado.py::test_r7_format_in_decimal_mode[3000000-%.2f-3.00 MB]": "passed",
+  "test_gerado.py::test_r7_format_in_decimal_mode[3000000-%.0f-3 MB]": "passed",
+  "test_gerado.py::test_r7_format_in_decimal_mode[1500-%.4f-1.5000 kB]": "passed",
+  "test_gerado.py::test_r7_format_in_binary_mode": "passed",
+  "test_gerado.py::test_r7_format_keyword_in_gnu_mode": "passed",
+  "test_gerado.py::test_r7_default_format_is_one_decimal_place": "passed",
+  "test_gerado.py::test_r7_format_preserves_sign": "passed",
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[999999-1.0 MB]": "passed",
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[-999999--1.0 MB]": "passed",
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[999999999-1.0 GB]": "passed",
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[999999000000000000000000000000-1.0 QB]": "passed",
+  "test_gerado.py::test_r8_decimal_just_below_rounding_threshold_keeps_suffix": "passed",
+  "test_gerado.py::test_r8_binary_rounding_to_base_promotes_suffix": "passed",
+  "test_gerado.py::test_r8_binary_just_below_rounding_threshold_keeps_suffix": "passed",
+  "test_gerado.py::test_r8_gnu_rounding_to_base_promotes_suffix": "passed",
+  "test_gerado.py::test_r8_gnu_just_below_rounding_threshold_keeps_suffix": "passed",
+  "test_gerado.py::test_r8_more_precise_format_does_not_reach_base": "passed",
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[1000000000000000000000000000000-1.0 QB]": "passed",
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[1000000000000000000000000000000000-1000.0 QB]": "passed",
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[30000000000000000000000000000000000-30000.0 QB]": "passed",
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[1000000000000000000000000000000000000-1000000.0 QB]": "passed",
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[-30000000000000000000000000000000000--30000.0 QB]": "passed",
+  "test_gerado.py::test_r9_binary_beyond_largest_suffix[1267650600228229401496703205376-1.0 QiB]": "passed",
+  "test_gerado.py::test_r9_binary_beyond_largest_suffix[1298074214633706907132624082305024-1024.0 QiB]": "passed",
+  "test_gerado.py::test_r9_binary_beyond_largest_suffix[2596148429267413814265248164610048-2048.0 QiB]": "passed",
+  "test_gerado.py::test_r9_gnu_beyond_largest_suffix[1267650600228229401496703205376-1.0Q]": "passed",
+  "test_gerado.py::test_r9_gnu_beyond_largest_suffix[1298074214633706907132624082305024-1024.0Q]": "passed",
+  "test_gerado.py::test_r9_gnu_beyond_largest_suffix[2596148429267413814265248164610048-2048.0Q]": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_r1_numeric_string_is_converted[3000000-3.0 MB]": [
+   {
+    "value": "3000000",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[1000-1.0 kB]": [
+   {
+    "value": "1000",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[999-999 Bytes]": [
+   {
+    "value": "999",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[0-0 Bytes]": [
+   {
+    "value": "0",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[1-1 Byte]": [
+   {
+    "value": "1",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[-1--1 Byte]": [
+   {
+    "value": "-1",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[1e6-1.0 MB]": [
+   {
+    "value": "1e6",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[  1000  -1.0 kB]": [
+   {
+    "value": "  1000  ",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_is_converted[-3000000--3.0 MB]": [
+   {
+    "value": "-3000000",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_int_and_float_are_accepted[3000000-3.0 MB]": [
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_int_and_float_are_accepted[3000000.0-3.0 MB]": [
+   {
+    "value": 3000000.0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_int_and_float_are_accepted[1000.0-1.0 kB]": [
+   {
+    "value": 1000.0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_int_and_float_are_accepted[1500.5-1.5 kB]": [
+   {
+    "value": 1500.5,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_int_and_float_are_accepted[0.0-0 Bytes]": [
+   {
+    "value": 0.0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_int_and_float_are_accepted[1.0-1 Byte]": [
+   {
+    "value": 1.0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_in_binary_mode": [
+   {
+    "value": "4096",
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_numeric_string_in_gnu_mode": [
+   {
+    "value": "3000",
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[abc]": [
+   {
+    "value": "abc",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[]": [
+   {
+    "value": "",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[10 kB]": [
+   {
+    "value": "10 kB",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[1,5]": [
+   {
+    "value": "1,5",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[one]": [
+   {
+    "value": "one",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error[   ]": [
+   {
+    "value": "   ",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_binary_mode[abc]": [
+   {
+    "value": "abc",
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_binary_mode[10 kB]": [
+   {
+    "value": "10 kB",
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_gnu_mode[abc]": [
+   {
+    "value": "abc",
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_numeric_string_raises_value_error_in_gnu_mode[10 kB]": [
+   {
+    "value": "10 kB",
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_none_raises_type_error": [
+   {
+    "value": null,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_none_raises_type_error_in_binary_and_gnu_modes": [
+   {
+    "value": null,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": null,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_convertible_types_raise_type_error[value0]": [
+   {
+    "value": [],
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_convertible_types_raise_type_error[value1]": [
+   {
+    "value": {},
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_non_convertible_types_raise_type_error[value2]": [
+   {
+    "value": "<object object at 0x7f4241d82160>",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[1-1 Byte0]": [
+   {
+    "value": 1,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[-1--1 Byte0]": [
+   {
+    "value": -1,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[1.0-1 Byte]": [
+   {
+    "value": 1.0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[-1.0--1 Byte]": [
+   {
+    "value": -1.0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[1-1 Byte1]": [
+   {
+    "value": "1",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_singular_with_sign_preserved[-1--1 Byte1]": [
+   {
+    "value": "-1",
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_in_binary_mode": [
+   {
+    "value": 1,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": -1,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_one_byte_ignores_format": [
+   {
+    "value": 1,
+    "binary": false,
+    "gnu": false,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r2_boundary_neighbors_of_one_are_plural[2-2 Bytes]": [
+   {
+    "value": 2,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_boundary_neighbors_of_one_are_plural[-2--2 Bytes]": [
+   {
+    "value": -2,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_boundary_neighbors_of_one_are_plural[0-0 Bytes]": [
+   {
+    "value": 0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[0-0 Bytes]": [
+   {
+    "value": 0,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[2-2 Bytes]": [
+   {
+    "value": 2,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[500-500 Bytes]": [
+   {
+    "value": 500,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[998-998 Bytes]": [
+   {
+    "value": 998,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[999-999 Bytes]": [
+   {
+    "value": 999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[-500--500 Bytes]": [
+   {
+    "value": -500,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_decimal_below_base_returns_bytes[-999--999 Bytes]": [
+   {
+    "value": -999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[0-0 Bytes]": [
+   {
+    "value": 0,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[2-2 Bytes]": [
+   {
+    "value": 2,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[999-999 Bytes]": [
+   {
+    "value": 999,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[1000-1000 Bytes]": [
+   {
+    "value": 1000,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_binary_below_base_1024_returns_bytes[1023-1023 Bytes]": [
+   {
+    "value": 1023,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[0-0B]": [
+   {
+    "value": 0,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[1-1B]": [
+   {
+    "value": 1,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[-1--1B]": [
+   {
+    "value": -1,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[2-2B]": [
+   {
+    "value": 2,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[300-300B]": [
+   {
+    "value": 300,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[999-999B]": [
+   {
+    "value": 999,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[1000-1000B]": [
+   {
+    "value": 1000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_below_base_returns_n_b_without_space[1023-1023B]": [
+   {
+    "value": 1023,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_gnu_one_is_not_singular_byte": [
+   {
+    "value": 1,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 1,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_below_base_ignores_format": [
+   {
+    "value": 999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.3f"
+   },
+   {
+    "value": 1023,
+    "binary": true,
+    "gnu": false,
+    "format": "%.3f"
+   },
+   {
+    "value": 300,
+    "binary": false,
+    "gnu": true,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[1000-1.0 kB]": [
+   {
+    "value": 1000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[1001-1.0 kB]": [
+   {
+    "value": 1001,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[1500-1.5 kB]": [
+   {
+    "value": 1500,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[3000000-3.0 MB]": [
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[123456789-123.5 MB]": [
+   {
+    "value": 123456789,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[2500000000-2.5 GB]": [
+   {
+    "value": 2500000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_mode_examples[10000000000000000000000000000-10.0 RB]": [
+   {
+    "value": 10000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[1-kB]": [
+   {
+    "value": 1000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[2-MB]": [
+   {
+    "value": 1000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[3-GB]": [
+   {
+    "value": 1000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[4-TB]": [
+   {
+    "value": 1000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[5-PB]": [
+   {
+    "value": 1000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[6-EB]": [
+   {
+    "value": 1000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[7-ZB]": [
+   {
+    "value": 1000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[8-YB]": [
+   {
+    "value": 1000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[9-RB]": [
+   {
+    "value": 1000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_suffix_sequence[10-QB]": [
+   {
+    "value": 1000000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-1000--1.0 kB]": [
+   {
+    "value": -1000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-1500--1.5 kB]": [
+   {
+    "value": -1500,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-3000000--3.0 MB]": [
+   {
+    "value": -3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_sign_is_preserved[-2500000000--2.5 GB]": [
+   {
+    "value": -2500000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_is_default_mode": [
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_decimal_lower_boundary_switches_from_bytes_to_kb": [
+   {
+    "value": 999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 1000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_mode_examples[1024-1.0 KiB]": [
+   {
+    "value": 1024,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_mode_examples[1025-1.0 KiB]": [
+   {
+    "value": 1025,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_mode_examples[1536-1.5 KiB]": [
+   {
+    "value": 1536,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_mode_examples[3000-2.9 KiB]": [
+   {
+    "value": 3000,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_mode_examples[4096-4.0 KiB]": [
+   {
+    "value": 4096,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_mode_examples[3221225472-3.0 GiB]": [
+   {
+    "value": 3221225472,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_positional_argument": [
+   {
+    "value": 3000,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_sign_is_preserved[-4096--4.0 KiB]": [
+   {
+    "value": -4096,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_sign_is_preserved[-1024--1.0 KiB]": [
+   {
+    "value": -1024,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_sign_is_preserved[-1536--1.5 KiB]": [
+   {
+    "value": -1536,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[1-KiB]": [
+   {
+    "value": 1024,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[2-MiB]": [
+   {
+    "value": 1048576,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[3-GiB]": [
+   {
+    "value": 1073741824,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[4-TiB]": [
+   {
+    "value": 1099511627776,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[5-PiB]": [
+   {
+    "value": 1125899906842624,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[6-EiB]": [
+   {
+    "value": 1152921504606846976,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[7-ZiB]": [
+   {
+    "value": 1180591620717411303424,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[8-YiB]": [
+   {
+    "value": 1208925819614629174706176,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[9-RiB]": [
+   {
+    "value": 1237940039285380274899124224,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_suffix_sequence[10-QiB]": [
+   {
+    "value": 1267650600228229401496703205376,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_binary_lower_boundary_switches_from_bytes_to_kib": [
+   {
+    "value": 1023,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 1024,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_mode_examples[1024-1.0K]": [
+   {
+    "value": 1024,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_mode_examples[1536-1.5K]": [
+   {
+    "value": 1536,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_mode_examples[3000-2.9K]": [
+   {
+    "value": 3000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_mode_examples[4096-4.0K]": [
+   {
+    "value": 4096,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_mode_examples[3221225472-3.0G]": [
+   {
+    "value": 3221225472,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_positional_arguments": [
+   {
+    "value": 3000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[1-K]": [
+   {
+    "value": 1024,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[2-M]": [
+   {
+    "value": 1048576,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[3-G]": [
+   {
+    "value": 1073741824,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[4-T]": [
+   {
+    "value": 1099511627776,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[5-P]": [
+   {
+    "value": 1125899906842624,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[6-E]": [
+   {
+    "value": 1152921504606846976,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[7-Z]": [
+   {
+    "value": 1180591620717411303424,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[8-Y]": [
+   {
+    "value": 1208925819614629174706176,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[9-R]": [
+   {
+    "value": 1237940039285380274899124224,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_suffix_sequence_without_space[10-Q]": [
+   {
+    "value": 1267650600228229401496703205376,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[1023]": [
+   {
+    "value": 1023,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 1023,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[1024]": [
+   {
+    "value": 1024,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 1024,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[3000]": [
+   {
+    "value": 3000,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 3000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[1073741824]": [
+   {
+    "value": 1073741824,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 1073741824,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_ignores_binary_parameter[3377699720527872]": [
+   {
+    "value": 3377699720527872,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 3377699720527872,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_with_binary_true_uses_one_letter_suffix": [
+   {
+    "value": 3000,
+    "binary": true,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_gnu_uses_base_1024_not_1000": [
+   {
+    "value": 1000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   },
+   {
+    "value": 1024,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_example_gnu": [
+   {
+    "value": 3000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_in_decimal_mode[1234567-%.3f-1.235 MB]": [
+   {
+    "value": 1234567,
+    "binary": false,
+    "gnu": false,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_in_decimal_mode[3000000-%.2f-3.00 MB]": [
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.2f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_in_decimal_mode[3000000-%.0f-3 MB]": [
+   {
+    "value": 3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.0f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_in_decimal_mode[1500-%.4f-1.5000 kB]": [
+   {
+    "value": 1500,
+    "binary": false,
+    "gnu": false,
+    "format": "%.4f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_in_binary_mode": [
+   {
+    "value": 3000,
+    "binary": true,
+    "gnu": false,
+    "format": "%.2f"
+   },
+   {
+    "value": 3000,
+    "binary": true,
+    "gnu": false,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_keyword_in_gnu_mode": [
+   {
+    "value": 3000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_default_format_is_one_decimal_place": [
+   {
+    "value": 1234567,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 1234567,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 1234567,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_format_preserves_sign": [
+   {
+    "value": -3000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.2f"
+   }
+  ],
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[999999-1.0 MB]": [
+   {
+    "value": 999999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[-999999--1.0 MB]": [
+   {
+    "value": -999999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[999999999-1.0 GB]": [
+   {
+    "value": 999999999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_decimal_rounding_to_base_promotes_suffix[999999000000000000000000000000-1.0 QB]": [
+   {
+    "value": 999999000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_decimal_just_below_rounding_threshold_keeps_suffix": [
+   {
+    "value": 999949,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_binary_rounding_to_base_promotes_suffix": [
+   {
+    "value": 1048575,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   },
+   {
+    "value": 1073741823,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_binary_just_below_rounding_threshold_keeps_suffix": [
+   {
+    "value": 1048000,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_gnu_rounding_to_base_promotes_suffix": [
+   {
+    "value": 1048575,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_gnu_just_below_rounding_threshold_keeps_suffix": [
+   {
+    "value": 1048000,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r8_more_precise_format_does_not_reach_base": [
+   {
+    "value": 999999,
+    "binary": false,
+    "gnu": false,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[1000000000000000000000000000000-1.0 QB]": [
+   {
+    "value": 1000000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[1000000000000000000000000000000000-1000.0 QB]": [
+   {
+    "value": 1000000000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[30000000000000000000000000000000000-30000.0 QB]": [
+   {
+    "value": 30000000000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[1000000000000000000000000000000000000-1000000.0 QB]": [
+   {
+    "value": 1000000000000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_decimal_beyond_largest_suffix[-30000000000000000000000000000000000--30000.0 QB]": [
+   {
+    "value": -30000000000000000000000000000000000,
+    "binary": false,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_binary_beyond_largest_suffix[1267650600228229401496703205376-1.0 QiB]": [
+   {
+    "value": 1267650600228229401496703205376,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_binary_beyond_largest_suffix[1298074214633706907132624082305024-1024.0 QiB]": [
+   {
+    "value": 1298074214633706907132624082305024,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_binary_beyond_largest_suffix[2596148429267413814265248164610048-2048.0 QiB]": [
+   {
+    "value": 2596148429267413814265248164610048,
+    "binary": true,
+    "gnu": false,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_gnu_beyond_largest_suffix[1267650600228229401496703205376-1.0Q]": [
+   {
+    "value": 1267650600228229401496703205376,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_gnu_beyond_largest_suffix[1298074214633706907132624082305024-1024.0Q]": [
+   {
+    "value": 1298074214633706907132624082305024,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r9_gnu_beyond_largest_suffix[2596148429267413814265248164610048-2048.0Q]": [
+   {
+    "value": 2596148429267413814265248164610048,
+    "binary": false,
+    "gnu": true,
+    "format": "%.1f"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 8,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "F6",
+   "F7",
+   "F8"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 1.0,
+ "cobertura_linhas": 1.0,
+ "defeitos": {
+  "d1_base_inclusiva": true,
+  "d2_base_binaria": true,
+  "d3_singular_sem_abs": true,
+  "d4_sem_subir_sufixo": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 59,
+  "equivalentes": 0,
+  "mortos": 59,
+  "sobreviventes": []
+ },
+ "mutation_score": 1.0
+}

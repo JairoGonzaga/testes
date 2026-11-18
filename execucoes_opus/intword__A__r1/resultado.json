@@ -1,0 +1,1043 @@
+{
+ "utilizavel": true,
+ "motivo": null,
+ "n_testes": 138,
+ "n_validos": 138,
+ "falsos_alarmes": 0.0,
+ "testes_referencia": {
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[0-0]": "passed",
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[1-1]": "passed",
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[100-100_0]": "passed",
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[998-998]": "passed",
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[999-999_0]": "passed",
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[100-100_1]": "passed",
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[999-999_1]": "passed",
+  "test_gerado.py::test_r1_retorno_e_string": "passed",
+  "test_gerado.py::test_r1_format_nao_altera_valores_menores_que_mil[%.3f]": "passed",
+  "test_gerado.py::test_r1_format_nao_altera_valores_menores_que_mil[%0.3f]": "passed",
+  "test_gerado.py::test_r1_format_nao_altera_valores_menores_que_mil[%.0f]": "passed",
+  "test_gerado.py::test_r1_fronteira_999_versus_1000": "passed",
+  "test_gerado.py::test_r2_exemplos_da_especificacao[12400-12.4 thousand]": "passed",
+  "test_gerado.py::test_r2_exemplos_da_especificacao[1000000-1.0 million]": "passed",
+  "test_gerado.py::test_r2_exemplos_da_especificacao[1200000000-1.2 billion]": "passed",
+  "test_gerado.py::test_r2_exemplos_da_especificacao[8100000000000000000000000000000000-8.1 decillion]": "passed",
+  "test_gerado.py::test_r2_fronteira_inferior_mil": "passed",
+  "test_gerado.py::test_r2_potencia_exata[3-thousand]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[6-million]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[9-billion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[12-trillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[15-quadrillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[18-quintillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[21-sextillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[24-septillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[27-octillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[30-nonillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[33-decillion]": "passed",
+  "test_gerado.py::test_r2_potencia_exata[100-googol]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[3-thousand]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[6-million]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[9-billion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[12-trillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[15-quadrillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[18-quintillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[21-sextillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[24-septillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[27-octillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[30-nonillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[33-decillion]": "passed",
+  "test_gerado.py::test_r2_quociente_intermediario[100-googol]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[3-thousand]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[6-million]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[9-billion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[12-trillion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[15-quadrillion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[18-quintillion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[21-sextillion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[24-septillion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[27-octillion]": "passed",
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[30-nonillion]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1049-1.0 thousand]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1960-2.0 thousand]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[12345-12.3 thousand]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[999949-999.9 thousand]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1234567-1.2 million]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[123456789-123.5 million]": "passed",
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1000000000000-1.0 trillion]": "passed",
+  "test_gerado.py::test_r3_exemplo_da_especificacao": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[3-million]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[6-billion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[9-trillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[12-quadrillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[15-quintillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[18-sextillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[21-septillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[24-octillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[27-nonillion]": "passed",
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[30-decillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[3-million]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[6-billion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[9-trillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[12-quadrillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[15-quintillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[18-sextillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[21-septillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[24-octillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[27-nonillion]": "passed",
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[30-decillion]": "passed",
+  "test_gerado.py::test_r3_promocao_depende_do_valor_formatado": "passed",
+  "test_gerado.py::test_r3_promocao_com_format_personalizado": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-10.0 googol]": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[15000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-1.5 googol]": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-2.0 googol]": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-100.0 googol]": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[9990000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-999.0 googol]": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-1000.0 googol]": "passed",
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-10000.0 googol]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-1200000--1.2 million]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-1--1]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-100--100]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-999--999]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-1000--1.0 thousand]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-12400--12.4 thousand]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-999999--1.0 million]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-999999999999999999999999999999999--1.0 decillion]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-8100000000000000000000000000000000--8.1 decillion]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000--1.0 googol]": "passed",
+  "test_gerado.py::test_r4_valores_negativos[-100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000--10.0 googol]": "passed",
+  "test_gerado.py::test_r4_negativo_com_format_personalizado": "passed",
+  "test_gerado.py::test_r4_negativo_em_string": "passed",
+  "test_gerado.py::test_r5_exemplo_da_especificacao": "passed",
+  "test_gerado.py::test_r5_format_personalizado[1234567-%.2f-1.23 million]": "passed",
+  "test_gerado.py::test_r5_format_personalizado[12345-%.0f-12 thousand]": "passed",
+  "test_gerado.py::test_r5_format_personalizado[1000-%.2f-1.00 thousand]": "passed",
+  "test_gerado.py::test_r5_format_personalizado[12400-%.3f-12.400 thousand]": "passed",
+  "test_gerado.py::test_r5_format_personalizado[100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-%.2f-10.00 googol]": "passed",
+  "test_gerado.py::test_r5_format_personalizado[8100000000000000000000000000000000-%.2f-8.10 decillion]": "passed",
+  "test_gerado.py::test_r5_format_padrao_e_uma_casa_decimal": "passed",
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[1000-1.0 thousand]": "passed",
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[12400-12.4 thousand]": "passed",
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[999-999]": "passed",
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[0-0]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[0.9-0]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[999.9-999]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[-999.9--999]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[1000.9-1.0 thousand]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[12400.99-12.4 thousand]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[1200000.5-1.2 million]": "passed",
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[1200000000.0-1.2 billion]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[None-None]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[abc-abc]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[-]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[12.5-12.5]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[1e3-1e3]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[valor5-[1, 2]]": "passed",
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[valor6-{}]": "passed",
+  "test_gerado.py::test_r6_objeto_inconvertivel_retorna_str_do_objeto": "passed",
+  "test_gerado.py::test_r6_inconvertivel_com_format_personalizado": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos[inf-+Inf0]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos[inf-+Inf1]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos[-inf--Inf0]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos[-inf--Inf1]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos[nan-NaN0]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos[nan-NaN1]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos_com_format_personalizado[inf-+Inf]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos_com_format_personalizado[-inf--Inf]": "passed",
+  "test_gerado.py::test_r7_valores_nao_finitos_com_format_personalizado[nan-NaN]": "passed"
+ },
+ "mensagens_referencia": {},
+ "chamadas_por_teste": {
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[0-0]": [
+   {
+    "value": 0,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[1-1]": [
+   {
+    "value": 1,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[100-100_0]": [
+   {
+    "value": 100,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[998-998]": [
+   {
+    "value": 998,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[999-999_0]": [
+   {
+    "value": 999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[100-100_1]": [
+   {
+    "value": "100",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_valores_menores_que_mil_sem_sufixo[999-999_1]": [
+   {
+    "value": "999",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_retorno_e_string": [
+   {
+    "value": 100,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r1_format_nao_altera_valores_menores_que_mil[%.3f]": [
+   {
+    "value": 999,
+    "format": "%.3f"
+   },
+   {
+    "value": 100,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r1_format_nao_altera_valores_menores_que_mil[%0.3f]": [
+   {
+    "value": 999,
+    "format": "%0.3f"
+   },
+   {
+    "value": 100,
+    "format": "%0.3f"
+   }
+  ],
+  "test_gerado.py::test_r1_format_nao_altera_valores_menores_que_mil[%.0f]": [
+   {
+    "value": 999,
+    "format": "%.0f"
+   },
+   {
+    "value": 100,
+    "format": "%.0f"
+   }
+  ],
+  "test_gerado.py::test_r1_fronteira_999_versus_1000": [
+   {
+    "value": 999,
+    "format": "%.1f"
+   },
+   {
+    "value": 1000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_exemplos_da_especificacao[12400-12.4 thousand]": [
+   {
+    "value": "12400",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_exemplos_da_especificacao[1000000-1.0 million]": [
+   {
+    "value": "1000000",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_exemplos_da_especificacao[1200000000-1.2 billion]": [
+   {
+    "value": 1200000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_exemplos_da_especificacao[8100000000000000000000000000000000-8.1 decillion]": [
+   {
+    "value": 8100000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_fronteira_inferior_mil": [
+   {
+    "value": 1000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[3-thousand]": [
+   {
+    "value": 1000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[6-million]": [
+   {
+    "value": 1000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[9-billion]": [
+   {
+    "value": 1000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[12-trillion]": [
+   {
+    "value": 1000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[15-quadrillion]": [
+   {
+    "value": 1000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[18-quintillion]": [
+   {
+    "value": 1000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[21-sextillion]": [
+   {
+    "value": 1000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[24-septillion]": [
+   {
+    "value": 1000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[27-octillion]": [
+   {
+    "value": 1000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[30-nonillion]": [
+   {
+    "value": 1000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[33-decillion]": [
+   {
+    "value": 1000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_potencia_exata[100-googol]": [
+   {
+    "value": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[3-thousand]": [
+   {
+    "value": 3700,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[6-million]": [
+   {
+    "value": 3700000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[9-billion]": [
+   {
+    "value": 3700000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[12-trillion]": [
+   {
+    "value": 3700000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[15-quadrillion]": [
+   {
+    "value": 3700000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[18-quintillion]": [
+   {
+    "value": 3700000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[21-sextillion]": [
+   {
+    "value": 3700000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[24-septillion]": [
+   {
+    "value": 3700000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[27-octillion]": [
+   {
+    "value": 3700000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[30-nonillion]": [
+   {
+    "value": 3700000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[33-decillion]": [
+   {
+    "value": 3700000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_quociente_intermediario[100-googol]": [
+   {
+    "value": 37000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[3-thousand]": [
+   {
+    "value": 999949,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[6-million]": [
+   {
+    "value": 999949000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[9-billion]": [
+   {
+    "value": 999949000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[12-trillion]": [
+   {
+    "value": 999949000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[15-quadrillion]": [
+   {
+    "value": 999949000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[18-quintillion]": [
+   {
+    "value": 999949000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[21-sextillion]": [
+   {
+    "value": 999949000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[24-septillion]": [
+   {
+    "value": 999949000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[27-octillion]": [
+   {
+    "value": 999949000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_maior_quociente_sem_promocao[30-nonillion]": [
+   {
+    "value": 999949000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1049-1.0 thousand]": [
+   {
+    "value": 1049,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1960-2.0 thousand]": [
+   {
+    "value": 1960,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[12345-12.3 thousand]": [
+   {
+    "value": 12345,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[999949-999.9 thousand]": [
+   {
+    "value": 999949,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1234567-1.2 million]": [
+   {
+    "value": 1234567,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[123456789-123.5 million]": [
+   {
+    "value": 123456789,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r2_formatacao_padrao_com_uma_casa[1000000000000-1.0 trillion]": [
+   {
+    "value": 1000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_exemplo_da_especificacao": [
+   {
+    "value": 999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[3-million]": [
+   {
+    "value": 999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[6-billion]": [
+   {
+    "value": 999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[9-trillion]": [
+   {
+    "value": 999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[12-quadrillion]": [
+   {
+    "value": 999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[15-quintillion]": [
+   {
+    "value": 999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[18-sextillion]": [
+   {
+    "value": 999999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[21-septillion]": [
+   {
+    "value": 999999999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[24-octillion]": [
+   {
+    "value": 999999999999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[27-nonillion]": [
+   {
+    "value": 999999999999999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_valor_imediatamente_abaixo_da_proxima_potencia[30-decillion]": [
+   {
+    "value": 999999999999999999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[3-million]": [
+   {
+    "value": 999960,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[6-billion]": [
+   {
+    "value": 999960000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[9-trillion]": [
+   {
+    "value": 999960000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[12-quadrillion]": [
+   {
+    "value": 999960000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[15-quintillion]": [
+   {
+    "value": 999960000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[18-sextillion]": [
+   {
+    "value": 999960000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[21-septillion]": [
+   {
+    "value": 999960000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[24-octillion]": [
+   {
+    "value": 999960000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[27-nonillion]": [
+   {
+    "value": 999960000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_quociente_arredondado_para_mil[30-decillion]": [
+   {
+    "value": 999960000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_promocao_depende_do_valor_formatado": [
+   {
+    "value": 999999,
+    "format": "%.3f"
+   },
+   {
+    "value": 999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_promocao_com_format_personalizado": [
+   {
+    "value": 999999600,
+    "format": "%.3f"
+   },
+   {
+    "value": 999600,
+    "format": "%.0f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-10.0 googol]": [
+   {
+    "value": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[15000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-1.5 googol]": [
+   {
+    "value": 15000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-2.0 googol]": [
+   {
+    "value": 20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-100.0 googol]": [
+   {
+    "value": 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[9990000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-999.0 googol]": [
+   {
+    "value": 9990000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-1000.0 googol]": [
+   {
+    "value": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r3_acima_de_googol_nao_ha_promocao[100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-10000.0 googol]": [
+   {
+    "value": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-1200000--1.2 million]": [
+   {
+    "value": -1200000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-1--1]": [
+   {
+    "value": -1,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-100--100]": [
+   {
+    "value": -100,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-999--999]": [
+   {
+    "value": -999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-1000--1.0 thousand]": [
+   {
+    "value": -1000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-12400--12.4 thousand]": [
+   {
+    "value": -12400,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-999999--1.0 million]": [
+   {
+    "value": -999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-999999999999999999999999999999999--1.0 decillion]": [
+   {
+    "value": -999999999999999999999999999999999,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-8100000000000000000000000000000000--8.1 decillion]": [
+   {
+    "value": -8100000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000--1.0 googol]": [
+   {
+    "value": -10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_valores_negativos[-100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000--10.0 googol]": [
+   {
+    "value": -100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r4_negativo_com_format_personalizado": [
+   {
+    "value": -1234000,
+    "format": "%0.3f"
+   }
+  ],
+  "test_gerado.py::test_r4_negativo_em_string": [
+   {
+    "value": "-1200000",
+    "format": "%.1f"
+   },
+   {
+    "value": "-999",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r5_exemplo_da_especificacao": [
+   {
+    "value": "1234000",
+    "format": "%0.3f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_personalizado[1234567-%.2f-1.23 million]": [
+   {
+    "value": 1234567,
+    "format": "%.2f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_personalizado[12345-%.0f-12 thousand]": [
+   {
+    "value": 12345,
+    "format": "%.0f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_personalizado[1000-%.2f-1.00 thousand]": [
+   {
+    "value": 1000,
+    "format": "%.2f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_personalizado[12400-%.3f-12.400 thousand]": [
+   {
+    "value": 12400,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_personalizado[100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-%.2f-10.00 googol]": [
+   {
+    "value": 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    "format": "%.2f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_personalizado[8100000000000000000000000000000000-%.2f-8.10 decillion]": [
+   {
+    "value": 8100000000000000000000000000000000,
+    "format": "%.2f"
+   }
+  ],
+  "test_gerado.py::test_r5_format_padrao_e_uma_casa_decimal": [
+   {
+    "value": 1234567,
+    "format": "%.1f"
+   },
+   {
+    "value": 1234567,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[1000-1.0 thousand]": [
+   {
+    "value": "1000",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[12400-12.4 thousand]": [
+   {
+    "value": "12400",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[999-999]": [
+   {
+    "value": "999",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_strings_com_inteiro_sao_aceitas[0-0]": [
+   {
+    "value": "0",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[0.9-0]": [
+   {
+    "value": 0.9,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[999.9-999]": [
+   {
+    "value": 999.9,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[-999.9--999]": [
+   {
+    "value": -999.9,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[1000.9-1.0 thousand]": [
+   {
+    "value": 1000.9,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[12400.99-12.4 thousand]": [
+   {
+    "value": 12400.99,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[1200000.5-1.2 million]": [
+   {
+    "value": 1200000.5,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_floats_sao_truncados_por_int[1200000000.0-1.2 billion]": [
+   {
+    "value": 1200000000.0,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[None-None]": [
+   {
+    "value": null,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[abc-abc]": [
+   {
+    "value": "abc",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[-]": [
+   {
+    "value": "",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[12.5-12.5]": [
+   {
+    "value": "12.5",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[1e3-1e3]": [
+   {
+    "value": "1e3",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[valor5-[1, 2]]": [
+   {
+    "value": [
+     1,
+     2
+    ],
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_valores_inconvertiveis_retornam_str[valor6-{}]": [
+   {
+    "value": {},
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_objeto_inconvertivel_retorna_str_do_objeto": [
+   {
+    "value": "<object object at 0x7f6c98f82640>",
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r6_inconvertivel_com_format_personalizado": [
+   {
+    "value": null,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos[inf-+Inf0]": [
+   {
+    "value": Infinity,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos[inf-+Inf1]": [
+   {
+    "value": Infinity,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos[-inf--Inf0]": [
+   {
+    "value": -Infinity,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos[-inf--Inf1]": [
+   {
+    "value": -Infinity,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos[nan-NaN0]": [
+   {
+    "value": NaN,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos[nan-NaN1]": [
+   {
+    "value": NaN,
+    "format": "%.1f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos_com_format_personalizado[inf-+Inf]": [
+   {
+    "value": Infinity,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos_com_format_personalizado[-inf--Inf]": [
+   {
+    "value": -Infinity,
+    "format": "%.3f"
+   }
+  ],
+  "test_gerado.py::test_r7_valores_nao_finitos_com_format_personalizado[nan-NaN]": [
+   {
+    "value": NaN,
+    "format": "%.3f"
+   }
+  ]
+ },
+ "fronteiras": {
+  "total": 6,
+  "cobertas": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "F6"
+  ],
+  "nao_cobertas": [],
+  "taxa": 1.0
+ },
+ "cobertura_fronteiras": 1.0,
+ "cobertura_ramos": 0.9285714285714286,
+ "cobertura_linhas": 0.972972972972973,
+ "defeitos": {
+  "d1_mil_sem_sufixo": true,
+  "d2_sem_carry": true,
+  "d3_perde_sinal": true,
+  "d4_bisect_left": true
+ },
+ "deteccao_defeitos": 1.0,
+ "mutantes": {
+  "total": 60,
+  "equivalentes": 7,
+  "mortos": 53,
+  "sobreviventes": []
+ },
+ "mutation_score": 1.0
+}

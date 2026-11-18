@@ -1,0 +1,4 @@
+# Mutantes que o gabarito NÃO mata. Inspecione cada um: se for equivalente
+# (comportamento idêntico ao original para qualquer entrada dentro das regras),
+# copie o nome para equivalentes.txt.
+

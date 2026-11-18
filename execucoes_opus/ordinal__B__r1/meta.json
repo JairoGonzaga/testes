@@ -1,0 +1,23 @@
+{
+ "run_id": "ordinal__B__r1",
+ "funcao": "ordinal",
+ "condicao": "B",
+ "repeticao": 1,
+ "piloto": false,
+ "provedor": "arquivo",
+ "modelo": "claude-opus-subagente",
+ "temperatura": null,
+ "max_chamadas": 3,
+ "versao_prompts": "56b903e055",
+ "data": "2026-11-17T21:37:22",
+ "status": "ok",
+ "reparos": 0,
+ "casos_plano": 54,
+ "casos_descartados": 0,
+ "chamadas": 1,
+ "tokens_entrada": 734,
+ "tokens_saida": 2561,
+ "tempo_modelo_s": 59.19,
+ "tempo_total_s": 59.67,
+ "tokens_aproximados": true
+}

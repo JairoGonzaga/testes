@@ -1,0 +1,845 @@
+{
+ "casos": [
+  {
+   "id": "C1",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "último dígito 1 recebe sufixo 'st'",
+   "entrada": {
+    "args": [
+     1
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1st"
+   }
+  },
+  {
+   "id": "C2",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "último dígito 2 recebe sufixo 'nd'",
+   "entrada": {
+    "args": [
+     2
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "2nd"
+   }
+  },
+  {
+   "id": "C3",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "último dígito 3 recebe sufixo 'rd'",
+   "entrada": {
+    "args": [
+     3
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "3rd"
+   }
+  },
+  {
+   "id": "C4",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "último dígito 4 recebe sufixo 'th'",
+   "entrada": {
+    "args": [
+     4
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "4th"
+   }
+  },
+  {
+   "id": "C5",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "zero: último dígito 0 recebe sufixo 'th'",
+   "entrada": {
+    "args": [
+     0
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "0th"
+   }
+  },
+  {
+   "id": "C6",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "último dígito 9 (maior dígito) recebe sufixo 'th'",
+   "entrada": {
+    "args": [
+     9
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "9th"
+   }
+  },
+  {
+   "id": "C7",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "10 termina em 0 e fica logo abaixo da faixa de exceção 11-13: 'th'",
+   "entrada": {
+    "args": [
+     10
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "10th"
+   }
+  },
+  {
+   "id": "C8",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "21 termina em 1 (não é 11): 'st'",
+   "entrada": {
+    "args": [
+     21
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "21st"
+   }
+  },
+  {
+   "id": "C9",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "22 termina em 2 (não é 12): 'nd'",
+   "entrada": {
+    "args": [
+     22
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "22nd"
+   }
+  },
+  {
+   "id": "C10",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "23 termina em 3 (não é 13): 'rd'",
+   "entrada": {
+    "args": [
+     23
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "23rd"
+   }
+  },
+  {
+   "id": "C11",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "exemplo da regra: 1002 recebe 'nd'",
+   "entrada": {
+    "args": [
+     1002
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1002nd"
+   }
+  },
+  {
+   "id": "C12",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "exemplo da regra: 103 recebe 'rd'",
+   "entrada": {
+    "args": [
+     103
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "103rd"
+   }
+  },
+  {
+   "id": "C13",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "101 termina em 01 (não é 11): 'st'",
+   "entrada": {
+    "args": [
+     101
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "101st"
+   }
+  },
+  {
+   "id": "C14",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "100 termina em 0: 'th'",
+   "entrada": {
+    "args": [
+     100
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "100th"
+   }
+  },
+  {
+   "id": "C15",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "57 termina em 7: 'th'",
+   "entrada": {
+    "args": [
+     57
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "57th"
+   }
+  },
+  {
+   "id": "C16",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "inteiro muito grande que termina em 01 recebe 'st'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**20+1"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "100000000000000000001st"
+   }
+  },
+  {
+   "id": "C17",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "11 é exceção: 'th' em vez de 'st'",
+   "entrada": {
+    "args": [
+     11
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "11th"
+   }
+  },
+  {
+   "id": "C18",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "12 é exceção: 'th' em vez de 'nd'",
+   "entrada": {
+    "args": [
+     12
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "12th"
+   }
+  },
+  {
+   "id": "C19",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "13 é exceção: 'th' em vez de 'rd'",
+   "entrada": {
+    "args": [
+     13
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "13th"
+   }
+  },
+  {
+   "id": "C20",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "14 fica logo acima da faixa de exceção 11-13: 'th' pela R1",
+   "entrada": {
+    "args": [
+     14
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "14th"
+   }
+  },
+  {
+   "id": "C21",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "exemplo da regra: 111 termina em 11, então 'th'",
+   "entrada": {
+    "args": [
+     111
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "111th"
+   }
+  },
+  {
+   "id": "C22",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "112 termina em 12, então 'th'",
+   "entrada": {
+    "args": [
+     112
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "112th"
+   }
+  },
+  {
+   "id": "C23",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "113 termina em 13, então 'th'",
+   "entrada": {
+    "args": [
+     113
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "113th"
+   }
+  },
+  {
+   "id": "C24",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "110 termina em 10 (fora da exceção): 'th' pela R1",
+   "entrada": {
+    "args": [
+     110
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "110th"
+   }
+  },
+  {
+   "id": "C25",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "121 termina em 21 (fora da exceção): volta a 'st'",
+   "entrada": {
+    "args": [
+     121
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "121st"
+   }
+  },
+  {
+   "id": "C26",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "1011 termina em 11, então 'th'",
+   "entrada": {
+    "args": [
+     1011
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1011th"
+   }
+  },
+  {
+   "id": "C27",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "2012 termina em 12, então 'th'",
+   "entrada": {
+    "args": [
+     2012
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "2012th"
+   }
+  },
+  {
+   "id": "C28",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "1013 termina em 13, então 'th'",
+   "entrada": {
+    "args": [
+     1013
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1013th"
+   }
+  },
+  {
+   "id": "C29",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "exemplo da regra: a string '5' é convertida com int()",
+   "entrada": {
+    "args": [
+     "5"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "5th"
+   }
+  },
+  {
+   "id": "C30",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "a string '112' é convertida e a exceção da R2 se aplica",
+   "entrada": {
+    "args": [
+     "112"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "112th"
+   }
+  },
+  {
+   "id": "C31",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "a string '1002' é convertida e recebe 'nd'",
+   "entrada": {
+    "args": [
+     "1002"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1002nd"
+   }
+  },
+  {
+   "id": "C32",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "o float 1.5 é truncado para 1",
+   "entrada": {
+    "args": [
+     1.5
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1st"
+   }
+  },
+  {
+   "id": "C33",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "o float 2.9 é truncado para 2, sem arredondar",
+   "entrada": {
+    "args": [
+     2.9
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "2nd"
+   }
+  },
+  {
+   "id": "C34",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "o float 11.9 é truncado para 11, então a R2 se aplica",
+   "entrada": {
+    "args": [
+     11.9
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "11th"
+   }
+  },
+  {
+   "id": "C35",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "o float 0.5 é truncado para 0",
+   "entrada": {
+    "args": [
+     0.5
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "0th"
+   }
+  },
+  {
+   "id": "C36",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "o float 103.0 é convertido para 103",
+   "entrada": {
+    "args": [
+     103.0
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "103rd"
+   }
+  },
+  {
+   "id": "C37",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "exemplo da regra: um texto não numérico é devolvido como str(value)",
+   "entrada": {
+    "args": [
+     "something else"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "something else"
+   }
+  },
+  {
+   "id": "C38",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "exemplo da regra: uma lista é devolvida como str(value)",
+   "entrada": {
+    "args": [
+     [
+      1,
+      2,
+      3
+     ]
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "[1, 2, 3]"
+   }
+  },
+  {
+   "id": "C39",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "None não pode ser convertido com int(): devolve 'None'",
+   "entrada": {
+    "args": [
+     null
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "None"
+   }
+  },
+  {
+   "id": "C40",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "a string vazia não pode ser convertida com int(): devolve ''",
+   "entrada": {
+    "args": [
+     ""
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": ""
+   }
+  },
+  {
+   "id": "C41",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "a string '5.5' falha em int(): devolve o próprio texto",
+   "entrada": {
+    "args": [
+     "5.5"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "5.5"
+   }
+  },
+  {
+   "id": "C42",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "um dicionário vazio é devolvido como str(value)",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "dict()"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "{}"
+   }
+  },
+  {
+   "id": "C43",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "um texto alfabético é devolvido como str(value)",
+   "entrada": {
+    "args": [
+     "abc"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "abc"
+   }
+  },
+  {
+   "id": "C44",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='female' dá o mesmo resultado para 1",
+   "entrada": {
+    "args": [
+     1
+    ],
+    "kwargs": {
+     "gender": "female"
+    }
+   },
+   "esperado": {
+    "retorno": "1st"
+   }
+  },
+  {
+   "id": "C45",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='female' dá o mesmo resultado para 2",
+   "entrada": {
+    "args": [
+     2
+    ],
+    "kwargs": {
+     "gender": "female"
+    }
+   },
+   "esperado": {
+    "retorno": "2nd"
+   }
+  },
+  {
+   "id": "C46",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='female' dá o mesmo resultado para 3",
+   "entrada": {
+    "args": [
+     3
+    ],
+    "kwargs": {
+     "gender": "female"
+    }
+   },
+   "esperado": {
+    "retorno": "3rd"
+   }
+  },
+  {
+   "id": "C47",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='female' mantém a exceção da R2 para 12",
+   "entrada": {
+    "args": [
+     12
+    ],
+    "kwargs": {
+     "gender": "female"
+    }
+   },
+   "esperado": {
+    "retorno": "12th"
+   }
+  },
+  {
+   "id": "C48",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='male' explícito equivale ao padrão",
+   "entrada": {
+    "args": [
+     4
+    ],
+    "kwargs": {
+     "gender": "male"
+    }
+   },
+   "esperado": {
+    "retorno": "4th"
+   }
+  },
+  {
+   "id": "C49",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='female' passado por posição dá o mesmo resultado",
+   "entrada": {
+    "args": [
+     22,
+     "female"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "22nd"
+   }
+  },
+  {
+   "id": "C50",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "gender='male' explícito mantém a exceção da R2 para 111",
+   "entrada": {
+    "args": [
+     111
+    ],
+    "kwargs": {
+     "gender": "male"
+    }
+   },
+   "esperado": {
+    "retorno": "111th"
+   }
+  },
+  {
+   "id": "C51",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "infinito positivo devolve '+Inf'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('inf')"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "+Inf"
+   }
+  },
+  {
+   "id": "C52",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "infinito negativo devolve '-Inf'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('-inf')"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-Inf"
+   }
+  },
+  {
+   "id": "C53",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "NaN devolve 'NaN'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('nan')"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "NaN"
+   }
+  },
+  {
+   "id": "C54",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "infinito positivo com gender='female' também devolve '+Inf'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('inf')"
+     }
+    ],
+    "kwargs": {
+     "gender": "female"
+    }
+   },
+   "esperado": {
+    "retorno": "+Inf"
+   }
+  }
+ ]
+}

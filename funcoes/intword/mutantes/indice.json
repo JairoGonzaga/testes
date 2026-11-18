@@ -1,0 +1,242 @@
+{
+ "m001": {
+  "linha": 9,
+  "descricao": "10 → 11"
+ },
+ "m002": {
+  "linha": 9,
+  "descricao": "** → *"
+ },
+ "m003": {
+  "linha": 9,
+  "descricao": "3 → 4"
+ },
+ "m004": {
+  "linha": 9,
+  "descricao": "6 → 7"
+ },
+ "m005": {
+  "linha": 9,
+  "descricao": "9 → 10"
+ },
+ "m006": {
+  "linha": 9,
+  "descricao": "12 → 13"
+ },
+ "m007": {
+  "linha": 9,
+  "descricao": "15 → 16"
+ },
+ "m008": {
+  "linha": 9,
+  "descricao": "18 → 19"
+ },
+ "m009": {
+  "linha": 9,
+  "descricao": "21 → 22"
+ },
+ "m010": {
+  "linha": 9,
+  "descricao": "24 → 25"
+ },
+ "m011": {
+  "linha": 9,
+  "descricao": "27 → 28"
+ },
+ "m012": {
+  "linha": 9,
+  "descricao": "30 → 31"
+ },
+ "m013": {
+  "linha": 9,
+  "descricao": "33 → 34"
+ },
+ "m014": {
+  "linha": 9,
+  "descricao": "100 → 101"
+ },
+ "m015": {
+  "linha": 11,
+  "descricao": "'thousand' → 'XXthousandXX'"
+ },
+ "m016": {
+  "linha": 11,
+  "descricao": "'million' → 'XXmillionXX'"
+ },
+ "m017": {
+  "linha": 11,
+  "descricao": "'billion' → 'XXbillionXX'"
+ },
+ "m018": {
+  "linha": 11,
+  "descricao": "'trillion' → 'XXtrillionXX'"
+ },
+ "m019": {
+  "linha": 11,
+  "descricao": "'quadrillion' → 'XXquadrillionXX'"
+ },
+ "m020": {
+  "linha": 11,
+  "descricao": "'quintillion' → 'XXquintillionXX'"
+ },
+ "m021": {
+  "linha": 12,
+  "descricao": "'sextillion' → 'XXsextillionXX'"
+ },
+ "m022": {
+  "linha": 12,
+  "descricao": "'septillion' → 'XXseptillionXX'"
+ },
+ "m023": {
+  "linha": 12,
+  "descricao": "'octillion' → 'XXoctillionXX'"
+ },
+ "m024": {
+  "linha": 12,
+  "descricao": "'nonillion' → 'XXnonillionXX'"
+ },
+ "m025": {
+  "linha": 12,
+  "descricao": "'decillion' → 'XXdecillionXX'"
+ },
+ "m026": {
+  "linha": 12,
+  "descricao": "'googol' → 'XXgoogolXX'"
+ },
+ "m027": {
+  "linha": 18,
+  "descricao": "'NaN' → 'XXNaNXX'"
+ },
+ "m028": {
+  "linha": 19,
+  "descricao": "0 → 1"
+ },
+ "m029": {
+  "linha": 19,
+  "descricao": "< → <="
+ },
+ "m030": {
+  "linha": 19,
+  "descricao": "and → or"
+ },
+ "m031": {
+  "linha": 20,
+  "descricao": "'-Inf' → 'XX-InfXX'"
+ },
+ "m032": {
+  "linha": 21,
+  "descricao": "0 → 1"
+ },
+ "m033": {
+  "linha": 21,
+  "descricao": "> → >="
+ },
+ "m034": {
+  "linha": 21,
+  "descricao": "and → or"
+ },
+ "m035": {
+  "linha": 22,
+  "descricao": "'+Inf' → 'XX+InfXX'"
+ },
+ "m036": {
+  "linha": 23,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m037": {
+  "linha": 26,
+  "descricao": "'%.1f' → 'XX%.1fXX'"
+ },
+ "m038": {
+  "linha": 28,
+  "descricao": "remove not"
+ },
+ "m039": {
+  "linha": 34,
+  "descricao": "0 → 1"
+ },
+ "m040": {
+  "linha": 34,
+  "descricao": "< → <="
+ },
+ "m041": {
+  "linha": 35,
+  "descricao": "1 → 2"
+ },
+ "m042": {
+  "linha": 35,
+  "descricao": "* → /"
+ },
+ "m043": {
+  "linha": 36,
+  "descricao": "'-' → 'XX-XX'"
+ },
+ "m044": {
+  "linha": 38,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m045": {
+  "linha": 40,
+  "descricao": "0 → 1"
+ },
+ "m046": {
+  "linha": 40,
+  "descricao": "< → <="
+ },
+ "m047": {
+  "linha": 44,
+  "descricao": "== → !="
+ },
+ "m048": {
+  "linha": 46,
+  "descricao": "1 → 2"
+ },
+ "m049": {
+  "linha": 46,
+  "descricao": "- → +"
+ },
+ "m050": {
+  "linha": 48,
+  "descricao": "/ → *"
+ },
+ "m051": {
+  "linha": 49,
+  "descricao": "% → //"
+ },
+ "m052": {
+  "linha": 51,
+  "descricao": "remove not"
+ },
+ "m053": {
+  "linha": 51,
+  "descricao": "1 → 2"
+ },
+ "m054": {
+  "linha": 51,
+  "descricao": "+ → -"
+ },
+ "m055": {
+  "linha": 51,
+  "descricao": "// → /"
+ },
+ "m056": {
+  "linha": 51,
+  "descricao": "== → !="
+ },
+ "m057": {
+  "linha": 51,
+  "descricao": "and → or"
+ },
+ "m058": {
+  "linha": 52,
+  "descricao": "1 → 2"
+ },
+ "m059": {
+  "linha": 52,
+  "descricao": "+ → -"
+ },
+ "m060": {
+  "linha": 56,
+  "descricao": "% → //"
+ }
+}

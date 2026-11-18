@@ -1,0 +1,7 @@
+{
+  "nome_funcao": "validate",
+  "assinatura": "def validate(number: str) -> str",
+  "excecoes": ["ValidationError", "InvalidFormat", "InvalidLength", "InvalidChecksum"],
+  "origem": "python-stdnum 2.2 — stdnum/br/cpf.py (licença LGPL-2.1+)",
+  "piloto": false
+}

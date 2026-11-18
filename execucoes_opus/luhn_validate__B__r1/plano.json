@@ -1,0 +1,877 @@
+{
+ "casos": [
+  {
+   "id": "C1",
+   "regra": "R1",
+   "tipo": "invalida",
+   "descricao": "string vazia é falsa e levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     ""
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C2",
+   "regra": "R1",
+   "tipo": "invalida",
+   "descricao": "None é falso e levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     null
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C3",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "inteiro 0 é falso e levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     0
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C4",
+   "regra": "R1",
+   "tipo": "invalida",
+   "descricao": "False é falso e levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     false
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C5",
+   "regra": "R1",
+   "tipo": "invalida",
+   "descricao": "None continua levantando InvalidFormat quando se informa outro alfabeto",
+   "entrada": {
+    "args": [
+     null
+    ],
+    "kwargs": {
+     "alphabet": "0123456789abcdef"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C6",
+   "regra": "R1",
+   "tipo": "invalida",
+   "descricao": "erro de formato para string vazia também é um ValidationError (classe base)",
+   "entrada": {
+    "args": [
+     ""
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValidationError"
+   }
+  },
+  {
+   "id": "C7",
+   "regra": "R1",
+   "tipo": "invalida",
+   "descricao": "erro de formato para None também é um ValueError",
+   "entrada": {
+    "args": [
+     null
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValueError"
+   }
+  },
+  {
+   "id": "C8",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "a string '0' não é falsa; soma 0 é múltipla de 10, então é válida e retornada",
+   "entrada": {
+    "args": [
+     "0"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "0"
+   }
+  },
+  {
+   "id": "C9",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "espaços não são removidos: número com espaços levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "7992 7398 713"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C10",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "hífens não são removidos e levantam InvalidFormat",
+   "entrada": {
+    "args": [
+     "7992-7398-713"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C11",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "espaço no início, fora do alfabeto, levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     " 79927398713"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C12",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "quebra de linha no final, fora do alfabeto, levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "79927398713\n"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C13",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "letra no alfabeto padrão levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "7992739871a"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C14",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "inteiro negativo: str(-18) contém '-', fora do alfabeto",
+   "entrada": {
+    "args": [
+     -18
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C15",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "float: str(18.0) contém '.', fora do alfabeto",
+   "entrada": {
+    "args": [
+     18.0
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C16",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "dígitos que não estão no alfabeto informado levantam InvalidFormat",
+   "entrada": {
+    "args": [
+     "18"
+    ],
+    "kwargs": {
+     "alphabet": "abcdefghij"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C17",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "caractere '2' fora do alfabeto binário levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "2"
+    ],
+    "kwargs": {
+     "alphabet": "01"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C18",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "com separadores e dígito verificador errado, prevalece InvalidFormat",
+   "entrada": {
+    "args": [
+     "7992 7398 710"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C19",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "dígitos Unicode não ASCII (arábico-índicos) não estão no alfabeto padrão",
+   "entrada": {
+    "args": [
+     "١٨"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C20",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "número hexadecimal com o alfabeto decimal padrão levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "1a2b1"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C21",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "'18': 8 + (2·1)=2, soma 10, válido",
+   "entrada": {
+    "args": [
+     "18"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "18"
+   }
+  },
+  {
+   "id": "C22",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "'59': o dobro de 5 dá 10 e vale 1+0=1; 9+1=10, válido",
+   "entrada": {
+    "args": [
+     "59"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "59"
+   }
+  },
+  {
+   "id": "C23",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "'91': o dobro do maior dígito (18) vale 1+8=9; 1+9=10, válido",
+   "entrada": {
+    "args": [
+     "91"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "91"
+   }
+  },
+  {
+   "id": "C24",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "'26': 6 + 4 = 10, válido",
+   "entrada": {
+    "args": [
+     "26"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "26"
+   }
+  },
+  {
+   "id": "C25",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "'00': soma 0 é múltipla de 10, válido",
+   "entrada": {
+    "args": [
+     "00"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "00"
+   }
+  },
+  {
+   "id": "C26",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "zero à esquerda é aceito e preservado: '018' tem soma 10",
+   "entrada": {
+    "args": [
+     "018"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "018"
+   }
+  },
+  {
+   "id": "C27",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "cartão de 16 dígitos (comprimento par) válido: soma 30",
+   "entrada": {
+    "args": [
+     "4111111111111111"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "4111111111111111"
+   }
+  },
+  {
+   "id": "C28",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "cartão de 16 dígitos válido com dobros acima de 9: soma 60",
+   "entrada": {
+    "args": [
+     "1234567812345670"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1234567812345670"
+   }
+  },
+  {
+   "id": "C29",
+   "regra": "R3",
+   "tipo": "invalida",
+   "descricao": "'81': quem é dobrado é a 2ª posição a partir da direita (1 + 7 = 8), inválido",
+   "entrada": {
+    "args": [
+     "81"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C30",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "um único dígito não nulo '5' tem soma 5, inválido",
+   "entrada": {
+    "args": [
+     "5"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C31",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "exemplo da especificação: '79927398710' levanta InvalidChecksum",
+   "entrada": {
+    "args": [
+     "79927398710"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C32",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "dígito verificador uma unidade abaixo do correto",
+   "entrada": {
+    "args": [
+     "79927398712"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C33",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "dígito verificador uma unidade acima do correto",
+   "entrada": {
+    "args": [
+     "79927398714"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C34",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "cartão de 16 dígitos com o último dígito alterado",
+   "entrada": {
+    "args": [
+     "4111111111111112"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C35",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "'10': soma 2, inválido",
+   "entrada": {
+    "args": [
+     "10"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C36",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "inteiro com checksum inválido levanta InvalidChecksum",
+   "entrada": {
+    "args": [
+     79927398710
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C37",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "InvalidChecksum é um ValidationError",
+   "entrada": {
+    "args": [
+     "79927398710"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValidationError"
+   }
+  },
+  {
+   "id": "C38",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "InvalidChecksum é um ValueError",
+   "entrada": {
+    "args": [
+     "79927398710"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValueError"
+   }
+  },
+  {
+   "id": "C39",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "exemplo da especificação: retorna a própria string válida",
+   "entrada": {
+    "args": [
+     "79927398713"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "79927398713"
+   }
+  },
+  {
+   "id": "C40",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "inteiro válido é retornado como o mesmo inteiro",
+   "entrada": {
+    "args": [
+     79927398713
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": 79927398713
+   }
+  },
+  {
+   "id": "C41",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "inteiro curto válido 18 é retornado como 18",
+   "entrada": {
+    "args": [
+     18
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": 18
+   }
+  },
+  {
+   "id": "C42",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "inteiro de 16 dígitos válido é retornado sem alteração",
+   "entrada": {
+    "args": [
+     4111111111111111
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": 4111111111111111
+   }
+  },
+  {
+   "id": "C43",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "exemplo da especificação: '1a2b1' em base 16 (alfabeto por kwarg) é válido",
+   "entrada": {
+    "args": [
+     "1a2b1"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789abcdef"
+    }
+   },
+   "esperado": {
+    "retorno": "1a2b1"
+   }
+  },
+  {
+   "id": "C44",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "alfabeto hexadecimal passado como argumento posicional",
+   "entrada": {
+    "args": [
+     "1a2b1",
+     "0123456789abcdef"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1a2b1"
+   }
+  },
+  {
+   "id": "C45",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "diferencia maiúsculas: '1A2B1' com alfabeto em minúsculas levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "1A2B1"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789abcdef"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C46",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "'1A2B1' com alfabeto em maiúsculas é válido",
+   "entrada": {
+    "args": [
+     "1A2B1"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789ABCDEF"
+    }
+   },
+   "esperado": {
+    "retorno": "1A2B1"
+   }
+  },
+  {
+   "id": "C47",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "diferencia maiúsculas: '1a2b1' com alfabeto em maiúsculas levanta InvalidFormat",
+   "entrada": {
+    "args": [
+     "1a2b1"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789ABCDEF"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C48",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "base 16: '1a2b2' tem soma 17, não múltipla de 16",
+   "entrada": {
+    "args": [
+     "1a2b2"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789abcdef"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C49",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "'18' é válido em base 10, mas em base 16 a soma 10 não é múltipla de 16",
+   "entrada": {
+    "args": [
+     "18"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789abcdef"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C50",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "base 16, maior valor dobrado: 'f' vale 15, o dobro 30 dá 1+14=15; 1+15=16, válido",
+   "entrada": {
+    "args": [
+     "f1"
+    ],
+    "kwargs": {
+     "alphabet": "0123456789abcdef"
+    }
+   },
+   "esperado": {
+    "retorno": "f1"
+   }
+  },
+  {
+   "id": "C51",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "base 2: '11' tem soma 1 + (2//2 + 2%2) = 2, válido",
+   "entrada": {
+    "args": [
+     "11"
+    ],
+    "kwargs": {
+     "alphabet": "01"
+    }
+   },
+   "esperado": {
+    "retorno": "11"
+   }
+  },
+  {
+   "id": "C52",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "base 2: '101' tem soma 1+0+1 = 2, válido",
+   "entrada": {
+    "args": [
+     "101"
+    ],
+    "kwargs": {
+     "alphabet": "01"
+    }
+   },
+   "esperado": {
+    "retorno": "101"
+   }
+  },
+  {
+   "id": "C53",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "base 2: '1' tem soma 1, não múltipla de 2",
+   "entrada": {
+    "args": [
+     "1"
+    ],
+    "kwargs": {
+     "alphabet": "01"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C54",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "o valor é a posição no alfabeto: com '9876543210', '81' tem soma 8 + 2 = 10, válido",
+   "entrada": {
+    "args": [
+     "81"
+    ],
+    "kwargs": {
+     "alphabet": "9876543210"
+    }
+   },
+   "esperado": {
+    "retorno": "81"
+   }
+  },
+  {
+   "id": "C55",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "com o alfabeto invertido, '18' tem soma 1 + 7 = 8, inválido",
+   "entrada": {
+    "args": [
+     "18"
+    ],
+    "kwargs": {
+     "alphabet": "9876543210"
+    }
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C56",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "alfabeto de letras 'abcdefghij' com o equivalente de 79927398713 é válido",
+   "entrada": {
+    "args": [
+     "hjjchdjihbd"
+    ],
+    "kwargs": {
+     "alphabet": "abcdefghij"
+    }
+   },
+   "esperado": {
+    "retorno": "hjjchdjihbd"
+   }
+  }
+ ]
+}

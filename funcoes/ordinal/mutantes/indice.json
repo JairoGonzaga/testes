@@ -1,0 +1,126 @@
+{
+ "m001": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m002": {
+  "linha": 9,
+  "descricao": "'st' → 'XXstXX'"
+ },
+ "m003": {
+  "linha": 9,
+  "descricao": "'nd' → 'XXndXX'"
+ },
+ "m004": {
+  "linha": 9,
+  "descricao": "'rd' → 'XXrdXX'"
+ },
+ "m005": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m006": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m007": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m008": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m009": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m010": {
+  "linha": 9,
+  "descricao": "'th' → 'XXthXX'"
+ },
+ "m011": {
+  "linha": 14,
+  "descricao": "'NaN' → 'XXNaNXX'"
+ },
+ "m012": {
+  "linha": 15,
+  "descricao": "0 → 1"
+ },
+ "m013": {
+  "linha": 15,
+  "descricao": "< → <="
+ },
+ "m014": {
+  "linha": 15,
+  "descricao": "and → or"
+ },
+ "m015": {
+  "linha": 16,
+  "descricao": "'-Inf' → 'XX-InfXX'"
+ },
+ "m016": {
+  "linha": 17,
+  "descricao": "0 → 1"
+ },
+ "m017": {
+  "linha": 17,
+  "descricao": "> → >="
+ },
+ "m018": {
+  "linha": 17,
+  "descricao": "and → or"
+ },
+ "m019": {
+  "linha": 18,
+  "descricao": "'+Inf' → 'XX+InfXX'"
+ },
+ "m020": {
+  "linha": 19,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m021": {
+  "linha": 22,
+  "descricao": "'male' → 'XXmaleXX'"
+ },
+ "m022": {
+  "linha": 24,
+  "descricao": "remove not"
+ },
+ "m023": {
+  "linha": 29,
+  "descricao": "100 → 101"
+ },
+ "m024": {
+  "linha": 29,
+  "descricao": "% → //"
+ },
+ "m025": {
+  "linha": 29,
+  "descricao": "11 → 12"
+ },
+ "m026": {
+  "linha": 29,
+  "descricao": "12 → 13"
+ },
+ "m027": {
+  "linha": 29,
+  "descricao": "13 → 14"
+ },
+ "m028": {
+  "linha": 29,
+  "descricao": "in → not in"
+ },
+ "m029": {
+  "linha": 29,
+  "descricao": "0 → 1"
+ },
+ "m030": {
+  "linha": 29,
+  "descricao": "10 → 11"
+ },
+ "m031": {
+  "linha": 29,
+  "descricao": "% → //"
+ }
+}

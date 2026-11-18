@@ -1,0 +1,816 @@
+{
+ "casos": [
+  {
+   "id": "C1",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "inteiro menor que 1000 é retornado como string sem sufixo",
+   "entrada": {
+    "args": [
+     100
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "100"
+   }
+  },
+  {
+   "id": "C2",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "zero é retornado como string sem sufixo",
+   "entrada": {
+    "args": [
+     0
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "0"
+   }
+  },
+  {
+   "id": "C3",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "999, o maior valor abaixo de 1000, não recebe sufixo",
+   "entrada": {
+    "args": [
+     999
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "999"
+   }
+  },
+  {
+   "id": "C4",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "string '100' é retornada como '100' (exemplo da regra)",
+   "entrada": {
+    "args": [
+     "100"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "100"
+   }
+  },
+  {
+   "id": "C5",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "1000 é o primeiro valor com sufixo thousand",
+   "entrada": {
+    "args": [
+     1000
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 thousand"
+   }
+  },
+  {
+   "id": "C6",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "string '12400' vira '12.4 thousand' (exemplo da regra)",
+   "entrada": {
+    "args": [
+     "12400"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "12.4 thousand"
+   }
+  },
+  {
+   "id": "C7",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "inteiro 12400 vira '12.4 thousand'",
+   "entrada": {
+    "args": [
+     12400
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "12.4 thousand"
+   }
+  },
+  {
+   "id": "C8",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^6 exato usa million",
+   "entrada": {
+    "args": [
+     1000000
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 million"
+   }
+  },
+  {
+   "id": "C9",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "1_200_000_000 vira '1.2 billion' (exemplo da regra)",
+   "entrada": {
+    "args": [
+     1200000000
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.2 billion"
+   }
+  },
+  {
+   "id": "C10",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^12 exato usa trillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**12"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 trillion"
+   }
+  },
+  {
+   "id": "C11",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "3.5 * 10^12 vira '3.5 trillion'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "35 * 10**11"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "3.5 trillion"
+   }
+  },
+  {
+   "id": "C12",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^15 exato usa quadrillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**15"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 quadrillion"
+   }
+  },
+  {
+   "id": "C13",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "4.2 * 10^15 vira '4.2 quadrillion'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "42 * 10**14"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "4.2 quadrillion"
+   }
+  },
+  {
+   "id": "C14",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^18 exato usa quintillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**18"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 quintillion"
+   }
+  },
+  {
+   "id": "C15",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^21 exato usa sextillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**21"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 sextillion"
+   }
+  },
+  {
+   "id": "C16",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^24 exato usa septillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**24"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 septillion"
+   }
+  },
+  {
+   "id": "C17",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^27 exato usa octillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**27"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 octillion"
+   }
+  },
+  {
+   "id": "C18",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^30 exato usa nonillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**30"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 nonillion"
+   }
+  },
+  {
+   "id": "C19",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^33 exato usa decillion",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**33"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 decillion"
+   }
+  },
+  {
+   "id": "C20",
+   "regra": "R2",
+   "tipo": "normal",
+   "descricao": "8.1 * 10^33 vira '8.1 decillion' (exemplo da regra)",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "81 * 10**32"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "8.1 decillion"
+   }
+  },
+  {
+   "id": "C21",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "10^100 exato usa googol",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**100"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 googol"
+   }
+  },
+  {
+   "id": "C22",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "quociente 999.94 formata como 999.9, que não chega a 1000, então continua em thousand",
+   "entrada": {
+    "args": [
+     999940
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "999.9 thousand"
+   }
+  },
+  {
+   "id": "C23",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "999_999 formataria como 1000.0 thousand e por isso passa para '1.0 million' (exemplo da regra)",
+   "entrada": {
+    "args": [
+     999999
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 million"
+   }
+  },
+  {
+   "id": "C24",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "quociente 999.96 arredonda para 1000.0 e passa para million",
+   "entrada": {
+    "args": [
+     999960
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 million"
+   }
+  },
+  {
+   "id": "C25",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "999_999_999 passa de million para '1.0 billion'",
+   "entrada": {
+    "args": [
+     999999999
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 billion"
+   }
+  },
+  {
+   "id": "C26",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "quociente 999.999 octillion passa para '1.0 nonillion'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "999999 * 10**24"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 nonillion"
+   }
+  },
+  {
+   "id": "C27",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "quociente 999.999 nonillion passa para '1.0 decillion'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "999999 * 10**27"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 decillion"
+   }
+  },
+  {
+   "id": "C28",
+   "regra": "R3",
+   "tipo": "normal",
+   "descricao": "acima de 10^100 não há próxima potência e o quociente continua crescendo (exemplo da regra)",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "10**101"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "10.0 googol"
+   }
+  },
+  {
+   "id": "C29",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "com '%.3f', 999_999 formata como 999.999, que não chega a 1000, então continua em thousand",
+   "entrada": {
+    "args": [
+     999999,
+     "%.3f"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "999.999 thousand"
+   }
+  },
+  {
+   "id": "C30",
+   "regra": "R4",
+   "tipo": "normal",
+   "descricao": "negativo recebe o prefixo '-' (exemplo da regra)",
+   "entrada": {
+    "args": [
+     -1200000
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-1.2 million"
+   }
+  },
+  {
+   "id": "C31",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "-999 tem valor absoluto abaixo de 1000: segue R1 e recebe o prefixo '-'",
+   "entrada": {
+    "args": [
+     -999
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-999"
+   }
+  },
+  {
+   "id": "C32",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "-1000 tem valor absoluto 1000: recebe sufixo thousand e prefixo '-'",
+   "entrada": {
+    "args": [
+     -1000
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-1.0 thousand"
+   }
+  },
+  {
+   "id": "C33",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "negativo também segue a passagem para a próxima potência de R3",
+   "entrada": {
+    "args": [
+     -999999
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-1.0 million"
+   }
+  },
+  {
+   "id": "C34",
+   "regra": "R4",
+   "tipo": "normal",
+   "descricao": "negativo acima de googol fica com o prefixo '-'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "-(10**101)"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-10.0 googol"
+   }
+  },
+  {
+   "id": "C35",
+   "regra": "R4",
+   "tipo": "normal",
+   "descricao": "string com inteiro negativo é convertida e recebe o prefixo '-'",
+   "entrada": {
+    "args": [
+     "-12400"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-12.4 thousand"
+   }
+  },
+  {
+   "id": "C36",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "format '%0.3f' controla a parte numérica (exemplo da regra)",
+   "entrada": {
+    "args": [
+     "1234000",
+     "%0.3f"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.234 million"
+   }
+  },
+  {
+   "id": "C37",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "format passado como kwarg com duas casas decimais",
+   "entrada": {
+    "args": [
+     1500000
+    ],
+    "kwargs": {
+     "format": "%.2f"
+    }
+   },
+   "esperado": {
+    "retorno": "1.50 million"
+   }
+  },
+  {
+   "id": "C38",
+   "regra": "R5",
+   "tipo": "normal",
+   "descricao": "format '%.0f' tira as casas decimais",
+   "entrada": {
+    "args": [
+     12400,
+     "%.0f"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "12 thousand"
+   }
+  },
+  {
+   "id": "C39",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "abaixo de 1000 o valor sai como string mesmo com format informado",
+   "entrada": {
+    "args": [
+     100,
+     "%.3f"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "100"
+   }
+  },
+  {
+   "id": "C40",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "float é truncado por int() antes de formatar",
+   "entrada": {
+    "args": [
+     1234.9
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.2 thousand"
+   }
+  },
+  {
+   "id": "C41",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "999.9 é truncado para 999 e não recebe sufixo",
+   "entrada": {
+    "args": [
+     999.9
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "999"
+   }
+  },
+  {
+   "id": "C42",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "1000.5 é truncado para 1000",
+   "entrada": {
+    "args": [
+     1000.5
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "1.0 thousand"
+   }
+  },
+  {
+   "id": "C43",
+   "regra": "R6",
+   "tipo": "fronteira",
+   "descricao": "float negativo é truncado por int() (-1000.9 vira -1000)",
+   "entrada": {
+    "args": [
+     -1000.9
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-1.0 thousand"
+   }
+  },
+  {
+   "id": "C44",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "None não pode ser convertido e retorna str(value) (exemplo da regra)",
+   "entrada": {
+    "args": [
+     null
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "None"
+   }
+  },
+  {
+   "id": "C45",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "string não numérica retorna str(value)",
+   "entrada": {
+    "args": [
+     "abc"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "abc"
+   }
+  },
+  {
+   "id": "C46",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "string com decimal falha em int() e retorna str(value)",
+   "entrada": {
+    "args": [
+     "12.5"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "12.5"
+   }
+  },
+  {
+   "id": "C47",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "string vazia não pode ser convertida e retorna str(value)",
+   "entrada": {
+    "args": [
+     ""
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": ""
+   }
+  },
+  {
+   "id": "C48",
+   "regra": "R6",
+   "tipo": "invalida",
+   "descricao": "lista não pode ser convertida e retorna str(value)",
+   "entrada": {
+    "args": [
+     [
+      1,
+      2
+     ]
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "[1, 2]"
+   }
+  },
+  {
+   "id": "C49",
+   "regra": "R7",
+   "tipo": "invalida",
+   "descricao": "infinito positivo retorna '+Inf'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('inf')"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "+Inf"
+   }
+  },
+  {
+   "id": "C50",
+   "regra": "R7",
+   "tipo": "invalida",
+   "descricao": "infinito negativo retorna '-Inf'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('-inf')"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "-Inf"
+   }
+  },
+  {
+   "id": "C51",
+   "regra": "R7",
+   "tipo": "invalida",
+   "descricao": "NaN retorna 'NaN'",
+   "entrada": {
+    "args": [
+     {
+      "$expr": "float('nan')"
+     }
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "NaN"
+   }
+  }
+ ]
+}

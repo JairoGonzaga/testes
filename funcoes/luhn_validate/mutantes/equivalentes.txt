@@ -1,0 +1,2 @@
+# Mutantes equivalentes (verificados manualmente). Um nome por linha; '#' inicia comentário.
+m001  # valor padrão de alphabet em checksum(); validate() sempre passa alphabet explicitamente

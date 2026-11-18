@@ -1,0 +1,106 @@
+{
+ "m001": {
+  "linha": 9,
+  "descricao": "'zero' → 'XXzeroXX'"
+ },
+ "m002": {
+  "linha": 9,
+  "descricao": "'one' → 'XXoneXX'"
+ },
+ "m003": {
+  "linha": 9,
+  "descricao": "'two' → 'XXtwoXX'"
+ },
+ "m004": {
+  "linha": 9,
+  "descricao": "'three' → 'XXthreeXX'"
+ },
+ "m005": {
+  "linha": 9,
+  "descricao": "'four' → 'XXfourXX'"
+ },
+ "m006": {
+  "linha": 10,
+  "descricao": "'five' → 'XXfiveXX'"
+ },
+ "m007": {
+  "linha": 10,
+  "descricao": "'six' → 'XXsixXX'"
+ },
+ "m008": {
+  "linha": 10,
+  "descricao": "'seven' → 'XXsevenXX'"
+ },
+ "m009": {
+  "linha": 10,
+  "descricao": "'eight' → 'XXeightXX'"
+ },
+ "m010": {
+  "linha": 10,
+  "descricao": "'nine' → 'XXnineXX'"
+ },
+ "m011": {
+  "linha": 16,
+  "descricao": "'NaN' → 'XXNaNXX'"
+ },
+ "m012": {
+  "linha": 17,
+  "descricao": "0 → 1"
+ },
+ "m013": {
+  "linha": 17,
+  "descricao": "< → <="
+ },
+ "m014": {
+  "linha": 17,
+  "descricao": "and → or"
+ },
+ "m015": {
+  "linha": 18,
+  "descricao": "'-Inf' → 'XX-InfXX'"
+ },
+ "m016": {
+  "linha": 19,
+  "descricao": "0 → 1"
+ },
+ "m017": {
+  "linha": 19,
+  "descricao": "> → >="
+ },
+ "m018": {
+  "linha": 19,
+  "descricao": "and → or"
+ },
+ "m019": {
+  "linha": 20,
+  "descricao": "'+Inf' → 'XX+InfXX'"
+ },
+ "m020": {
+  "linha": 21,
+  "descricao": "'' → 'XXXX'"
+ },
+ "m021": {
+  "linha": 26,
+  "descricao": "remove not"
+ },
+ "m022": {
+  "linha": 31,
+  "descricao": "0 → 1"
+ },
+ "m023": {
+  "linha": 31,
+  "descricao": "10 → 11"
+ },
+ "m024": {
+  "linha": 31,
+  "descricao": "<= → <"
+ },
+ "m025": {
+  "linha": 31,
+  "descricao": "< → <="
+ },
+ "m026": {
+  "linha": 31,
+  "descricao": "remove not"
+ }
+}

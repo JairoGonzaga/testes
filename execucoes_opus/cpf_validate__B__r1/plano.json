@@ -1,0 +1,829 @@
+{
+ "casos": [
+  {
+   "id": "C1",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "CPF formatado com pontos e hífen é compactado e validado",
+   "entrada": {
+    "args": [
+     "390.533.447-05"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C2",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "espaços nas pontas são removidos",
+   "entrada": {
+    "args": [
+     "  39053344705  "
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C3",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "espaços no meio do número são removidos",
+   "entrada": {
+    "args": [
+     "390 533 447 05"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C4",
+   "regra": "R1",
+   "tipo": "normal",
+   "descricao": "hífens usados como separadores em todas as posições são removidos",
+   "entrada": {
+    "args": [
+     "390-533-447-05"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C5",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "ponto entre cada dígito é removido",
+   "entrada": {
+    "args": [
+     "3.9.0.5.3.3.4.4.7.0.5"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C6",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "mistura de espaços, pontos e hífens repetidos, inclusive nas pontas, é removida",
+   "entrada": {
+    "args": [
+     " -.390..533--447 . 05.- "
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C7",
+   "regra": "R1",
+   "tipo": "fronteira",
+   "descricao": "tab e quebra de linha nas pontas são removidos",
+   "entrada": {
+    "args": [
+     "\t39053344705\n"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C8",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "caractere '=' (exemplo da especificação) gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "390.533.447=0"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C9",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "letra no meio dos dígitos gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "3905334470A"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C10",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "prefixo de texto antes do número gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "CPF 390.533.447-05"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C11",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "vírgula e barra não são removidas na compactação e geram InvalidFormat",
+   "entrada": {
+    "args": [
+     "390,533,447/05"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C12",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "sinal '+' não é dígito e gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "+39053344705"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C13",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "string vazia gera InvalidFormat",
+   "entrada": {
+    "args": [
+     ""
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C14",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "string só com espaços fica vazia após compactação e gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "   "
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C15",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "string só com separadores fica vazia após compactação e gera InvalidFormat",
+   "entrada": {
+    "args": [
+     " .-.- "
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C16",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "11 zeros equivale a zero e gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "00000000000"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C17",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "CPF zerado formatado gera InvalidFormat",
+   "entrada": {
+    "args": [
+     "000.000.000-00"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C18",
+   "regra": "R2",
+   "tipo": "fronteira",
+   "descricao": "um único zero é igual a zero: InvalidFormat, e não InvalidLength",
+   "entrada": {
+    "args": [
+     "0"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C19",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "None (não string) gera InvalidFormat",
+   "entrada": {
+    "args": [
+     null
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C20",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "inteiro (não string) gera InvalidFormat, mesmo com dígitos de um CPF válido",
+   "entrada": {
+    "args": [
+     39053344705
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C21",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "10 dígitos (um a menos) gera InvalidLength",
+   "entrada": {
+    "args": [
+     "3905334470"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C22",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "12 dígitos (um a mais) gera InvalidLength",
+   "entrada": {
+    "args": [
+     "390533447055"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C23",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "número formatado com 10 dígitos após compactação gera InvalidLength",
+   "entrada": {
+    "args": [
+     "390.533.447-0"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C24",
+   "regra": "R3",
+   "tipo": "invalida",
+   "descricao": "um único dígito diferente de zero gera InvalidLength",
+   "entrada": {
+    "args": [
+     "1"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C25",
+   "regra": "R3",
+   "tipo": "invalida",
+   "descricao": "15 dígitos geram InvalidLength",
+   "entrada": {
+    "args": [
+     "123456789012345"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C26",
+   "regra": "R3",
+   "tipo": "fronteira",
+   "descricao": "10 dígitos com zeros à esquerda, mas diferente de zero, geram InvalidLength",
+   "entrada": {
+    "args": [
+     "0000000001"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C27",
+   "regra": "R3",
+   "tipo": "invalida",
+   "descricao": "InvalidLength é subclasse de InvalidFormat",
+   "entrada": {
+    "args": [
+     "3905334470"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C28",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "exemplo da especificação com verificadores errados gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "231.002.999-00"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C29",
+   "regra": "R4",
+   "tipo": "normal",
+   "descricao": "mesma base com os verificadores corretos (d1=8, d2=1) é válida",
+   "entrada": {
+    "args": [
+     "231.002.999-81"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "23100299981"
+   }
+  },
+  {
+   "id": "C30",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "d1 errado (10º dígito) gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "39053344715"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C31",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "só o d2 errado (11º dígito) gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "39053344704"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C32",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "verificadores trocados de posição geram InvalidChecksum",
+   "entrada": {
+    "args": [
+     "39053344750"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C33",
+   "regra": "R4",
+   "tipo": "normal",
+   "descricao": "CPF válido com d1=2 e d2=5",
+   "entrada": {
+    "args": [
+     "529.982.247-25"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "52998224725"
+   }
+  },
+  {
+   "id": "C34",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "d1 correto e d2 diferente do calculado gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "529.982.247-24"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C35",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "d1 = 10 mod 10 = 0 (soma mod 11 = 1)",
+   "entrada": {
+    "args": [
+     "123.456.789-09"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "12345678909"
+   }
+  },
+  {
+   "id": "C36",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "d1 = 11 mod 11 = 0 (soma divisível por 11) e d2 = 10 mod 10 = 0",
+   "entrada": {
+    "args": [
+     "987.654.321-00"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "98765432100"
+   }
+  },
+  {
+   "id": "C37",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "d2 = 11 mod 11 = 0 (soma de d2 divisível por 11) com d1=9",
+   "entrada": {
+    "args": [
+     "98765432290"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "98765432290"
+   }
+  },
+  {
+   "id": "C38",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "d1=1 quando o correto é 0 gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "98765432110"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C39",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "CPF válido com zeros à esquerda (d1=0 por soma 11) mantém os zeros",
+   "entrada": {
+    "args": [
+     "000.000.014-06"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "00000001406"
+   }
+  },
+  {
+   "id": "C40",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "menor CPF válido diferente de zero",
+   "entrada": {
+    "args": [
+     "00000000191"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "00000000191"
+   }
+  },
+  {
+   "id": "C41",
+   "regra": "R4",
+   "tipo": "fronteira",
+   "descricao": "11 dígitos diferente de zero com verificadores errados (o correto seria 00)",
+   "entrada": {
+    "args": [
+     "00000000001"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C42",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "InvalidChecksum é subclasse de ValidationError",
+   "entrada": {
+    "args": [
+     "231.002.999-00"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValidationError"
+   }
+  },
+  {
+   "id": "C43",
+   "regra": "R4",
+   "tipo": "invalida",
+   "descricao": "InvalidChecksum é, indiretamente, subclasse de ValueError",
+   "entrada": {
+    "args": [
+     "39053344704"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValueError"
+   }
+  },
+  {
+   "id": "C44",
+   "regra": "R5",
+   "tipo": "invalida",
+   "descricao": "caractere inválido e tamanho errado: R2 vem antes de R3, então InvalidFormat",
+   "entrada": {
+    "args": [
+     "3905334470A5"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C45",
+   "regra": "R5",
+   "tipo": "invalida",
+   "descricao": "10 zeros: zero e tamanho errado ao mesmo tempo, R2 vem antes de R3, então InvalidFormat",
+   "entrada": {
+    "args": [
+     "0000000000"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C46",
+   "regra": "R5",
+   "tipo": "invalida",
+   "descricao": "tamanho errado tem precedência sobre a verificação de dígitos (InvalidLength)",
+   "entrada": {
+    "args": [
+     "1111111111"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidLength"
+   }
+  },
+  {
+   "id": "C47",
+   "regra": "R5",
+   "tipo": "invalida",
+   "descricao": "11 caracteres com letra no lugar do verificador: InvalidFormat antes de InvalidChecksum",
+   "entrada": {
+    "args": [
+     "231.002.999-0X"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidFormat"
+   }
+  },
+  {
+   "id": "C48",
+   "regra": "R2",
+   "tipo": "invalida",
+   "descricao": "InvalidFormat é subclasse de ValidationError",
+   "entrada": {
+    "args": [
+     "abc"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "ValidationError"
+   }
+  },
+  {
+   "id": "C49",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "número válido já compactado é retornado igual",
+   "entrada": {
+    "args": [
+     "39053344705"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "39053344705"
+   }
+  },
+  {
+   "id": "C50",
+   "regra": "R6",
+   "tipo": "normal",
+   "descricao": "número válido formatado é retornado sem separadores",
+   "entrada": {
+    "args": [
+     "111.444.777-35"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "11144477735"
+   }
+  },
+  {
+   "id": "C51",
+   "regra": "R7",
+   "tipo": "normal",
+   "descricao": "todos os dígitos 1 com verificadores corretos é válido (exemplo da especificação)",
+   "entrada": {
+    "args": [
+     "111.111.111-11"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "11111111111"
+   }
+  },
+  {
+   "id": "C52",
+   "regra": "R7",
+   "tipo": "fronteira",
+   "descricao": "todos os dígitos 9 com verificadores corretos é válido",
+   "entrada": {
+    "args": [
+     "99999999999"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "99999999999"
+   }
+  },
+  {
+   "id": "C53",
+   "regra": "R7",
+   "tipo": "normal",
+   "descricao": "todos os dígitos 5 formatado é válido",
+   "entrada": {
+    "args": [
+     "555.555.555-55"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "retorno": "55555555555"
+   }
+  },
+  {
+   "id": "C54",
+   "regra": "R7",
+   "tipo": "invalida",
+   "descricao": "todos iguais na base, mas d2 errado, gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "11111111112"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  },
+  {
+   "id": "C55",
+   "regra": "R7",
+   "tipo": "invalida",
+   "descricao": "base 222222222 com verificadores 11 (o correto é 22) gera InvalidChecksum",
+   "entrada": {
+    "args": [
+     "222.222.222-11"
+    ],
+    "kwargs": {}
+   },
+   "esperado": {
+    "excecao": "InvalidChecksum"
+   }
+  }
+ ]
+}
