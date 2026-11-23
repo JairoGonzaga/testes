@@ -1,0 +1,8 @@
+{
+ "agente": "aa1f9f6d6da076849",
+ "nota": "Complete pytest suite for alvo.naturalsize covering suffix tables, decimal/binary/gnu units, unit-promotion rounding, the cap at the largest unit, format strings, coercion and error handling, with expected values derived by hand from the source.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

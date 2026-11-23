@@ -1,0 +1,8 @@
+{
+ "agente": "a4f68082bd9448fc6",
+ "nota": "Adds an R7 repeated-digit CPF test (222.222.222-22) that passes on alvo.validate, with no extra imports needed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

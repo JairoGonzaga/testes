@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.4,
+ "tokens_entrada": 52242,
+ "tokens_saida": 1940,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.002339,
+ "chamadas_api": 13,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 13,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 9,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 12,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d4_segundo_digito__s1",
+ "nota": "I wrote `test_issue.py`, which fails on the current `alvo.py` (valid CPFs like `11144477735`, `52998224725`, `01234567890` raise `InvalidChecksum` because the second check digit is computed with the wrong weight) and passes once the checksum algorithm is fixed."
+}

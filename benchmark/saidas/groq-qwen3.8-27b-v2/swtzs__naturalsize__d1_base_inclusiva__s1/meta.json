@@ -1,0 +1,13 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 128.9,
+ "tokens_entrada": 2200,
+ "tokens_saida": 868,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 2,
+ "provedores": [],
+ "finish_reason": "stop",
+ "revisado": true
+}

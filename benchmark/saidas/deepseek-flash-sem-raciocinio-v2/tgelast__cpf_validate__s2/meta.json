@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.3,
+ "tokens_entrada": 16754,
+ "tokens_saida": 478,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000617,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__cpf_validate__s2",
+ "nota": "Added `test_c27_r7_normal_com_espacos` and `test_c28_r7_retorno_compactado` asserting `validate` strips surrounding spaces and returns the compact number; all 28 tests pass."
+}

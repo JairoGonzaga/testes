@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.2,
+ "tokens_entrada": 14120,
+ "tokens_saida": 888,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001033,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d4_retorno_vazio__s3",
+ "nota": "I wrote `test_issue.py`: all tests fail on the current buggy code (returning `''` instead of `str(value)`) and pass against a patched version of `ordinal`."
+}

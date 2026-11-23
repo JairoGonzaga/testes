@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 8.7,
+ "tokens_entrada": 16552,
+ "tokens_saida": 701,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000627,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 3,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 1,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__naturalsize__s2",
+ "nota": "The new tests pass and cover the top-level suffix cap (`QB` at 10**30 and beyond).\n\n```python\n\n\ndef test_c44_r9():\n    # [R9/fronteira]\n    assert naturalsize(10**30) == '1.0 QB'\n\n\ndef test_c45_r9():\n    # [R9/normal]\n    assert naturalsize(-10**31, format='%.0f') == '-10 QB'\n```"
+}

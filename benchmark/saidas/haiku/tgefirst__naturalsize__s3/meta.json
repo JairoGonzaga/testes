@@ -1,0 +1,8 @@
+{
+ "agente": "ae0a1b1835ad61bca",
+ "nota": "Adds a valid-input test for the decimal kB branch, checked by hand against alvo.py: naturalsize(1500) returns \"1.5 kB\".",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "agente": "adb578c94a419f2b9",
+ "nota": "The test file reproduces the bug where intword(1000) returns '1000' instead of '1.0 thousand' because of the `<=` check against powers[0]; the two 1000 cases fail on the current code and the 999 guard passes.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

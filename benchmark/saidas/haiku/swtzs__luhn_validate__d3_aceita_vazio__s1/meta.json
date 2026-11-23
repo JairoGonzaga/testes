@@ -1,0 +1,8 @@
+{
+ "agente": "ae4e5c3332a004eb8",
+ "nota": "The test expects validate('') to raise InvalidFormat, which fails on the current code because the empty string passes the checksum and is returned.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

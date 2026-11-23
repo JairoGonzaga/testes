@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 14.9,
+ "tokens_entrada": 30668,
+ "tokens_saida": 1583,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001617,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 6,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 7,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__naturalsize__d2_base_binaria__s1",
+ "nota": "All 11 tests pass on the minimally fixed copy and fail (on the reported bug) with the current code; `test_issue.py` is in the sandbox root."
+}

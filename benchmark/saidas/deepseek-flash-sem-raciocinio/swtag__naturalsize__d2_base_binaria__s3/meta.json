@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.5,
+ "tokens_entrada": 7025,
+ "tokens_saida": 356,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000402,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d2_base_binaria__s3",
+ "nota": "I wrote `test_issue.py`, which fails on the current `alvo.py` because `binary=True` still divides by powers of 1000 instead of 1024, and will pass once the base is correctly set to 1024 for binary mode."
+}

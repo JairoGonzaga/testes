@@ -1,0 +1,8 @@
+{
+ "agente": "a955fb0c93a390d58",
+ "nota": "The file reproduces the 11/12/13 teen-suffix bug in ordinal(), since the check uses value % 10 instead of value % 100, and it keeps passing cases for the regular suffixes.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

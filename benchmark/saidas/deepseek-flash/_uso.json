@@ -1,0 +1,11 @@
+{
+ "modelo_id": "deepseek-flash",
+ "tarefas": 210,
+ "com_codigo": 201,
+ "custo_usd": 0.5093,
+ "tokens_entrada": 2196737,
+ "tokens_saida": 766840,
+ "tokens_raciocinio": 628255,
+ "tempo_s": 4230.1,
+ "truncadas": 13
+}

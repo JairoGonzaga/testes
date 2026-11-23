@@ -1,0 +1,8 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -25,4 +25,4 @@
+         raise InvalidFormat()
+     if not valid:
+         raise InvalidChecksum()
+-    return str(number)
++    return number

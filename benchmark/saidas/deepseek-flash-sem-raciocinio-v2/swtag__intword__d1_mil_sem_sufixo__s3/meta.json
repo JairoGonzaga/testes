@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.0,
+ "tokens_entrada": 9247,
+ "tokens_saida": 450,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000472,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 4,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d1_mil_sem_sufixo__s3",
+ "nota": "`test_issue.py` asserts that `intword(1000)` yields `'1.0 thousand'` (and `-1000` yields `'-1.0 thousand'`), failing on the current code and passing on a minimal fixed copy."
+}

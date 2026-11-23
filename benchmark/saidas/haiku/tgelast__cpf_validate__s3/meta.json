@@ -1,0 +1,8 @@
+{
+ "agente": "a9d7992807e4d0828",
+ "nota": "Adds a normal-case test for another all-same-digit CPF (222.222.222-22), whose check digits I verified by hand against the module's algorithm.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

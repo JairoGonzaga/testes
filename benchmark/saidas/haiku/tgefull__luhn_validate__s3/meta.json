@@ -1,0 +1,8 @@
+{
+ "agente": "a1836ff6967f88928",
+ "nota": "Pytest suite for alvo.py covering the exception hierarchy, checksum on decimal and custom alphabets, validate's format and checksum errors, and oracle-based round-trip checks.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

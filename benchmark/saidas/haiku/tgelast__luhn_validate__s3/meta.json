@@ -1,0 +1,8 @@
+{
+ "agente": "a11832adc5b6b7cf1",
+ "nota": "Added a hex-alphabet checksum test (1a2b2 gives sum 17 mod 16 = 1) asserting the base ValidationError; no new import needed since pytest and ValidationError are already imported.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

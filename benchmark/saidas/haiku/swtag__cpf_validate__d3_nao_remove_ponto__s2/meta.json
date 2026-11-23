@@ -1,0 +1,10 @@
+{
+ "agente": "af139275001dbc023",
+ "nota": "test_issue.py has three tests: the dotted CPF from the issue plus two related dot-formatting cases; against the current alvo.py they fail (3 failed), and with compact also stripping dots they pass (3 passed, checked in-process without editing alvo.py).",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

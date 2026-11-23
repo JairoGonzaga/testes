@@ -1,0 +1,8 @@
+{
+ "agente": "ae39970cecc596b80",
+ "nota": "The tests reproduce the bug: checksum() doubles the wrong digit positions (the check digit and its even-index neighbours instead of every second digit from the right), so valid Luhn numbers are rejected.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

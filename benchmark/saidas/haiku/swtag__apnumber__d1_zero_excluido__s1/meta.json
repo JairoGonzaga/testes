@@ -1,0 +1,11 @@
+{
+ "agente": "acaec7de889f129d7",
+ "nota": "test_issue.py reproduces the bug: test_zero_is_spelled_out fails on the current code with \"'0' == 'zero'\", while the single-digit and ten checks pass; the fix is to change the range check in alvo.py from 0 < value to 0 <= value.",
+ "ferramentas": {
+  "mcp__ccd_turn__update_plan": 1,
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

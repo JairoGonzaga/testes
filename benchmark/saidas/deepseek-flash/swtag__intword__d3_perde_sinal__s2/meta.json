@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 24.8,
+ "tokens_entrada": 51839,
+ "tokens_saida": 2588,
+ "tokens_raciocinio": 760,
+ "custo_usd": 0.00263,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 8,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "_check_fixed/test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "_check_fixed/test_issue.py -q",
+   "exit": 0
+  },
+  {
+   "turno": 8,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d3_perde_sinal__s2",
+ "nota": "`test_issue.py` is written: its negative-value assertions fail on the current `alvo.py` (which drops the minus sign) and all pass against a fixed version, verified in a temporary copy."
+}

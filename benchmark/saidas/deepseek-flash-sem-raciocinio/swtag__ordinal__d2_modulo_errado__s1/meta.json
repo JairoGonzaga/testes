@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.1,
+ "tokens_entrada": 6117,
+ "tokens_saida": 385,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000603,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d2_modulo_errado__s1",
+ "nota": "I wrote `test_issue.py`, which reproduces the bug: ordinal suffixes for 11/12/13 (and 111/112/113) fail on the current code but will pass once the teen-suffix logic is fixed."
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.1,
+ "tokens_entrada": 10213,
+ "tokens_saida": 956,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000883,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d1_base_inclusiva__s3",
+ "nota": "Wrote `test_issue.py`; it fails on the current code for the `<= base` boundary bug and passes once 1000/1024 convert to the next unit."
+}

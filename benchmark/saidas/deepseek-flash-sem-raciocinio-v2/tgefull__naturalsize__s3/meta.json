@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 30.5,
+ "tokens_entrada": 62638,
+ "tokens_saida": 6275,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.004637,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 2,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_alvo.py --cov=alvo --cov-branch --cov-report=term-missing",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "test_alvo.py --cov=alvo --cov-branch --cov-report=term-missing",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefull__naturalsize__s3",
+ "nota": "All 93 tests pass with 100% statement and branch coverage.\n\nThe suite in `test_alvo.py` covers decimal, binary and gnu modes, the `Byte`/`B`/`Bytes` special cases, suffix clamping at the top unit, the rounding re-check branch, custom formats, precedence of `gnu` over `binary`, and float casting."
+}

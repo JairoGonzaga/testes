@@ -1,0 +1,10 @@
+{
+ "agente": "a601ebda4817f8e2d",
+ "nota": "test_issue.py was written in the sandbox: 4 binary tests fail on the current alvo.py and 2 decimal/gnu guards pass; with the fix (base 1024 when binary) applied in memory only, all 6 pass.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

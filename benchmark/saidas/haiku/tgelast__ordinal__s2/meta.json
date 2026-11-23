@@ -1,0 +1,8 @@
+{
+ "agente": "a13539c58c958a773",
+ "nota": "Adds a NaN test under R6 that covers the isnan branch of _format_not_finite, which the existing tests leave uncovered.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

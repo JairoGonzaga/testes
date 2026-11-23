@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.2,
+ "tokens_entrada": 18914,
+ "tokens_saida": 853,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00094,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__naturalsize__d4_sem_subir_sufixo__s2",
+ "nota": "`test_issue.py` reproduces the bug (4 failures on `alvo.py`, all passing on a copy that promotes the unit when rounded output reaches the base)."
+}

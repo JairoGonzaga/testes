@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.1,
+ "tokens_entrada": 18095,
+ "tokens_saida": 850,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000835,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__ordinal__d4_retorno_vazio__s3",
+ "nota": "Created `test_issue.py`, which fails on the current code (non-numeric input returns `''` instead of `str(value)`) and passes on a fixed copy."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a4aea677cce222c94",
+ "nota": "Two pytest tests check that intword(10**100) and intword(-10**100) return '1.0 googol' and '-1.0 googol', failing on the current code and passing once the bug is fixed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

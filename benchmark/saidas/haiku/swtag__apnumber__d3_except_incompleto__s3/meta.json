@@ -1,0 +1,12 @@
+{
+ "agente": "ac4d71814a7607b73",
+ "nota": "test_issue.py reproduces the apnumber(None) TypeError: on the current alvo.py, 3 of 4 tests fail (None, [], {}) and the 'abc' control passes, and the fix of catching TypeError alongside ValueError would make all pass.",
+ "ferramentas": {
+  "Read": 4,
+  "mcp__ccd_session__mark_chapter": 2,
+  "mcp__ccd_turn__update_plan": 2,
+  "Write": 2,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

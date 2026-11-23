@@ -1,0 +1,8 @@
+{
+ "agente": "a160bca4be2793447",
+ "nota": "The test file reproduces the TypeError from apnumber(None) and extends it to other non-int-convertible values, each expected to return str(value).",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

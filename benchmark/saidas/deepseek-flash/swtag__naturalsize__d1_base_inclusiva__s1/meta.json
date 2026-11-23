@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 26.7,
+ "tokens_entrada": 29990,
+ "tokens_saida": 3534,
+ "tokens_raciocinio": 1939,
+ "custo_usd": 0.003006,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d1_base_inclusiva__s1",
+ "nota": "`test_issue.py` is in place: it fails on the current `alvo.py` (15 failures, e.g. `naturalsize(1000) == '1000 Bytes'`) and all 35 tests pass when the boundary comparison is corrected (`alvo.py` verified restored to its buggy state)."
+}

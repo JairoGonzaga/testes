@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.2,
+ "tokens_entrada": 5008,
+ "tokens_saida": 339,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000334,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d3_singular_sem_abs__s3",
+ "nota": "The test reproduces the bug: `naturalsize(-1)` returns `'-1 Bytes'` instead of `'-1 Byte'`, while all other checks pass."
+}

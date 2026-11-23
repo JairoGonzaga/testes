@@ -1,0 +1,10 @@
+{
+ "agente": "acc337cb075efea84",
+ "nota": "Wrote test_issue.py in the sandbox with three tests covering dotted CPF input; all three fail on the current alvo.py (InvalidFormat / dots kept by compact) and should pass once compact also strips dots.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

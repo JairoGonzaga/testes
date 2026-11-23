@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.7,
+ "tokens_entrada": 8890,
+ "tokens_saida": 431,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000501,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 4,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d1_mil_sem_sufixo__s2",
+ "nota": "`test_issue.py` reproduces the bug (`intword(1000)` returns `'1000'` instead of `'1.0 thousand'`) and passes once the boundary check uses `<` instead of `<=`."
+}

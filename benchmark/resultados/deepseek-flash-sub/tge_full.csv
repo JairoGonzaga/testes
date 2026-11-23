@@ -1,0 +1,3 @@
+job,funcao,amostra,gerado,utilizavel,n_testes,n_validos,falsos_alarmes,cobertura_linhas,cobertura_ramos,mutation_score,deteccao_defeitos,motivo,all_pass,any_pass
+tgefull__apnumber__s1,apnumber,1,True,True,88,88,0.0,1.0,1.0,1.0,1.0,,True,True
+tgefull__cpf_validate__s1,cpf_validate,1,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False

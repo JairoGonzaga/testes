@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -15,7 +15,7 @@
+     else:
+         suffix = suffixes["decimal"]
+ 
+-    base = 1024 if gnu else 1000
++    base = 1024 if (gnu or binary) else 1000
+     bytes_ = float(value)
+     abs_bytes = abs(bytes_)
+ 

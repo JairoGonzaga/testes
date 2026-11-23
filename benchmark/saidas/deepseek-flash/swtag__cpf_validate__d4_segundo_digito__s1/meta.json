@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.7,
+ "tokens_entrada": 21336,
+ "tokens_saida": 3645,
+ "tokens_raciocinio": 2129,
+ "custo_usd": 0.002716,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d4_segundo_digito__s1",
+ "nota": "Verified: on current `alvo.py` 8 tests fail (`InvalidChecksum` for valid CPFs since the second check digit is computed without weighting the first check digit by 2), and with a corrected algorithm all 10 pass. Final file written as `test_issue.py`."
+}

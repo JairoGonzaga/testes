@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.0,
+ "tokens_entrada": 12526,
+ "tokens_saida": 1004,
+ "tokens_raciocinio": 180,
+ "custo_usd": 0.00092,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d3_perde_sinal__s1",
+ "nota": "`test_issue.py` is written: 5 tests fail on the current `alvo.py` (sign dropped by the `negative_prefix = \"\"` bug) and all 6 pass against a locally-simulated fix."
+}

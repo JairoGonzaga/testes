@@ -1,0 +1,8 @@
+{
+ "agente": "a18dbef6cd9b381d4",
+ "nota": "The pytest file reproduces the off-by-one at exactly 1000 (the `<=` base check in alvo.py), with the binary 1024 case and boundary guards that pass both before and after the fix.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

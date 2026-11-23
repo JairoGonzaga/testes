@@ -1,0 +1,33 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 60.9,
+ "tokens_entrada": 6576,
+ "tokens_saida": 1714,
+ "tokens_raciocinio": 1554,
+ "custo_usd": 0.0,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 1,
+   "args": "-q",
+   "exit": 0
+  },
+  {
+   "turno": 3,
+   "args": "-q",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\tgeextra__apnumber__s1",
+ "nota": "import pytest\nfrom alvo import apnumber\n\ndef test_bool_values():\n    assert apnumber(True) == \"one\"\n    assert apnumber(False) == \"zero\""
+}

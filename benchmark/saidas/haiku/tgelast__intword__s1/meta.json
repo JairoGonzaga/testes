@@ -1,0 +1,8 @@
+{
+ "agente": "ac9ad0333cf2fdfe6",
+ "nota": "The missing last test covers the NaN branch of _format_not_finite, using the math import already at the top of the file.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

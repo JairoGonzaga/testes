@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.2,
+ "tokens_entrada": 12182,
+ "tokens_saida": 601,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00057,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__cpf_validate__s3",
+ "nota": "Added `test_c28_r8` (non-iterable int input raises `InvalidFormat`), `test_c29_r8` (all-zero 11-digit number rejected by the `int(number) <= 0` guard), and `test_c30_r8` (the `InvalidLength` subclass relationship), all passing."
+}

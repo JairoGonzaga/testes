@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -32,7 +32,7 @@
+ 
+ 
+ def compact(number):
+-    return clean(number, " -").strip()
++    return clean(number, " -.").strip()
+ 
+ 
+ def _calc_check_digits(number):

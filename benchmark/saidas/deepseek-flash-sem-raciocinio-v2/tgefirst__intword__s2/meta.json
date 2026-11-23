@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.0,
+ "tokens_entrada": 11903,
+ "tokens_saida": 766,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000646,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "nenhuma",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__intword__s2",
+ "nota": "The new test `test_c2_r2` checks unit labels, rounding, negatives, near-boundary values and the custom format; it passes alongside the existing test."
+}

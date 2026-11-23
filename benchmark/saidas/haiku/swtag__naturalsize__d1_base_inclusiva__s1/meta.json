@@ -1,0 +1,10 @@
+{
+ "agente": "a1230459fcc587348",
+ "nota": "test_issue.py has 5 tests: 4 fail on the current alvo.py (the `<=` boundary check returns '1000 Bytes') and 1 regression guard passes; all 5 pass when the check is changed to `<` in an in-memory copy, with alvo.py left untouched.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

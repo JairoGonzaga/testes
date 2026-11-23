@@ -1,0 +1,8 @@
+{
+ "agente": "ab34a56d8859ed656",
+ "nota": "The new test covers the broad `except Exception` branch in validate, which no existing test reaches, since every current format failure raises ValueError from alphabet.index.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

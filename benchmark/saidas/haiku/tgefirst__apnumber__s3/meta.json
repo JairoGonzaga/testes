@@ -1,0 +1,8 @@
+{
+ "agente": "a9d146fd6c0c7b59d",
+ "nota": "Adds a boundary test for the upper edge of the 0-9 word range: 9 maps to 'nine' and 10 falls back to '10'.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

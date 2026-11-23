@@ -1,0 +1,8 @@
+{
+ "agente": "ae52d7230c41707d2",
+ "nota": "Pytest suite for alvo.py covering clean, isdigits, compact, validate, the exception hierarchy and check-digit logic, using hand-verified and generated CPF vectors.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

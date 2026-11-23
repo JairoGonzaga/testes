@@ -1,0 +1,8 @@
+{
+ "agente": "a4ad7733b7d724172",
+ "nota": "The test file reproduces the ordinal(13) bug: the 13 and 113 cases fail on the current code because the 11/12 exception does not cover 13, and the other cases pass as controls.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

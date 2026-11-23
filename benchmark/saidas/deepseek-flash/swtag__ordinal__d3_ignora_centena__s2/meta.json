@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 30.0,
+ "tokens_entrada": 60643,
+ "tokens_saida": 3940,
+ "tokens_raciocinio": 970,
+ "custo_usd": 0.003633,
+ "chamadas_api": 11,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 11,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 6,
+  "Write": 2,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "test_issue.py -q 2>&1 | tail -3",
+   "exit": 4
+  },
+  {
+   "turno": 10,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d3_ignora_centena__s2",
+ "nota": "`test_issue.py` now reproduces the bug (16 failures on the current code, all tied to numbers ending in 11/12/13) and passes fully against several plausible fixes, leaving `alvo.py` untouched."
+}

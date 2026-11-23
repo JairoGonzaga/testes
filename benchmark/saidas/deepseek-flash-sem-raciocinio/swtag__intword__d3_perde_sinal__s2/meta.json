@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 4.6,
+ "tokens_entrada": 5533,
+ "tokens_saida": 332,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000427,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__intword__d3_perde_sinal__s2",
+ "nota": "`test_issue.py` reproduces the bug: negative inputs lose their minus sign, so the tests fail on current code and will pass once the sign is preserved."
+}

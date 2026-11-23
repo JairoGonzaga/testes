@@ -1,0 +1,8 @@
+{
+ "agente": "aac3714bcb6fbda97",
+ "nota": "Pytest suite covering every branch of ordinal() and _format_not_finite(), including the exhaustive 0-1999 check against an English-rules oracle and pinned current behaviour for negative inputs and OverflowError.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

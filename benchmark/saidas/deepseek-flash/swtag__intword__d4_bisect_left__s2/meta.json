@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 18.0,
+ "tokens_entrada": 21526,
+ "tokens_saida": 2341,
+ "tokens_raciocinio": 1283,
+ "custo_usd": 0.001868,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d4_bisect_left__s2",
+ "nota": "Wrote `test_issue.py`: it asserts `intword(10**100)` (and its negation, plus `\"%d\"` formatting) yields `'1.0 googol'`, which fails on the current `bisect_left` logic and passes once the suffix selection is fixed."
+}

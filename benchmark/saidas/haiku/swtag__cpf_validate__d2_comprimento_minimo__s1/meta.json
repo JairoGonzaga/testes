@@ -1,0 +1,11 @@
+{
+ "agente": "a84de44ba309700b3",
+ "nota": "The test file reproduces the bug that a CPF with more than 11 digits raises InvalidChecksum instead of InvalidLength; on the current alvo.py, 5 of 7 tests fail and the too-few-digits and valid-CPF guards pass.",
+ "ferramentas": {
+  "mcp__ccd_turn__update_plan": 1,
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

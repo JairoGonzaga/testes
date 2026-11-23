@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 14.5,
+ "tokens_entrada": 13888,
+ "tokens_saida": 1514,
+ "tokens_raciocinio": 519,
+ "custo_usd": 0.001336,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d3_nao_remove_ponto__s1",
+ "nota": "`test_issue.py` reproduces the bug: 7 of 9 tests fail on current code (formatted CPFs are rejected because `compact()` doesn't strip dots), and all 9 pass when `compact()` also removes dots — `alvo.py` was restored to its original state."
+}

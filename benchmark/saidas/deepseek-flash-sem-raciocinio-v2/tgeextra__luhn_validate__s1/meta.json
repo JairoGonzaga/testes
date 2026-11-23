@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.3,
+ "tokens_entrada": 14644,
+ "tokens_saida": 642,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000775,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__luhn_validate__s1",
+ "nota": "Added `test_c21_alphabet_custom`, which checks that uppercase characters are rejected with `InvalidFormat` for a custom alphabet and that a binary-alphabet number validates correctly."
+}

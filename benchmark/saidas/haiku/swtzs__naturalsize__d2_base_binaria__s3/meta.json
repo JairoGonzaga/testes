@@ -1,0 +1,8 @@
+{
+ "agente": "aef8fe80ab9d43665",
+ "nota": "The pytest file covers the issue's 3000000 example plus three more binary cases that fail on the current base-1000 code and should pass once binary uses base 1024.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

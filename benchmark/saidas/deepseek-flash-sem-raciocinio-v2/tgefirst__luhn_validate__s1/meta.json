@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.9,
+ "tokens_entrada": 6138,
+ "tokens_saida": 462,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000483,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__luhn_validate__s1",
+ "nota": "```python\ndef test_c2_r2():\n    # [R2/fronteira]\n    assert validate('0') == '0'\n    assert validate('18') == '18'\n    with pytest.raises(InvalidChecksum):\n        validate('1')\n    with pytest.raises(InvalidChecksum):\n        validate('12345678')\n    with pytest.raises(InvalidFormat):\n        validate(0)\n    with pytest.raises(InvalidFormat):\n        validate('12a')\n```"
+}

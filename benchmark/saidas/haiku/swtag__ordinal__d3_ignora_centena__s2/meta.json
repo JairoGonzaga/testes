@@ -1,0 +1,10 @@
+{
+ "agente": "a1944b203df3e41b1",
+ "nota": "test_issue.py reproduces the bug: the 7 larger-number teen cases (111, 112, 113, 211, 1011, 1012, 1013) fail on the current alvo.py, while the 14 small-number regression cases pass; the fix (checking value % 100 for 11/12/13) would make all pass.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

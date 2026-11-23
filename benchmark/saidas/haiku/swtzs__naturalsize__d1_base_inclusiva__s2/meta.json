@@ -1,0 +1,8 @@
+{
+ "agente": "a6f6b68bc135f6043",
+ "nota": "The tests target the `<=` base check in alvo.py that keeps 1000 in the bytes branch, and they import naturalsize from alvo.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

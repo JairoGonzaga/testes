@@ -1,0 +1,8 @@
+{
+ "agente": "a2c1d0bbd28c3b7d7",
+ "nota": "Single pytest file covering every branch of alvo.py: word mapping, boundaries, float truncation, string and Decimal inputs, non-finite formatting, the TypeError/ValueError fallback, and propagated exceptions.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

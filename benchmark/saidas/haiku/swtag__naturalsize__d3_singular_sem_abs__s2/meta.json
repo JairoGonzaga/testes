@@ -1,0 +1,10 @@
+{
+ "agente": "a4e2c8f538735a7e5",
+ "nota": "Two pytest tests check that naturalsize(-1) uses the singular \"Byte\" in decimal and binary modes; both fail on the current code with '-1 Bytes' and pass with a abs(bytes_) == 1 fix verified in memory.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

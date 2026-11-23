@@ -1,0 +1,8 @@
+{
+ "agente": "a8f9caebed893b3a6",
+ "nota": "Two pytest tests check that intword(10**100) and intword(-10**100) return '1.0 googol' and '-1.0 googol', so both fail on the current float-vs-int comparison and should pass once it is fixed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

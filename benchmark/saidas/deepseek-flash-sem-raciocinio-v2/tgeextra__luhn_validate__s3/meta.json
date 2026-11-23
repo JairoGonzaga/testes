@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.2,
+ "tokens_entrada": 8774,
+ "tokens_saida": 464,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000428,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__luhn_validate__s3",
+ "nota": "Added `test_c21_r6_alfabeto_hexadecimal`, which checks that a valid hex-alphabet value passes, that a same-length invalid one raises `InvalidChecksum`, and that it fails with `InvalidFormat` under the default alphabet; all 21 tests pass."
+}

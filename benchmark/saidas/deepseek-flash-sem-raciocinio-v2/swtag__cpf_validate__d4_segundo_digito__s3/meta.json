@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.6,
+ "tokens_entrada": 21089,
+ "tokens_saida": 1271,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00116,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__cpf_validate__d4_segundo_digito__s3",
+ "nota": "The tests fail on the current code with `InvalidChecksum` (the second check digit wrongly adds `d1` instead of `2*d1`) and all pass against a fixed copy."
+}

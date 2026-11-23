@@ -1,0 +1,408 @@
+{
+ "modelo": "deepseek-flash-sem-raciocinio-v2",
+ "swt": {
+  "zeroshot": {
+   "n": 69,
+   "gerados": 69,
+   "W": 1.0,
+   "S": 1.0,
+   "F2P_algum": 1.0,
+   "P2F_algum": 0.0,
+   "cobertura_patch": 1.0,
+   "cobertura_patch_sucesso": 1.0,
+   "pass@1": 1.0,
+   "pass@3": 1.0,
+   "por_funcao": {
+    "apnumber": 1.0,
+    "cpf_validate": 1.0,
+    "intword": 1.0,
+    "luhn_validate": 1.0,
+    "naturalsize": 1.0,
+    "ordinal": 1.0
+   },
+   "por_instancia": {
+    "apnumber__d1_zero_excluido": 3,
+    "apnumber__d2_nove_excluido": 3,
+    "apnumber__d3_except_incompleto": 3,
+    "cpf_validate__d1_aceita_zero": 3,
+    "cpf_validate__d2_comprimento_minimo": 3,
+    "cpf_validate__d3_nao_remove_ponto": 3,
+    "cpf_validate__d4_segundo_digito": 3,
+    "intword__d1_mil_sem_sufixo": 3,
+    "intword__d2_sem_carry": 3,
+    "intword__d3_perde_sinal": 3,
+    "intword__d4_bisect_left": 3,
+    "luhn_validate__d1_posicoes_trocadas": 3,
+    "luhn_validate__d2_sem_vai_um": 3,
+    "luhn_validate__d3_aceita_vazio": 3,
+    "luhn_validate__d4_converte_str": 3,
+    "naturalsize__d1_base_inclusiva": 3,
+    "naturalsize__d2_base_binaria": 3,
+    "naturalsize__d3_singular_sem_abs": 3,
+    "naturalsize__d4_sem_subir_sufixo": 3,
+    "ordinal__d1_treze_esquecido": 3,
+    "ordinal__d2_modulo_errado": 3,
+    "ordinal__d3_ignora_centena": 3,
+    "ordinal__d4_retorno_vazio": 3
+   }
+  },
+  "agente": {
+   "n": 69,
+   "gerados": 69,
+   "W": 1.0,
+   "S": 0.9855072463768116,
+   "F2P_algum": 1.0,
+   "P2F_algum": 0.014492753623188406,
+   "cobertura_patch": 1.0,
+   "cobertura_patch_sucesso": 1.0,
+   "pass@1": 0.9855072463768116,
+   "pass@3": 1.0,
+   "por_funcao": {
+    "apnumber": 1.0,
+    "cpf_validate": 1.0,
+    "intword": 1.0,
+    "luhn_validate": 0.9166666666666666,
+    "naturalsize": 1.0,
+    "ordinal": 1.0
+   },
+   "por_instancia": {
+    "apnumber__d1_zero_excluido": 3,
+    "apnumber__d2_nove_excluido": 3,
+    "apnumber__d3_except_incompleto": 3,
+    "cpf_validate__d1_aceita_zero": 3,
+    "cpf_validate__d2_comprimento_minimo": 3,
+    "cpf_validate__d3_nao_remove_ponto": 3,
+    "cpf_validate__d4_segundo_digito": 3,
+    "intword__d1_mil_sem_sufixo": 3,
+    "intword__d2_sem_carry": 3,
+    "intword__d3_perde_sinal": 3,
+    "intword__d4_bisect_left": 3,
+    "luhn_validate__d1_posicoes_trocadas": 3,
+    "luhn_validate__d2_sem_vai_um": 2,
+    "luhn_validate__d3_aceita_vazio": 3,
+    "luhn_validate__d4_converte_str": 3,
+    "naturalsize__d1_base_inclusiva": 3,
+    "naturalsize__d2_base_binaria": 3,
+    "naturalsize__d3_singular_sem_abs": 3,
+    "naturalsize__d4_sem_subir_sufixo": 3,
+    "ordinal__d1_treze_esquecido": 3,
+    "ordinal__d2_modulo_errado": 3,
+    "ordinal__d3_ignora_centena": 3,
+    "ordinal__d4_retorno_vazio": 3
+   },
+   "chamadas_bash_media": 4.811594202898551,
+   "alterou_alvo": 0,
+   "processo": {
+    "turnos_media": 8.028985507246377,
+    "rodou_pytest": 1.0,
+    "viu_falhar": 1.0,
+    "ultimo_pytest_falhou": 0.13043478260869565,
+    "entregou_arquivo": 1.0,
+    "limite_turnos": 4,
+    "argumentos_invalidos": 0,
+    "sucesso_se_rodou_pytest": 0.9855072463768116,
+    "sucesso_se_nao_rodou": null,
+    "custo_total_usd": 0.065528,
+    "custo_por_sucesso_usd": 0.0009636470588235295
+   }
+  }
+ },
+ "tge_full": {
+  "n": 18,
+  "utilizavel": 1.0,
+  "all_pass_pass@1": 1.0,
+  "all_pass_pass@3": 1.0,
+  "any_pass_pass@1": 1.0,
+  "any_pass_pass@3": 1.0,
+  "falsos_alarmes": 0.0,
+  "n_testes": 58.77777777777778,
+  "cobertura_linhas": 1.0,
+  "cobertura_ramos": 1.0,
+  "mutation_score": 0.9926900584795322,
+  "deteccao_defeitos": 0.9722222222222222,
+  "por_funcao": {
+   "apnumber": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 1.0,
+    "deteccao_defeitos": 1.0,
+    "falsos_alarmes": 0.0
+   },
+   "cpf_validate": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 0.956140350877193,
+    "deteccao_defeitos": 1.0,
+    "falsos_alarmes": 0.0
+   },
+   "intword": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 1.0,
+    "deteccao_defeitos": 1.0,
+    "falsos_alarmes": 0.0
+   },
+   "luhn_validate": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 1.0,
+    "deteccao_defeitos": 0.8333333333333334,
+    "falsos_alarmes": 0.0
+   },
+   "naturalsize": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 1.0,
+    "deteccao_defeitos": 1.0,
+    "falsos_alarmes": 0.0
+   },
+   "ordinal": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 1.0,
+    "deteccao_defeitos": 1.0,
+    "falsos_alarmes": 0.0
+   }
+  }
+ },
+ "tge_compl": {
+  "first": {
+   "n": 18,
+   "pass@1": 0.9444444444444445,
+   "pass@3": 1.0,
+   "delta_cobertura_linhas": 0.44494862561023607,
+   "delta_cobertura_ramos": 0.65,
+   "delta_mutation_score": 0.538919941598574,
+   "delta_deteccao_defeitos": 0.7352941176470589,
+   "motivos_falha": {
+    "sem resposta": 1
+   }
+  },
+  "last": {
+   "n": 18,
+   "pass@1": 1.0,
+   "pass@3": 1.0,
+   "delta_cobertura_linhas": 0.02160976766239923,
+   "delta_cobertura_ramos": 0.04940476190476192,
+   "delta_mutation_score": 0.021247290622890252,
+   "delta_deteccao_defeitos": 0.0,
+   "motivos_falha": {}
+  },
+  "extra": {
+   "n": 18,
+   "pass@1": 1.0,
+   "pass@3": 1.0,
+   "delta_cobertura_linhas": 0.0,
+   "delta_cobertura_ramos": 0.0,
+   "delta_mutation_score": 0.0,
+   "delta_deteccao_defeitos": 0.0,
+   "motivos_falha": {}
+  }
+ },
+ "base_ctx": {
+  "apnumber/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.45,
+   "cobertura_ramos": 0.2,
+   "mutation_score": 0.25,
+   "deteccao_defeitos": 0.3333333333333333,
+   "motivo": null
+  },
+  "apnumber/last": {
+   "utilizavel": true,
+   "n_testes": 21,
+   "n_validos": 21,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.9,
+   "cobertura_ramos": 0.8,
+   "mutation_score": 0.95,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "apnumber/extra": {
+   "utilizavel": true,
+   "n_testes": 22,
+   "n_validos": 22,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.95,
+   "cobertura_ramos": 0.9,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "cpf_validate/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.8387096774193549,
+   "cobertura_ramos": 0.5,
+   "mutation_score": 0.6842105263157895,
+   "deteccao_defeitos": 0.25,
+   "motivo": null
+  },
+  "cpf_validate/last": {
+   "utilizavel": true,
+   "n_testes": 26,
+   "n_validos": 26,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "cpf_validate/extra": {
+   "utilizavel": true,
+   "n_testes": 27,
+   "n_validos": 27,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "intword/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.35135135135135137,
+   "cobertura_ramos": 0.21428571428571427,
+   "mutation_score": 0.07547169811320754,
+   "deteccao_defeitos": 0.0,
+   "motivo": null
+  },
+  "intword/last": {
+   "utilizavel": true,
+   "n_testes": 32,
+   "n_validos": 32,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.9459459459459459,
+   "cobertura_ramos": 0.8571428571428571,
+   "mutation_score": 0.9811320754716981,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "intword/extra": {
+   "utilizavel": true,
+   "n_testes": 33,
+   "n_validos": 33,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.972972972972973,
+   "cobertura_ramos": 0.9285714285714286,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "luhn_validate/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.4117647058823529,
+   "cobertura_ramos": 0.25,
+   "mutation_score": 0.08333333333333333,
+   "deteccao_defeitos": 0.25,
+   "motivo": null
+  },
+  "luhn_validate/last": {
+   "utilizavel": true,
+   "n_testes": 19,
+   "n_validos": 19,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "luhn_validate/extra": {
+   "utilizavel": true,
+   "n_testes": 20,
+   "n_validos": 20,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "naturalsize/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.4,
+   "cobertura_ramos": 0.2,
+   "mutation_score": 0.03389830508474576,
+   "deteccao_defeitos": 0.0,
+   "motivo": null
+  },
+  "naturalsize/last": {
+   "utilizavel": true,
+   "n_testes": 43,
+   "n_validos": 43,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 0.9661016949152542,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "naturalsize/extra": {
+   "utilizavel": true,
+   "n_testes": 44,
+   "n_validos": 44,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "ordinal/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.47368421052631576,
+   "cobertura_ramos": 0.125,
+   "mutation_score": 0.16666666666666666,
+   "deteccao_defeitos": 0.0,
+   "motivo": null
+  },
+  "ordinal/last": {
+   "utilizavel": true,
+   "n_testes": 35,
+   "n_validos": 35,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.8947368421052632,
+   "cobertura_ramos": 0.75,
+   "mutation_score": 0.9583333333333334,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "ordinal/extra": {
+   "utilizavel": true,
+   "n_testes": 36,
+   "n_validos": 36,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.9473684210526315,
+   "cobertura_ramos": 0.875,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  }
+ }
+}

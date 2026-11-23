@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 16.6,
+ "tokens_entrada": 18157,
+ "tokens_saida": 1773,
+ "tokens_raciocinio": 755,
+ "custo_usd": 0.001529,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d1_aceita_zero__s1",
+ "nota": "Wrote `test_issue.py`, which fails on the current code (all-zeros CPF is accepted) and passes with a fix that rejects it (`10 passed` in a simulated fixed copy)."
+}

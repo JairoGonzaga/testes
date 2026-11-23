@@ -1,0 +1,8 @@
+{
+ "agente": "a6a2c437c1cba7980",
+ "nota": "The test file reproduces the all-zeros CPF bug: validate() currently returns the input instead of raising InvalidFormat, so the test fails until the bug is fixed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

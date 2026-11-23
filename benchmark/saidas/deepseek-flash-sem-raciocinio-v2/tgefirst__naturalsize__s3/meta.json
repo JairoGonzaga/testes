@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 13.1,
+ "tokens_entrada": 18150,
+ "tokens_saida": 1531,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001214,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 3,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__naturalsize__s3",
+ "nota": "```python\ndef test_c2_r1_bytes_e_escalas():\n    # [R2/R3/valida]\n    assert naturalsize(0) == \"0 Bytes\"\n    assert naturalsize(1) == \"1 Byte\"\n    assert naturalsize(-1) == \"-1 Byte\"\n    assert naturalsize(999) == \"999 Bytes\"\n    assert naturalsize(1000) == \"1.0 kB\"\n    assert naturalsize(1500) == \"1.5 kB\"\n    assert naturalsize(-2000) == \"-2.0 kB\"\n    assert naturalsize(10**6) == \"1.0 MB\"\n    assert naturalsize(1024) == \"1.0 kB\"\n    assert naturalsize(10**24) == \"1.0 YB\"\n    assert naturalsize(1"
+}

@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 29.1,
+ "tokens_entrada": 37066,
+ "tokens_saida": 3324,
+ "tokens_raciocinio": 1660,
+ "custo_usd": 0.00285,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__apnumber__d3_except_incompleto__s2",
+ "nota": "`test_issue.py` is written: it fails on the current `alvo.py` (10 failures, all from `apnumber(None)` / other non-numeric values raising `TypeError`) and all 23 tests pass against a corrected implementation that catches `TypeError` alongside `ValueError` and returns `str(value)`."
+}

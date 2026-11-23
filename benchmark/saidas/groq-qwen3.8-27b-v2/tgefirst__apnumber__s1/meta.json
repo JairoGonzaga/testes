@@ -1,0 +1,38 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 97.4,
+ "tokens_entrada": 11218,
+ "tokens_saida": 427,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 6,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\tgefirst__apnumber__s1",
+ "nota": "The test passes. My new test function `test_string_passthrough` verifies that non-numeric strings pass through unchanged by `apnumber`."
+}

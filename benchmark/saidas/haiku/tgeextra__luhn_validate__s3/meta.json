@@ -1,0 +1,8 @@
+{
+ "agente": "a9442f9dce4ab7ff8",
+ "nota": "The new test swaps each single symbol of three known-valid numbers (decimal and hex) and checks every swap raises InvalidChecksum; no new imports are needed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

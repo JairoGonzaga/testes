@@ -1,0 +1,8 @@
+{
+ "agente": "a591a1da4735b6ae4",
+ "nota": "Adds test_c1_r2 checking ordinal(3) == '3rd' (the 'rd' suffix), following the existing test_c1_r1 pattern; the R2/normal label is inferred from naming.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

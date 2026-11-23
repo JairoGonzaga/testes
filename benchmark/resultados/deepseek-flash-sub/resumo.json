@@ -1,0 +1,190 @@
+{
+ "modelo": "deepseek-flash",
+ "swt": {
+  "zeroshot": {
+   "n": 2,
+   "gerados": 2,
+   "W": 1.0,
+   "S": 1.0,
+   "F2P_algum": 1.0,
+   "P2F_algum": 0.0,
+   "cobertura_patch": 1.0,
+   "cobertura_patch_sucesso": 1.0,
+   "pass@1": 1.0,
+   "pass@3": null,
+   "por_funcao": {
+    "apnumber": 1.0
+   },
+   "por_instancia": {
+    "apnumber__d1_zero_excluido": 1,
+    "apnumber__d2_nove_excluido": 1
+   }
+  },
+  "agente": {
+   "n": 2,
+   "gerados": 2,
+   "W": 1.0,
+   "S": 1.0,
+   "F2P_algum": 1.0,
+   "P2F_algum": 0.0,
+   "cobertura_patch": 1.0,
+   "cobertura_patch_sucesso": 1.0,
+   "pass@1": 1.0,
+   "pass@3": null,
+   "por_funcao": {
+    "apnumber": 1.0
+   },
+   "por_instancia": {
+    "apnumber__d1_zero_excluido": 1,
+    "apnumber__d2_nove_excluido": 1
+   },
+   "chamadas_bash_media": 2.5,
+   "alterou_alvo": 0,
+   "processo": {
+    "turnos_media": 6.0,
+    "rodou_pytest": 1.0,
+    "viu_falhar": 1.0,
+    "ultimo_pytest_falhou": 1.0,
+    "entregou_arquivo": 1.0,
+    "limite_turnos": 0,
+    "argumentos_invalidos": 0,
+    "sucesso_se_rodou_pytest": 1.0,
+    "sucesso_se_nao_rodou": null,
+    "custo_total_usd": 0.0026300000000000004,
+    "custo_por_sucesso_usd": 0.0013150000000000002
+   }
+  }
+ },
+ "tge_full": {
+  "n": 2,
+  "utilizavel": 0.5,
+  "all_pass_pass@1": 0.5,
+  "all_pass_pass@3": null,
+  "any_pass_pass@1": 0.5,
+  "any_pass_pass@3": null,
+  "falsos_alarmes": 0.0,
+  "n_testes": 88.0,
+  "cobertura_linhas": 1.0,
+  "cobertura_ramos": 1.0,
+  "mutation_score": 1.0,
+  "deteccao_defeitos": 1.0,
+  "por_funcao": {
+   "apnumber": {
+    "all_pass": 1.0,
+    "cobertura_linhas": 1.0,
+    "cobertura_ramos": 1.0,
+    "mutation_score": 1.0,
+    "deteccao_defeitos": 1.0,
+    "falsos_alarmes": 0.0
+   },
+   "cpf_validate": {
+    "all_pass": 0.0,
+    "cobertura_linhas": null,
+    "cobertura_ramos": null,
+    "mutation_score": null,
+    "deteccao_defeitos": null,
+    "falsos_alarmes": null
+   }
+  }
+ },
+ "tge_compl": {
+  "first": {
+   "n": 2,
+   "pass@1": 1.0,
+   "pass@3": null,
+   "delta_cobertura_linhas": 0.21612903225806449,
+   "delta_cobertura_ramos": 0.4333333333333333,
+   "delta_mutation_score": 0.2,
+   "delta_deteccao_defeitos": 0.16666666666666666,
+   "motivos_falha": {}
+  },
+  "last": {
+   "n": 2,
+   "pass@1": 1.0,
+   "pass@3": null,
+   "delta_cobertura_linhas": 0.024999999999999967,
+   "delta_cobertura_ramos": 0.04999999999999999,
+   "delta_mutation_score": 0.025000000000000022,
+   "delta_deteccao_defeitos": 0.0,
+   "motivos_falha": {}
+  },
+  "extra": {
+   "n": 2,
+   "pass@1": 1.0,
+   "pass@3": null,
+   "delta_cobertura_linhas": 0.0,
+   "delta_cobertura_ramos": 0.0,
+   "delta_mutation_score": 0.0,
+   "delta_deteccao_defeitos": 0.0,
+   "motivos_falha": {}
+  }
+ },
+ "base_ctx": {
+  "apnumber/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.45,
+   "cobertura_ramos": 0.2,
+   "mutation_score": 0.25,
+   "deteccao_defeitos": 0.3333333333333333,
+   "motivo": null
+  },
+  "apnumber/last": {
+   "utilizavel": true,
+   "n_testes": 21,
+   "n_validos": 21,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.9,
+   "cobertura_ramos": 0.8,
+   "mutation_score": 0.95,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "apnumber/extra": {
+   "utilizavel": true,
+   "n_testes": 22,
+   "n_validos": 22,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.95,
+   "cobertura_ramos": 0.9,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "cpf_validate/first": {
+   "utilizavel": true,
+   "n_testes": 1,
+   "n_validos": 1,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 0.8387096774193549,
+   "cobertura_ramos": 0.5,
+   "mutation_score": 0.6842105263157895,
+   "deteccao_defeitos": 0.25,
+   "motivo": null
+  },
+  "cpf_validate/last": {
+   "utilizavel": true,
+   "n_testes": 26,
+   "n_validos": 26,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  },
+  "cpf_validate/extra": {
+   "utilizavel": true,
+   "n_testes": 27,
+   "n_validos": 27,
+   "falsos_alarmes": 0.0,
+   "cobertura_linhas": 1.0,
+   "cobertura_ramos": 1.0,
+   "mutation_score": 1.0,
+   "deteccao_defeitos": 1.0,
+   "motivo": null
+  }
+ }
+}

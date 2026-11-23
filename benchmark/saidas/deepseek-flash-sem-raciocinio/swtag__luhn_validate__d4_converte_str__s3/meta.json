@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 8.9,
+ "tokens_entrada": 8418,
+ "tokens_saida": 759,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000683,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d4_converte_str__s3",
+ "nota": "Wrote `test_issue.py`: two tests fail on current code (`validate(79927398713)` and `validate(18)` return `str` instead of the original `int`), and all 5 tests pass against a fixed `validate()` that returns the value unchanged."
+}

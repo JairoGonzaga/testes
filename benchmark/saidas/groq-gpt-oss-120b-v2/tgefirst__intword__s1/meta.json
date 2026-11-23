@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 47.7,
+ "tokens_entrada": 2435,
+ "tokens_saida": 3243,
+ "tokens_raciocinio": 3100,
+ "custo_usd": 0.0,
+ "chamadas_api": 2,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 2,
+ "origem_codigo": "mensagem_final",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\claude\\965c3fc526490071\\bd2711e8-1c50-476f-ba58-a35e58244997\\scratchpad\\sb_groq_full\\groq-gpt-oss-120b-v2\\tgefirst__intword__s1",
+ "nota": "```python\ndef test_c2_r1_rounding_bump():\n    # When the format rounds the chopped value up to exactly 1000,\n    # the function should promote to the next unit.\n    assert intword(999500, format=\"%.0f\") == \"1 million\"\n    # With the default format (one decimal), it stays in the original unit.\n    assert intword(999500) == \"999.5 thousand\"\n```"
+}

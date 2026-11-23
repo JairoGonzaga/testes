@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -35,7 +35,7 @@
+     if value < powers[0]:
+         return f"{negative_prefix}{value}"
+ 
+-    ordinal = bisect.bisect_left(powers, value)
++    ordinal = bisect.bisect_right(powers, value)
+     largest_ordinal = ordinal == len(powers)
+ 
+     ordinal -= 1

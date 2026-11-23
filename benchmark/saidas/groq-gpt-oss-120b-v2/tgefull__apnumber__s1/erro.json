@@ -1,0 +1,11 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": "RuntimeError: HTTP 400: {\"error\":{\"message\":\"Failed to parse tool call arguments as JSON\",\"type\":\"invalid_request_error\",\"code\":\"tool_use_failed\",\"failed_generation\":\"{\\\"name\\\": \\\"write_file\\\", \\\"arguments\\\": {\\\"path\\\":\\\"test_alvo.py\\\",\\\"content\\\":\\\"import math\\\\nimport pytest\\\\nfrom alvo import apnumber, _format_not_finit",
+ "tempo_s": 60.0,
+ "tokens_entrada": 2664,
+ "tokens_saida": 1532,
+ "tokens_raciocinio": 693,
+ "custo_usd": 0.0,
+ "chamadas_api": 2,
+ "provedores": []
+}

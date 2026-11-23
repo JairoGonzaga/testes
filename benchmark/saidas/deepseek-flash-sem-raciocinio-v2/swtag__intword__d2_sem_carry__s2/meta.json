@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.2,
+ "tokens_entrada": 60046,
+ "tokens_saida": 2048,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.002446,
+ "chamadas_api": 13,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 13,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 9,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 12,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  },
+  {
+   "turno": 12,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d2_sem_carry__s2",
+ "nota": "`test_issue.py` now reproduces the reported promotion bug (6 failures, all `1000.0 thousand`-style outputs where `1.0 million`-style is expected) and passes fully (7 passed) against a minimally fixed copy in `fixcheck/`."
+}

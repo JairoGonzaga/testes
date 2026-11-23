@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 16.7,
+ "tokens_entrada": 11180,
+ "tokens_saida": 1934,
+ "tokens_raciocinio": 767,
+ "custo_usd": 0.00152,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d1_treze_esquecido__s1",
+ "nota": "All 36 tests fail on the buggy `alvo.py` (`ordinal(13) == '13rd'`) and pass with the corrected teen rule; `test_issue.py` is written."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "abf3a262eebb5fd34",
+ "nota": "Adds one test that pins out-of-range floats returning the truncated integer text (10.7 gives '10', -2.5 gives '-2'), a case no existing test covers.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

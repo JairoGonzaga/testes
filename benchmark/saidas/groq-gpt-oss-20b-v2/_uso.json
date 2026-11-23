@@ -1,0 +1,11 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "tarefas": 28,
+ "com_codigo": 26,
+ "custo_usd": 0.0,
+ "tokens_entrada": 64730,
+ "tokens_saida": 42794,
+ "tokens_raciocinio": 31526,
+ "tempo_s": 1285.5,
+ "truncadas": 0
+}

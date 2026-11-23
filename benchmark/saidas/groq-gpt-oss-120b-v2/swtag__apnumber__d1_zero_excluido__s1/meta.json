@@ -1,0 +1,53 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 224.5,
+ "tokens_entrada": 26021,
+ "tokens_saida": 2045,
+ "tokens_raciocinio": 1137,
+ "custo_usd": 0.0,
+ "chamadas_api": 14,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 14,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 4,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "-q",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "-q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "-q",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "-q",
+   "exit": 1
+  },
+  {
+   "turno": 10,
+   "args": "-q fixcheck/test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 13,
+   "args": "-q fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\swtag__apnumber__d1_zero_excluido__s1",
+ "nota": "Implemented tests that confirm `apnumber(0)` returns \"zero\" and verify other single-digit conversions remain correct."
+}

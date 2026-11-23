@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 17.8,
+ "tokens_entrada": 1162,
+ "tokens_saida": 930,
+ "tokens_raciocinio": 793,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "mensagem_final",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\tgefirst__cpf_validate__s1",
+ "nota": "```python\ndef test_invalid_cases():\n    # Invalid checksum (correct format and length but wrong check digits)\n    with pytest.raises(InvalidChecksum):\n        validate('390.533.447-04')\n    # Invalid length (too short)\n    with pytest.raises(InvalidLength):\n        validate('1234567890')\n    # Invalid format (non‑digit character after cleaning)\n    with pytest.raises(InvalidFormat):\n        validate('12A-34-5678-90')\n    # Invalid format (numeric value is zero)\n    with pytest.raises(InvalidForm"
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a0e02c7892582e5ba",
+ "nota": "Adds a boundary test for rounding carry into the next unit with negative decimal values and positive binary values, which the existing tests do not cover.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

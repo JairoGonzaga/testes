@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.5,
+ "tokens_entrada": 6601,
+ "tokens_saida": 455,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000492,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__apnumber__s1",
+ "nota": "Added a parametrized test covering number words, out-of-range ints, floats, strings, None/True, and non-finite values; all 17 tests pass."
+}

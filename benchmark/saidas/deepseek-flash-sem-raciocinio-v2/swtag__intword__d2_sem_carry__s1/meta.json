@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 17.7,
+ "tokens_entrada": 36098,
+ "tokens_saida": 1270,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001435,
+ "chamadas_api": 12,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 12,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 8,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 10,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 0
+  },
+  {
+   "turno": 11,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d2_sem_carry__s1",
+ "nota": "`test_issue.py` reproduces the bug (`intword(999999)` yields `'1000.0 thousand'` instead of `'1.0 million'`, plus the analogous million→billion and negative cases) and passes fully against a fixed copy in `fixcheck/`."
+}

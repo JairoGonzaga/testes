@@ -1,0 +1,11 @@
+{
+ "agente": "a1369ca55ef636651",
+ "nota": "test_issue.py reproduces the bug where validate() returns str(number) for int input: the three int-expecting tests fail on the current code (returns '18' and '79927398713'), and the two string-input guards pass.",
+ "ferramentas": {
+  "mcp__ccd_turn__update_plan": 1,
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

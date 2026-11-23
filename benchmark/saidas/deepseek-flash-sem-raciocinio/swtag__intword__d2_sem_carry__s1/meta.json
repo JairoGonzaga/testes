@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.6,
+ "tokens_entrada": 42509,
+ "tokens_saida": 2427,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.002395,
+ "chamadas_api": 11,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 11,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 3,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__intword__d2_sem_carry__s1",
+ "nota": "I wrote `test_issue.py`, which fails on the current `alvo.py` (e.g. `intword(999999)` returns `'1000.0 thousand'`) and passes once rounding correctly promotes the unit suffix."
+}

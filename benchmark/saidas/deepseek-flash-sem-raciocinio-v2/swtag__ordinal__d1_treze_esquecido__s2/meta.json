@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 14.8,
+ "tokens_entrada": 29743,
+ "tokens_saida": 1169,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001437,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__ordinal__d1_treze_esquecido__s2",
+ "nota": "Wrote `test_issue.py`, which fails on the current code (13/113/213/1013 get \"rd\" instead of \"th\" for the teens case) and passes on a copy with the minimal fix extending the teens check to 13."
+}

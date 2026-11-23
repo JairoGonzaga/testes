@@ -1,0 +1,8 @@
+{
+ "agente": "a46e10d1593c471b5",
+ "nota": "Pytest file that reproduces the CPF over-length bug: 12-, 13- and 14-digit inputs should raise InvalidLength, with short and valid 11-digit controls.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

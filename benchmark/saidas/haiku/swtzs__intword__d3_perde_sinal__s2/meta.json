@@ -1,0 +1,8 @@
+{
+ "agente": "a01bdaa22b1c5e0cf",
+ "nota": "Pytest file with negative-value tests that fail on the current alvo.py (sign dropped) and should pass once the sign is kept.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

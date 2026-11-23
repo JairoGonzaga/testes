@@ -1,0 +1,3 @@
+def test_c22_r5():
+    # [R5/invalida]
+    assert apnumber(math.nan) == 'NaN'

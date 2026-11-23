@@ -1,0 +1,8 @@
+{
+ "agente": "ab5bf5319c8eab6f3",
+ "nota": "Adds a test that a wrong check digit raises InvalidChecksum, using only the imports already in the file.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

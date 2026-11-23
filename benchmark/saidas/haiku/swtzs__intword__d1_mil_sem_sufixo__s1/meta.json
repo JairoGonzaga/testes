@@ -1,0 +1,8 @@
+{
+ "agente": "ab3856991562fcb5f",
+ "nota": "The pytest file reproduces the bug at the 1000 boundary: the exact-1000 and negative-1000 cases fail on the current code, and the 999 case guards the unchanged range.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

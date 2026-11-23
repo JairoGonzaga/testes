@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.0,
+ "tokens_entrada": 13410,
+ "tokens_saida": 630,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000715,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__ordinal__d2_modulo_errado__s1",
+ "nota": "`test_issue.py` reproduces the bug: `ordinal` uses `value % 10` instead of `value % 100` to detect the 11/12/13 exception, so 11, 12, 13 (and 111 etc.) get the wrong suffix; all four tests fail on `alvo.py` and pass on the fixed copy."
+}

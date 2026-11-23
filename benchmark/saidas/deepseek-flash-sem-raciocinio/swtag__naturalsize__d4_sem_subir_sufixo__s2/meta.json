@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 16.0,
+ "tokens_entrada": 24165,
+ "tokens_saida": 2225,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001855,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d4_sem_subir_sufixo__s2",
+ "nota": "`test_issue.py` now fails on the current `alvo.py` (5 failures covering the rounding-overflow bug for decimal, binary, GNU and negative values) and passes against a fixed implementation."
+}

@@ -1,0 +1,118 @@
+{
+  "_sobre": "Relatos de bug (estilo issue do GitHub) para as instâncias SWT-Bench. Descrevem só o sintoma observado, sem indicar a correção. A chave 'repro' é conferida por preparar.py: precisa dar resultado diferente na versão com defeito e na corrigida.",
+  "apnumber__d1_zero_excluido": {
+    "title": "apnumber(0) is not spelled out",
+    "body": "The docs say numbers from 0 to 9 are returned as words, but zero comes back as a digit string.\n\n```python\n>>> from alvo import apnumber\n>>> apnumber(0)\n'0'\n```\n\nExpected `'zero'`. Other single digits (e.g. `apnumber(5)` -> `'five'`) work fine.",
+    "repro": "apnumber(0)"
+  },
+  "apnumber__d2_nove_excluido": {
+    "title": "apnumber(9) returns '9' instead of 'nine'",
+    "body": "Single-digit numbers should be spelled out, but 9 is returned as a digit.\n\n```python\n>>> from alvo import apnumber\n>>> apnumber(9)\n'9'\n```\n\nExpected `'nine'`.",
+    "repro": "apnumber(9)"
+  },
+  "apnumber__d3_except_incompleto": {
+    "title": "apnumber(None) crashes with TypeError",
+    "body": "Values that cannot be converted to int are supposed to be returned unchanged as a string (`str(value)`), but passing `None` raises:\n\n```python\n>>> from alvo import apnumber\n>>> apnumber(None)\nTraceback (most recent call last):\n  ...\nTypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'\n```\n\nExpected `'None'`, the same way `apnumber('abc')` returns `'abc'`.",
+    "repro": "apnumber(None)"
+  },
+  "cpf_validate__d1_aceita_zero": {
+    "title": "validate() accepts the all-zeros CPF",
+    "body": "A CPF made only of zeros is not a valid number and should be rejected with `InvalidFormat`, but it is accepted:\n\n```python\n>>> from alvo import validate\n>>> validate('00000000000')\n'00000000000'\n```\n\nExpected: `InvalidFormat` is raised.",
+    "repro": "validate('00000000000')"
+  },
+  "cpf_validate__d2_comprimento_minimo": {
+    "title": "CPF with too many digits raises InvalidChecksum instead of InvalidLength",
+    "body": "Any CPF whose compacted form does not have exactly 11 digits should raise `InvalidLength`. With 12 digits we get the wrong exception:\n\n```python\n>>> from alvo import validate\n>>> validate('111444777350')\nTraceback (most recent call last):\n  ...\nalvo.InvalidChecksum\n```\n\nExpected: `InvalidLength`.",
+    "repro": "validate('111444777350')"
+  },
+  "cpf_validate__d3_nao_remove_ponto": {
+    "title": "Formatted CPF with dots is rejected",
+    "body": "`validate()` is documented to accept CPFs in the usual `XXX.XXX.XXX-XX` format (spaces, dots and hyphens are removed before validating), but a correctly formatted valid CPF fails:\n\n```python\n>>> from alvo import validate\n>>> validate('111.444.777-35')\nTraceback (most recent call last):\n  ...\nalvo.InvalidFormat\n```\n\nExpected: returns the compact form `'11144477735'`.",
+    "repro": "validate('111.444.777-35')"
+  },
+  "cpf_validate__d4_segundo_digito": {
+    "title": "Valid CPF rejected with InvalidChecksum",
+    "body": "Some perfectly valid CPF numbers are rejected as having a wrong check digit:\n\n```python\n>>> from alvo import validate\n>>> validate('11144477735')\nTraceback (most recent call last):\n  ...\nalvo.InvalidChecksum\n```\n\n`111.444.777-35` is a well-known valid CPF (both check digits are correct). Expected: returns `'11144477735'`.",
+    "repro": "validate('11144477735')"
+  },
+  "intword__d1_mil_sem_sufixo": {
+    "title": "intword(1000) is not humanized",
+    "body": "Numbers of one thousand or more should be written with a word suffix, but exactly 1000 comes back unchanged:\n\n```python\n>>> from alvo import intword\n>>> intword(1000)\n'1000'\n```\n\nExpected `'1.0 thousand'`.",
+    "repro": "intword(1000)"
+  },
+  "intword__d2_sem_carry": {
+    "title": "intword(999999) returns '1000.0 thousand'",
+    "body": "When rounding pushes a value up to the next power, the suffix is not promoted:\n\n```python\n>>> from alvo import intword\n>>> intword(999999)\n'1000.0 thousand'\n```\n\nExpected `'1.0 million'`.",
+    "repro": "intword(999999)"
+  },
+  "intword__d3_perde_sinal": {
+    "title": "intword drops the minus sign of negative numbers",
+    "body": "Negative values lose their sign:\n\n```python\n>>> from alvo import intword\n>>> intword(-1000000)\n'1.0 million'\n```\n\nExpected `'-1.0 million'`.",
+    "repro": "intword(-1000000)"
+  },
+  "intword__d4_bisect_left": {
+    "title": "intword(10**100) does not return '1.0 googol'",
+    "body": "A googol should be humanized as `'1.0 googol'`, but we get a huge number with the previous suffix:\n\n```python\n>>> from alvo import intword\n>>> intword(10**100)\n'9999999999999999827367757839185598317239782875580932278577147150336.0 decillion'\n```\n\nExpected `'1.0 googol'`.",
+    "repro": "intword(10**100)"
+  },
+  "luhn_validate__d1_posicoes_trocadas": {
+    "title": "Valid Luhn number rejected",
+    "body": "The textbook Luhn example number is rejected:\n\n```python\n>>> from alvo import validate\n>>> validate('79927398713')\nTraceback (most recent call last):\n  ...\nalvo.InvalidChecksum\n```\n\n`79927398713` has a valid Luhn check digit. Expected: returns `'79927398713'`.",
+    "repro": "validate('79927398713')"
+  },
+  "luhn_validate__d2_sem_vai_um": {
+    "title": "Luhn validation fails for numbers with digits >= 5 in doubled positions",
+    "body": "Valid numbers are rejected when some of the doubled digits are 5 or more:\n\n```python\n>>> from alvo import validate\n>>> validate('79927398713')\nTraceback (most recent call last):\n  ...\nalvo.InvalidChecksum\n```\n\n`79927398713` is the standard valid Luhn example. Expected: returns `'79927398713'`.",
+    "repro": "validate('79927398713')"
+  },
+  "luhn_validate__d3_aceita_vazio": {
+    "title": "validate('') accepts an empty string",
+    "body": "An empty value should be rejected with `InvalidFormat`, but it is accepted:\n\n```python\n>>> from alvo import validate\n>>> validate('')\n''\n```\n\nExpected: `InvalidFormat` is raised.",
+    "repro": "validate('')"
+  },
+  "luhn_validate__d4_converte_str": {
+    "title": "validate() returns a string when given an int",
+    "body": "`validate()` should return the value it received, unchanged, when it is valid. When an int is passed, a str comes back:\n\n```python\n>>> from alvo import validate\n>>> validate(79927398713)\n'79927398713'\n```\n\nExpected the int `79927398713`.",
+    "repro": "validate(79927398713)"
+  },
+  "naturalsize__d1_base_inclusiva": {
+    "title": "naturalsize(1000) returns '1000 Bytes'",
+    "body": "Exactly one kilobyte is not converted to the next unit:\n\n```python\n>>> from alvo import naturalsize\n>>> naturalsize(1000)\n'1000 Bytes'\n```\n\nExpected `'1.0 kB'`.",
+    "repro": "naturalsize(1000)"
+  },
+  "naturalsize__d2_base_binaria": {
+    "title": "naturalsize(binary=True) gives wrong values",
+    "body": "With `binary=True` the result should use powers of 1024 (KiB, MiB...), but the numbers look like they are computed with powers of 1000:\n\n```python\n>>> from alvo import naturalsize\n>>> naturalsize(3000000, binary=True)\n'3.0 MiB'\n```\n\n3000000 / 1024**2 = 2.86..., so expected `'2.9 MiB'`.",
+    "repro": "naturalsize(3000000, binary=True)"
+  },
+  "naturalsize__d3_singular_sem_abs": {
+    "title": "naturalsize(-1) uses the plural 'Bytes'",
+    "body": "`naturalsize(1)` correctly returns `'1 Byte'`, but the negative counterpart uses the plural:\n\n```python\n>>> from alvo import naturalsize\n>>> naturalsize(-1)\n'-1 Bytes'\n```\n\nExpected `'-1 Byte'`.",
+    "repro": "naturalsize(-1)"
+  },
+  "naturalsize__d4_sem_subir_sufixo": {
+    "title": "naturalsize(999999) returns '1000.0 kB'",
+    "body": "When formatting rounds a value up to the size of the next unit, the unit is not promoted:\n\n```python\n>>> from alvo import naturalsize\n>>> naturalsize(999999)\n'1000.0 kB'\n```\n\nExpected `'1.0 MB'`.",
+    "repro": "naturalsize(999999)"
+  },
+  "ordinal__d1_treze_esquecido": {
+    "title": "ordinal(13) returns '13rd'",
+    "body": "```python\n>>> from alvo import ordinal\n>>> ordinal(13)\n'13rd'\n```\n\nExpected `'13th'` (11, 12 and 13 always take 'th').",
+    "repro": "ordinal(13)"
+  },
+  "ordinal__d2_modulo_errado": {
+    "title": "ordinal(11) returns '11st'",
+    "body": "```python\n>>> from alvo import ordinal\n>>> ordinal(11)\n'11st'\n```\n\nExpected `'11th'`.",
+    "repro": "ordinal(11)"
+  },
+  "ordinal__d3_ignora_centena": {
+    "title": "ordinal(111) returns '111st'",
+    "body": "Small numbers like 11 work, but larger numbers ending in 11/12/13 get the wrong suffix:\n\n```python\n>>> from alvo import ordinal\n>>> ordinal(111)\n'111st'\n```\n\nExpected `'111th'`.",
+    "repro": "ordinal(111)"
+  },
+  "ordinal__d4_retorno_vazio": {
+    "title": "ordinal() returns an empty string for non-numeric input",
+    "body": "Values that cannot be converted to int should be returned as `str(value)`, but an empty string comes back:\n\n```python\n>>> from alvo import ordinal\n>>> ordinal('something else')\n''\n```\n\nExpected `'something else'`.",
+    "repro": "ordinal('something else')"
+  }
+}

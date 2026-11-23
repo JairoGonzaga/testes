@@ -1,0 +1,8 @@
+{
+ "agente": "a0dc42d96f3207a9d",
+ "nota": "Wrote a complete pytest file for alvo.apnumber covering the digit table, range boundaries, float truncation, non-finite values, overflow, strings, non-numeric fallbacks and the _format_not_finite helper.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

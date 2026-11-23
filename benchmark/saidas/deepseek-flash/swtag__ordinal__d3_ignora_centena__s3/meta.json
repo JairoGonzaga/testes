@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.9,
+ "tokens_entrada": 10597,
+ "tokens_saida": 991,
+ "tokens_raciocinio": 115,
+ "custo_usd": 0.001036,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d3_ignora_centena__s3",
+ "nota": "`test_issue.py` is written: it fails on the current `alvo.py` (111 → '111st' etc.) and passes with the 11/12/13 handling applied to `value % 100`."
+}

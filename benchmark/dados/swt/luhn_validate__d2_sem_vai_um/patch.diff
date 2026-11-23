@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -13,7 +13,7 @@
+ def checksum(number, alphabet="0123456789"):
+     n = len(alphabet)
+     values = tuple(alphabet.index(i) for i in reversed(str(number)))
+-    return (sum(values[::2]) + sum((i * 2) % n for i in values[1::2])) % n
++    return (sum(values[::2]) + sum(sum(divmod(i * 2, n)) for i in values[1::2])) % n
+ 
+ 
+ def validate(number, alphabet="0123456789"):

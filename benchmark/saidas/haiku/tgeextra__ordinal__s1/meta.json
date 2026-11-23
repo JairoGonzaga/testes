@@ -1,0 +1,8 @@
+{
+ "agente": "a4b8a18191430b175",
+ "nota": "Adds a test that large integers above 2**53, both as int and as string, keep exact digits and the correct suffix, which catches precision loss from float conversion.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

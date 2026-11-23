@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.5,
+ "tokens_entrada": 4815,
+ "tokens_saida": 380,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000405,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d4_converte_str__s1",
+ "nota": "I wrote `test_issue.py`; it fails on the current code (int is converted to str) and its other tests confirm string/error behavior once the fix returns the value unchanged."
+}

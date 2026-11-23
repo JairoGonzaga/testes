@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.0,
+ "tokens_entrada": 15534,
+ "tokens_saida": 1164,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000996,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 3,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__apnumber__s3",
+ "nota": "The new test passes alongside the existing one:\n\n```python\ndef test_c2_r1_finitos_e_tipos_convertidos():\n    # [R1/ramos de conversao e de intervalo]\n    assert apnumber(9) == \"nine\"\n    assert apnumber(3.9) == \"three\"\n    assert apnumber(9.99) == \"nine\"\n    assert apnumber(-0.5) == \"zero\"\n    assert apnumber(10) == \"10\"\n    assert apnumber(-1) == \"-1\"\n    assert apnumber(\"7\") == \"seven\"\n    assert apnumber(\"abc\") == \"abc\"\n    assert apnumber(None) == \"None\"\n    assert apnumber(float(\"nan\")) == "
+}

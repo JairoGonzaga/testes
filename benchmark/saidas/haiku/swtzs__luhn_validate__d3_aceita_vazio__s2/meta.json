@@ -1,0 +1,8 @@
+{
+ "agente": "a83a317d08c5165f9",
+ "nota": "A single pytest test asserting validate('') raises InvalidFormat, which fails on the current code because it returns '' instead.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

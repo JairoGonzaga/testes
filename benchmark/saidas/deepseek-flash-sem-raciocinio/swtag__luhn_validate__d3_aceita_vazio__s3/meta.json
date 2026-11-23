@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.6,
+ "tokens_entrada": 4826,
+ "tokens_saida": 435,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000402,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d3_aceita_vazio__s3",
+ "nota": "Created `test_issue.py`; it fails on the empty-string cases now and will pass once `validate('')` raises `InvalidFormat`."
+}

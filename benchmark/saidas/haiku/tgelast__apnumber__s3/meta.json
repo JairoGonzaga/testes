@@ -1,0 +1,8 @@
+{
+ "agente": "ae519d37a7fe3b8e7",
+ "nota": "Adds a NaN case for R5, using the math import already in the test file, which returns 'NaN' per _format_not_finite.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a63d6e77258de8b05",
+ "nota": "The single failing test reproduces the issue at 1000, and the other three are regression guards that pass both before and after the fix.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

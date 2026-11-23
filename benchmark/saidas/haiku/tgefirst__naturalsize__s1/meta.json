@@ -1,0 +1,8 @@
+{
+ "agente": "a6c3a17b7f76e3cc3",
+ "nota": "Adds a valid-input test checking that naturalsize(1000) returns \"1.0 kB\" under the decimal default, which matches the source logic.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

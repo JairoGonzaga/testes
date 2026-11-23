@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 17.9,
+ "tokens_entrada": 18722,
+ "tokens_saida": 1727,
+ "tokens_raciocinio": 449,
+ "custo_usd": 0.001511,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d3_perde_sinal__s3",
+ "nota": "`test_issue.py` is written: 6 negative-value tests fail on the current code (sign dropped) while positive/non-finite tests pass, and all pass once `intword` sets `negative_prefix = \"-\"`."
+}

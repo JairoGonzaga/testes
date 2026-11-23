@@ -1,0 +1,8 @@
+{
+ "agente": "ae78dad69c9fbcbf6",
+ "nota": "Adds a test for non-finite values passed as strings ('nan', 'inf', '-Infinity'), a path the existing float-only R6 tests never reach.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

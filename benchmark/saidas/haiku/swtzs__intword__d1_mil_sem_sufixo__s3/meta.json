@@ -1,0 +1,8 @@
+{
+ "agente": "aa44aebf487161f9d",
+ "nota": "The pytest file reproduces the issue by checking that intword(1000) returns '1.0 thousand' (and the negative case), with a passing guard for 999.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

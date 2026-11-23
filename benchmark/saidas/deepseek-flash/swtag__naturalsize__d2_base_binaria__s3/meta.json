@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 13.4,
+ "tokens_entrada": 13666,
+ "tokens_saida": 2581,
+ "tokens_raciocinio": 907,
+ "custo_usd": 0.001962,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d2_base_binaria__s3",
+ "nota": "`test_issue.py` is written: 5 tests fail on the current code (binary mode scales by 1000 instead of 1024), while decimal/gnu behaviour checks and all assertions were verified to pass against a corrected `naturalsize`."
+}

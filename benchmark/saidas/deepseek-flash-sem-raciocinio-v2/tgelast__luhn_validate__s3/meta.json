@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.1,
+ "tokens_entrada": 26553,
+ "tokens_saida": 692,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000861,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 6,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__luhn_validate__s3",
+ "nota": "```python\ndef test_c20_r6():\n    # [R6/invalida]\n    with pytest.raises(InvalidChecksum):\n        validate('2', alphabet='1098765432')\n```"
+}

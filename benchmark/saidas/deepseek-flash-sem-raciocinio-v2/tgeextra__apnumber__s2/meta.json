@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 3.3,
+ "tokens_entrada": 3817,
+ "tokens_saida": 189,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000178,
+ "chamadas_api": 2,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 2,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 1,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__apnumber__s2",
+ "nota": "Added `test_c23_r3_float_int_negative`, asserting `apnumber(-4.9) == '-4'` (truncation through `int()` followed by the out-of-range string path), and it passes."
+}

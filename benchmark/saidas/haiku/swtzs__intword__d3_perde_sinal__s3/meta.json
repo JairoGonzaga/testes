@@ -1,0 +1,8 @@
+{
+ "agente": "a17b38801c0adba49",
+ "nota": "Pytest file with failing tests for the dropped minus sign in negative intword values, plus a positive-value control that passes on both current and fixed code.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

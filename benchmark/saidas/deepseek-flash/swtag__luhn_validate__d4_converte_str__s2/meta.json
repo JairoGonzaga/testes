@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 19.4,
+ "tokens_entrada": 16705,
+ "tokens_saida": 2018,
+ "tokens_raciocinio": 899,
+ "custo_usd": 0.00159,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d4_converte_str__s2",
+ "nota": "`test_issue.py` now reproduces the bug (5 failures now) and passes fully (8 passed) against a version where `validate()` returns the original value instead of `str(number)`."
+}

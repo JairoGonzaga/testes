@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -17,6 +17,8 @@
+ 
+ 
+ def validate(number, alphabet="0123456789"):
++    if not bool(number):
++        raise InvalidFormat()
+     try:
+         valid = checksum(number, alphabet) == 0
+     except Exception:

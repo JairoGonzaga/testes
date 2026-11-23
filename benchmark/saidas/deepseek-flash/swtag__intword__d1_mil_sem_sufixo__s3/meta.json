@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.5,
+ "tokens_entrada": 12320,
+ "tokens_saida": 1110,
+ "tokens_raciocinio": 307,
+ "custo_usd": 0.001028,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d1_mil_sem_sufixo__s3",
+ "nota": "`test_issue.py` reproduces the bug: it fails on the current code (6 failures, all around the 1000 boundary) and every assertion matches the fixed behaviour (`intword(1000) == \"1.0 thousand\"`, etc.), which I verified against a patched in-memory copy of the module without touching `alvo.py`."
+}

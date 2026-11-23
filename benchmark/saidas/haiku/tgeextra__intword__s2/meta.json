@@ -1,0 +1,8 @@
+{
+ "agente": "ada4fb4c6ae45b245",
+ "nota": "The new test covers rounding carry boundaries with a custom format and negative sign, plus the no-carry cap at googol, none of which the existing tests check.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

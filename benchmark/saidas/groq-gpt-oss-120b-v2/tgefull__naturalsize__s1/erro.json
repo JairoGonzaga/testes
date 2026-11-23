@@ -1,0 +1,11 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": "CotaEsgotada: limite de requisições/tokens do plano; liberaria em 961s (> --espera-max 900s): {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_***` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196133, Re",
+ "tempo_s": 310.9,
+ "tokens_entrada": 19277,
+ "tokens_saida": 8157,
+ "tokens_raciocinio": 6710,
+ "custo_usd": 0.0,
+ "chamadas_api": 10,
+ "provedores": []
+}

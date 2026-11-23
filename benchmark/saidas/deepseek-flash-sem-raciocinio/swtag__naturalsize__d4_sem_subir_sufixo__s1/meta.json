@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.7,
+ "tokens_entrada": 9749,
+ "tokens_saida": 579,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000662,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d4_sem_subir_sufixo__s1",
+ "nota": "I wrote `test_issue.py`, which fails on the current code (`naturalsize(999999)` yields `'1000.0 kB'`) and will pass once rounding up correctly promotes the unit."
+}

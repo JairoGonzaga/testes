@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 91.9,
+ "tokens_entrada": 208926,
+ "tokens_saida": 15591,
+ "tokens_raciocinio": 11689,
+ "custo_usd": 0.011039,
+ "chamadas_api": 15,
+ "provedores": [],
+ "finish_reason": "limite_de_turnos",
+ "turnos": 15,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 13,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 8,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 15,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d4_bisect_left__s1",
+ "nota": ""
+}

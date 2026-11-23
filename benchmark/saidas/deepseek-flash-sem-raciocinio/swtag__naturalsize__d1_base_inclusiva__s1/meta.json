@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.6,
+ "tokens_entrada": 15101,
+ "tokens_saida": 1113,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001014,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d1_base_inclusiva__s1",
+ "nota": "`test_issue.py` is written: it fails on the current code (3 failures for exactly 1000/1024 bytes in decimal, binary and gnu modes) and passes all 13 tests once the `abs_bytes <= base` boundary check is fixed."
+}

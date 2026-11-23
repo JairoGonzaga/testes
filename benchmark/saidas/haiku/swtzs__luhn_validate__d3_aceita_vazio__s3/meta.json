@@ -1,0 +1,8 @@
+{
+ "agente": "a9696ad19e79f9ae8",
+ "nota": "The test calls validate('') and expects InvalidFormat, which fails on the current code because it returns '' and passes once the empty-string bug is fixed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

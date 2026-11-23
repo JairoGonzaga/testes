@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 14.1,
+ "tokens_entrada": 13032,
+ "tokens_saida": 1076,
+ "tokens_raciocinio": 190,
+ "custo_usd": 0.000982,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__apnumber__d1_zero_excluido__s3",
+ "nota": "`test_issue.py` is written: it fails now because `apnumber(0)` returns `'0'` instead of `'zero'`, and passes with the range check fixed to include zero."
+}

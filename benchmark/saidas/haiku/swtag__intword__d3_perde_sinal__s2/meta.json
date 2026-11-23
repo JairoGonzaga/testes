@@ -1,0 +1,12 @@
+{
+ "agente": "a50617e515269b3c0",
+ "nota": "Wrote test_issue.py with negative-value cases that fail on the current code (5 failed, 1 passed for the positive regression check) because intword never applies the \"-\" prefix.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_session__list_start_targets": 1,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

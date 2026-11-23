@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 18.2,
+ "tokens_entrada": 14484,
+ "tokens_saida": 2153,
+ "tokens_raciocinio": 1178,
+ "custo_usd": 0.001715,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d4_retorno_vazio__s2",
+ "nota": "Created `test_issue.py`: the reported case fails on current code (8 failures) and all 26 tests pass with the fix simulated."
+}

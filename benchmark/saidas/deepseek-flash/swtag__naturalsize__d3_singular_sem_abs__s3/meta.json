@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 15.7,
+ "tokens_entrada": 12497,
+ "tokens_saida": 1548,
+ "tokens_raciocinio": 656,
+ "custo_usd": 0.001185,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d3_singular_sem_abs__s3",
+ "nota": "Wrote `test_issue.py`: 3 tests fail on the current code (`naturalsize(-1)`, `naturalsize(-1.0)`, and the binary variant return `'-1 Bytes'`), plus regression tests that pass now and after a fix (verified with a simulated `abs_bytes == 1` fix → 9 passed)."
+}

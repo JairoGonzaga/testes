@@ -1,0 +1,8 @@
+{
+ "agente": "ab2ba314e2e4d4e40",
+ "nota": "The pytest file reproduces the intword rounding-overflow bug, where 999999 yields '1000.0 thousand' instead of '1.0 million', and covers the negative and billion cases.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

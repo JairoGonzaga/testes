@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.2,
+ "tokens_entrada": 16626,
+ "tokens_saida": 1065,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001157,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d2_modulo_errado__s3",
+ "nota": "`test_issue.py` is written: it fails on the current code (10 failures, e.g. `ordinal(11) == '11st'`) because the code checks `value % 10` instead of the last two digits, and it passes once the teen rule checks `value % 100`."
+}

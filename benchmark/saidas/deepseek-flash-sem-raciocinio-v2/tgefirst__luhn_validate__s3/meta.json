@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 18.2,
+ "tokens_entrada": 33794,
+ "tokens_saida": 1395,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00139,
+ "chamadas_api": 11,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 11,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 8,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 10,
+   "args": "test_alvo.py -p no:randomly",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__luhn_validate__s3",
+ "nota": "```python\n\ndef test_c2_r1():\n    # [R1] entradas válidas: validate devolve o próprio número recebido,\n    # sem alterar o tipo.\n    assert validate('0') == '0'\n    assert validate('18') == '18'\n    assert validate('59') == '59'\n    assert validate('79927398713') == '79927398713'\n    assert validate(18) == 18\n    assert validate('2a', '0123456789abcd') == '2a'\n```"
+}

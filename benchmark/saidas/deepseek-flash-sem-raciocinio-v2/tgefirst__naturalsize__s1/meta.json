@@ -1,0 +1,48 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 19.5,
+ "tokens_entrada": 33273,
+ "tokens_saida": 1857,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001702,
+ "chamadas_api": 12,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 12,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 6,
+  "Write": 5,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 11,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__naturalsize__s1",
+ "nota": "All tests pass.\n\n```python\ndef test_c1_r3_byte_unico_e_sufixos():\n    # [R3/valida] singular/plural, limites de expoente e sufixos extremos\n    assert naturalsize(1) == \"1 Byte\"\n    assert naturalsize(-1) == \"-1 Byte\"\n    assert naturalsize(1.0) == \"1 Byte\"\n    assert naturalsize(1e30) == \"1.0 QB\"\n    assert naturalsize(1e30, binary=True) == \"807.8 RiB\"\n    assert naturalsize(1000, format=\"%.0f\") == \"1 kB\"\n    assert naturalsize(999999) == \"1.0 MB\"\n    assert naturalsize(1023) == \"1.0 kB\"\n    as"
+}

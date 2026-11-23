@@ -1,0 +1,8 @@
+{
+ "agente": "af597cd6829a17365",
+ "nota": "Added a NaN case under R6/invalida, continuing the test_cN_r6 pattern, which checks ordinal(float('nan')) == 'NaN' and needs no new imports.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

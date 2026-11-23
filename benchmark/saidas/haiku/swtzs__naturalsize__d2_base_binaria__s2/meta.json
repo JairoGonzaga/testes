@@ -1,0 +1,8 @@
+{
+ "agente": "ac133ba1fdec0f576",
+ "nota": "Pytest file with four binary=True tests that fail on the current base-1000 code and two decimal/gnu regression tests that pass both before and after the fix.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

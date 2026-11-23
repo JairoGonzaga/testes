@@ -1,0 +1,11 @@
+{
+ "agente": "a6fefbe204cb6bcf7",
+ "nota": "The test file reproduces the issue: test_negative_one_byte_uses_singular fails on the current code ('-1 Bytes' != '-1 Byte'), while the two guard tests pass.",
+ "ferramentas": {
+  "mcp__ccd_turn__update_plan": 1,
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

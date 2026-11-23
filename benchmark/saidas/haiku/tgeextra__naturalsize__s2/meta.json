@@ -1,0 +1,8 @@
+{
+ "agente": "ae13087954899a42f",
+ "nota": "Covers the rounding carry into the next unit in binary and GNU modes, which the existing tests only check for decimal (999999).",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

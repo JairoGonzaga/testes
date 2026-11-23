@@ -1,0 +1,33 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 93.2,
+ "tokens_entrada": 10841,
+ "tokens_saida": 301,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 1,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\tgelast__apnumber__s1",
+ "nota": "All 22 tests pass. The new test checks that `apnumber(float('nan'))` returns `'NaN'`, covering the still-untested NaN branch of `apnumber`.\n\n```python\ndef test_c22_r5():\n    # [R5/invalida]\n    assert apnumber(float('nan')) == 'NaN'\n```"
+}

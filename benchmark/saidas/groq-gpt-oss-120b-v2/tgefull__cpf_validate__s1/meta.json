@@ -1,0 +1,33 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 510.6,
+ "tokens_entrada": 12172,
+ "tokens_saida": 2420,
+ "tokens_raciocinio": 639,
+ "custo_usd": 0.0,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\tgefull__cpf_validate__s1",
+ "nota": "All tests pass successfully."
+}

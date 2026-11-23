@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 5.5,
+ "tokens_entrada": 984,
+ "tokens_saida": 750,
+ "tokens_raciocinio": 542,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "mensagem_final",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\tgefirst__apnumber__s1",
+ "nota": "```python\nimport math\nimport pytest\n\n@pytest.mark.parametrize(\n    \"inp,expected\",\n    [\n        (5, \"five\"),                     # simple integer within range\n        (\"3\", \"three\"),                  # numeric string\n        (2.9, \"two\"),                    # float truncated to int\n        (-1, \"-1\"),                      # negative integer out of range\n        (10, \"10\"),                      # integer equal to upper bound, out of range\n        (math.nan, \"NaN\"),               # NaN value\n    "
+}

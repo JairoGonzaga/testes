@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.2,
+ "tokens_entrada": 32287,
+ "tokens_saida": 3278,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.002595,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 8,
+   "args": "--cov=alvo --cov-branch --cov-report=term-missing test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefull__cpf_validate__s1",
+ "nota": "The suite is complete and passing with 100% line and branch coverage; all expected values were traced from the code."
+}

@@ -1,0 +1,11 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "tarefas": 36,
+ "com_codigo": 36,
+ "custo_usd": 0.0,
+ "tokens_entrada": 131672,
+ "tokens_saida": 46695,
+ "tokens_raciocinio": 30200,
+ "tempo_s": 2347.9,
+ "truncadas": 0
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a7b8a80c6a7e87948",
+ "nota": "Adds a NaN case for R5 (invalid non-finite input), which the existing +Inf and -Inf tests do not cover; math is already imported.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

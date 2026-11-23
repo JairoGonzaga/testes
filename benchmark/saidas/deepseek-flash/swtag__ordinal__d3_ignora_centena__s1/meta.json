@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 16.4,
+ "tokens_entrada": 14745,
+ "tokens_saida": 1720,
+ "tokens_raciocinio": 437,
+ "custo_usd": 0.001513,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d3_ignora_centena__s1",
+ "nota": "Tests fail on the buggy code (24 failures around `111/112/113` and larger teens endings) and all 43 pass against a fixed implementation, with `alvo.py` left untouched."
+}

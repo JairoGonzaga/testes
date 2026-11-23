@@ -1,0 +1,33 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 292.6,
+ "tokens_entrada": 16865,
+ "tokens_saida": 2354,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_alvo.py --cov=alvo --cov-branch --cov-report=term-missing",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py --cov=alvo --cov-branch --cov-report=term-missing",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\tgefull__apnumber__s1",
+ "nota": "All 19 tests pass with 100% line and branch coverage."
+}

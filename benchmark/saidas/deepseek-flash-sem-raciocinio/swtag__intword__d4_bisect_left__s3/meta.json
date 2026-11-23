@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 8.2,
+ "tokens_entrada": 10551,
+ "tokens_saida": 755,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000756,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__intword__d4_bisect_left__s3",
+ "nota": "My expectations match a correct fix. The test file is finalized.\n\n`test_issue.py` is written: it reproduces the googol bug (`intword(10**100)` and related cases fail now, pass after fixing the bisect boundary)."
+}

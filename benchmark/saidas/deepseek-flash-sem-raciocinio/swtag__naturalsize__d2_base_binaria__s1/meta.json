@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.6,
+ "tokens_entrada": 16195,
+ "tokens_saida": 1265,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001269,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d2_base_binaria__s1",
+ "nota": "I wrote `test_issue.py` with binary-base assertions that currently fail (e.g. `naturalsize(3000000, binary=True)` returns `'3.0 MiB'` instead of `'2.9 MiB'`) while passing decimal cases remain green."
+}

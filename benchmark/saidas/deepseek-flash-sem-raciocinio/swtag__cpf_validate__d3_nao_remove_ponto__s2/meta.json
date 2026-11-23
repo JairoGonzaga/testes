@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.4,
+ "tokens_entrada": 6369,
+ "tokens_saida": 522,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000554,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d3_nao_remove_ponto__s2",
+ "nota": "I wrote `test_issue.py`, which reproduces the bug (formatted CPFs with dots are rejected because `compact()` only strips spaces and hyphens) and fails on the current code while passing once dots are handled."
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 8.7,
+ "tokens_entrada": 7475,
+ "tokens_saida": 615,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000625,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__apnumber__d3_except_incompleto__s2",
+ "nota": "I wrote `test_issue.py`, which fails on the current `alvo.py` (TypeError from `apnumber(None)`) and passes once non-int-convertible values like `None` fall back to `str(value)`."
+}

@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 17.3,
+ "tokens_entrada": 32873,
+ "tokens_saida": 1909,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001862,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__intword__d1_mil_sem_sufixo__s1",
+ "nota": "`test_issue.py` now reproduces the bug: `intword(1000)` (and `-1000`, plus float/string inputs) returns the raw number instead of `'1.0 thousand'`, and all tests pass once the `<=` comparison in `alvo.py` is corrected."
+}

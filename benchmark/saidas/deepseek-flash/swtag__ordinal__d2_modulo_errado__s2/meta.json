@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.5,
+ "tokens_entrada": 11752,
+ "tokens_saida": 1376,
+ "tokens_raciocinio": 401,
+ "custo_usd": 0.001271,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d2_modulo_errado__s2",
+ "nota": "All 12 teen-suffix tests fail on the current code (`11st`, `12nd`, `13rd`, …) while the regular-suffix tests pass, and I verified every expectation against a corrected implementation.\n\n`test_issue.py` is written: it reproduces the teens-suffix bug (`ordinal(11) == '11st'`) plus the 1xx/2xx variants, and guards that normal suffixes still work."
+}

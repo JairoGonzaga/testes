@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": null,
+ "tempo_s": 89.1,
+ "tokens_entrada": 984,
+ "tokens_saida": 1660,
+ "tokens_raciocinio": 1442,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "nenhuma",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-20b-v2\\tgefirst__apnumber__s1",
+ "nota": "def test_apnumber_various_inputs():\n    # numeric strings that can be converted to int\n    assert apnumber('5') == 'five'\n    # numeric strings that cannot be converted to int remain unchanged\n    assert apnumber('5.0') == '5.0'\n    assert apnumber('abc') == 'abc'\n    assert apnumber('5abc') == '5abc'\n    # None should be converted to its string representation\n    assert apnumber(None) == 'None'\n    # floats\n    assert apnumber(3.7) == 'three'           # truncates to integer 3\n    assert apnumb"
+}

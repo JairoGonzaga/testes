@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.7,
+ "tokens_entrada": 7689,
+ "tokens_saida": 617,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000526,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__naturalsize__s2",
+ "nota": "Both tests pass; the new test `test_c2_r2_decimal_binary_gnu` covers decimal, binary, GNU and custom-format outputs of `naturalsize`."
+}

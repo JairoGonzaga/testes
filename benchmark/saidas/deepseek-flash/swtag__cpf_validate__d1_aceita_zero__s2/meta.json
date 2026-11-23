@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 20.5,
+ "tokens_entrada": 20019,
+ "tokens_saida": 2537,
+ "tokens_raciocinio": 1395,
+ "custo_usd": 0.001853,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d1_aceita_zero__s2",
+ "nota": "`test_issue.py` reproduces the bug (all-zeros CPF is accepted instead of raising `InvalidFormat`), fails on the current `alvo.py`, and passes once `validate()` rejects it."
+}

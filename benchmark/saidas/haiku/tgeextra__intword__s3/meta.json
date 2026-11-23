@@ -1,0 +1,8 @@
+{
+ "agente": "aa38af0b4e29057d5",
+ "nota": "The new test checks that values just below each power from trillion to decillion roll over to \"1.0 <next unit>\", for both signs, which the existing tests only cover up to million and billion.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

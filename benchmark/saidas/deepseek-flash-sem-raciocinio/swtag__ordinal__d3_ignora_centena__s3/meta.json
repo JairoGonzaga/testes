@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.3,
+ "tokens_entrada": 6221,
+ "tokens_saida": 431,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000627,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d3_ignora_centena__s3",
+ "nota": "`test_issue.py` is written: 9 tests fail on the current buggy code (111→\"111st\", etc.) while the regular-ordinal cases pass, and all will pass once the teen-suffix rule checks the last two digits."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a9d2331d679534f8c",
+ "nota": "The pytest file reproduces the apnumber(None) TypeError, since the module only catches ValueError, so the None and other uncastable-value tests fail now and should pass once the exception handling is widened.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

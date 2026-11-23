@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 31.6,
+ "tokens_entrada": 32524,
+ "tokens_saida": 5013,
+ "tokens_raciocinio": 2115,
+ "custo_usd": 0.003596,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d1_posicoes_trocadas__s1",
+ "nota": "`test_issue.py` is written: it fails on the current code (19 failures for valid Luhn numbers such as `79927398713`) and all 31 tests pass once `checksum` doubles the correct digit positions."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "abc931a65c09cdb22",
+ "nota": "Adds a happy-path test: a valid Luhn number (79927398713, checksum 70 % 10 == 0) is returned unchanged by validate.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

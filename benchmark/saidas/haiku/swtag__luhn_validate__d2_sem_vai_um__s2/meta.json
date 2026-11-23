@@ -1,0 +1,10 @@
+{
+ "agente": "a60e599641d62470f",
+ "nota": null,
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 3,
+  "StructuredOutput": 1
+ }
+}

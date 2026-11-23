@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -45,7 +45,7 @@
+ 
+ def validate(number):
+     number = compact(number)
+-    if not isdigits(number):
++    if not isdigits(number) or int(number) <= 0:
+         raise InvalidFormat()
+     if len(number) != 11:
+         raise InvalidLength()

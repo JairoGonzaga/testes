@@ -1,0 +1,11 @@
+{
+ "agente": "a15749c001e410f00",
+ "nota": "Two tests reproduce the all-zeros CPF bug and fail on current alvo.py (DID NOT RAISE InvalidFormat), while a valid-CPF guard test passes on both current and fixed code.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

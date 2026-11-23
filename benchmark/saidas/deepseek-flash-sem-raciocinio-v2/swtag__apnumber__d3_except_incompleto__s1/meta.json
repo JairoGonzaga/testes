@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 8.6,
+ "tokens_entrada": 12547,
+ "tokens_saida": 547,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000761,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__apnumber__d3_except_incompleto__s1",
+ "nota": "Wrote `test_issue.py`, which fails on the current `alvo.py` with the `TypeError` for `apnumber(None)` and passes against a minimal fix (catching `TypeError` too)."
+}

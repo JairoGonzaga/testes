@@ -1,0 +1,8 @@
+{
+ "agente": "a219b7c13fc188890",
+ "nota": "The pytest file reproduces the bug by asserting that non-numeric input comes back as str(value), which fails now because ordinal() returns ''.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

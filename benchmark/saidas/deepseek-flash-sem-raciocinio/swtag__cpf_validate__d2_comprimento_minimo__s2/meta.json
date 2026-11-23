@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.4,
+ "tokens_entrada": 6279,
+ "tokens_saida": 441,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000548,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d2_comprimento_minimo__s2",
+ "nota": "I wrote `test_issue.py`, which fails on the current code with `InvalidChecksum` for 12+ digit CPFs and will pass once `validate` raises `InvalidLength` for any compacted length ≠ 11."
+}

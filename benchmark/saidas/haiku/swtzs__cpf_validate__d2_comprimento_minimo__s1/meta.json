@@ -1,0 +1,8 @@
+{
+ "agente": "a0edc0318d5c98a5f",
+ "nota": "Parametrized pytest tests asserting that CPFs with more than 11 digits raise InvalidLength, which fail on the current code because it raises InvalidChecksum.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

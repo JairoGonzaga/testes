@@ -1,0 +1,33 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 48.3,
+ "tokens_entrada": 6663,
+ "tokens_saida": 658,
+ "tokens_raciocinio": 498,
+ "custo_usd": 0.0,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 4
+  },
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\swtag__apnumber__d2_nove_excluido__s1",
+ "nota": "Test added to verify that `apnumber(9)` returns the word “nine”."
+}
