@@ -1,0 +1,8 @@
+{
+ "agente": "aba111c120a998eb4",
+ "nota": "Adds a test for non-finite values passed as strings, a path the existing R5 tests (float inputs only) do not reach; it passes on the given alvo.py.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

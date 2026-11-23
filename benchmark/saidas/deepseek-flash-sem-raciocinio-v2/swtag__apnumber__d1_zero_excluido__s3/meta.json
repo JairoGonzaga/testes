@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.4,
+ "tokens_entrada": 8491,
+ "tokens_saida": 481,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000471,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 4,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__apnumber__d1_zero_excluido__s3",
+ "nota": "Wrote `test_issue.py`, which fails on the current code because `apnumber(0)` returns `'0'` instead of `'zero'`, and passes on a copy where the range check includes 0."
+}

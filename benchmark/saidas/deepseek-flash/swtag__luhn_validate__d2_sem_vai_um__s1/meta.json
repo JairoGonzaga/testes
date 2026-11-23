@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.7,
+ "tokens_entrada": 17282,
+ "tokens_saida": 2634,
+ "tokens_raciocinio": 1231,
+ "custo_usd": 0.002065,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d2_sem_vai_um__s1",
+ "nota": "Wrote `test_issue.py`: it fails on the current `alvo.py` (canonical Luhn number `79927398713` and other numbers with doubled digits ≥ 5 are rejected) and all 25 tests pass against a corrected `divmod`-based Luhn implementation."
+}

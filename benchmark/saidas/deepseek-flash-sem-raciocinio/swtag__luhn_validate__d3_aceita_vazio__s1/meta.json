@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 18.2,
+ "tokens_entrada": 27218,
+ "tokens_saida": 1425,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001438,
+ "chamadas_api": 12,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 12,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 8,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "_tmp_fixed_test.py",
+   "exit": 2
+  },
+  {
+   "turno": 9,
+   "args": "_tmp_fixed_test.py",
+   "exit": 0
+  },
+  {
+   "turno": 11,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d3_aceita_vazio__s1",
+ "nota": "`test_issue.py` is written: all 4 tests fail on the current `alvo.py` (empty string is wrongly accepted) and pass against a patched version, without modifying `alvo.py`."
+}

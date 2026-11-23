@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 4.8,
+ "tokens_entrada": 5130,
+ "tokens_saida": 378,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000526,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__apnumber__d3_except_incompleto__s1",
+ "nota": "Wrote `test_issue.py`: `apnumber(None)` tests fail with the reported TypeError while other behavior tests pass, and they'd pass once `None` is returned as `'None'`."
+}

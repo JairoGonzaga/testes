@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.2,
+ "tokens_entrada": 30796,
+ "tokens_saida": 748,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001154,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__ordinal__s1",
+ "nota": "Added two tests covering float truncation (`20.99` → `'20th'`, `-3.9` → `'-3th'`) and non-numeric string/dict inputs falling back to `str(value)`; all 38 tests pass."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a74a1791d5bf35e31",
+ "nota": "Parametrized pytest cases for negative inputs, each expecting the minus sign that the current code drops.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

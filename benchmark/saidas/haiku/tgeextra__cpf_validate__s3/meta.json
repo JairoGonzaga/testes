@@ -1,0 +1,8 @@
+{
+ "agente": "a77baef07eb2d6a74",
+ "nota": "Adds a test that tab and newline characters at the edges are stripped while a tab inside the number is rejected as InvalidFormat, which no existing test checks.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,10 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -23,6 +23,6 @@
+         value = int(value)
+     except (TypeError, ValueError):
+         return str(value)
+-    if not 0 < value < 10:
++    if not 0 <= value < 10:
+         return str(value)
+     return _APNUMBER_WORDS[value]

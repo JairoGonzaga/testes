@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.1,
+ "tokens_entrada": 15135,
+ "tokens_saida": 876,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000858,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__naturalsize__d4_sem_subir_sufixo__s1",
+ "nota": "`test_issue.py` reproduces the bug (`naturalsize(999999)` returning `'1000.0 kB'` instead of `'1.0 MB'`), failing on the current code and passing on a fixed copy."
+}

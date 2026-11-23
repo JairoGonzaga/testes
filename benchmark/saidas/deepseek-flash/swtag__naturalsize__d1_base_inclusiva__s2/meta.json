@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 18.9,
+ "tokens_entrada": 18494,
+ "tokens_saida": 2656,
+ "tokens_raciocinio": 1406,
+ "custo_usd": 0.002053,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d1_base_inclusiva__s2",
+ "nota": "Created `test_issue.py`: 7 boundary tests fail on the current code (`naturalsize(1000)`, `±1000`, `binary ±1024`, `gnu ±1024`) while regression tests pass, and all 21 tests pass once the `<`/`<=` boundary comparison is fixed in `alvo.py` (verified on a temporary copy; `alvo.py` untouched)."
+}

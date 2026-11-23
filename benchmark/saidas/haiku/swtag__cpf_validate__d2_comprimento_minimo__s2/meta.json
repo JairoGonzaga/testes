@@ -1,0 +1,10 @@
+{
+ "agente": "aabce001f22a23af0",
+ "nota": "Wrote test_issue.py with 5 tests (12-14 digit CPFs, including formatted input) that all fail on the current alvo.py with InvalidChecksum and should pass once validate raises InvalidLength for any compacted length other than 11.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

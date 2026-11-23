@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.9,
+ "tokens_entrada": 8096,
+ "tokens_saida": 350,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000484,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__apnumber__s1",
+ "nota": "Added `test_c24_r4_lista_nao_numerica`, which covers the `TypeError` fallback (`str(value)`) path with a non-numeric list argument."
+}

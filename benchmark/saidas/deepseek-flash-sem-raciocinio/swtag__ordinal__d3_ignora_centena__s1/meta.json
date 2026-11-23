@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.8,
+ "tokens_entrada": 7798,
+ "tokens_saida": 897,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000786,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d3_ignora_centena__s1",
+ "nota": "Wrote `test_issue.py`, which reproduces the bug: `ordinal(111)` and other numbers ending in 11/12/13 return the wrong suffix, while the tests for 1st/2nd/3rd and the small teens already pass."
+}

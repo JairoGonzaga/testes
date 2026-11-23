@@ -1,0 +1,8 @@
+{
+ "agente": "a2592057348c21c3e",
+ "nota": "Adds a test for negative values, covering the sign prefix and unit selection for millions and the below-thousand case.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

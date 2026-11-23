@@ -1,0 +1,28 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 272.0,
+ "tokens_entrada": 27915,
+ "tokens_saida": 818,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 4,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 7,
+   "args": "test_alvo.py -q",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\tgeextra__cpf_validate__s1",
+ "nota": "The test passes; `validate('390 533 447 15')` confirms the InvalidChecksum path (valid digits, >0, length 11, but check digits 15 don't match).\n\nNew test added:\n```python\ndef test_checksum_mismatch_11_digits():\n    # all digits, int > 0, length 11, but check digits (15) don't match\n    with pytest.raises(InvalidChecksum):\n        validate('390 533 447 15')\n```"
+}

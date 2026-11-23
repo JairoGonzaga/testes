@@ -1,0 +1,8 @@
+{
+ "agente": "a2bdb6baeb9e64d80",
+ "nota": "The test file checks that naturalsize(-1) returns the singular '-1 Byte', which fails on the current code that returns '-1 Bytes', alongside a passing sanity check for naturalsize(1).",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.9,
+ "tokens_entrada": 11000,
+ "tokens_saida": 1479,
+ "tokens_raciocinio": 610,
+ "custo_usd": 0.001296,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d2_modulo_errado__s1",
+ "nota": "Verified: `test_issue.py` fails on the current code (10 failures, e.g. `ordinal(11) == '11st'`) and all 25 tests pass with a corrected teen-check (`value % 100 in (11, 12, 13)`), with `alvo.py` left untouched."
+}

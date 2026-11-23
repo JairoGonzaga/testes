@@ -1,0 +1,10 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -26,5 +26,7 @@
+         return f"{int(bytes_)}B" if gnu else "%d Bytes" % int(bytes_)
+ 
+     exp = int(min(log(abs_bytes, base), len(suffix)))
++    if exp < len(suffix) and abs(float(format % (abs_bytes / (base**exp)))) >= base:
++        exp += 1
+     space = "" if gnu else " "
+     return format % (bytes_ / (base**exp)) + space + suffix[exp - 1]

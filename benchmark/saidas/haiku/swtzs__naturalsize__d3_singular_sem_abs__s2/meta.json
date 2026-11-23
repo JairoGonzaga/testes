@@ -1,0 +1,8 @@
+{
+ "agente": "a4fcbbfc8ac34e494",
+ "nota": "The pytest file reproduces the naturalsize(-1) plural-'Bytes' bug with singular-form assertions, plus a binary variant and guard tests for other small values that should keep the plural.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a379a14fc3f03a44c",
+ "nota": "Adds a test that the teen exceptions (11, 12, 13, 111) take the \"th\" suffix, which the module handles via its modulo-100 check.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

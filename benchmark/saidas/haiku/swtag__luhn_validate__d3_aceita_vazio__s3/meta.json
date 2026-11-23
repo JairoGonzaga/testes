@@ -1,0 +1,10 @@
+{
+ "agente": "a1f074e7e844208ae",
+ "nota": "test_issue.py has two tests asserting that validate('') raises InvalidFormat; both fail on the current alvo.py (DID NOT RAISE) and should pass once empty input is rejected.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

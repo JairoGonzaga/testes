@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.8,
+ "tokens_entrada": 7661,
+ "tokens_saida": 537,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000568,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__intword__d2_sem_carry__s2",
+ "nota": "Wrote `test_issue.py` with tests asserting `intword(999999) == \"1.0 million\"` (plus negative and billion-scale variants), which fail now and pass once rounding promotion is fixed."
+}

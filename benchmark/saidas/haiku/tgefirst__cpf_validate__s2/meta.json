@@ -1,0 +1,8 @@
+{
+ "agente": "ad1b12569cc084cd5",
+ "nota": "Adds a test that a CPF with a wrong check digit raises InvalidChecksum, using pytest.raises and the existing imports, with no extra import needed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

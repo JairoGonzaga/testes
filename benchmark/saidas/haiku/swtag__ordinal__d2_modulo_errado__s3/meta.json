@@ -1,0 +1,10 @@
+{
+ "agente": "a664e91baa6448d3f",
+ "nota": "The test file reproduces the bug where the 11/12/13 check uses value % 10 instead of value % 100, so ordinal(11) returns '11st'; on the current alvo.py 8 tests fail, and with the modulo corrected in memory all 21 pass.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

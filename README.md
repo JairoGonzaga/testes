@@ -16,6 +16,10 @@ regras.md ──► gerar.py ──► test_gerado.py ──► executar.py ─�
                          revisao.py (2 revisores, cego) ──► analisar.py ──► resultados/
 ```
 
+> **Benchmark de modelos (SWT-Bench + TestGenEval):** a pasta [benchmark/](benchmark/) mede quão bem
+> modelos de IA (Haiku, DeepSeek, modelos gratuitos da Groq) escrevem testes para as funções deste projeto.
+> Resultados e instruções em [benchmark/README.md](benchmark/README.md).
+
 ---
 
 ## 1. Instalação (uma vez)

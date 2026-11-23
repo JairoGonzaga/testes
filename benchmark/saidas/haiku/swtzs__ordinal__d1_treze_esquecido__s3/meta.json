@@ -1,0 +1,8 @@
+{
+ "agente": "aff6100c10f2f2a30",
+ "nota": "The pytest file reproduces the ordinal(13) bug with 11, 12, 13, 111, 112 and 113 expecting 'th', and adds regression checks for regular suffixes that pass on the current code.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

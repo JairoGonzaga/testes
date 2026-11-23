@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.4,
+ "tokens_entrada": 5366,
+ "tokens_saida": 391,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000513,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d1_aceita_zero__s1",
+ "nota": "Wrote `test_issue.py`; it fails on the current code (all-repeated-digit CPFs, including `00000000000`, are accepted) and will pass once `validate()` rejects them with `InvalidFormat`."
+}

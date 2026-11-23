@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.1,
+ "tokens_entrada": 4865,
+ "tokens_saida": 427,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000421,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d1_treze_esquecido__s3",
+ "nota": "Created `test_issue.py`; it fails now (`ordinal(13) == '13rd'`) and will pass once 13/113 correctly map to \"th\"."
+}

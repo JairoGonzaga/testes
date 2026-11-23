@@ -1,0 +1,8 @@
+{
+ "agente": "afaad018e5e0db717",
+ "nota": "Adds a test for non-finite values passed as strings, which the existing tests only cover as float literals; it passes on alvo.py.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

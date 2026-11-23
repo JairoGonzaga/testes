@@ -1,0 +1,11 @@
+{
+ "agente": "a398a03e497663192",
+ "nota": "test_issue.py reproduces the boundary bug (naturalsize(1000) gives '1000 Bytes' because of the `<=` check); 3 tests fail on the current code and the 999 guard passes, and the expected outputs were confirmed with an in-memory `<` patch without editing alvo.py.",
+ "ferramentas": {
+  "mcp__ccd_turn__update_plan": 1,
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

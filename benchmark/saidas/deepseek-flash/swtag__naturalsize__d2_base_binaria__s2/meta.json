@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 28.4,
+ "tokens_entrada": 38851,
+ "tokens_saida": 3881,
+ "tokens_raciocinio": 1511,
+ "custo_usd": 0.003264,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 6,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d2_base_binaria__s2",
+ "nota": "`test_issue.py` is written: 13 of its cases fail on the current `alvo.py` (binary mode scaled by 1000) and all 23 pass with the base fixed to 1024, while decimal and gnu modes are covered as regression checks."
+}

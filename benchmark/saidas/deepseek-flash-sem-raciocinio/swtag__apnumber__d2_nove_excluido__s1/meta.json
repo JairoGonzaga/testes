@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.0,
+ "tokens_entrada": 9309,
+ "tokens_saida": 800,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000841,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__apnumber__d2_nove_excluido__s1",
+ "nota": "All 13 tests pass with the fix and 3 fail on the current code, so `test_issue.py` correctly reproduces the `apnumber(9)` bug."
+}

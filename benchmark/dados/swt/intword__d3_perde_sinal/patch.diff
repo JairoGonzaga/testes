@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -28,7 +28,7 @@
+ 
+     if value < 0:
+         value *= -1
+-        negative_prefix = ""
++        negative_prefix = "-"
+     else:
+         negative_prefix = ""
+ 

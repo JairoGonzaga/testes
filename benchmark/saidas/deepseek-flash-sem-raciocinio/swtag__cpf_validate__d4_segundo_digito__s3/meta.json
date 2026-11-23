@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.1,
+ "tokens_entrada": 18095,
+ "tokens_saida": 1411,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001284,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d4_segundo_digito__s3",
+ "nota": "I wrote `test_issue.py`, which currently fails with `InvalidChecksum` on valid CPFs like `11144477735` and `52998224725` (while still asserting that genuinely bad check digits are rejected), so it will pass once the check-digit calculation is fixed."
+}

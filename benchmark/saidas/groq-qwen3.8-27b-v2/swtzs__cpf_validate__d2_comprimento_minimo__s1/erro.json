@@ -1,0 +1,11 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": "RuntimeError: falhou após 6 tentativas: HTTP 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_***` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1596. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the requ",
+ "tempo_s": 798.5,
+ "tokens_entrada": 0,
+ "tokens_saida": 0,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 0,
+ "provedores": []
+}

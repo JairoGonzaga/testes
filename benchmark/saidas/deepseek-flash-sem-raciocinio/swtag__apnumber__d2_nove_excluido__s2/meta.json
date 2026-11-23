@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.3,
+ "tokens_entrada": 11697,
+ "tokens_saida": 886,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000837,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__apnumber__d2_nove_excluido__s2",
+ "nota": "I wrote `test_issue.py`, which fails on the current `alvo.py` (3 failures, all from `apnumber(9)` returning `'9'`) and passes all 15 tests once the range check is corrected to include 9; `alvo.py` was left unmodified."
+}

@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.2,
+ "tokens_entrada": 20522,
+ "tokens_saida": 945,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00103,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  },
+  {
+   "turno": 8,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__naturalsize__d1_base_inclusiva__s3",
+ "nota": "I wrote `test_issue.py`, which fails on the current code (`naturalsize(1000)` returns `'1000 Bytes'` instead of `'1.0 kB'`, same for `-1000`, binary `1024`, and gnu `1024`) and passes on a fixed copy where the boundary comparison uses `<` instead of `<=`."
+}

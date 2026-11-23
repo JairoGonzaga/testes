@@ -1,0 +1,19 @@
+job,funcao,amostra,gerado,utilizavel,n_testes,n_validos,falsos_alarmes,cobertura_linhas,cobertura_ramos,mutation_score,deteccao_defeitos,motivo,all_pass,any_pass
+tgefull__apnumber__s1,apnumber,1,True,True,88,88,0.0,1.0,1.0,1.0,1.0,,True,True
+tgefull__apnumber__s2,apnumber,2,True,False,,,,,,,,erro de coleta (sintaxe/importação),False,False
+tgefull__apnumber__s3,apnumber,3,True,True,112,112,0.0,1.0,1.0,1.0,1.0,,True,True
+tgefull__cpf_validate__s1,cpf_validate,1,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__cpf_validate__s2,cpf_validate,2,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__cpf_validate__s3,cpf_validate,3,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__intword__s1,intword,1,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__intword__s2,intword,2,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__intword__s3,intword,3,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__luhn_validate__s1,luhn_validate,1,True,True,64,64,0.0,1.0,1.0,0.9166666666666666,1.0,,True,True
+tgefull__luhn_validate__s2,luhn_validate,2,True,True,75,75,0.0,1.0,1.0,1.0,1.0,,True,True
+tgefull__luhn_validate__s3,luhn_validate,3,True,True,47,47,0.0,1.0,1.0,1.0,1.0,,True,True
+tgefull__naturalsize__s1,naturalsize,1,True,False,,,,,,,,erro de coleta (sintaxe/importação),False,False
+tgefull__naturalsize__s2,naturalsize,2,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__naturalsize__s3,naturalsize,3,False,False,,,,,,,,nenhum arquivo de teste foi gerado,False,False
+tgefull__ordinal__s1,ordinal,1,True,True,185,185,0.0,1.0,1.0,1.0,1.0,,True,True
+tgefull__ordinal__s2,ordinal,2,True,False,,,,,,,,erro de coleta (sintaxe/importação),False,False
+tgefull__ordinal__s3,ordinal,3,True,False,,,,,,,,erro de coleta (sintaxe/importação),False,False

@@ -1,0 +1,8 @@
+{
+ "agente": "af63370110f5c58f6",
+ "nota": "Parametrized pytest tests cover CPFs with more than 11 digits (the reported 12-digit case plus longer and formatted variants), and a guard for too-short inputs.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

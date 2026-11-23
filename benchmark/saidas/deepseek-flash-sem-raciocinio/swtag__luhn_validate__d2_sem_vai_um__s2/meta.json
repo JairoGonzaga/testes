@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.5,
+ "tokens_entrada": 20526,
+ "tokens_saida": 1187,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001307,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d2_sem_vai_um__s2",
+ "nota": "I wrote `test_issue.py`, which fails on the current (buggy) `alvo.py` because valid Luhn numbers like `79927398713` are rejected, and passes with a correct Luhn implementation."
+}

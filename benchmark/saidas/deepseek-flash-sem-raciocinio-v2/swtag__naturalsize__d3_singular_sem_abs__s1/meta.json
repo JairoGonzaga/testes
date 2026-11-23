@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.6,
+ "tokens_entrada": 10246,
+ "tokens_saida": 432,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000517,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__naturalsize__d3_singular_sem_abs__s1",
+ "nota": "`test_issue.py` fails on the current code (`naturalsize(-1)` returns `'-1 Bytes'`) and passes with a minimal fix making the singular check use `abs(bytes_) == 1`."
+}

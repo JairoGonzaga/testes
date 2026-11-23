@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 29.1,
+ "tokens_entrada": 68620,
+ "tokens_saida": 3259,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.003085,
+ "chamadas_api": 15,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 15,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 12,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 14,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d4_segundo_digito__s2",
+ "nota": "`test_issue.py` reproduces the bug: valid CPFs (like `11144477735`) are wrongly rejected with `InvalidChecksum` because the second check digit omits the `d1 * 2` weighting term."
+}

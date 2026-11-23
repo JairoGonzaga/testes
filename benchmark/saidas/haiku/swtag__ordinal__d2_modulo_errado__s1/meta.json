@@ -1,0 +1,11 @@
+{
+ "agente": "ae88740f80c82b44f",
+ "nota": "The tests reproduce the bug where ordinal checks value % 10 instead of value % 100 for the 11-13 exception, so 7 teen cases fail on the current code and all 19 pass on a patched copy.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 4,
+  "StructuredOutput": 1
+ }
+}

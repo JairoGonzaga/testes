@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 19.4,
+ "tokens_entrada": 24190,
+ "tokens_saida": 2265,
+ "tokens_raciocinio": 431,
+ "custo_usd": 0.002033,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d3_nao_remove_ponto__s2",
+ "nota": "`test_issue.py` is written: 6 tests fail on the current code (formatted CPFs with dots rejected) and all 10 pass once `compact()`/`validate()` strips dots as documented."
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.0,
+ "tokens_entrada": 13811,
+ "tokens_saida": 1232,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001193,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d1_base_inclusiva__s2",
+ "nota": "All 26 tests fail on the buggy code (7 do) and all 26 pass with the minimal fix (`abs_bytes <= base` → `abs_bytes < base`). `alvo.py` was left untouched.\n\n`test_issue.py` reproduces the bug: exact unit boundaries (`1000`, `1024`, negatives, binary and GNU modes) aren't promoted to the next unit, while sub-unit values keep their current behavior."
+}

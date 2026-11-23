@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.3,
+ "tokens_entrada": 11874,
+ "tokens_saida": 792,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000845,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d2_sem_vai_um__s3",
+ "nota": "`test_issue.py` now reproduces the bug: it fails on the current `alvo.py` (valid Luhn numbers with doubled digits ≥ 5 rejected) and passes with a correct Luhn implementation."
+}

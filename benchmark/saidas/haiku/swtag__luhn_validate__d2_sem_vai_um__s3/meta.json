@@ -1,0 +1,10 @@
+{
+ "agente": "a148b19c08672f71a",
+ "nota": "Wrote test_issue.py in the sandbox: on the current alvo.py 10 of 11 tests fail (the issue example and the doubled-digit cases raise InvalidChecksum), and all 11 pass against a corrected checksum.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 4,
+  "StructuredOutput": 1
+ }
+}

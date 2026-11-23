@@ -1,0 +1,8 @@
+{
+ "agente": "a35e157001468b8db",
+ "nota": "Returns a complete pytest file (test_alvo.py) covering the intword rounding, carry, sign, non-finite, format-argument and fallback branches of alvo.py, with expected values derived by hand from the source.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

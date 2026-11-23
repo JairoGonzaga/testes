@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 17.0,
+ "tokens_entrada": 16158,
+ "tokens_saida": 1771,
+ "tokens_raciocinio": 653,
+ "custo_usd": 0.001398,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d3_singular_sem_abs__s2",
+ "nota": "`test_issue.py` is in place: it currently fails on the three assertions that `naturalsize(-1)`, `naturalsize(-1.0)`, and `naturalsize(-1, binary=True)` should render the singular `'-1 Byte'`, and all its assertions pass with the `abs_bytes == 1` fix."
+}

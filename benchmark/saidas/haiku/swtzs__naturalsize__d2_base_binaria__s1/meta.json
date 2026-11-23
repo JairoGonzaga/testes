@@ -1,0 +1,8 @@
+{
+ "agente": "a6cd41811a3dba205",
+ "nota": "Pytest file with binary-mode cases that fail on the current base-1000 code and should pass once binary uses base 1024.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": null,
+ "tempo_s": 19.2,
+ "tokens_entrada": 1883,
+ "tokens_saida": 1492,
+ "tokens_raciocinio": 1134,
+ "custo_usd": 0.0,
+ "chamadas_api": 2,
+ "provedores": [],
+ "finish_reason": "stop",
+ "revisado": true
+}

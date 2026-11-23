@@ -1,0 +1,13 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 19.7,
+ "tokens_entrada": 1728,
+ "tokens_saida": 1131,
+ "tokens_raciocinio": 833,
+ "custo_usd": 0.0,
+ "chamadas_api": 2,
+ "provedores": [],
+ "finish_reason": "stop",
+ "revisado": true
+}

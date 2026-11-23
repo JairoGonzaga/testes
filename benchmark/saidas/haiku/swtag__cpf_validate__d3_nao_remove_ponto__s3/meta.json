@@ -1,0 +1,11 @@
+{
+ "agente": "a15931a33e90997a0",
+ "nota": "test_issue.py is written in the sandbox; on the current alvo.py 6 tests fail on dotted CPFs with InvalidFormat and 3 guard tests pass, and a dot-stripping patch applied in memory makes the expected results hold.",
+ "ferramentas": {
+  "Read": 4,
+  "mcp__ccd_turn__update_plan": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

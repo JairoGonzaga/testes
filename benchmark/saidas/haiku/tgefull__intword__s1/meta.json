@@ -1,0 +1,8 @@
+{
+ "agente": "a3258fba3ebcb4b20",
+ "nota": "The full pytest suite for alvo.py, covering constants, every unit boundary, rollover, custom formats, negatives, non-finite and non-numeric inputs, and the overflow path.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

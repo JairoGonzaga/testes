@@ -1,0 +1,5 @@
+from alvo import validate
+
+
+def test_validate_accepts_cpf_formatted_with_dots():
+    assert validate("111.444.777-35") == "11144477735"

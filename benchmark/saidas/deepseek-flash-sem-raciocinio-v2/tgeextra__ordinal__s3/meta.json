@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.2,
+ "tokens_entrada": 9984,
+ "tokens_saida": 280,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000311,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__ordinal__s3",
+ "nota": "Added `test_c37_r3_r4_misto`, covering whitespace-padded numeric strings, non-integer string passthrough, booleans, empty string, and larger values — all passing."
+}

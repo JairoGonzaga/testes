@@ -1,0 +1,33 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 415.2,
+ "tokens_entrada": 13264,
+ "tokens_saida": 3095,
+ "tokens_raciocinio": 1093,
+ "custo_usd": 0.0,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "-q test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "-q test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\claude\\965c3fc526490071\\bd2711e8-1c50-476f-ba58-a35e58244997\\scratchpad\\sb_groq_full\\groq-gpt-oss-120b-v2\\tgefull__apnumber__s1",
+ "nota": "All tests pass successfully."
+}

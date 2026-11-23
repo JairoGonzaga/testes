@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 24.1,
+ "tokens_entrada": 38506,
+ "tokens_saida": 2461,
+ "tokens_raciocinio": 1003,
+ "custo_usd": 0.002454,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d2_comprimento_minimo__s2",
+ "nota": "`test_issue.py` is written: it fails on the current `alvo.py` (too-long CPFs raise `InvalidChecksum` instead of `InvalidLength`) and passes against a fixed version where the length check is `len(number) != 11`."
+}

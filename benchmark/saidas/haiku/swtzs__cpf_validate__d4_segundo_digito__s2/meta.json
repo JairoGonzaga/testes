@@ -1,0 +1,8 @@
+{
+ "agente": "a07c9f8b88d3de25f",
+ "nota": "The bug is that the second check digit adds d1 once instead of twice (weight 2), so valid CPFs such as 11144477735 fail; these tests cover that plus a negative control.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

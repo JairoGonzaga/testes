@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.6,
+ "tokens_entrada": 12361,
+ "tokens_saida": 796,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000845,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d3_aceita_vazio__s2",
+ "nota": "I created `test_issue.py`, which fails on the current code because `validate('')` returns `''` instead of raising `InvalidFormat`, and its sanity-check test passes."
+}

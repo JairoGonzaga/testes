@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 3.8,
+ "tokens_entrada": 5823,
+ "tokens_saida": 179,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00036,
+ "chamadas_api": 3,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 3,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__luhn_validate__s1",
+ "nota": "The new test (test_c20_r6_invalida) checks that a valid-alphabet string with a wrong checksum raises a ValidationError, and all 20 tests pass."
+}

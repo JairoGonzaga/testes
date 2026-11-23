@@ -1,0 +1,8 @@
+{
+ "agente": "ae0d45d65bdcb6eee",
+ "nota": "The pytest file imports validate from alvo and asserts that dotted CPFs such as 111.444.777-35 return the compact form, so it fails on the current code and passes once dots are stripped.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

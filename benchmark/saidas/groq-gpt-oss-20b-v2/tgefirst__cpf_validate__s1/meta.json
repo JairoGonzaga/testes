@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": null,
+ "tempo_s": 3.9,
+ "tokens_entrada": 1162,
+ "tokens_saida": 1347,
+ "tokens_raciocinio": 1174,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "nenhuma",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-20b-v2\\tgefirst__cpf_validate__s1",
+ "nota": "from alvo import compact\n\ndef test_validate_errors():\n    # Wrong length should raise InvalidLength\n    with pytest.raises(InvalidLength):\n        validate('1234567890')          # 10 digits\n\n    # Incorrect checksum should raise InvalidChecksum\n    with pytest.raises(InvalidChecksum):\n        validate('39053344706')         # last digit altered\n\n    # Non‑digit characters should raise InvalidFormat\n    with pytest.raises(InvalidFormat):\n        validate('abcd')                # letters only\n\n  "
+}

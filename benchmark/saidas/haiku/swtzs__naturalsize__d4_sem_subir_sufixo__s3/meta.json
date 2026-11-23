@@ -1,0 +1,8 @@
+{
+ "agente": "a5b3993f39f63760c",
+ "nota": "The pytest file reproduces the naturalsize unit-promotion bug with the issue example plus decimal, binary and GNU rounding cases, and includes a control case that already passes.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

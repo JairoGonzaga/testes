@@ -1,0 +1,8 @@
+{
+ "agente": "a0a11a0f81e0257e5",
+ "nota": "The test file reproduces the bug where the second check digit adds d1 with weight 1 instead of 2, so valid CPFs such as 11144477735 and 52998224725 raise InvalidChecksum on the current code.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

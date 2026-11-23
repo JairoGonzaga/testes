@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -32,7 +32,7 @@
+     else:
+         negative_prefix = ""
+ 
+-    if value <= powers[0]:
++    if value < powers[0]:
+         return f"{negative_prefix}{value}"
+ 
+     ordinal = bisect.bisect_right(powers, value)

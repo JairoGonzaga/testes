@@ -1,0 +1,11 @@
+{
+ "agente": "a5abdfdfbb1b1873a",
+ "nota": "test_issue.py has two tests that fail on the current alvo.py (naturalsize(999999) gives '1000.0 kB' instead of '1.0 MB', and the GB analogue) plus one guard test that passes; all three pass against a plausible unit-promotion fix checked in memory.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 3,
+  "StructuredOutput": 1
+ }
+}

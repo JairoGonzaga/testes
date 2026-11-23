@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 40.5,
+ "tokens_entrada": 63315,
+ "tokens_saida": 5644,
+ "tokens_raciocinio": 3873,
+ "custo_usd": 0.004209,
+ "chamadas_api": 12,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 12,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 9,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 7,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "check -q -p no:cacheprovider",
+   "exit": 0
+  },
+  {
+   "turno": 11,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d4_sem_subir_sufixo__s3",
+ "nota": "`test_issue.py` is written: the unit-promotion tests fail on the current `alvo.py` (e.g. `naturalsize(999999) == '1000.0 kB'`) and all pass against a correctly fixed implementation."
+}

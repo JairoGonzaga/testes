@@ -1,0 +1,8 @@
+{
+ "agente": "a1e7b9aed141c91e0",
+ "nota": "Pytest suite for alvo.py covering the error hierarchy, checksum known values, a seeded reference oracle, check-digit and single-digit-error properties, and every validate branch.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

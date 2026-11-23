@@ -1,0 +1,8 @@
+{
+ "agente": "a85f4c7d74b15e42f",
+ "nota": "Read the prompt file and wrote a pytest file reproducing the intword suffix-promotion bug, with one control test that should pass before and after the fix.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

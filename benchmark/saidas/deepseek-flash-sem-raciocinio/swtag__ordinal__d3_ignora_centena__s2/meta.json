@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.2,
+ "tokens_entrada": 6241,
+ "tokens_saida": 467,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000652,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d3_ignora_centena__s2",
+ "nota": "I wrote `test_issue.py`, which fails on the current code for numbers like 111/112/113 (and passes for the already-correct smaller cases) and will pass once the suffix logic handles any number whose last two digits are 11–13."
+}

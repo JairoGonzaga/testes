@@ -1,0 +1,8 @@
+{
+ "agente": "a696958ca98a79ffa",
+ "nota": "The test file asserts the promoted unit for the decimal and binary cases, which the current code formats as '1000.0 kB', '1000.0 MB' and '1024.0 KiB'.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": null,
+ "tempo_s": 142.6,
+ "tokens_entrada": 5586,
+ "tokens_saida": 733,
+ "tokens_raciocinio": 483,
+ "custo_usd": 0.0,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-20b-v2\\swtag__apnumber__d2_nove_excluido__s1",
+ "nota": "I created a test that expects `apnumber(9)` to return `'nine'`, which fails on the current code but will pass once the bug is fixed."
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 13.7,
+ "tokens_entrada": 12063,
+ "tokens_saida": 1398,
+ "tokens_raciocinio": 384,
+ "custo_usd": 0.001181,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d1_mil_sem_sufixo__s2",
+ "nota": "Tests fail on the current code (exactly 1000 returns `'1000'`) and pass with the one-character fix (`<=` → `<`), verified against a temporary patched copy while `alvo.py` was left untouched."
+}

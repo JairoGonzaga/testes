@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.9,
+ "tokens_entrada": 12822,
+ "tokens_saida": 538,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000515,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 1,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__naturalsize__s3",
+ "nota": "Added `test_c45_r8_arredondamento`, which checks the exponent bump caused by rounding in the format string (both mid-range and at the suffix limit), and all tests pass."
+}

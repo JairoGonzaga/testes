@@ -1,0 +1,8 @@
+{
+ "agente": "ae0914981d8a2b8a8",
+ "nota": "The test file parametrizes 0 through 9 and checks that apnumber(9) returns 'nine', so it fails on the current `< 9` bound and passes once that bound is fixed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

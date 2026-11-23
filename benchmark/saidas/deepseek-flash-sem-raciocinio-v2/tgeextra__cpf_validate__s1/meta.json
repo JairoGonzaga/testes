@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.8,
+ "tokens_entrada": 12931,
+ "tokens_saida": 413,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000663,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__cpf_validate__s1",
+ "nota": "Added `test_c28_r6_compact_strip_extremos`, covering whitespace/separator stripping at the edges and an all-whitespace input raising `InvalidFormat`; the suite passes (28 tests)."
+}

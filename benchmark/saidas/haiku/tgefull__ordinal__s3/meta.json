@@ -1,0 +1,8 @@
+{
+ "agente": "aa067f21a130a2098",
+ "nota": "Pytest suite for alvo.ordinal and _format_not_finite covering digit and teen rules, negatives, float truncation, string and object fallbacks, non-finite values and overflow.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.6,
+ "tokens_entrada": 7426,
+ "tokens_saida": 604,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000573,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d2_base_binaria__s2",
+ "nota": "Wrote `test_issue.py`, which fails now (`naturalsize(3000000, binary=True)` returns `'3.0 MiB'` instead of `'2.9 MiB'`) and will pass once binary mode divides by powers of 1024."
+}

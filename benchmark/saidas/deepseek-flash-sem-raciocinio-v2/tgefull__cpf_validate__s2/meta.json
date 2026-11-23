@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 17.0,
+ "tokens_entrada": 24009,
+ "tokens_saida": 3046,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.002211,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "--cov=alvo --cov-branch --cov-report=term-missing test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefull__cpf_validate__s2",
+ "nota": "All 30 tests pass with 100% line and branch coverage.\n\nThe suite in `test_alvo.py` covers the exception hierarchy, `clean`/`compact`/`isdigits` edge cases (including regex `$` before newline), `_calc_check_digits` values traced from the code, and every `validate` branch with exact exception types."
+}

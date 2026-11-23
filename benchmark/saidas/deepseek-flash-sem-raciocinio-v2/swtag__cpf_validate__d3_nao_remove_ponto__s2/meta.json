@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.0,
+ "tokens_entrada": 14409,
+ "tokens_saida": 596,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000694,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__cpf_validate__d3_nao_remove_ponto__s2",
+ "nota": "`test_issue.py` reproduces the bug (dots are not stripped, so formatted CPFs raise `InvalidFormat`), failing on the current code and passing with the minimal fix in `fixcheck/`."
+}

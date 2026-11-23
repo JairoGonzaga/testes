@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.8,
+ "tokens_entrada": 8425,
+ "tokens_saida": 943,
+ "tokens_raciocinio": 218,
+ "custo_usd": 0.000832,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d1_treze_esquecido__s3",
+ "nota": "`test_issue.py` is written: it fails on the current `ordinal(13)` → `'13rd'` bug (also for 113, 1013) and passes with the corrected teens handling."
+}

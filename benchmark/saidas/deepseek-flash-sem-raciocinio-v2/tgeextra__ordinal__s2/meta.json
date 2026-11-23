@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.0,
+ "tokens_entrada": 16626,
+ "tokens_saida": 630,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000595,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__ordinal__s2",
+ "nota": "Added `test_c37_r3_r6_varios`, covering string infinities, float-to-int conversion, negative values, non-numeric strings and dicts, all passing."
+}

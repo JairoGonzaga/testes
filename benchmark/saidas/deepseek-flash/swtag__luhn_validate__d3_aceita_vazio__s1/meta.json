@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 16.0,
+ "tokens_entrada": 12630,
+ "tokens_saida": 1867,
+ "tokens_raciocinio": 670,
+ "custo_usd": 0.001434,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d3_aceita_vazio__s1",
+ "nota": "All 5 empty-value tests fail on the current code, and the full file passes (9 passed) against a patched copy of `alvo.py`, while `alvo.py` itself is untouched.\n\n`test_issue.py` reproduces the bug: `validate('')` (and empty values with custom alphabets) is accepted instead of raising `InvalidFormat`, plus regression guards for valid/invalid inputs that must keep working after the fix."
+}

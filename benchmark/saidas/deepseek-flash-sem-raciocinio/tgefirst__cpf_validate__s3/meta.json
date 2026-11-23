@@ -1,0 +1,12 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 1.2,
+ "tokens_entrada": 590,
+ "tokens_saida": 81,
+ "tokens_raciocinio": 0,
+ "custo_usd": 8.1e-05,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.1,
+ "tokens_entrada": 15166,
+ "tokens_saida": 819,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000772,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__apnumber__d3_except_incompleto__s3",
+ "nota": "`test_issue.py` reproduces the bug (`apnumber(None)` raises TypeError instead of returning `'None'`) and passes against the fixed copy."
+}

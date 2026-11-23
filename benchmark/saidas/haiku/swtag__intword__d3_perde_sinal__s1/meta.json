@@ -1,0 +1,10 @@
+{
+ "agente": "a4d199778c1940e88",
+ "nota": "Negative tests fail on the current alvo.py (8 failed, 1 passing positive control) and all 9 pass when the negative branch sets negative_prefix to \"-\" in an in-memory check, with alvo.py left unchanged.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

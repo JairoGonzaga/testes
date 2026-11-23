@@ -1,0 +1,8 @@
+{
+ "agente": "a5a152e2aa578c00e",
+ "nota": "Adds a normal-case test for a negative value in the millions, expecting '-1.5 million', which traces to the module's output.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

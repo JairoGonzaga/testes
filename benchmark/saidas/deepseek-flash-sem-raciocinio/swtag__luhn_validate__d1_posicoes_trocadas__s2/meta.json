@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 13.8,
+ "tokens_entrada": 22996,
+ "tokens_saida": 1237,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00152,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d1_posicoes_trocadas__s2",
+ "nota": "`test_issue.py` is written: it fails on the current `checksum` (doubling applied to the wrong index parity) and all 16 tests pass against a corrected Luhn implementation."
+}

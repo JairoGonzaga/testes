@@ -1,0 +1,8 @@
+{
+ "agente": "ad4c857410db259cc",
+ "nota": "Adds the upper-boundary test: 9 maps to 'nine' and 10 falls back to '10'.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

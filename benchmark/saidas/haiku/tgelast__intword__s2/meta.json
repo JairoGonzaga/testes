@@ -1,0 +1,8 @@
+{
+ "agente": "acd2cd0aeb5d5d0a3",
+ "nota": "Adds a NaN case for R7 using the already-imported math module; intword returns 'NaN' via _format_not_finite.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

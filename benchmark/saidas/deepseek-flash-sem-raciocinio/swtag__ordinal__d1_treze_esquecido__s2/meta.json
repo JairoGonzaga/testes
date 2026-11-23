@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.0,
+ "tokens_entrada": 4978,
+ "tokens_saida": 421,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000454,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d1_treze_esquecido__s2",
+ "nota": "Wrote `test_issue.py`, which fails on the current code (`ordinal(13)` returns `'13rd'`) and will pass once the teen handling includes 13."
+}

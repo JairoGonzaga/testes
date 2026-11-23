@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 22.7,
+ "tokens_entrada": 21818,
+ "tokens_saida": 2630,
+ "tokens_raciocinio": 563,
+ "custo_usd": 0.002028,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d3_aceita_vazio__s3",
+ "nota": "`test_issue.py` is written: its 6 empty-string tests fail on the current `alvo.py` (which accepts `validate('')`) and the whole suite of 16 passes once empty values raise `InvalidFormat`, while valid/invalid number behaviour stays pinned by guard-rail tests."
+}

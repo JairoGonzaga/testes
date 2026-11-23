@@ -1,0 +1,11 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": "CotaEsgotada: limite de requisições/tokens do plano; liberaria em 1175s (> --espera-max 900s): {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_***` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197114, Reque",
+ "tempo_s": 1550.0,
+ "tokens_entrada": 58376,
+ "tokens_saida": 1584,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 17,
+ "provedores": []
+}

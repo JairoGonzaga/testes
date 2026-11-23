@@ -1,0 +1,33 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 86.5,
+ "tokens_entrada": 9932,
+ "tokens_saida": 504,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\swtag__apnumber__d1_zero_excluido__s1",
+ "nota": "The test fails on the buggy code (apnumber(0) returns `'0'` instead of `'zero'`) and passes all cases on the fixed version. `test_issue.py` is in place.\n\nThe test reproduces the issue: `apnumber(0)` should return `'zero'` per the docs but returns `'0'` in the current code, while the fixed version (condition `0 <= value < 10`) makes all tests pass."
+}

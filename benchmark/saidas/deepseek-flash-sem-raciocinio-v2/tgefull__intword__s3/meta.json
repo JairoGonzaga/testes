@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 30.7,
+ "tokens_entrada": 59054,
+ "tokens_saida": 6186,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.004441,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 2,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "--cov=alvo --cov-branch --cov-report=term-missing test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "--cov=alvo --cov-branch --cov-report=term-missing test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefull__intword__s3",
+ "nota": "All 67 tests pass with 100% line and branch coverage.\n\nThe suite in `test_alvo.py` covers constants, `_format_not_finite`, every power/unit branch, negative prefixes, unit promotion on rounding, custom formats, largest-ordinal (`googol`) float-division behaviour, non-numeric inputs, and error paths (`TypeError` for a bad format, `OverflowError` for huge ints)."
+}

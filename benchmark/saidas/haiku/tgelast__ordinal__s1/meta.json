@@ -1,0 +1,8 @@
+{
+ "agente": "abb5732434adc04e1",
+ "nota": "Adds the missing NaN case of R6, the only branch of _format_not_finite no existing test covers; it needs no extra imports.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

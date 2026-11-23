@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": null,
+ "tempo_s": 18.1,
+ "tokens_entrada": 1517,
+ "tokens_saida": 1066,
+ "tokens_raciocinio": 1032,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "mensagem_final",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-20b-v2\\tgelast__apnumber__s1",
+ "nota": "```python\ndef test_c22_r5_nan():\n    assert apnumber(float('nan')) == 'NaN'\n```"
+}

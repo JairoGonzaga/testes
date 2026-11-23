@@ -1,0 +1,5 @@
+job,modo,instancia,funcao,amostra,gerado,aplicavel,sucesso,n_testes,F2P,F2F,P2P,P2F,cobertura_patch,motivo,chamadas_bash,chamadas_ferramentas,turnos,origem_codigo,finish_reason,argumentos_invalidos,custo_usd,rodou_pytest,viu_falhar,ultimo_pytest_falhou,alterou_alvo
+swtzs__apnumber__d1_zero_excluido__s1,zeroshot,apnumber__d1_zero_excluido,apnumber,1,True,True,True,3,1,0,2,0,1.0,,0,0,,,,,,,,,
+swtag__apnumber__d1_zero_excluido__s1,agente,apnumber__d1_zero_excluido,apnumber,1,True,True,True,3,2,0,1,0,1.0,,3,6,5,arquivo,stop,0,0.000627,True,True,False,False
+swtzs__apnumber__d2_nove_excluido__s1,zeroshot,apnumber__d2_nove_excluido,apnumber,1,True,True,True,3,1,0,2,0,1.0,,0,0,,,,,,,,,
+swtag__apnumber__d2_nove_excluido__s1,agente,apnumber__d2_nove_excluido,apnumber,1,True,True,True,3,2,0,1,0,1.0,,3,6,6,arquivo,stop,0,0.000692,True,True,False,False

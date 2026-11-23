@@ -1,0 +1,8 @@
+{
+ "agente": "af248a46a6abbd6e9",
+ "nota": "The file reproduces the bug where 11, 12 and 13 (and 111-113) get the wrong suffix because the teen check uses value % 10 instead of value % 100, with control cases for regular ordinals.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

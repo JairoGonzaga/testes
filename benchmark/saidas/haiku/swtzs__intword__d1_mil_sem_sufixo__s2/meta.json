@@ -1,0 +1,8 @@
+{
+ "agente": "a4ab2f45223d8fe7c",
+ "nota": "Two pytest tests for the issue: intword(1000) and intword(-1000) should return the word-suffixed form, which the current `value <= powers[0]` check prevents.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

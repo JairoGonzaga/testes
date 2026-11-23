@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.4,
+ "tokens_entrada": 15720,
+ "tokens_saida": 860,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00088,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__cpf_validate__d2_comprimento_minimo__s1",
+ "nota": "All tests fail on the buggy code (12/13-digit CPFs raise `InvalidChecksum`) and pass once `validate` enforces exactly 11 digits; `test_issue.py` is in the sandbox root."
+}

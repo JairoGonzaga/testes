@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.4,
+ "tokens_entrada": 22477,
+ "tokens_saida": 1034,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001207,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__ordinal__d2_modulo_errado__s3",
+ "nota": "All 20 tests pass on the fixed copy; the same tests fail on the original `alvo.py` (`ordinal(11)` → `'11st'`).\n\n`test_issue.py` reproduces the bug: numbers ending in 11–13 (e.g. 11, 12, 13, 111, 1112) get the wrong suffix instead of `th`; it fails on current code and passes once the teens check uses `value % 100`."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "ac552e0e50cd5727d",
+ "nota": "Adds a test for negative values whose rounding bumps the unit up (-999999 gives -1.0 MB, -1048575 binary gives -1.0 MiB), a case no existing test covers.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

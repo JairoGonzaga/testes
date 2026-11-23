@@ -1,0 +1,8 @@
+{
+ "agente": "a62395d0af630fb4f",
+ "nota": "Adds a test that numeric strings for infinity and NaN go through float() and return the same markers as the float inputs, a path the existing suite does not check.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

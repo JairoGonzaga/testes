@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 13.2,
+ "tokens_entrada": 11374,
+ "tokens_saida": 1530,
+ "tokens_raciocinio": 543,
+ "custo_usd": 0.001213,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__apnumber__d2_nove_excluido__s1",
+ "nota": "Tests written in `test_issue.py`: they fail on the current code (`apnumber(9) == '9'`) and pass with the off-by-one bound fixed (`0 <= value < 10`), which I verified against a patched copy."
+}

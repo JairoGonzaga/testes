@@ -1,0 +1,33 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 98.5,
+ "tokens_entrada": 11645,
+ "tokens_saida": 559,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\swtag__apnumber__d2_nove_excluido__s1",
+ "nota": "The test fails on the current code (`apnumber(9)` returns `'9'`) and passes with the `<` → `<=` fix."
+}

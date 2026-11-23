@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 14.2,
+ "tokens_entrada": 14110,
+ "tokens_saida": 1517,
+ "tokens_raciocinio": 347,
+ "custo_usd": 0.001371,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d1_treze_esquecido__s2",
+ "nota": "All 11 failing tests turn green with the minimal fix (`(11, 12, 13)`), and `alvo.py` is untouched.\n\n`test_issue.py` reproduces the `ordinal(13) == '13rd'` bug: it fails on the current code (11 failures, 22 passes) and fully passes once the 13 case is special-cased."
+}

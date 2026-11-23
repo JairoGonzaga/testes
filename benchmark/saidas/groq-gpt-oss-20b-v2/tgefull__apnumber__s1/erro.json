@@ -1,0 +1,11 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": "RuntimeError: HTTP 413: {\"error\":{\"message\":\"Request too large for model `openai/gpt-oss-20b` in organization `org_***` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8825, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https:",
+ "tempo_s": 398.7,
+ "tokens_entrada": 7484,
+ "tokens_saida": 5643,
+ "tokens_raciocinio": 1783,
+ "custo_usd": 0.0,
+ "chamadas_api": 3,
+ "provedores": []
+}

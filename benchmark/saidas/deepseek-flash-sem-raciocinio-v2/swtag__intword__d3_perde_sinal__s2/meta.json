@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.7,
+ "tokens_entrada": 15012,
+ "tokens_saida": 1062,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000932,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d3_perde_sinal__s2",
+ "nota": "`test_issue.py` reproduces the lost minus sign for negative values (fails on current `alvo.py`, passes with a minimal fix in `fixcheck/`)."
+}

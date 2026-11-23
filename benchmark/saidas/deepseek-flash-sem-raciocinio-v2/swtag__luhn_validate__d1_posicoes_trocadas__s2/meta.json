@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 36.2,
+ "tokens_entrada": 91412,
+ "tokens_saida": 3886,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00338,
+ "chamadas_api": 20,
+ "provedores": [],
+ "finish_reason": "limite_de_turnos",
+ "turnos": 20,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 18,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 14,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 16,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 19,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 0
+  },
+  {
+   "turno": 20,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__luhn_validate__d1_posicoes_trocadas__s2",
+ "nota": ""
+}

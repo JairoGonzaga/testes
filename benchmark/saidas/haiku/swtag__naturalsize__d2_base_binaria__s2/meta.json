@@ -1,0 +1,11 @@
+{
+ "agente": "a16a429184c141e5e",
+ "nota": "The test file reproduces the bug: all three tests fail on the current alvo.py ('3.0 MiB', '1.6 MiB', '1.0 KiB') and pass when the base is 1024 for binary=True, as checked on an in-memory patched copy.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.1,
+ "tokens_entrada": 13810,
+ "tokens_saida": 652,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000713,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__ordinal__d3_ignora_centena__s1",
+ "nota": "Created `test_issue.py` reproducing the bug (ordinal(111) → '111st' instead of '111th', plus 112/113/1011), which fails on the current code and passes with a modulo-100 fix."
+}

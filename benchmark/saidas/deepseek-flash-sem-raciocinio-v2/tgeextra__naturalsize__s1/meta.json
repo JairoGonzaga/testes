@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.3,
+ "tokens_entrada": 13857,
+ "tokens_saida": 623,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000872,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__naturalsize__s1",
+ "nota": "I added three tests covering format-based unit promotion, the suffix-list upper bound, and gnu-mode values at/above the 1024 base; all 47 tests pass."
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.1,
+ "tokens_entrada": 5848,
+ "tokens_saida": 550,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000586,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__ordinal__d4_retorno_vazio__s2",
+ "nota": "The tests fail on the current code as expected; I wrote `test_issue.py` covering the non-numeric `str(value)` behavior plus regression tests for numbers and non-finite values."
+}

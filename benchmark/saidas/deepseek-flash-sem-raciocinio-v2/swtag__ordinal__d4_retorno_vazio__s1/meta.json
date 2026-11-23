@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.5,
+ "tokens_entrada": 19588,
+ "tokens_saida": 1047,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001045,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__ordinal__d4_retorno_vazio__s1",
+ "nota": "Wrote `test_issue.py`, which fails on the current code (`ordinal('something else')` returns `''`) and passes on a fixed copy where the exception path returns `str(value)`."
+}

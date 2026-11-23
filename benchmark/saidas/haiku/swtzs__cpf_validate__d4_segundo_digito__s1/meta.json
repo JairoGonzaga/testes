@@ -1,0 +1,8 @@
+{
+ "agente": "a4391ef82b448b611",
+ "nota": "The test file reproduces the InvalidChecksum bug: _calc_check_digits adds d1 with weight 1 instead of weight 2 when computing d2, so valid CPFs such as 11144477735 and 52998224725 fail.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

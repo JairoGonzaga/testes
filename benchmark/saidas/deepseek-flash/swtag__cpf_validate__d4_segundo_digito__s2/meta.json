@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 44.6,
+ "tokens_entrada": 70527,
+ "tokens_saida": 7210,
+ "tokens_raciocinio": 2385,
+ "custo_usd": 0.005196,
+ "chamadas_api": 12,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 12,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 2,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 8,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__cpf_validate__d4_segundo_digito__s2",
+ "nota": "Wrote `test_issue.py`: it fails on the current code (27 failures, since `_calc_check_digits` adds `d1` instead of `2 * d1`) and passes all 28 tests once the check-digit formula is fixed, while `alvo.py` was left untouched."
+}

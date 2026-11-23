@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.2,
+ "tokens_entrada": 10014,
+ "tokens_saida": 269,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000516,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__ordinal__s1",
+ "nota": "Added `test_c36_r6` asserting `ordinal(float('nan')) == 'NaN'`; all 36 tests pass."
+}

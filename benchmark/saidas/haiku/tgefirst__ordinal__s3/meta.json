@@ -1,0 +1,8 @@
+{
+ "agente": "af5aa7d0c18d75ad5",
+ "nota": "Adds test_c1_r2 covering the nd/rd suffixes and the 11-13 teen exception, using only the existing imports.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

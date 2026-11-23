@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 4.9,
+ "tokens_entrada": 7743,
+ "tokens_saida": 284,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000316,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__apnumber__s3",
+ "nota": "```python\nimport math\n\nimport pytest\n\nfrom alvo import apnumber\n\n\ndef test_c22_r5():\n    # [R5/invalida]\n    assert apnumber(float('nan')) == 'NaN'\n    assert apnumber('nan') == 'NaN'\n```"
+}

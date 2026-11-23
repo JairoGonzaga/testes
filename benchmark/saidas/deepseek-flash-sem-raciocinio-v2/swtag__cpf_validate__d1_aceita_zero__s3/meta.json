@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.1,
+ "tokens_entrada": 16222,
+ "tokens_saida": 791,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000782,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__cpf_validate__d1_aceita_zero__s3",
+ "nota": "Created `test_issue.py`, which fails on the current code because `validate('00000000000')` (and its formatted/recomputed-check-digit variants) is accepted instead of raising `InvalidFormat`, and passes on the fixed copy."
+}

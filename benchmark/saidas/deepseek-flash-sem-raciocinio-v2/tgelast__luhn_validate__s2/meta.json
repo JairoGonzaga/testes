@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.6,
+ "tokens_entrada": 8507,
+ "tokens_saida": 422,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0004,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__luhn_validate__s2",
+ "nota": "Added `test_c20_r6`, which asserts that a valid-alphabet value with a wrong Luhn checksum raises `InvalidChecksum`; all 20 tests pass."
+}

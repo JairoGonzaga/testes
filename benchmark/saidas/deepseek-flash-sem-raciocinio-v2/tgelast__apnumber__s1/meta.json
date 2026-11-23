@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.1,
+ "tokens_entrada": 12981,
+ "tokens_saida": 519,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000659,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__apnumber__s1",
+ "nota": "Added three passing tests (`test_c22_r5_nan`, `test_c23_r3_limite`, `test_c24_r6_bool`) covering the NaN branch, float truncation at the upper word boundary, and bool input."
+}

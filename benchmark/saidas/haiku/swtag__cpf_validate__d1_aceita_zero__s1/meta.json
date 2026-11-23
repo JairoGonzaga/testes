@@ -1,0 +1,11 @@
+{
+ "agente": "acf197f5134fd3da6",
+ "nota": "The test file reproduces the all-zeros CPF bug: the two zero-CPF cases fail on the current code with DID NOT RAISE, and a valid-CPF guard test passes.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 8.7,
+ "tokens_entrada": 10346,
+ "tokens_saida": 722,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000724,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__naturalsize__d4_sem_subir_sufixo__s3",
+ "nota": "I wrote `test_issue.py`, which reproduces the bug (3 failing assertions on the current code) and will pass once rounding-up values promote to the next unit."
+}

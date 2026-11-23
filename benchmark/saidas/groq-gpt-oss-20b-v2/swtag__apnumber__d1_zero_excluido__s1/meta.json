@@ -1,0 +1,33 @@
+{
+ "modelo_id": "openai/gpt-oss-20b",
+ "erro": null,
+ "tempo_s": 131.9,
+ "tokens_entrada": 8527,
+ "tokens_saida": 1545,
+ "tokens_raciocinio": 1149,
+ "custo_usd": 0.0,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 4
+  },
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-20b-v2\\swtag__apnumber__d1_zero_excluido__s1",
+ "nota": "Implemented a test to assert that `apnumber(0)` returns `'zero'`, reproducing the documented bug."
+}

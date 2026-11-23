@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.2,
+ "tokens_entrada": 7931,
+ "tokens_saida": 543,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000593,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__cpf_validate__d3_nao_remove_ponto__s1",
+ "nota": "Wrote `test_issue.py`, which reproduces the bug: formatted CPFs with dots raise `InvalidFormat` because `compact()` doesn't strip `.`, and the tests will pass once dots are removed."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "abe2dc19d934cd835",
+ "nota": "Adds a test for rounding carry into the next power with a negative sign, a custom format, and the nonillion-to-decillion boundary, none of which the existing tests cover.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

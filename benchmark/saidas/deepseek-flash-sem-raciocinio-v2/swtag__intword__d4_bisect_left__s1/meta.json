@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 13.1,
+ "tokens_entrada": 20728,
+ "tokens_saida": 1003,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001001,
+ "chamadas_api": 9,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 9,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d4_bisect_left__s1",
+ "nota": "All three tests pass on the fixed copy and fail (2 of 3) on the buggy code.\n\n`test_issue.py` is in the sandbox root: it asserts `intword(10**100) == \"1.0 googol\"` (plus negative and 2×googol cases), failing now with the huge \"decillion\" output and passing once the power lookup is fixed."
+}

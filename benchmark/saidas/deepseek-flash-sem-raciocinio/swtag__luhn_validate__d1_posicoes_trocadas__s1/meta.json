@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 19.1,
+ "tokens_entrada": 35917,
+ "tokens_saida": 2428,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.002441,
+ "chamadas_api": 10,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 10,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 9,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d1_posicoes_trocadas__s1",
+ "nota": "`test_issue.py` reproduces the bug: it fails on the current `alvo.py` (Luhn digits doubled in the wrong parity) and passes all 29 tests against the corrected algorithm."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "af62a2fdb1849946e",
+ "nota": "For each payload and alphabet, exactly one check digit passes validate, and it is the expected one; this covers binary and base-3 alphabets not tested yet.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "agente": "ac8d7e430a39f463d",
+ "nota": "Wrote test_issue.py with four over-long CPF tests that fail on the current code (InvalidChecksum or no exception) and two guards that pass on both versions; with an in-memory length fix all six pass.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 4,
+  "StructuredOutput": 1
+ }
+}

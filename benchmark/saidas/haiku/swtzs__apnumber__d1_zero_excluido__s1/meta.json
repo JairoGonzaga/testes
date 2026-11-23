@@ -1,0 +1,8 @@
+{
+ "agente": "aa18882d3996c2632",
+ "nota": "Two pytest tests: one checks apnumber(0) == 'zero' directly, the other checks digits 0 to 9 as words, so both fail on the current code and pass once zero is spelled out.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

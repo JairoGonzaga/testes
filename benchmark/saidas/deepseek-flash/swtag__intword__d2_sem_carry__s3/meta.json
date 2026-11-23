@@ -1,0 +1,43 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 47.7,
+ "tokens_entrada": 118563,
+ "tokens_saida": 7457,
+ "tokens_raciocinio": 2570,
+ "custo_usd": 0.005945,
+ "chamadas_api": 15,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 15,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 9,
+  "Write": 4,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 10,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 12,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 0
+  },
+  {
+   "turno": 13,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d2_sem_carry__s3",
+ "nota": "`test_issue.py` is written: it fails on the current `alvo.py` (30 failures, root case `intword(999999) == '1000.0 thousand'`) and passes fully against a minimally fixed version where the rounded mantissa is compared to the next power in the same scale."
+}

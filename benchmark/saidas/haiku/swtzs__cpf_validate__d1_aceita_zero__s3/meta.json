@@ -1,0 +1,8 @@
+{
+ "agente": "a0121622870057022",
+ "nota": "Pytest file with parametrized all-zeros CPF rejection tests (fail on current code) plus a valid-CPF guard test that passes both before and after the fix.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

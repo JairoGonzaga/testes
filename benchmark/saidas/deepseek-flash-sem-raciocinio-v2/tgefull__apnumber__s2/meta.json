@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 11.9,
+ "tokens_entrada": 11263,
+ "tokens_saida": 1729,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.001222,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_alvo.py --cov=alvo --cov-branch --cov-report=term-missing",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefull__apnumber__s2",
+ "nota": "All 53 tests pass with 100% line and branch coverage."
+}

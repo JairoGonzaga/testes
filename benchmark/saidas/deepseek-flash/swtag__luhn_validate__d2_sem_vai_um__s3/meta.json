@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 26.2,
+ "tokens_entrada": 28072,
+ "tokens_saida": 3231,
+ "tokens_raciocinio": 706,
+ "custo_usd": 0.002518,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 2,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d2_sem_vai_um__s3",
+ "nota": "The test file is written: 12 tests fail on the current buggy `checksum` and all 24 pass against a corrected Luhn implementation."
+}

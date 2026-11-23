@@ -1,0 +1,8 @@
+{
+ "agente": "a93c29d1b4d9f2bb7",
+ "nota": "The test file reproduces the issue: the issue example and two-digit cases with a doubled 5 or 9 are rejected by the current code, and they should pass once the doubling is fixed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

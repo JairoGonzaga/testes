@@ -1,0 +1,8 @@
+{
+ "agente": "adcc084f37c457015",
+ "nota": "Adds a hex-alphabet invalid-checksum test for R6, which I checked by hand: '1a2b2' sums to 17 mod 16 = 1, so it raises InvalidChecksum.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

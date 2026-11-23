@@ -1,0 +1,8 @@
+{
+ "agente": "ac547dbff3817aa18",
+ "nota": "The pytest file reproduces the ordinal suffix bug for numbers ending in 11, 12 or 13 (such as 111 and 112), and checks that the other cases stay correct.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

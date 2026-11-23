@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 45.6,
+ "tokens_entrada": 90629,
+ "tokens_saida": 6716,
+ "tokens_raciocinio": 3767,
+ "custo_usd": 0.005205,
+ "chamadas_api": 13,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 13,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 7,
+  "Write": 4,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 12,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d4_sem_subir_sufixo__s1",
+ "nota": "`test_issue.py` is written: 8 tests fail on the current buggy code (unit not promoted when rounding overflows) while the 16 non-regression assertions pass, and all 24 pass against two plausible fix implementations I verified in a scratch copy."
+}

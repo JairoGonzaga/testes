@@ -1,0 +1,8 @@
+{
+ "agente": "a4d41c9bdcea382f7",
+ "nota": "Checks that all 99 wrong check-digit pairs on a valid CPF raise InvalidChecksum, a case the existing single-value tests leave open (e.g. a comparison that only checks the second digit would pass them).",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

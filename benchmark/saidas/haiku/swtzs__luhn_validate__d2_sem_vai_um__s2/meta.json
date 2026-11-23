@@ -1,0 +1,8 @@
+{
+ "agente": "aeeef02d562c3fd59",
+ "nota": "The test file reproduces the Luhn bug with the issue's example and two other valid numbers whose doubled digits reach 5 or more, plus guard tests that should pass both before and after the fix.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

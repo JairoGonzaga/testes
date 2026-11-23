@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 5.9,
+ "tokens_entrada": 6427,
+ "tokens_saida": 453,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000483,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d1_posicoes_trocadas__s3",
+ "nota": "The tests fail as expected on the buggy code (the doubling is applied to the wrong parity position) and pass once the Luhn check digit ordering is corrected."
+}

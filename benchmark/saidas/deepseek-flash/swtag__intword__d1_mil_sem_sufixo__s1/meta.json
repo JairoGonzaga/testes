@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 12.7,
+ "tokens_entrada": 15561,
+ "tokens_saida": 1126,
+ "tokens_raciocinio": 332,
+ "custo_usd": 0.001072,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "fix_check/test_issue.py -q",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d1_mil_sem_sufixo__s1",
+ "nota": "Wrote `test_issue.py`: it fails on the current `alvo.py` (`intword(1000)` returns `'1000'`) and passes once the `<=` boundary check in `intword` is fixed."
+}

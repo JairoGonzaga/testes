@@ -1,0 +1,8 @@
+{
+ "agente": "a571ac55737f21cbb",
+ "nota": "Adds a valid-input test checking the singular \"1 Byte\" case and the plural \"999 Bytes\" case under the decimal default, which both follow directly from the alvo.py branches.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

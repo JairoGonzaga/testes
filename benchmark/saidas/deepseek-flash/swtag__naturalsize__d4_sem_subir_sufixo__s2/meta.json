@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 27.2,
+ "tokens_entrada": 29750,
+ "tokens_saida": 4784,
+ "tokens_raciocinio": 2774,
+ "custo_usd": 0.003476,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d4_sem_subir_sufixo__s2",
+ "nota": "Tests are in place: 9 fail on the current code with `1000.0 kB` / `1024.0 KiB` style outputs, and all pass under a fix that promotes the unit when the formatted value rounds up to the base (verified against a simulated fix)."
+}

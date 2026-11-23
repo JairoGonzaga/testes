@@ -1,0 +1,10 @@
+{
+ "agente": "a363c2a2e31b585c9",
+ "nota": "The test file reproduces the issue: 8 negative-value tests fail on the current alvo.py (sign dropped) and the positive regression test passes; with the sign fix applied in memory all 9 pass.",
+ "ferramentas": {
+  "Read": 2,
+  "Write": 1,
+  "Bash": 2,
+  "StructuredOutput": 1
+ }
+}

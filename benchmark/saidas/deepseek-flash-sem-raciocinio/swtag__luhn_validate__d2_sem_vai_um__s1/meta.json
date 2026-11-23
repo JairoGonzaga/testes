@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.3,
+ "tokens_entrada": 7381,
+ "tokens_saida": 460,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000631,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 1,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__luhn_validate__d2_sem_vai_um__s1",
+ "nota": "I wrote `test_issue.py`, which fails on the current buggy code (standard Luhn valid numbers rejected) and should pass with the corrected checksum."
+}

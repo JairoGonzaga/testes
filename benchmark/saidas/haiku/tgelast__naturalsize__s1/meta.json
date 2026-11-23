@@ -1,0 +1,8 @@
+{
+ "agente": "ad5fe217339fd66e8",
+ "nota": "Adds a rounding-boundary test where values that round up to 1000 (or 1024 in binary) move to the next unit, consistent with the existing R8 test.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

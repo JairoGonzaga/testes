@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.6,
+ "tokens_entrada": 16595,
+ "tokens_saida": 490,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00077,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 2,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 2,
+   "args": "test_alvo.py",
+   "exit": 0
+  },
+  {
+   "turno": 5,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgeextra__intword__s1",
+ "nota": "Added `test_c34_r3_custom_format_rollover`, covering unit rollover when a custom format rounds up (including negative values); all 34 tests pass."
+}

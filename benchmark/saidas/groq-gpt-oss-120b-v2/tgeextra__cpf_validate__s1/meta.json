@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 13.7,
+ "tokens_entrada": 2014,
+ "tokens_saida": 946,
+ "tokens_raciocinio": 806,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "mensagem_final",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\tgeextra__cpf_validate__s1",
+ "nota": "```python\nimport pytest\nfrom alvo import clean, _calc_check_digits, InvalidFormat\n\ndef test_clean_and_calc_check_digits():\n    # clean should remove specified characters from any iterable of characters\n    assert clean(['a', 'b', 'c', '1', '2', '3'], deletechars='abc') == '123'\n\n    # clean should raise InvalidFormat when the input is not iterable\n    with pytest.raises(InvalidFormat):\n        clean(12345)\n\n    # _calc_check_digits should correctly compute the check digits for a known base\n    a"
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "a4cff8b5ca80cf9fb",
+ "nota": "Adds a NaN case for the non-finite branch, using the already-imported math module, which the test file never uses yet.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

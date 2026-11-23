@@ -1,0 +1,38 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.2,
+ "tokens_entrada": 13887,
+ "tokens_saida": 535,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000673,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "fixcheck/test_issue.py -q",
+   "exit": 0
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__naturalsize__d1_base_inclusiva__s2",
+ "nota": "`test_issue.py` reproduces the bug: exactly-one-unit sizes (1000 decimal, 1024 binary/gnu) are reported as raw bytes instead of `1.0 kB` / `1.0 KiB` / `1.0K`, and all three tests pass with the off-by-one boundary fix."
+}

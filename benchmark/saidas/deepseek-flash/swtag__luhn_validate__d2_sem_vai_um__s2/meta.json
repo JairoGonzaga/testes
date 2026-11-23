@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 28.4,
+ "tokens_entrada": 30416,
+ "tokens_saida": 3485,
+ "tokens_raciocinio": 1615,
+ "custo_usd": 0.00274,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 7,
+   "args": "test_issue.py -q --tb=no",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d2_sem_vai_um__s2",
+ "nota": "`test_issue.py` reproduces the bug: valid Luhn numbers such as `'79927398713'` (13 failing assertions on the current code) are rejected with `InvalidChecksum`, and all 25 tests pass against a corrected digit-sum implementation."
+}

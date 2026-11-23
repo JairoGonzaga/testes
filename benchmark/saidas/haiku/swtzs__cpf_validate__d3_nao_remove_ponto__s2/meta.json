@@ -1,0 +1,8 @@
+{
+ "agente": "adfd9d12cd23fc732",
+ "nota": "The pytest file reproduces the dotted-CPF bug: the dotted inputs fail on current code (InvalidFormat) and should pass once dots are stripped like spaces and hyphens.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

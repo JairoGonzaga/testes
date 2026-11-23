@@ -1,0 +1,11 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "tarefas": 11,
+ "com_codigo": 11,
+ "custo_usd": 0.0,
+ "tokens_entrada": 138523,
+ "tokens_saida": 8395,
+ "tokens_raciocinio": 0,
+ "tempo_s": 1388.7,
+ "truncadas": 0
+}

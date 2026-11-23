@@ -1,0 +1,8 @@
+{
+ "agente": "af34408e08219812e",
+ "nota": "Adds the NaN case for R5, which the visible tests cover only for +inf and -inf; it uses the math import already in the file.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

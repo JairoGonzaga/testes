@@ -1,0 +1,1889 @@
+[
+ {
+  "id": "swtzs__apnumber__d1_zero_excluido__s1",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d1_zero_excluido",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__apnumber__d1_zero_excluido.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d1_zero_excluido__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d1_zero_excluido__s1",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d1_zero_excluido",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d1_zero_excluido__s1",
+  "saida": "saidas/haiku/swtag__apnumber__d1_zero_excluido__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d1_zero_excluido__s2",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d1_zero_excluido",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__apnumber__d1_zero_excluido.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d1_zero_excluido__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d1_zero_excluido__s2",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d1_zero_excluido",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d1_zero_excluido__s2",
+  "saida": "saidas/haiku/swtag__apnumber__d1_zero_excluido__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d1_zero_excluido__s3",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d1_zero_excluido",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__apnumber__d1_zero_excluido.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d1_zero_excluido__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d1_zero_excluido__s3",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d1_zero_excluido",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d1_zero_excluido__s3",
+  "saida": "saidas/haiku/swtag__apnumber__d1_zero_excluido__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d2_nove_excluido__s1",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d2_nove_excluido",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__apnumber__d2_nove_excluido.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d2_nove_excluido__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d2_nove_excluido__s1",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d2_nove_excluido",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d2_nove_excluido__s1",
+  "saida": "saidas/haiku/swtag__apnumber__d2_nove_excluido__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d2_nove_excluido__s2",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d2_nove_excluido",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__apnumber__d2_nove_excluido.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d2_nove_excluido__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d2_nove_excluido__s2",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d2_nove_excluido",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d2_nove_excluido__s2",
+  "saida": "saidas/haiku/swtag__apnumber__d2_nove_excluido__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d2_nove_excluido__s3",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d2_nove_excluido",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__apnumber__d2_nove_excluido.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d2_nove_excluido__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d2_nove_excluido__s3",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d2_nove_excluido",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d2_nove_excluido__s3",
+  "saida": "saidas/haiku/swtag__apnumber__d2_nove_excluido__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d3_except_incompleto__s1",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d3_except_incompleto",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__apnumber__d3_except_incompleto.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d3_except_incompleto__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d3_except_incompleto__s1",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d3_except_incompleto",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d3_except_incompleto__s1",
+  "saida": "saidas/haiku/swtag__apnumber__d3_except_incompleto__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d3_except_incompleto__s2",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d3_except_incompleto",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__apnumber__d3_except_incompleto.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d3_except_incompleto__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d3_except_incompleto__s2",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d3_except_incompleto",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d3_except_incompleto__s2",
+  "saida": "saidas/haiku/swtag__apnumber__d3_except_incompleto__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__apnumber__d3_except_incompleto__s3",
+  "tipo": "swt_zs",
+  "instancia": "apnumber__d3_except_incompleto",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__apnumber__d3_except_incompleto.md",
+  "saida": "saidas/haiku/swtzs__apnumber__d3_except_incompleto__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__apnumber__d3_except_incompleto__s3",
+  "tipo": "swt_agente",
+  "instancia": "apnumber__d3_except_incompleto",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__apnumber__d3_except_incompleto__s3",
+  "saida": "saidas/haiku/swtag__apnumber__d3_except_incompleto__s3/test_issue.py"
+ },
+ {
+  "id": "tgefull__apnumber__s1",
+  "tipo": "tge_full",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefull__apnumber.md",
+  "saida": "saidas/haiku/tgefull__apnumber__s1/test_alvo.py"
+ },
+ {
+  "id": "tgefull__apnumber__s2",
+  "tipo": "tge_full",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefull__apnumber.md",
+  "saida": "saidas/haiku/tgefull__apnumber__s2/test_alvo.py"
+ },
+ {
+  "id": "tgefull__apnumber__s3",
+  "tipo": "tge_full",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefull__apnumber.md",
+  "saida": "saidas/haiku/tgefull__apnumber__s3/test_alvo.py"
+ },
+ {
+  "id": "tgefirst__apnumber__s1",
+  "tipo": "tge_first",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefirst__apnumber.md",
+  "saida": "saidas/haiku/tgefirst__apnumber__s1/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__apnumber__s2",
+  "tipo": "tge_first",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefirst__apnumber.md",
+  "saida": "saidas/haiku/tgefirst__apnumber__s2/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__apnumber__s3",
+  "tipo": "tge_first",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefirst__apnumber.md",
+  "saida": "saidas/haiku/tgefirst__apnumber__s3/novo_teste.py"
+ },
+ {
+  "id": "tgelast__apnumber__s1",
+  "tipo": "tge_last",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgelast__apnumber.md",
+  "saida": "saidas/haiku/tgelast__apnumber__s1/novo_teste.py"
+ },
+ {
+  "id": "tgelast__apnumber__s2",
+  "tipo": "tge_last",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgelast__apnumber.md",
+  "saida": "saidas/haiku/tgelast__apnumber__s2/novo_teste.py"
+ },
+ {
+  "id": "tgelast__apnumber__s3",
+  "tipo": "tge_last",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgelast__apnumber.md",
+  "saida": "saidas/haiku/tgelast__apnumber__s3/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__apnumber__s1",
+  "tipo": "tge_extra",
+  "funcao": "apnumber",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgeextra__apnumber.md",
+  "saida": "saidas/haiku/tgeextra__apnumber__s1/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__apnumber__s2",
+  "tipo": "tge_extra",
+  "funcao": "apnumber",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgeextra__apnumber.md",
+  "saida": "saidas/haiku/tgeextra__apnumber__s2/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__apnumber__s3",
+  "tipo": "tge_extra",
+  "funcao": "apnumber",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgeextra__apnumber.md",
+  "saida": "saidas/haiku/tgeextra__apnumber__s3/novo_teste.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d1_aceita_zero__s1",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d1_aceita_zero",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d1_aceita_zero.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d1_aceita_zero__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d1_aceita_zero__s1",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d1_aceita_zero",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d1_aceita_zero__s1",
+  "saida": "saidas/haiku/swtag__cpf_validate__d1_aceita_zero__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d1_aceita_zero__s2",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d1_aceita_zero",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d1_aceita_zero.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d1_aceita_zero__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d1_aceita_zero__s2",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d1_aceita_zero",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d1_aceita_zero__s2",
+  "saida": "saidas/haiku/swtag__cpf_validate__d1_aceita_zero__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d1_aceita_zero__s3",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d1_aceita_zero",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d1_aceita_zero.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d1_aceita_zero__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d1_aceita_zero__s3",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d1_aceita_zero",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d1_aceita_zero__s3",
+  "saida": "saidas/haiku/swtag__cpf_validate__d1_aceita_zero__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d2_comprimento_minimo__s1",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d2_comprimento_minimo",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d2_comprimento_minimo.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d2_comprimento_minimo__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d2_comprimento_minimo__s1",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d2_comprimento_minimo",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d2_comprimento_minimo__s1",
+  "saida": "saidas/haiku/swtag__cpf_validate__d2_comprimento_minimo__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d2_comprimento_minimo__s2",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d2_comprimento_minimo",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d2_comprimento_minimo.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d2_comprimento_minimo__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d2_comprimento_minimo__s2",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d2_comprimento_minimo",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d2_comprimento_minimo__s2",
+  "saida": "saidas/haiku/swtag__cpf_validate__d2_comprimento_minimo__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d2_comprimento_minimo__s3",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d2_comprimento_minimo",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d2_comprimento_minimo.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d2_comprimento_minimo__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d2_comprimento_minimo__s3",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d2_comprimento_minimo",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d2_comprimento_minimo__s3",
+  "saida": "saidas/haiku/swtag__cpf_validate__d2_comprimento_minimo__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d3_nao_remove_ponto__s1",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d3_nao_remove_ponto",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d3_nao_remove_ponto.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d3_nao_remove_ponto__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d3_nao_remove_ponto__s1",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d3_nao_remove_ponto",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d3_nao_remove_ponto__s1",
+  "saida": "saidas/haiku/swtag__cpf_validate__d3_nao_remove_ponto__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d3_nao_remove_ponto__s2",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d3_nao_remove_ponto",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d3_nao_remove_ponto.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d3_nao_remove_ponto__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d3_nao_remove_ponto__s2",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d3_nao_remove_ponto",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d3_nao_remove_ponto__s2",
+  "saida": "saidas/haiku/swtag__cpf_validate__d3_nao_remove_ponto__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d3_nao_remove_ponto__s3",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d3_nao_remove_ponto",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d3_nao_remove_ponto.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d3_nao_remove_ponto__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d3_nao_remove_ponto__s3",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d3_nao_remove_ponto",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d3_nao_remove_ponto__s3",
+  "saida": "saidas/haiku/swtag__cpf_validate__d3_nao_remove_ponto__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d4_segundo_digito__s1",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d4_segundo_digito",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d4_segundo_digito.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d4_segundo_digito__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d4_segundo_digito__s1",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d4_segundo_digito",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d4_segundo_digito__s1",
+  "saida": "saidas/haiku/swtag__cpf_validate__d4_segundo_digito__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d4_segundo_digito__s2",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d4_segundo_digito",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d4_segundo_digito.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d4_segundo_digito__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d4_segundo_digito__s2",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d4_segundo_digito",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d4_segundo_digito__s2",
+  "saida": "saidas/haiku/swtag__cpf_validate__d4_segundo_digito__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__cpf_validate__d4_segundo_digito__s3",
+  "tipo": "swt_zs",
+  "instancia": "cpf_validate__d4_segundo_digito",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__cpf_validate__d4_segundo_digito.md",
+  "saida": "saidas/haiku/swtzs__cpf_validate__d4_segundo_digito__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__cpf_validate__d4_segundo_digito__s3",
+  "tipo": "swt_agente",
+  "instancia": "cpf_validate__d4_segundo_digito",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__cpf_validate__d4_segundo_digito__s3",
+  "saida": "saidas/haiku/swtag__cpf_validate__d4_segundo_digito__s3/test_issue.py"
+ },
+ {
+  "id": "tgefull__cpf_validate__s1",
+  "tipo": "tge_full",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefull__cpf_validate.md",
+  "saida": "saidas/haiku/tgefull__cpf_validate__s1/test_alvo.py"
+ },
+ {
+  "id": "tgefull__cpf_validate__s2",
+  "tipo": "tge_full",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefull__cpf_validate.md",
+  "saida": "saidas/haiku/tgefull__cpf_validate__s2/test_alvo.py"
+ },
+ {
+  "id": "tgefull__cpf_validate__s3",
+  "tipo": "tge_full",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefull__cpf_validate.md",
+  "saida": "saidas/haiku/tgefull__cpf_validate__s3/test_alvo.py"
+ },
+ {
+  "id": "tgefirst__cpf_validate__s1",
+  "tipo": "tge_first",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefirst__cpf_validate.md",
+  "saida": "saidas/haiku/tgefirst__cpf_validate__s1/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__cpf_validate__s2",
+  "tipo": "tge_first",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefirst__cpf_validate.md",
+  "saida": "saidas/haiku/tgefirst__cpf_validate__s2/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__cpf_validate__s3",
+  "tipo": "tge_first",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefirst__cpf_validate.md",
+  "saida": "saidas/haiku/tgefirst__cpf_validate__s3/novo_teste.py"
+ },
+ {
+  "id": "tgelast__cpf_validate__s1",
+  "tipo": "tge_last",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgelast__cpf_validate.md",
+  "saida": "saidas/haiku/tgelast__cpf_validate__s1/novo_teste.py"
+ },
+ {
+  "id": "tgelast__cpf_validate__s2",
+  "tipo": "tge_last",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgelast__cpf_validate.md",
+  "saida": "saidas/haiku/tgelast__cpf_validate__s2/novo_teste.py"
+ },
+ {
+  "id": "tgelast__cpf_validate__s3",
+  "tipo": "tge_last",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgelast__cpf_validate.md",
+  "saida": "saidas/haiku/tgelast__cpf_validate__s3/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__cpf_validate__s1",
+  "tipo": "tge_extra",
+  "funcao": "cpf_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgeextra__cpf_validate.md",
+  "saida": "saidas/haiku/tgeextra__cpf_validate__s1/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__cpf_validate__s2",
+  "tipo": "tge_extra",
+  "funcao": "cpf_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgeextra__cpf_validate.md",
+  "saida": "saidas/haiku/tgeextra__cpf_validate__s2/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__cpf_validate__s3",
+  "tipo": "tge_extra",
+  "funcao": "cpf_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgeextra__cpf_validate.md",
+  "saida": "saidas/haiku/tgeextra__cpf_validate__s3/novo_teste.py"
+ },
+ {
+  "id": "swtzs__intword__d1_mil_sem_sufixo__s1",
+  "tipo": "swt_zs",
+  "instancia": "intword__d1_mil_sem_sufixo",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__intword__d1_mil_sem_sufixo.md",
+  "saida": "saidas/haiku/swtzs__intword__d1_mil_sem_sufixo__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d1_mil_sem_sufixo__s1",
+  "tipo": "swt_agente",
+  "instancia": "intword__d1_mil_sem_sufixo",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d1_mil_sem_sufixo__s1",
+  "saida": "saidas/haiku/swtag__intword__d1_mil_sem_sufixo__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d1_mil_sem_sufixo__s2",
+  "tipo": "swt_zs",
+  "instancia": "intword__d1_mil_sem_sufixo",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__intword__d1_mil_sem_sufixo.md",
+  "saida": "saidas/haiku/swtzs__intword__d1_mil_sem_sufixo__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d1_mil_sem_sufixo__s2",
+  "tipo": "swt_agente",
+  "instancia": "intword__d1_mil_sem_sufixo",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d1_mil_sem_sufixo__s2",
+  "saida": "saidas/haiku/swtag__intword__d1_mil_sem_sufixo__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d1_mil_sem_sufixo__s3",
+  "tipo": "swt_zs",
+  "instancia": "intword__d1_mil_sem_sufixo",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__intword__d1_mil_sem_sufixo.md",
+  "saida": "saidas/haiku/swtzs__intword__d1_mil_sem_sufixo__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d1_mil_sem_sufixo__s3",
+  "tipo": "swt_agente",
+  "instancia": "intword__d1_mil_sem_sufixo",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d1_mil_sem_sufixo__s3",
+  "saida": "saidas/haiku/swtag__intword__d1_mil_sem_sufixo__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d2_sem_carry__s1",
+  "tipo": "swt_zs",
+  "instancia": "intword__d2_sem_carry",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__intword__d2_sem_carry.md",
+  "saida": "saidas/haiku/swtzs__intword__d2_sem_carry__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d2_sem_carry__s1",
+  "tipo": "swt_agente",
+  "instancia": "intword__d2_sem_carry",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d2_sem_carry__s1",
+  "saida": "saidas/haiku/swtag__intword__d2_sem_carry__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d2_sem_carry__s2",
+  "tipo": "swt_zs",
+  "instancia": "intword__d2_sem_carry",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__intword__d2_sem_carry.md",
+  "saida": "saidas/haiku/swtzs__intword__d2_sem_carry__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d2_sem_carry__s2",
+  "tipo": "swt_agente",
+  "instancia": "intword__d2_sem_carry",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d2_sem_carry__s2",
+  "saida": "saidas/haiku/swtag__intword__d2_sem_carry__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d2_sem_carry__s3",
+  "tipo": "swt_zs",
+  "instancia": "intword__d2_sem_carry",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__intword__d2_sem_carry.md",
+  "saida": "saidas/haiku/swtzs__intword__d2_sem_carry__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d2_sem_carry__s3",
+  "tipo": "swt_agente",
+  "instancia": "intword__d2_sem_carry",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d2_sem_carry__s3",
+  "saida": "saidas/haiku/swtag__intword__d2_sem_carry__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d3_perde_sinal__s1",
+  "tipo": "swt_zs",
+  "instancia": "intword__d3_perde_sinal",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__intword__d3_perde_sinal.md",
+  "saida": "saidas/haiku/swtzs__intword__d3_perde_sinal__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d3_perde_sinal__s1",
+  "tipo": "swt_agente",
+  "instancia": "intword__d3_perde_sinal",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d3_perde_sinal__s1",
+  "saida": "saidas/haiku/swtag__intword__d3_perde_sinal__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d3_perde_sinal__s2",
+  "tipo": "swt_zs",
+  "instancia": "intword__d3_perde_sinal",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__intword__d3_perde_sinal.md",
+  "saida": "saidas/haiku/swtzs__intword__d3_perde_sinal__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d3_perde_sinal__s2",
+  "tipo": "swt_agente",
+  "instancia": "intword__d3_perde_sinal",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d3_perde_sinal__s2",
+  "saida": "saidas/haiku/swtag__intword__d3_perde_sinal__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d3_perde_sinal__s3",
+  "tipo": "swt_zs",
+  "instancia": "intword__d3_perde_sinal",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__intword__d3_perde_sinal.md",
+  "saida": "saidas/haiku/swtzs__intword__d3_perde_sinal__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d3_perde_sinal__s3",
+  "tipo": "swt_agente",
+  "instancia": "intword__d3_perde_sinal",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d3_perde_sinal__s3",
+  "saida": "saidas/haiku/swtag__intword__d3_perde_sinal__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d4_bisect_left__s1",
+  "tipo": "swt_zs",
+  "instancia": "intword__d4_bisect_left",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__intword__d4_bisect_left.md",
+  "saida": "saidas/haiku/swtzs__intword__d4_bisect_left__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d4_bisect_left__s1",
+  "tipo": "swt_agente",
+  "instancia": "intword__d4_bisect_left",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d4_bisect_left__s1",
+  "saida": "saidas/haiku/swtag__intword__d4_bisect_left__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d4_bisect_left__s2",
+  "tipo": "swt_zs",
+  "instancia": "intword__d4_bisect_left",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__intword__d4_bisect_left.md",
+  "saida": "saidas/haiku/swtzs__intword__d4_bisect_left__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d4_bisect_left__s2",
+  "tipo": "swt_agente",
+  "instancia": "intword__d4_bisect_left",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d4_bisect_left__s2",
+  "saida": "saidas/haiku/swtag__intword__d4_bisect_left__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__intword__d4_bisect_left__s3",
+  "tipo": "swt_zs",
+  "instancia": "intword__d4_bisect_left",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__intword__d4_bisect_left.md",
+  "saida": "saidas/haiku/swtzs__intword__d4_bisect_left__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__intword__d4_bisect_left__s3",
+  "tipo": "swt_agente",
+  "instancia": "intword__d4_bisect_left",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__intword__d4_bisect_left__s3",
+  "saida": "saidas/haiku/swtag__intword__d4_bisect_left__s3/test_issue.py"
+ },
+ {
+  "id": "tgefull__intword__s1",
+  "tipo": "tge_full",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefull__intword.md",
+  "saida": "saidas/haiku/tgefull__intword__s1/test_alvo.py"
+ },
+ {
+  "id": "tgefull__intword__s2",
+  "tipo": "tge_full",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefull__intword.md",
+  "saida": "saidas/haiku/tgefull__intword__s2/test_alvo.py"
+ },
+ {
+  "id": "tgefull__intword__s3",
+  "tipo": "tge_full",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefull__intword.md",
+  "saida": "saidas/haiku/tgefull__intword__s3/test_alvo.py"
+ },
+ {
+  "id": "tgefirst__intword__s1",
+  "tipo": "tge_first",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefirst__intword.md",
+  "saida": "saidas/haiku/tgefirst__intword__s1/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__intword__s2",
+  "tipo": "tge_first",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefirst__intword.md",
+  "saida": "saidas/haiku/tgefirst__intword__s2/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__intword__s3",
+  "tipo": "tge_first",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefirst__intword.md",
+  "saida": "saidas/haiku/tgefirst__intword__s3/novo_teste.py"
+ },
+ {
+  "id": "tgelast__intword__s1",
+  "tipo": "tge_last",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgelast__intword.md",
+  "saida": "saidas/haiku/tgelast__intword__s1/novo_teste.py"
+ },
+ {
+  "id": "tgelast__intword__s2",
+  "tipo": "tge_last",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgelast__intword.md",
+  "saida": "saidas/haiku/tgelast__intword__s2/novo_teste.py"
+ },
+ {
+  "id": "tgelast__intword__s3",
+  "tipo": "tge_last",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgelast__intword.md",
+  "saida": "saidas/haiku/tgelast__intword__s3/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__intword__s1",
+  "tipo": "tge_extra",
+  "funcao": "intword",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgeextra__intword.md",
+  "saida": "saidas/haiku/tgeextra__intword__s1/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__intword__s2",
+  "tipo": "tge_extra",
+  "funcao": "intword",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgeextra__intword.md",
+  "saida": "saidas/haiku/tgeextra__intword__s2/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__intword__s3",
+  "tipo": "tge_extra",
+  "funcao": "intword",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgeextra__intword.md",
+  "saida": "saidas/haiku/tgeextra__intword__s3/novo_teste.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d1_posicoes_trocadas__s1",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d1_posicoes_trocadas",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d1_posicoes_trocadas.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d1_posicoes_trocadas__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d1_posicoes_trocadas__s1",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d1_posicoes_trocadas",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d1_posicoes_trocadas__s1",
+  "saida": "saidas/haiku/swtag__luhn_validate__d1_posicoes_trocadas__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d1_posicoes_trocadas__s2",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d1_posicoes_trocadas",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d1_posicoes_trocadas.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d1_posicoes_trocadas__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d1_posicoes_trocadas__s2",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d1_posicoes_trocadas",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d1_posicoes_trocadas__s2",
+  "saida": "saidas/haiku/swtag__luhn_validate__d1_posicoes_trocadas__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d1_posicoes_trocadas__s3",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d1_posicoes_trocadas",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d1_posicoes_trocadas.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d1_posicoes_trocadas__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d1_posicoes_trocadas__s3",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d1_posicoes_trocadas",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d1_posicoes_trocadas__s3",
+  "saida": "saidas/haiku/swtag__luhn_validate__d1_posicoes_trocadas__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d2_sem_vai_um__s1",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d2_sem_vai_um",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d2_sem_vai_um.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d2_sem_vai_um__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d2_sem_vai_um__s1",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d2_sem_vai_um",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d2_sem_vai_um__s1",
+  "saida": "saidas/haiku/swtag__luhn_validate__d2_sem_vai_um__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d2_sem_vai_um__s2",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d2_sem_vai_um",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d2_sem_vai_um.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d2_sem_vai_um__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d2_sem_vai_um__s2",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d2_sem_vai_um",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d2_sem_vai_um__s2",
+  "saida": "saidas/haiku/swtag__luhn_validate__d2_sem_vai_um__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d2_sem_vai_um__s3",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d2_sem_vai_um",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d2_sem_vai_um.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d2_sem_vai_um__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d2_sem_vai_um__s3",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d2_sem_vai_um",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d2_sem_vai_um__s3",
+  "saida": "saidas/haiku/swtag__luhn_validate__d2_sem_vai_um__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d3_aceita_vazio__s1",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d3_aceita_vazio",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d3_aceita_vazio.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d3_aceita_vazio__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d3_aceita_vazio__s1",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d3_aceita_vazio",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d3_aceita_vazio__s1",
+  "saida": "saidas/haiku/swtag__luhn_validate__d3_aceita_vazio__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d3_aceita_vazio__s2",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d3_aceita_vazio",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d3_aceita_vazio.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d3_aceita_vazio__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d3_aceita_vazio__s2",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d3_aceita_vazio",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d3_aceita_vazio__s2",
+  "saida": "saidas/haiku/swtag__luhn_validate__d3_aceita_vazio__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d3_aceita_vazio__s3",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d3_aceita_vazio",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d3_aceita_vazio.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d3_aceita_vazio__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d3_aceita_vazio__s3",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d3_aceita_vazio",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d3_aceita_vazio__s3",
+  "saida": "saidas/haiku/swtag__luhn_validate__d3_aceita_vazio__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d4_converte_str__s1",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d4_converte_str",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d4_converte_str.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d4_converte_str__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d4_converte_str__s1",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d4_converte_str",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d4_converte_str__s1",
+  "saida": "saidas/haiku/swtag__luhn_validate__d4_converte_str__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d4_converte_str__s2",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d4_converte_str",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d4_converte_str.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d4_converte_str__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d4_converte_str__s2",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d4_converte_str",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d4_converte_str__s2",
+  "saida": "saidas/haiku/swtag__luhn_validate__d4_converte_str__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__luhn_validate__d4_converte_str__s3",
+  "tipo": "swt_zs",
+  "instancia": "luhn_validate__d4_converte_str",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__luhn_validate__d4_converte_str.md",
+  "saida": "saidas/haiku/swtzs__luhn_validate__d4_converte_str__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__luhn_validate__d4_converte_str__s3",
+  "tipo": "swt_agente",
+  "instancia": "luhn_validate__d4_converte_str",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__luhn_validate__d4_converte_str__s3",
+  "saida": "saidas/haiku/swtag__luhn_validate__d4_converte_str__s3/test_issue.py"
+ },
+ {
+  "id": "tgefull__luhn_validate__s1",
+  "tipo": "tge_full",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefull__luhn_validate.md",
+  "saida": "saidas/haiku/tgefull__luhn_validate__s1/test_alvo.py"
+ },
+ {
+  "id": "tgefull__luhn_validate__s2",
+  "tipo": "tge_full",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefull__luhn_validate.md",
+  "saida": "saidas/haiku/tgefull__luhn_validate__s2/test_alvo.py"
+ },
+ {
+  "id": "tgefull__luhn_validate__s3",
+  "tipo": "tge_full",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefull__luhn_validate.md",
+  "saida": "saidas/haiku/tgefull__luhn_validate__s3/test_alvo.py"
+ },
+ {
+  "id": "tgefirst__luhn_validate__s1",
+  "tipo": "tge_first",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefirst__luhn_validate.md",
+  "saida": "saidas/haiku/tgefirst__luhn_validate__s1/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__luhn_validate__s2",
+  "tipo": "tge_first",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefirst__luhn_validate.md",
+  "saida": "saidas/haiku/tgefirst__luhn_validate__s2/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__luhn_validate__s3",
+  "tipo": "tge_first",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefirst__luhn_validate.md",
+  "saida": "saidas/haiku/tgefirst__luhn_validate__s3/novo_teste.py"
+ },
+ {
+  "id": "tgelast__luhn_validate__s1",
+  "tipo": "tge_last",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgelast__luhn_validate.md",
+  "saida": "saidas/haiku/tgelast__luhn_validate__s1/novo_teste.py"
+ },
+ {
+  "id": "tgelast__luhn_validate__s2",
+  "tipo": "tge_last",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgelast__luhn_validate.md",
+  "saida": "saidas/haiku/tgelast__luhn_validate__s2/novo_teste.py"
+ },
+ {
+  "id": "tgelast__luhn_validate__s3",
+  "tipo": "tge_last",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgelast__luhn_validate.md",
+  "saida": "saidas/haiku/tgelast__luhn_validate__s3/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__luhn_validate__s1",
+  "tipo": "tge_extra",
+  "funcao": "luhn_validate",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgeextra__luhn_validate.md",
+  "saida": "saidas/haiku/tgeextra__luhn_validate__s1/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__luhn_validate__s2",
+  "tipo": "tge_extra",
+  "funcao": "luhn_validate",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgeextra__luhn_validate.md",
+  "saida": "saidas/haiku/tgeextra__luhn_validate__s2/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__luhn_validate__s3",
+  "tipo": "tge_extra",
+  "funcao": "luhn_validate",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgeextra__luhn_validate.md",
+  "saida": "saidas/haiku/tgeextra__luhn_validate__s3/novo_teste.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d1_base_inclusiva__s1",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d1_base_inclusiva",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__naturalsize__d1_base_inclusiva.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d1_base_inclusiva__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d1_base_inclusiva__s1",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d1_base_inclusiva",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d1_base_inclusiva__s1",
+  "saida": "saidas/haiku/swtag__naturalsize__d1_base_inclusiva__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d1_base_inclusiva__s2",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d1_base_inclusiva",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__naturalsize__d1_base_inclusiva.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d1_base_inclusiva__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d1_base_inclusiva__s2",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d1_base_inclusiva",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d1_base_inclusiva__s2",
+  "saida": "saidas/haiku/swtag__naturalsize__d1_base_inclusiva__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d1_base_inclusiva__s3",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d1_base_inclusiva",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__naturalsize__d1_base_inclusiva.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d1_base_inclusiva__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d1_base_inclusiva__s3",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d1_base_inclusiva",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d1_base_inclusiva__s3",
+  "saida": "saidas/haiku/swtag__naturalsize__d1_base_inclusiva__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d2_base_binaria__s1",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d2_base_binaria",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__naturalsize__d2_base_binaria.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d2_base_binaria__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d2_base_binaria__s1",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d2_base_binaria",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d2_base_binaria__s1",
+  "saida": "saidas/haiku/swtag__naturalsize__d2_base_binaria__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d2_base_binaria__s2",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d2_base_binaria",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__naturalsize__d2_base_binaria.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d2_base_binaria__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d2_base_binaria__s2",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d2_base_binaria",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d2_base_binaria__s2",
+  "saida": "saidas/haiku/swtag__naturalsize__d2_base_binaria__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d2_base_binaria__s3",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d2_base_binaria",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__naturalsize__d2_base_binaria.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d2_base_binaria__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d2_base_binaria__s3",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d2_base_binaria",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d2_base_binaria__s3",
+  "saida": "saidas/haiku/swtag__naturalsize__d2_base_binaria__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d3_singular_sem_abs__s1",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d3_singular_sem_abs",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__naturalsize__d3_singular_sem_abs.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d3_singular_sem_abs__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d3_singular_sem_abs__s1",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d3_singular_sem_abs",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d3_singular_sem_abs__s1",
+  "saida": "saidas/haiku/swtag__naturalsize__d3_singular_sem_abs__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d3_singular_sem_abs__s2",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d3_singular_sem_abs",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__naturalsize__d3_singular_sem_abs.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d3_singular_sem_abs__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d3_singular_sem_abs__s2",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d3_singular_sem_abs",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d3_singular_sem_abs__s2",
+  "saida": "saidas/haiku/swtag__naturalsize__d3_singular_sem_abs__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d3_singular_sem_abs__s3",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d3_singular_sem_abs",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__naturalsize__d3_singular_sem_abs.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d3_singular_sem_abs__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d3_singular_sem_abs__s3",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d3_singular_sem_abs",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d3_singular_sem_abs__s3",
+  "saida": "saidas/haiku/swtag__naturalsize__d3_singular_sem_abs__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d4_sem_subir_sufixo__s1",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d4_sem_subir_sufixo",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__naturalsize__d4_sem_subir_sufixo.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d4_sem_subir_sufixo__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d4_sem_subir_sufixo__s1",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d4_sem_subir_sufixo",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d4_sem_subir_sufixo__s1",
+  "saida": "saidas/haiku/swtag__naturalsize__d4_sem_subir_sufixo__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d4_sem_subir_sufixo__s2",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d4_sem_subir_sufixo",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__naturalsize__d4_sem_subir_sufixo.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d4_sem_subir_sufixo__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d4_sem_subir_sufixo__s2",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d4_sem_subir_sufixo",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d4_sem_subir_sufixo__s2",
+  "saida": "saidas/haiku/swtag__naturalsize__d4_sem_subir_sufixo__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__naturalsize__d4_sem_subir_sufixo__s3",
+  "tipo": "swt_zs",
+  "instancia": "naturalsize__d4_sem_subir_sufixo",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__naturalsize__d4_sem_subir_sufixo.md",
+  "saida": "saidas/haiku/swtzs__naturalsize__d4_sem_subir_sufixo__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__naturalsize__d4_sem_subir_sufixo__s3",
+  "tipo": "swt_agente",
+  "instancia": "naturalsize__d4_sem_subir_sufixo",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__naturalsize__d4_sem_subir_sufixo__s3",
+  "saida": "saidas/haiku/swtag__naturalsize__d4_sem_subir_sufixo__s3/test_issue.py"
+ },
+ {
+  "id": "tgefull__naturalsize__s1",
+  "tipo": "tge_full",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefull__naturalsize.md",
+  "saida": "saidas/haiku/tgefull__naturalsize__s1/test_alvo.py"
+ },
+ {
+  "id": "tgefull__naturalsize__s2",
+  "tipo": "tge_full",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefull__naturalsize.md",
+  "saida": "saidas/haiku/tgefull__naturalsize__s2/test_alvo.py"
+ },
+ {
+  "id": "tgefull__naturalsize__s3",
+  "tipo": "tge_full",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefull__naturalsize.md",
+  "saida": "saidas/haiku/tgefull__naturalsize__s3/test_alvo.py"
+ },
+ {
+  "id": "tgefirst__naturalsize__s1",
+  "tipo": "tge_first",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefirst__naturalsize.md",
+  "saida": "saidas/haiku/tgefirst__naturalsize__s1/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__naturalsize__s2",
+  "tipo": "tge_first",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefirst__naturalsize.md",
+  "saida": "saidas/haiku/tgefirst__naturalsize__s2/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__naturalsize__s3",
+  "tipo": "tge_first",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefirst__naturalsize.md",
+  "saida": "saidas/haiku/tgefirst__naturalsize__s3/novo_teste.py"
+ },
+ {
+  "id": "tgelast__naturalsize__s1",
+  "tipo": "tge_last",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgelast__naturalsize.md",
+  "saida": "saidas/haiku/tgelast__naturalsize__s1/novo_teste.py"
+ },
+ {
+  "id": "tgelast__naturalsize__s2",
+  "tipo": "tge_last",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgelast__naturalsize.md",
+  "saida": "saidas/haiku/tgelast__naturalsize__s2/novo_teste.py"
+ },
+ {
+  "id": "tgelast__naturalsize__s3",
+  "tipo": "tge_last",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgelast__naturalsize.md",
+  "saida": "saidas/haiku/tgelast__naturalsize__s3/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__naturalsize__s1",
+  "tipo": "tge_extra",
+  "funcao": "naturalsize",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgeextra__naturalsize.md",
+  "saida": "saidas/haiku/tgeextra__naturalsize__s1/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__naturalsize__s2",
+  "tipo": "tge_extra",
+  "funcao": "naturalsize",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgeextra__naturalsize.md",
+  "saida": "saidas/haiku/tgeextra__naturalsize__s2/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__naturalsize__s3",
+  "tipo": "tge_extra",
+  "funcao": "naturalsize",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgeextra__naturalsize.md",
+  "saida": "saidas/haiku/tgeextra__naturalsize__s3/novo_teste.py"
+ },
+ {
+  "id": "swtzs__ordinal__d1_treze_esquecido__s1",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d1_treze_esquecido",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__ordinal__d1_treze_esquecido.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d1_treze_esquecido__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d1_treze_esquecido__s1",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d1_treze_esquecido",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d1_treze_esquecido__s1",
+  "saida": "saidas/haiku/swtag__ordinal__d1_treze_esquecido__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d1_treze_esquecido__s2",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d1_treze_esquecido",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__ordinal__d1_treze_esquecido.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d1_treze_esquecido__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d1_treze_esquecido__s2",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d1_treze_esquecido",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d1_treze_esquecido__s2",
+  "saida": "saidas/haiku/swtag__ordinal__d1_treze_esquecido__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d1_treze_esquecido__s3",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d1_treze_esquecido",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__ordinal__d1_treze_esquecido.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d1_treze_esquecido__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d1_treze_esquecido__s3",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d1_treze_esquecido",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d1_treze_esquecido__s3",
+  "saida": "saidas/haiku/swtag__ordinal__d1_treze_esquecido__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d2_modulo_errado__s1",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d2_modulo_errado",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__ordinal__d2_modulo_errado.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d2_modulo_errado__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d2_modulo_errado__s1",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d2_modulo_errado",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d2_modulo_errado__s1",
+  "saida": "saidas/haiku/swtag__ordinal__d2_modulo_errado__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d2_modulo_errado__s2",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d2_modulo_errado",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__ordinal__d2_modulo_errado.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d2_modulo_errado__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d2_modulo_errado__s2",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d2_modulo_errado",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d2_modulo_errado__s2",
+  "saida": "saidas/haiku/swtag__ordinal__d2_modulo_errado__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d2_modulo_errado__s3",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d2_modulo_errado",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__ordinal__d2_modulo_errado.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d2_modulo_errado__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d2_modulo_errado__s3",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d2_modulo_errado",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d2_modulo_errado__s3",
+  "saida": "saidas/haiku/swtag__ordinal__d2_modulo_errado__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d3_ignora_centena__s1",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d3_ignora_centena",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__ordinal__d3_ignora_centena.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d3_ignora_centena__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d3_ignora_centena__s1",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d3_ignora_centena",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d3_ignora_centena__s1",
+  "saida": "saidas/haiku/swtag__ordinal__d3_ignora_centena__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d3_ignora_centena__s2",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d3_ignora_centena",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__ordinal__d3_ignora_centena.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d3_ignora_centena__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d3_ignora_centena__s2",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d3_ignora_centena",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d3_ignora_centena__s2",
+  "saida": "saidas/haiku/swtag__ordinal__d3_ignora_centena__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d3_ignora_centena__s3",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d3_ignora_centena",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__ordinal__d3_ignora_centena.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d3_ignora_centena__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d3_ignora_centena__s3",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d3_ignora_centena",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d3_ignora_centena__s3",
+  "saida": "saidas/haiku/swtag__ordinal__d3_ignora_centena__s3/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d4_retorno_vazio__s1",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d4_retorno_vazio",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtzs__ordinal__d4_retorno_vazio.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d4_retorno_vazio__s1/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d4_retorno_vazio__s1",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d4_retorno_vazio",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d4_retorno_vazio__s1",
+  "saida": "saidas/haiku/swtag__ordinal__d4_retorno_vazio__s1/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d4_retorno_vazio__s2",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d4_retorno_vazio",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtzs__ordinal__d4_retorno_vazio.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d4_retorno_vazio__s2/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d4_retorno_vazio__s2",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d4_retorno_vazio",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d4_retorno_vazio__s2",
+  "saida": "saidas/haiku/swtag__ordinal__d4_retorno_vazio__s2/test_issue.py"
+ },
+ {
+  "id": "swtzs__ordinal__d4_retorno_vazio__s3",
+  "tipo": "swt_zs",
+  "instancia": "ordinal__d4_retorno_vazio",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtzs__ordinal__d4_retorno_vazio.md",
+  "saida": "saidas/haiku/swtzs__ordinal__d4_retorno_vazio__s3/test_issue.py"
+ },
+ {
+  "id": "swtag__ordinal__d4_retorno_vazio__s3",
+  "tipo": "swt_agente",
+  "instancia": "ordinal__d4_retorno_vazio",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/swtag.md",
+  "sandbox": "~/AppData/Local/Temp/claude/965c3fc526490071/bd2711e8-1c50-476f-ba58-a35e58244997/scratchpad/bench_sandbox/swtag__ordinal__d4_retorno_vazio__s3",
+  "saida": "saidas/haiku/swtag__ordinal__d4_retorno_vazio__s3/test_issue.py"
+ },
+ {
+  "id": "tgefull__ordinal__s1",
+  "tipo": "tge_full",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefull__ordinal.md",
+  "saida": "saidas/haiku/tgefull__ordinal__s1/test_alvo.py"
+ },
+ {
+  "id": "tgefull__ordinal__s2",
+  "tipo": "tge_full",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefull__ordinal.md",
+  "saida": "saidas/haiku/tgefull__ordinal__s2/test_alvo.py"
+ },
+ {
+  "id": "tgefull__ordinal__s3",
+  "tipo": "tge_full",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefull__ordinal.md",
+  "saida": "saidas/haiku/tgefull__ordinal__s3/test_alvo.py"
+ },
+ {
+  "id": "tgefirst__ordinal__s1",
+  "tipo": "tge_first",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgefirst__ordinal.md",
+  "saida": "saidas/haiku/tgefirst__ordinal__s1/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__ordinal__s2",
+  "tipo": "tge_first",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgefirst__ordinal.md",
+  "saida": "saidas/haiku/tgefirst__ordinal__s2/novo_teste.py"
+ },
+ {
+  "id": "tgefirst__ordinal__s3",
+  "tipo": "tge_first",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgefirst__ordinal.md",
+  "saida": "saidas/haiku/tgefirst__ordinal__s3/novo_teste.py"
+ },
+ {
+  "id": "tgelast__ordinal__s1",
+  "tipo": "tge_last",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgelast__ordinal.md",
+  "saida": "saidas/haiku/tgelast__ordinal__s1/novo_teste.py"
+ },
+ {
+  "id": "tgelast__ordinal__s2",
+  "tipo": "tge_last",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgelast__ordinal.md",
+  "saida": "saidas/haiku/tgelast__ordinal__s2/novo_teste.py"
+ },
+ {
+  "id": "tgelast__ordinal__s3",
+  "tipo": "tge_last",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgelast__ordinal.md",
+  "saida": "saidas/haiku/tgelast__ordinal__s3/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__ordinal__s1",
+  "tipo": "tge_extra",
+  "funcao": "ordinal",
+  "amostra": 1,
+  "prompt": "dados/prompts/tgeextra__ordinal.md",
+  "saida": "saidas/haiku/tgeextra__ordinal__s1/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__ordinal__s2",
+  "tipo": "tge_extra",
+  "funcao": "ordinal",
+  "amostra": 2,
+  "prompt": "dados/prompts/tgeextra__ordinal.md",
+  "saida": "saidas/haiku/tgeextra__ordinal__s2/novo_teste.py"
+ },
+ {
+  "id": "tgeextra__ordinal__s3",
+  "tipo": "tge_extra",
+  "funcao": "ordinal",
+  "amostra": 3,
+  "prompt": "dados/prompts/tgeextra__ordinal.md",
+  "saida": "saidas/haiku/tgeextra__ordinal__s3/novo_teste.py"
+ }
+]

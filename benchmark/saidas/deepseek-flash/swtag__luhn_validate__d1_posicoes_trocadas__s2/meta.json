@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 27.7,
+ "tokens_entrada": 33389,
+ "tokens_saida": 4259,
+ "tokens_raciocinio": 3060,
+ "custo_usd": 0.003217,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 1,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__luhn_validate__d1_posicoes_trocadas__s2",
+ "nota": "`test_issue.py` is written: 13 tests fail on the current code (the Luhn doubling parity is applied to the wrong digit positions, so `79927398713` raises `InvalidChecksum`) and all 20 pass once `checksum` doubles `values[1::2]` instead of `values[::2]`."
+}

@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 21.8,
+ "tokens_entrada": 28490,
+ "tokens_saida": 2603,
+ "tokens_raciocinio": 840,
+ "custo_usd": 0.002467,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__naturalsize__d2_base_binaria__s1",
+ "nota": "`test_issue.py` is written: 9 tests fail on the current buggy code and all 21 pass with the one-line `base = 1024 if (gnu or binary) else 1000` fix (verified on a temporary patched copy, then `alvo.py` restored untouched)."
+}

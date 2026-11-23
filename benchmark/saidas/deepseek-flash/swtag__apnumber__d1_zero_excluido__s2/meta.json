@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.5,
+ "tokens_entrada": 6992,
+ "tokens_saida": 605,
+ "tokens_raciocinio": 80,
+ "custo_usd": 0.000565,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__apnumber__d1_zero_excluido__s2",
+ "nota": "`test_issue.py` is written: it fails on the current code (`apnumber(0)` returns `'0'`) and passes once the boundary check is fixed to include zero."
+}

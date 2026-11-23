@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -47,7 +47,7 @@
+     number = compact(number)
+     if not isdigits(number) or int(number) <= 0:
+         raise InvalidFormat()
+-    if len(number) < 11:
++    if len(number) != 11:
+         raise InvalidLength()
+     if _calc_check_digits(number) != number[-2:]:
+         raise InvalidChecksum()

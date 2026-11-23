@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -19,7 +19,7 @@
+     bytes_ = float(value)
+     abs_bytes = abs(bytes_)
+ 
+-    if bytes_ == 1 and not gnu:
++    if abs_bytes == 1 and not gnu:
+         return "%d Byte" % int(bytes_)
+ 
+     if abs_bytes < base:

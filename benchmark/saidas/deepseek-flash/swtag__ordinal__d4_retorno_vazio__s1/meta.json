@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 20.0,
+ "tokens_entrada": 16955,
+ "tokens_saida": 2742,
+ "tokens_raciocinio": 621,
+ "custo_usd": 0.0021,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__ordinal__d4_retorno_vazio__s1",
+ "nota": "Confirmed: the tests fail on the current code (8 failures on the `''` return for unconvertible input) and all 10 pass against the expected fixed behaviour (`return str(value)`), with regression guards for valid and non-finite inputs.\n\n`test_issue.py` reproduces the issue: `ordinal(\"something else\")` and other unconvertible values must return `str(value)` instead of `''`."
+}

@@ -1,0 +1,28 @@
+{
+ "modelo_id": "qwen/qwen3.8-27b",
+ "erro": null,
+ "tempo_s": 146.7,
+ "tokens_entrada": 17084,
+ "tokens_saida": 1521,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.0,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 0
+ },
+ "pytests": [
+  {
+   "turno": 6,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-qwen3.8-27b-v2\\tgefirst__cpf_validate__s1",
+ "nota": "Both tests pass. The new test function is:\n\n```python\ndef test_c2_invalid_format():\n    # Invalid: non-digit characters after cleaning\n    with pytest.raises(InvalidFormat):\n        validate('abc')\n\n    # Invalid: all zeros (int(value) <= 0)\n    with pytest.raises(InvalidFormat):\n        validate('000.000.000-00')\n\n    # Invalid: too short\n    with pytest.raises(InvalidLength):\n        validate('123')\n\n    # Invalid: checksum mismatch\n    with pytest.raises(InvalidChecksum):\n        validate('12"
+}

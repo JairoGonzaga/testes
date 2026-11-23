@@ -1,0 +1,8 @@
+{
+ "agente": "a624c4972e92b8035",
+ "nota": "Adds a last R7 test checking that every repeated-digit CPF from 111 to 999 (digits 1-9) validates to its 11-digit form, using only names already imported.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

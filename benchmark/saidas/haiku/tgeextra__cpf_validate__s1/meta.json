@@ -1,0 +1,8 @@
+{
+ "agente": "a274b8d2a78e849d3",
+ "nota": "Covers the mod-10 mapping of a check-digit remainder of 10 to 0 for both verifier digits, which no existing test exercises; values were hand-checked against the source formula.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "afeab8d156164ab3b",
+ "nota": "The test file reproduces the bug with ordinal(111) and related 11-13 endings in larger numbers, and keeps regular suffix cases as passing checks.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

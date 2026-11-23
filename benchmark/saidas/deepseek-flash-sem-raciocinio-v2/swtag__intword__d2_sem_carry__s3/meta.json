@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 9.6,
+ "tokens_entrada": 14856,
+ "tokens_saida": 706,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000733,
+ "chamadas_api": 7,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 7,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 6,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__intword__d2_sem_carry__s3",
+ "nota": "Created `test_issue.py`, which fails on the current code (`intword(999999) == '1000.0 thousand'`) and passes on a fixed copy where rounding to the next power promotes the suffix."
+}

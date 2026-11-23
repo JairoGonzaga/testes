@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.1,
+ "tokens_entrada": 6756,
+ "tokens_saida": 542,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000473,
+ "chamadas_api": 4,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 4,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 3,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgefirst__luhn_validate__s2",
+ "nota": "Added `test_c2_r1_checksum_invalido_retorna_original`, which verifies valid checksums return the original input, invalid checksums raise `InvalidChecksum`, bad formats raise `InvalidFormat`, and both are `ValidationError` subclasses; it passes."
+}

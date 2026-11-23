@@ -1,0 +1,22 @@
+{
+ "modelo_id": "openai/gpt-oss-120b",
+ "erro": null,
+ "tempo_s": 15.1,
+ "tokens_entrada": 1972,
+ "tokens_saida": 579,
+ "tokens_raciocinio": 519,
+ "custo_usd": 0.0,
+ "chamadas_api": 1,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 1,
+ "origem_codigo": "mensagem_final",
+ "ferramentas": {
+  "Bash": 0,
+  "Write": 0,
+  "Read": 0
+ },
+ "pytests": [],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\groq-gpt-oss-120b-v2\\tgelast__cpf_validate__s1",
+ "nota": "```python\ndef test_c27_hyphen_ignored():\n    # Leading hyphen should be removed like any other deletechar and the number validated.\n    assert validate('-123.456.789-09') == '12345678909'\n```"
+}

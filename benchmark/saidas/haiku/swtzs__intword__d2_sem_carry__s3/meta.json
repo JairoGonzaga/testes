@@ -1,0 +1,8 @@
+{
+ "agente": "a19f796875964f4a1",
+ "nota": "The pytest file reproduces the promotion bug for 999999 and its negative and larger-power variants, with one control case that should keep passing.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

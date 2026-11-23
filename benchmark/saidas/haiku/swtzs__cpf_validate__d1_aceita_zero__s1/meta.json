@@ -1,0 +1,8 @@
+{
+ "agente": "aa1ba1da82f07e92f",
+ "nota": "The test file reproduces the all-zeros CPF bug with a raises check (fails on current code) and includes a valid-CPF regression guard.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

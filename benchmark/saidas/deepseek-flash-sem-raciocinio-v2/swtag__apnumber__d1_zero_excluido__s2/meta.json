@@ -1,0 +1,33 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 10.1,
+ "tokens_entrada": 11579,
+ "tokens_saida": 1106,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.00097,
+ "chamadas_api": 6,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 6,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 3,
+  "Write": 3,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 5,
+   "args": "fixcheck/test_issue.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\swtag__apnumber__d1_zero_excluido__s2",
+ "nota": "The tests fail on the current code exactly as the issue describes (zero comes back as `'0'`) and all pass against a copy with the minimal fix (`0 <= value < 10`), so `test_issue.py` is left in the sandbox root."
+}

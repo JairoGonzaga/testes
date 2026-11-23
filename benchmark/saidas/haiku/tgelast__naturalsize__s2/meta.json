@@ -1,0 +1,8 @@
+{
+ "agente": "a935f2f1e66eb8698",
+ "nota": "Adds a test for the binary and GNU rounding-up-to-next-unit case, which the existing tests do not cover.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

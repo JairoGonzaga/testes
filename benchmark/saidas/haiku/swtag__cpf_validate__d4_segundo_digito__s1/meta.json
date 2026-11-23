@@ -1,0 +1,11 @@
+{
+ "agente": "a4f420dab33c59a9b",
+ "nota": "Nine pytest cases reproduce the bug: the second check digit adds the first check digit with weight 1 instead of 2; all 9 fail on the current alvo.py and pass when the patch is applied in memory.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Bash": 6,
+  "Write": 1,
+  "StructuredOutput": 1
+ }
+}

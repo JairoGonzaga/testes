@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 6.9,
+ "tokens_entrada": 7670,
+ "tokens_saida": 457,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000578,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 2,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_issue.py",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio\\swtag__intword__d4_bisect_left__s1",
+ "nota": "Wrote `test_issue.py`, which fails on the current code (googol values render as huge `decillion` numbers due to float division overflow) and will pass once `intword` handles huge values exactly."
+}

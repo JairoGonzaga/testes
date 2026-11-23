@@ -1,0 +1,53 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 78.6,
+ "tokens_entrada": 169364,
+ "tokens_saida": 13050,
+ "tokens_raciocinio": 7104,
+ "custo_usd": 0.009809,
+ "chamadas_api": 15,
+ "provedores": [],
+ "finish_reason": "limite_de_turnos",
+ "turnos": 15,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 12,
+  "Write": 4,
+  "Read": 3
+ },
+ "pytests": [
+  {
+   "turno": 8,
+   "args": "test_issue.py",
+   "exit": 1
+  },
+  {
+   "turno": 8,
+   "args": "check_a/test_issue.py",
+   "exit": 2
+  },
+  {
+   "turno": 12,
+   "args": "check_a/test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 12,
+   "args": "check_b/test_issue.py -q",
+   "exit": 1
+  },
+  {
+   "turno": 15,
+   "args": "check_a/test_issue.py -q",
+   "exit": 0
+  },
+  {
+   "turno": 15,
+   "args": "check_b/test_issue.py -q",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d2_sem_carry__s1",
+ "nota": ""
+}

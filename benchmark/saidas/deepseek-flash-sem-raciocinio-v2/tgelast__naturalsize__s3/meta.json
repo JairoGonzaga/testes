@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 7.4,
+ "tokens_entrada": 18724,
+ "tokens_saida": 640,
+ "tokens_raciocinio": 0,
+ "custo_usd": 0.000671,
+ "chamadas_api": 5,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 5,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 4,
+  "Write": 1,
+  "Read": 1
+ },
+ "pytests": [
+  {
+   "turno": 4,
+   "args": "test_alvo.py",
+   "exit": 0
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash-sem-raciocinio-v2\\tgelast__naturalsize__s3",
+ "nota": "All 44 tests pass.\n\n```python\ndef test_c44_r8():\n    # [R8/normal]\n    assert naturalsize(10**30) == '1.0 QB'\n```"
+}

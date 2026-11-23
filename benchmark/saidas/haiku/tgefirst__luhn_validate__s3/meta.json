@@ -1,0 +1,8 @@
+{
+ "agente": "af10056f6a4fc137a",
+ "nota": "Adds a test that a Luhn-invalid number raises InvalidChecksum; no new imports are needed.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

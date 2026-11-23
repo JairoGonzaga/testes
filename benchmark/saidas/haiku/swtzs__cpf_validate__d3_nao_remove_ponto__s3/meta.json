@@ -1,0 +1,8 @@
+{
+ "agente": "a990f40fba65f0e54",
+ "nota": "The pytest file targets the dots-not-removed bug in alvo.validate and asserts the compact CPF result for formatted inputs.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

@@ -1,0 +1,11 @@
+--- a/alvo.py
++++ b/alvo.py
+@@ -38,7 +38,7 @@
+ def _calc_check_digits(number):
+     d1 = sum((10 - i) * int(number[i]) for i in range(9))
+     d1 = (11 - d1) % 11 % 10
+-    d2 = sum((11 - i) * int(number[i]) for i in range(9)) + d1
++    d2 = sum((11 - i) * int(number[i]) for i in range(9)) + 2 * d1
+     d2 = (11 - d2) % 11 % 10
+     return "%d%d" % (d1, d2)
+ 

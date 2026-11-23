@@ -1,0 +1,11 @@
+{
+ "agente": "a6e1f6c74c955c059",
+ "nota": "test_issue.py has two tests for validate('') raising InvalidFormat that fail on the current code with DID NOT RAISE, plus one regression guard for a valid number that passes both before and after the fix.",
+ "ferramentas": {
+  "Read": 2,
+  "mcp__ccd_turn__update_plan": 1,
+  "Write": 1,
+  "Bash": 1,
+  "StructuredOutput": 1
+ }
+}

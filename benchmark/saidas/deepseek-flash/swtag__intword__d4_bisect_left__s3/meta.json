@@ -1,0 +1,28 @@
+{
+ "modelo_id": "deepseek-flash",
+ "erro": null,
+ "tempo_s": 50.3,
+ "tokens_entrada": 47822,
+ "tokens_saida": 9238,
+ "tokens_raciocinio": 7491,
+ "custo_usd": 0.006112,
+ "chamadas_api": 8,
+ "provedores": [],
+ "finish_reason": "stop",
+ "turnos": 8,
+ "origem_codigo": "arquivo",
+ "ferramentas": {
+  "Bash": 5,
+  "Write": 1,
+  "Read": 2
+ },
+ "pytests": [
+  {
+   "turno": 5,
+   "args": "test_issue.py -q",
+   "exit": 1
+  }
+ ],
+ "sandbox": "~\\AppData\\Local\\Temp\\bench_sandbox_openrouter\\deepseek-flash\\swtag__intword__d4_bisect_left__s3",
+ "nota": "I wrote `test_issue.py`: 15 tests total — 5 fail on the current `alvo.py` (e.g. `intword(10**100)` returning the mangled \"…0.0 decillion\" instead of `'1.0 googol'`, same for negatives, near-boundary values and custom formats), and all pass once the float-precision boundary-promotion check is fixed, with 10 sanity tests pinning existing behaviour."
+}

@@ -1,0 +1,8 @@
+{
+ "agente": "ade8213d977ad5b28",
+ "nota": "The pytest file reproduces the bug through apnumber(9), which should return 'nine' but returns '9' because the range check stops at 8, and it keeps 0-8 and 10 as regression guards.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

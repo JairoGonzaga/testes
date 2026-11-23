@@ -1,0 +1,8 @@
+{
+ "agente": "a566ad2ab0fb1acca",
+ "nota": "A complete pytest file for alvo.naturalsize covering the decimal, binary and gnu modes, rounding bumps, exponent caps, custom formats, special floats and error paths.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}

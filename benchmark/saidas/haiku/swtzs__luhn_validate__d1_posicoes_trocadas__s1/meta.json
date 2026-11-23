@@ -1,0 +1,8 @@
+{
+ "agente": "a458623088d4cf102",
+ "nota": "The file has the pytest reproduction for the Luhn bug, where validate('79927398713') wrongly raises InvalidChecksum; the cause is that checksum() doubles the wrong set of digit positions.",
+ "ferramentas": {
+  "Read": 1,
+  "StructuredOutput": 1
+ }
+}
